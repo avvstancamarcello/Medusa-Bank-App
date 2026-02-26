@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Financial Authorities Map - Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .popup-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+            animation: popupIn 0.3s ease-out;
+        }
+
+        @keyframes popupIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .popup-header {
+            background: linear-gradient(135deg, #003399 0%, #0055aa 100%);
+            color: white;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .popup-header h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .popup-header h2::before {
+            content: "🗺️";
+            font-size: 1.4rem;
+        }
+
+        .close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .map-container {
+            position: relative;
+            height: 450px;
+            background: #e8f0f8;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .map-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            padding: 40px 20px 20px;
+            color: white;
+        }
+
+        .map-overlay h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .map-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .popup-footer {
+            padding: 16px 24px;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .authority-stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .stat-icon {
+            width: 24px;
+            height: 24px;
+            background: #003399;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+        }
+
+        .open-fullscreen {
+            background: #003399;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .open-fullscreen:hover {
+            background: #0055aa;
+        }
+
+        /* Thumbnail mode (miniatura) */
+        .thumbnail-mode {
+            width: 320px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .thumbnail-mode:hover {
+            transform: scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .thumbnail-mode .map-container {
+            height: 200px;
+        }
+
+        .thumbnail-mode .popup-footer {
+            display: none;
+        }
+
+        .thumbnail-mode .map-overlay {
+            padding: 20px 15px 15px;
+        }
+
+        .thumbnail-mode .map-overlay h3 {
+            font-size: 0.9rem;
+        }
+
+        .thumbnail-mode .map-overlay p {
+            font-size: 0.75rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .popup-container {
+                border-radius: 8px;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+
+            .popup-footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .authority-stats {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container" id="mapPopup">
+        <div class="popup-header">
+            <h2>European Financial Supervisory Authorities</h2>
+            <button class="close-btn" onclick="closePopup()" title="Close">&times;</button>
+        </div>
+
+        <div class="map-container">
+            <!-- Google Maps embed centrato sull'Europa con zoom appropriato -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12000000!2d10!3d50!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1707400000000!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="map-overlay">
+                <h3>🏛️ Financial Supervisory Authorities</h3>
+                <p>Central banks, supervisory authorities and financial regulators in Europe</p>
+            </div>
+        </div>
+
+        <div class="popup-footer">
+            <div class="authority-stats">
+                <div class="stat">
+                    <span class="stat-icon">🇪🇺</span>
+                    <span>27 EU States</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">🏦</span>
+                    <span>40+ Authorities</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">✅</span>
+                    <span>Verified database</span>
+                </div>
+            </div>
+            <button class="open-fullscreen" onclick="openFullMap()">
+                <span>🔍</span> Open full map
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Close popup
+        function closePopup() {
+            document.getElementById('mapPopup').style.display = 'none';
+            document.body.style.background = '#fff';
+        }
+
+        // Open full map in new tab
+        function openFullMap() {
+            // Link to Google Maps with European Financial Authorities
+            window.open('https://www.google.com/maps/d/viewer?mid=1aJJxJMCQVQgKN4_9E6L3lFP5J8E&ll=50.0,10.0&z=4', '_blank');
+        }
+
+        // Enable thumbnail mode
+        function setThumbnailMode(enable) {
+            const popup = document.getElementById('mapPopup');
+            if (enable) {
+                popup.classList.add('thumbnail-mode');
+            } else {
+                popup.classList.remove('thumbnail-mode');
+            }
+        }
+
+        // Example: to use as thumbnail, call setThumbnailMode(true)
+        // URL param: ?thumbnail=true
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('thumbnail') === 'true') {
+            setThumbnailMode(true);
+            document.body.style.background = 'transparent';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "Scam Radar - Financial Protection",
+  "short_name": "Scam Radar",
+  "description": "48 European Financial Authorities - Verify before you invest",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1128",
+  "theme_color": "#0a1128",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo_shield_MS-3000.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo_shield_financial_defense.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["finance", "security", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+}

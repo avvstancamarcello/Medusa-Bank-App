@@ -1,0 +1,71 @@
+08/12/25,17:42 Agreement on payment services:greater protection against fraud |News |European Parliament
+Payment services contract:
+greater protection against fraud
+online and hidden fees
+Press release [ECON]27-1 1-2025-09:33
+Payment service users must be better protected against fraud and the misuse of
+their data.
+Fees and charges for payment services must be transparent.
+A fairer competitive environment between banks and non-bank payment service
+providers
+Provisions to ensure better access to species,particularly in remote and rural
+areas
+The European Parliament and the Council have reached an agreement to make the
+the payment services sector is more open,more competitive,and equipped with
+guarantees against fraud and data breaches.
+On Thursday morning,the negotiators of the Parliament and the Council reached an agreement
+on the Payment Services Regulation (PSR)and the third Payment Services Directive
+(PSD3).
+The regulation aims to harmonize payment services and strengthen fraud prevention
+across the EU.It applies to payment services provided by banks,postal money transfer
+services,and payment institutions,as well as to technical service providers supporting
+payment services and,in some cases,electronic communications providers and online
+platforms.The directive aims to ensure fair competition among payment service
+providers in terms of authorization and oversight powers and to improve access to
+cash,particularly in remote areas.
+Protecting customers from fraud:
+If a payment service provider does not implement adequate fraud prevention
+mechanisms,it will be responsible for covering the losses incurred by customers.
+Payment service providers (PSPs)will be required to verify the match between the name
+and the unique identifier of the beneficiary.Otherwise,the PSP must refuse the
+payment order and inform the payer.Payment service providers must also ensure
+secure customer authentication and conduct a risk assessment.
+The members of Parliament have confirmed that payment service providers
+https://www.europarl.europa.eu/news/fr/press-room/20251121IPR31540/accord-sur-les-services-de-paiement-plus-de-protection-contre-la-fraude 2/6
+08/12/25,17:42 Payment Services Agreement:Stronger Protection Against Fraud |News I European Parliament
+They will have to offer spending limits and blocking measures to reduce the risk of fraud.
+If a scammer initiates or alters a transaction,it will be considered unauthorized.
+and the payment service provider will be responsible for the entire fraudulent amount.
+Additionally,the receiving payment service provider must block any transactions it
+deems suspicious.
+To protect customers from identity theft fraud,where a scammer impersonates a
+PSP employee and deceives the customer into approving a payment,the PSP
+must refund the full amount as soon as the customer reports the fraud to the police
+and informs them.
+Online platforms will be liable to payment service providers who have refunded
+fraudulent customers if they were informed of the presence of fraudulent content on
+their platform and failed to take the necessary steps to remove it.This measure builds
+on and reinforces the protections provided by the Digital Services Act.
+Additionally,financial services advertisers must demonstrate to major online platforms
+and search engines that they are legally authorized (or officially exempt)in the country
+in question to offer such services,or that they are advertising on behalf of someone
+who is.
+MPs also ensured that users have access to human customer service (not just
+chatbots)and that public resources are dedicated to training people on how to
+avoid fraud.
+As for the commissions,
+Customers must be adequately informed of all charges before making a
+payment.For example,they must receive information about conversion fees
+currency or fixed commissions for withdrawing cash from ATMs,regardless of the
+operator.
+Better access to cash:
+To ensure better access to cash,particularly in remote and rural areas,retail stores will
+be able to make cash withdrawals of up to E150,but with a minimum of E100,without
+requiring the customer to make any purchase.
+Strengthen competition:
+Negotiators agreed to reduce barriers to the market for "open access services"
+banking"(account information and payment initiation services)and
+prevent payment service providers (ASPSPs,typically banks or other financial
+institutions)from discriminating against them.
+Authorized open banking service providers must be able to access payment account
+data;and the legislation includes a list of prohibited barriers to data access.
