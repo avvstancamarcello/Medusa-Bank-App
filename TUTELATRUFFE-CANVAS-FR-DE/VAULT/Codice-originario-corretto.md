@@ -1,0 +1,6382 @@
+
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- SEO META TAGS - Caravaggio Codex -->
+  <title>Caravaggio Codex | Guida Truffe Finanziarie, ABF e Bank Complaints Database</title>
+  <meta name="description" content="Caravaggio Codex unisce gioco interattivo, guida anti truffe finanziarie, bank complaints database, casi reali Roma Today e risorse ABF per reclami, rimborsi, phishing bancario, falsa telefonata, trading scam e tutela del consumatore.">
+  <meta name="keywords" content="Caravaggio Codex, truffe finanziarie, guida anti truffe, bank complaints database, reclami banca, rimborso truffa, ABF, Arbitro Bancario Finanziario, phishing bancario, falsa telefonata banca, sms banca truffa, bonifici non autorizzati, Roma Today truffe, Banca d'Italia ABF, trading scam, crypto scam, tutela truffe, tutela consumatore, financial scam guide, fraud recovery, Medusa financial defense">
+  <meta name="author" content="Avv. Marcello Stanca - Firenze">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://tutelatruffe.it/caravaggio-codex.html">
+  
+  <!-- Favicon Medusa Caravaggio -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e3a5f">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tutelatruffe.it/caravaggio-codex.html">
+  <meta property="og:title" content="Caravaggio Codex | Guida Truffe Finanziarie, ABF e Reclami Bancari">
+  <meta property="og:description" content="Guida multilanguage contro phishing bancario, falsa telefonata, trading scam e frodi finanziarie, con bank complaints database, casi reali Roma Today e risorse ABF.">
+  <meta property="og:image" content="https://tutelatruffe.it/Images/caravaggio-medusa-shield.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="de_DE">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Caravaggio Codex | Guida Truffe Finanziarie e ABF">
+  <meta name="twitter:description" content="Guida anti truffe finanziarie con reclami bancari, casi reali Roma Today, ABF e risorse di tutela per phishing, sms spoofing e bonifici anomali.">
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Caravaggio Codex - Medusa Financial Defense",
+    "description": "Guida interattiva contro le truffe finanziarie con bank complaints database, casi reali, reclami bancari, ABF e risorse di tutela del consumatore",
+    "url": "https://tutelatruffe.it/caravaggio-codex.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web Browser",
+    "author": {
+      "@type": "Person",
+      "name": "Avv. Marcello Stanca",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Firenze",
+        "addressCountry": "IT"
+      }
+    },
+    "keywords": ["bank complaints", "truffe finanziarie", "ABF", "Arbitro Bancario Finanziario", "reclami banca", "phishing bancario", "falsa telefonata banca", "Roma Today truffe", "Banca d'Italia", "fraud protection"],
+    "inLanguage": ["it", "en", "fr", "de", "es"]
+  }
+  </script>
+  
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{min-height:100%;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:#eee;background:#000d14;overflow-x:hidden;scroll-behavior:smooth}
+    
+    /* ZOOM LENTICOLARE CONTROLLATO - evita overflow da zoom browser */
+    .zoom-container{overflow:hidden;position:relative}
+    .lens-zoomable{transition:transform .3s ease, z-index 0s}
+    .lens-zoomable:hover{transform:scale(1.5);z-index:1000;position:relative}
+    
+    .stars{position:fixed;width:100%;height:100%;pointer-events:none;z-index:0}
+    .star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle 3s infinite}
+    @keyframes twinkle{0%,100%{opacity:.3}50%{opacity:1}}
+    
+    .wrap{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:20px}
+    
+    /* Header - non coperto dalle meduse */
+      header{display:flex;align-items:center;justify-content:center;margin-bottom:15px;gap:12px;position:relative;z-index:100;flex-wrap:wrap;padding-left:72px;padding-right:72px}
+    
+    /* Top Banners - 4 elementi affiancati */
+      .top-banners{display:flex;align-items:center;justify-content:center;gap:clamp(8px,1vw,12px);flex-wrap:wrap;overflow:hidden;max-width:100%;margin:0 auto}
+    .banner-item{display:flex;align-items:center;gap:4px;border:2px solid;border-radius:8px;font-weight:700;transition:all .3s}
+    .banner-item svg{width:clamp(12px,1.3vw,16px);height:clamp(12px,1.3vw,16px);flex-shrink:0}
+    .banner-main{color:#ff9f43;font-size:clamp(14px,1.5vw,20px);border-color:#ff9f43;background:linear-gradient(135deg,#1a0f00,#2a1500);box-shadow:0 0 15px rgba(255,159,67,.4);padding:clamp(3px,0.4vw,5px) clamp(5px,0.6vw,8px)}
+    .banner-main:hover{transform:scale(1.3);z-index:100;box-shadow:0 0 30px rgba(255,159,67,.8)}
+    .banner-link{text-decoration:none;color:#4db8ff;font-size:clamp(12px,1.25vw,16px);border-color:#1a3f5e;background:#0a1f2e;cursor:pointer;padding:clamp(6px,0.7vw,9px) clamp(10px,1.1vw,14px)}
+    .banner-link:hover{transform:scale(1.3);z-index:100;box-shadow:0 0 20px rgba(77,184,255,.7);border-color:#4db8ff}
+    .banner-gmw{color:#ff9f43;border-color:#ff9f43;background:linear-gradient(135deg,#1a0f00,#2a1500);box-shadow:0 0 15px rgba(255,159,67,.4)}
+    .banner-gmw:hover{box-shadow:0 0 30px rgba(255,159,67,.8);border-color:#ff9f43}
+    .banner-avv{text-decoration:none;color:#4db8ff;border-color:#1a3f5e;background:#0a1f2e;box-shadow:0 0 15px rgba(77,184,255,.24)}
+    .banner-avv:hover{box-shadow:0 0 20px rgba(77,184,255,.7);border-color:#4db8ff}
+    .banner-heartbeat{animation:heartbeat 1.2s ease-in-out infinite}
+    @keyframes heartbeat{0%{transform:scale(1)}14%{transform:scale(1.15)}28%{transform:scale(1)}42%{transform:scale(1.12)}70%{transform:scale(1)}}
+    
+    .lang-buttons-left,.lang-buttons-right{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+    .lang-buttons-left{position:absolute;top:0;left:5%;z-index:165}
+    .lang-buttons-right{position:absolute;top:0;right:5%;align-items:flex-end;z-index:165;margin-left:0}
+    .lang-btn{padding:5px 12px;background:#0a1f2e;border:2px solid #1a3f5e;border-radius:6px;color:#4db8ff;font-weight:600;cursor:pointer;transition:all .2s;font-size:13px;position:relative}
+    .lang-btn.active{background:#1a5f8e;border-color:#4db8ff}
+    .lang-btn:hover{background:#1a4f7e}
+    .lang-btn .music-note{font-size:10px;margin-left:4px;opacity:0.7;transition:all .3s}
+    .lang-btn:hover .music-note{opacity:1;transform:scale(1.2)}
+    .lang-btn.playing .music-note{animation:noteGlow 0.5s ease-in-out infinite alternate;color:#ffd700}
+    .lang-btn[data-lang="EN"] .music-note{color:#00247d}
+    .lang-btn[data-lang="IT"] .music-note{color:#009246}
+    .lang-btn[data-lang="FR"] .music-note{color:#0055a4}
+    .lang-btn[data-lang="DE"] .music-note{color:#ffcc00}
+    @keyframes noteGlow{0%{text-shadow:0 0 5px currentColor}100%{text-shadow:0 0 15px currentColor,0 0 25px currentColor}}
+    /* Tooltip per pulsanti lingua - lato interno */
+    .lang-btn .music-tooltip{position:absolute;top:50%;transform:translateY(-50%);background:linear-gradient(135deg,#1a0a00,#3d1a00);border:2px solid #ffd700;border-radius:8px;padding:8px 12px;min-width:160px;opacity:0;visibility:hidden;transition:all .3s;z-index:1000;box-shadow:0 4px 15px rgba(255,215,0,0.4);pointer-events:none}
+    .lang-btn:hover .music-tooltip{opacity:1;visibility:visible}
+    /* Pulsanti SINISTRA (EN, IT) - tooltip a destra */
+    .lang-buttons-left .lang-btn .music-tooltip{left:110%;right:auto}
+    .lang-buttons-left .lang-btn .music-tooltip::after{content:'';position:absolute;top:50%;right:100%;margin-top:-8px;border-width:8px;border-style:solid;border-color:transparent #ffd700 transparent transparent}
+    /* Pulsanti DESTRA (FR, DE) - tooltip a sinistra */
+    .lang-buttons-right .lang-btn .music-tooltip{right:110%;left:auto}
+    .lang-buttons-right .lang-btn .music-tooltip::after{content:'';position:absolute;top:50%;left:100%;margin-top:-8px;border-width:8px;border-style:solid;border-color:transparent transparent transparent #ffd700}
+    .lang-btn .music-tooltip .tooltip-line{display:block;color:#ffe066;font-size:11px;line-height:1.4;text-align:center;white-space:nowrap}
+    .lang-btn .music-tooltip .tooltip-note{color:#ffd700;font-size:13px}
+
+    .avatar-tutorial-container {
+        position: absolute;
+        top: 70px; /* Posiziona sotto i pulsanti lingua */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 165;
+    }
+    .avatar-tutorial-btn {
+        padding: 8px 16px;
+        background-color: #00ff00; /* Sfondo verde */
+        border: 2px solid #000;
+        border-radius: 6px;
+        color: #000; /* Testo nero */
+        font-weight: 700;
+        cursor: pointer;
+        transition: all .2s;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .avatar-tutorial-btn:hover {
+        background-color: #33ff33;
+        transform: scale(1.05);
+    }
+    
+    /* Gazza Ladra Icon - Marchio Musicale Italiano - Sulla cornice rossa del banner */
+    .gazza-icon{position:absolute;width:50px;height:50px;background:linear-gradient(135deg,#f5f5dc,#fffacd,#fafad2);border-radius:50%;padding:5px;box-shadow:0 2px 10px rgba(0,0,0,0.4),inset 0 0 10px rgba(255,255,255,0.5),0 0 15px rgba(255,215,0,0.5);cursor:pointer;transition:all .3s;z-index:160}
+    .gazza-icon:hover{transform:scale(1.2);box-shadow:0 4px 20px rgba(255,215,0,0.9)}
+    .gazza-icon svg{width:100%;height:100%}
+    /* Gazza SINISTRA - al 10% del banner (sotto medusa sinistra, vicino forziere) */
+    .gazza-left{top:204px;left:calc(13% + 4px);animation:gazzaHopLeft 1.8s ease-in-out infinite}
+    /* Gazza DESTRA - al 90% del banner (sotto medusa destra, vicino forziere) */
+    .gazza-right{top:204px;right:calc(13% + 4px);left:auto;animation:gazzaHopRight 1.8s ease-in-out infinite}
+    .gazza-left.gazza-playing{animation:gazzaHopLeftFast 1s ease-in-out infinite}
+    .gazza-right.gazza-playing{animation:gazzaHopRightFast 1s ease-in-out infinite}
+    @keyframes gazzaHopLeft{0%,100%{transform:translateX(0)}50%{transform:translateX(-8px)}}
+    @keyframes gazzaHopRight{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+    @keyframes gazzaHopLeftFast{0%,100%{transform:translateX(0) rotate(-5deg)}50%{transform:translateX(-12px) rotate(5deg)}}
+    @keyframes gazzaHopRightFast{0%,100%{transform:translateX(0) rotate(5deg)}50%{transform:translateX(12px) rotate(-5deg)}}
+    /* Scritte MEDUSA accanto alle gazze */
+    .medusa-label{position:absolute;top:-28px;font-size:21px;font-weight:900;color:#00ff00;letter-spacing:1px;z-index:162;pointer-events:none}
+    .medusa-label-left{left:9%;text-align:center;width:clamp(130px,12vw,180px)}
+    .medusa-label-right{right:9%;left:auto;text-align:center;width:clamp(130px,12vw,180px)}
+    
+    /* Hidden Gazza - Gazze nascoste vicino al pulsante PLAY, appaiono dopo click */
+    .hidden-gazza{position:absolute;width:40px;height:40px;background:linear-gradient(135deg,#f5f5dc,#fffacd);border-radius:50%;padding:4px;box-shadow:0 2px 8px rgba(0,0,0,0.3);z-index:140;opacity:0;transform:scale(0.5);transition:all 0.5s ease;pointer-events:none}
+    .hidden-gazza.visible{opacity:1;transform:scale(1);pointer-events:auto}
+    .hidden-gazza svg{width:100%;height:100%}
+    .hidden-gazza-left{top:150px;left:calc(50% - 150px)}
+    .hidden-gazza-right{top:150px;left:calc(50% + 115px)}
+    .hidden-gazza.visible{animation:gazzaPeek 0.8s ease-out}
+    @keyframes gazzaPeek{0%{opacity:0;transform:scale(0.3) translateY(20px)}50%{transform:scale(1.1) translateY(-5px)}100%{opacity:1;transform:scale(1) translateY(0)}}
+    
+    /* Audio Control - Mini player indicatore - A SINISTRA del pulsante PLAY */
+    .audio-indicator{position:absolute;top:155px;left:calc(50% - 130px);transform:translateX(-100%);background:rgba(10,31,46,0.95);border:2px solid #4db8ff;border-radius:10px;padding:8px 12px;color:#4db8ff;font-size:11px;z-index:151;display:none;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
+    .audio-indicator.visible{display:flex}
+    .audio-indicator .track-name{font-weight:600;max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .audio-indicator .stop-btn{background:#660000;border:2px solid #ff4444;border-radius:5px;padding:4px 10px;color:#ff4444;cursor:pointer;font-size:11px;transition:all .2s}
+    .audio-indicator .stop-btn:hover{background:#990000}
+    .audio-equalizer{display:flex;gap:2px;align-items:flex-end;height:15px}
+    .audio-equalizer span{width:3px;background:#4db8ff;animation:equalize 0.5s ease-in-out infinite alternate}
+    .audio-equalizer span:nth-child(1){animation-delay:0s;height:5px}
+    .audio-equalizer span:nth-child(2){animation-delay:0.1s;height:10px}
+    .audio-equalizer span:nth-child(3){animation-delay:0.2s;height:7px}
+    .audio-equalizer span:nth-child(4){animation-delay:0.3s;height:12px}
+    @keyframes equalize{0%{height:5px}100%{height:15px}}
+    
+    /* SOS Buttons - SOTTO le frecce rosse lampeggianti */
+    .sos-buttons-container{position:absolute;display:flex;gap:15px;z-index:100}
+    .sos-left{left:calc(15% + 105px + 8px);top:calc(44% + 35px)}
+    .sos-right{right:calc(15% + 105px + 8px);top:calc(44% + 35px)}
+    .sos-btn{background:#660000;border:3px solid #ff0000;border-radius:10px;padding:8px 12px;color:#ff0000;font-size:12px;font-weight:700;text-align:center;box-shadow:0 4px 15px rgba(255,0,0,.5);transition:all .3s;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px;line-height:1.2}
+    .sos-btn:hover{transform:scale(1.05);box-shadow:0 6px 20px rgba(255,0,0,.7)}
+    
+    /* Petition Buttons - nelle colonne laterali */
+    .petition-side-container{position:absolute;display:flex;flex-direction:column;gap:10px;z-index:100}
+    .petition-left{left:3%;bottom:80px}
+    .petition-right{right:3%;bottom:80px}
+    .petition-btn{display:flex;flex-direction:column;align-items:center;gap:clamp(5px,0.6vw,8px);text-decoration:none;background:#003399;border:3px solid #FFD700;border-radius:12px;padding:clamp(5px,0.6vw,8px) clamp(10px,1.2vw,15px);box-shadow:0 4px 15px rgba(255,215,0,.5);transition:all .3s;min-width:clamp(80px,7vw,100px)}
+    .petition-btn:hover{transform:scale(1.5);z-index:1000;box-shadow:0 10px 40px rgba(255,215,0,.9)}
+    .petition-eu-circle{width:clamp(35px,4vw,50px);height:clamp(35px,4vw,50px);background:#FFD700;border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 15px rgba(255,215,0,.6);}
+    .petition-eu-circle svg{width:clamp(20px,2.5vw,30px);height:clamp(20px,2.5vw,30px)}
+    .eu-stars-ring{position:absolute;width:clamp(40px,5vw,60px);height:clamp(40px,5vw,60px);top:50%;left:50%;transform:translate(-50%,-50%)}
+    .petition-label{color:#FFD700;font-size:clamp(10px,1.1vw,14px);font-weight:700;text-align:center;line-height:1.2}
+    
+    /* Scene - layout verticale FISSO basato sulle torri emoji */
+    .scene{position:relative;height:auto;min-height:7900px;margin:20px auto;overflow:visible;padding-bottom:80px}
+    
+    /* === SEZIONE CIELO (0-250px) - Meduse attaccanti === */
+    .medusa{position:absolute;top:10px;width:clamp(130px,12vw,180px);height:clamp(130px,12vw,180px);z-index:25;transition:transform .3s ease}
+    .medusa:hover{transform:scale(1.3);z-index:100}
+    .medusa.left{left:4%}
+    .medusa.right{right:4%}
+
+    /* Banner testuale statico */
+    .banner-static-text {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    line-height: 1.35;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 0 0 8px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    }
+
+    .banner-static-text p {
+    margin: 0;
+    padding: 0;
+    }
+           
+    /* === SEZIONE TORRI EMOJI (400-1520px) - 10 piani da 112px === */
+    /* Orbite banche - CENTRATE su PIANO 7 (centro 792px) */
+    .orbit{position:absolute;left:50%;border:2px dashed;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}
+    .orbit-outer{top:792px;width:320px;height:320px;border-color:rgba(255,100,100,.4)}
+    .orbit-inner{top:792px;width:220px;height:220px;border-color:rgba(100,200,255,.5)}
+    .orbit-safe{
+      top: 1280px;
+        width: 250px;
+        height: 250px;
+        border-color: rgba(0, 255, 100, .6);
+        border-style: solid;
+        border-width: 3px;
+        z-index: 148;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        box-shadow: 0 0 20px rgba(0, 255, 100, .4), inset 0 0 15px rgba(0, 255, 100, .2);
+        background: rgba(0, 40, 20, 0.3);
+        backdrop-filter: blur(3px);
+    }
+    
+    /* Medusa di Caravaggio - CENTRO PIANO 7 (792px) - SFONDO ORBITE */
+    .medusa-caravaggio{position:absolute;left:50%;top:792px;transform:translate(-50%,-50%);width:280px;height:280px;z-index:145;border-radius:50%;overflow:hidden;box-shadow:0 0 50px rgba(255,0,0,.7),0 0 100px rgba(255,0,0,.5);border:4px solid rgba(200,0,0,.9);transition:all .3s ease;cursor:pointer}
+    .medusa-caravaggio:hover{transform:translate(-50%,-50%) scale(1.35);z-index:250;box-shadow:0 0 80px rgba(255,0,0,1),0 0 150px rgba(255,0,0,.8),0 0 40px rgba(255,215,0,.6);border-color:#FFD700}
+    .medusa-caravaggio img{width:100%;height:100%;object-fit:cover;filter:saturate(1.2) contrast(1.1)}
+    
+    .medusa-image-container{position:relative;width:180px;height:180px;border-radius:50%;overflow:hidden;box-shadow:0 0 40px rgba(255,0,0,.8),0 0 80px rgba(255,0,0,.5);border:4px solid rgba(200,0,0,.9)}
+    .medusa-image-container img{width:100%;height:100%;object-fit:cover;filter:saturate(1.3) contrast(1.15) brightness(0.95)}
+    
+    /* Animazione pulsazione con rotazione testa - effetto sguardo ipnotico di Medusa */
+    .medusa.left .medusa-image-container{animation:headTiltLeft 3s ease-in-out infinite}
+    .medusa.right .medusa-image-container{animation:headTiltRight 3s ease-in-out infinite}
+    
+    @keyframes headTiltLeft{
+      0%,100%{transform:rotate(-8deg) scale(1)}
+      50%{transform:rotate(8deg) scale(1.12)}
+    }
+    @keyframes headTiltRight{
+      0%,100%{transform:rotate(8deg) scale(1)}
+      50%{transform:rotate(-8deg) scale(1.12)}
+    }
+    
+    /* Totalizzatore nei captures containers - formato counter banche - GIALLO */
+    .captures-total{background:#000;color:#FFD700;padding:4px 10px;border-radius:8px;font-size:14px;font-weight:700;border:2px solid #FFD700;box-shadow:0 4px 12px rgba(255,215,0,.5);text-align:center;margin-top:5px;display:inline-block;transition:all .3s;cursor:pointer}
+    .captures-total:hover{transform:scale(1.15);box-shadow:0 6px 18px rgba(255,215,0,.8)}
+    
+    /* Laccio-serpente attacco - Celeste fosforo ondulante come oscilloscopio (NASCOSTO - usato solo per posizionamento) */
+    .whip-tentacle{position:absolute;height:8px;background:transparent;border-radius:4px;transform-origin:0 50%;opacity:0;transition:opacity .3s;z-index:18}
+    .whip-tentacle.active{opacity:1}
+    
+    /* Anelli OVALI di catena - collegati lungo asse maggiore */
+    .chain-ring{position:absolute;width:12px;height:20px;border-radius:50%;border:3px solid;opacity:0;z-index:19;transition:opacity .1s}
+    .chain-ring.active{opacity:1}
+    
+    /* Colori catena */
+    .chain-cyan{border-color:#00FFFF;box-shadow:0 0 10px rgba(0,255,255,.9),0 0 20px rgba(0,255,255,.6)}
+    .chain-red{border-color:#FF3333;box-shadow:0 0 10px rgba(255,51,51,.9),0 0 20px rgba(255,51,51,.6)}
+    .chain-green{border-color:#33FF33;box-shadow:0 0 10px rgba(51,255,51,.9),0 0 20px rgba(51,255,51,.6)}
+    .chain-yellow{border-color:#FFFF33;box-shadow:0 0 10px rgba(255,255,51,.9),0 0 20px rgba(255,255,51,.6)}
+    .chain-blue{border-color:#3366FF;box-shadow:0 0 10px rgba(51,102,255,.9),0 0 20px rgba(51,102,255,.6)}
+    
+    /* Animazione lucciola singola - anelli ovali */
+    .chain-ring.glow{animation:chainGlow 0.12s ease-out}
+    @keyframes chainGlow{
+      0%{filter:brightness(1)}
+      50%{filter:brightness(2.5);box-shadow:0 0 25px currentColor}
+      100%{filter:brightness(1)}
+    }
+    
+    /* Emoji cattura all'apice della catena */
+    .chain-emoji{position:absolute;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:32px;z-index:20;filter:drop-shadow(0 0 15px rgba(255,255,255,.8));animation:emojiPulse 0.4s ease-in-out infinite}
+    @keyframes emojiPulse{
+      0%,100%{transform:scale(1)}
+      50%{transform:scale(1.15)}
+    }
+    
+    /* Pulsazione automatica container cattura */
+    .captures-container.capture-pulse{animation:capturePulse 0.6s ease-out}
+    @keyframes capturePulse{
+      0%{transform:scale(1)}
+      30%{transform:scale(1.15);box-shadow:0 8px 40px rgba(255,50,50,1)}
+      100%{transform:scale(1)}
+    }
+    
+    /* Shield centrale - PIANO 3 (1514px) - SOTTO IL VECCHIO ORBIT-SAFE */
+    .shield-center{position:absolute;left:calc(50% - 35px);right:auto;top:1500px;transform:translate(-50%,-50%);width:140px;height:140px;z-index:149;cursor:pointer;transition:transform .3s ease}
+    .shield-center img{width:100%;height:100%;filter:drop-shadow(0 0 25px rgba(100,150,255,.7));transition:all .3s ease}
+    .shield-center:hover{transform:translate(-50%,-50%) scale(1.15)}
+    .shield-center:hover img{filter:drop-shadow(0 0 40px rgba(100,200,255,1)) drop-shadow(0 0 60px rgba(150,220,255,.8))}
+    .shield-glow{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,rgba(100,180,255,.3),transparent 70%);animation:pulse-glow 3s ease-in-out infinite}
+    @keyframes pulse-glow{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.15);opacity:1}}
+    .photo-arrows{position:absolute;top:1397px;left:50%;transform:translateX(-50%);width:280px;display:flex;justify-content:space-between;align-items:center;pointer-events:none;z-index:185}
+    .photo-arrow{font-size:46px;font-weight:900;color:#FFD700;text-shadow:0 0 15px rgba(255,215,0,.95),0 0 30px rgba(255,215,0,.65);animation:photoArrowBlink 1.4s ease-in-out infinite}
+    .photo-arrow.left{transform:translateX(-8px)}
+    .photo-arrow.right{transform:translateX(8px)}
+    @keyframes photoArrowBlink{0%,100%{opacity:.35;filter:brightness(1)}50%{opacity:1;filter:brightness(1.7)}}
+    
+    /* === PULSANTI VERDI - Nello spazio centrale tra i READ PETITION (1020px) === */
+    /* Authorities Search Button - Centro sinistra - RIDOTTO 40% - BORDO SINISTRO INVARIATO */
+    .authorities-search-button{position:absolute;left:50%;top:1040px;transform:translateX(-258%) scale(1.15);padding:10px 14px;background:#0f3;border:2px solid #0f3;border-radius:9px;color:#000;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 0 15px rgba(0,255,100,.6);transition:all .3s;z-index:160;text-decoration:none;display:block;text-align:center;width:108px;line-height:1.3}
+    .authorities-search-button:hover{transform:translateX(-258%) scale(1.60);box-shadow:0 0 30px rgba(0,255,100,.9)}
+    
+    /* Global Protection Button - Centro destra */
+    .global-protection-button{position:absolute;left:50%;top:1038px;transform:translateX(210%) scale(1.15);padding:8px 12px;background:#00FF00;border:2px solid #00FF00;border-radius:11px;color:#000;font-size:12px;font-weight:700;cursor:pointer;box-shadow:0 0 15px rgba(0,255,0,.6);transition:all .3s;z-index:160;text-decoration:none;display:block;text-align:center;width:90px;line-height:1.3}
+    .global-protection-button:hover{transform:translateX(210%) scale(1.60);box-shadow:0 0 30px rgba(0,255,0,.9)}
+    
+    /* Freccia invito click - Sopra pulsanti verdi (rimossa - non più visibile) */
+    .click-arrow{display:none}
+    @keyframes arrowBounceDown{
+      0%,100%{transform:translateY(0);opacity:1}
+      50%{transform:translateY(12px);opacity:0.9}
+    }
+    
+    /* Frecce celesti sopra Psychology e Psychiatry */
+    .sos-arrow-cyan{position:absolute;top:-45px;left:50%;transform:translateX(-50%);font-size:35px;color:transparent;-webkit-text-stroke:3px #00FFFF;z-index:101;animation:cyanArrowBounce 1.2s ease-in-out infinite;text-shadow:0 0 12px rgba(0,255,255,.8);filter:drop-shadow(0 0 8px #00FFFF)}
+    @keyframes cyanArrowBounce{
+      0%,100%{transform:translateX(-50%) translateY(0);opacity:1}
+      50%{transform:translateX(-50%) translateY(10px);opacity:0.95}
+    }
+          
+    /* Bank + Emoji Face */
+    .bank-face-group{position:absolute;display:flex;flex-direction:column;align-items:center;gap:8px;z-index:15}
+    
+    .bank{width:clamp(50px,5vw,70px);height:clamp(50px,5vw,70px);background:linear-gradient(135deg,#87CEEB 0%,#5BA3D0 50%,#4A90E2 100%);border:2px solid #4db8ff;border-radius:10px;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 6px 20px rgba(74,144,226,.4),0 0 15px rgba(135,206,235,.3);transition:transform .3s ease, z-index 0s}
+    .bank img{max-width:80%;max-height:80%;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+    .bank:hover{transform:scale(1.8);z-index:1000;border-color:#87CEEB;box-shadow:0 10px 40px rgba(74,144,226,.8),0 0 30px rgba(135,206,235,.7)}
+    .bank.lens-zoom{transform:scale(2);z-index:1000;box-shadow:0 10px 40px rgba(74,144,226,.8),0 0 30px rgba(135,206,235,.7)}
+    
+    /* Didascalie per icone banche rotanti */
+    .bank-label-top{position:absolute;top:3px;left:50%;transform:translateX(-50%);font-size:9px;font-weight:900;color:#ff0000;text-shadow:0 0 8px rgba(255,0,0,1),0 1px 2px rgba(0,0,0,.8);text-transform:uppercase;letter-spacing:1px;white-space:nowrap;pointer-events:none;z-index:5}
+    .bank-label-bottom{position:absolute;bottom:3px;left:50%;transform:translateX(-50%);font-size:8px;font-weight:900;color:#ff0000;text-shadow:0 0 8px rgba(255,0,0,1),0 1px 2px rgba(0,0,0,.8);text-transform:uppercase;letter-spacing:1px;white-space:nowrap;pointer-events:none;z-index:5}
+    
+    /* Flag */
+    .flag{position:absolute;top:-22px;right:-6px;width:28px;height:20px;border-radius:3px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.2)}
+    .flag img{width:100%;height:100%;object-fit:cover}
+    
+    /* Counter banca (negativo) */
+    .bank-counter{position:absolute;top:-35px;left:50%;transform:translateX(-50%);background:#000;color:#f00;padding:4px 10px;border-radius:8px;font-size:13px;font-weight:700;border:2px solid #f00;box-shadow:0 4px 12px rgba(255,0,0,.5);min-width:80px;text-align:center}
+    
+    /* Emoji Face */
+    .emoji-face{font-size:45px;text-align:center;transition:all .4s;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4))}
+    .emoji-face.happy{content:'😊'}
+    .emoji-face.hypnotized{animation:hypno-spin 1s ease-in-out;content:'😵'}
+    .emoji-face.crying{content:'😢'}
+    @keyframes hypno-spin{0%{transform:rotate(0deg) scale(1)}50%{transform:rotate(180deg) scale(1.2)}100%{transform:rotate(360deg) scale(1)}}
+    
+    /* Coin/Dollar flow */
+    .money-flow{position:fixed;background:linear-gradient(135deg,#ffd700,#ffed4e);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#000;box-shadow:0 4px 12px rgba(255,215,0,.7);z-index:22;pointer-events:none}
+    .money-flow.pound{background:linear-gradient(135deg,#ff6b6b,#ff4444);color:#fff}
+    
+    /* Info boxes */
+    .info-box{position:absolute;padding:10px 14px;background:rgba(10,20,35,.92);border:2px solid;border-radius:10px;font-size:12px;max-width:160px;backdrop-filter:blur(8px);z-index:12}
+    .info-box.danger{border-color:#ff5555;color:#ffaaaa;bottom:5%;left:3%}
+    .info-box.safe{border-color:#4db8ff;color:#aae5ff;bottom:2%;right:3%}
+    
+    /* === TORRI EMOJI LATERALI - 11 piani (400-1632px) altezza piano=112px === */
+    .captures-container{position:absolute;top:400px;width:100px;height:1232px;background:rgba(20,10,10,.85);border:3px solid #ff3333;border-radius:12px;padding:8px;backdrop-filter:blur(10px);z-index:10;box-shadow:0 5px 25px rgba(255,50,50,.5);display:flex;flex-direction:column;gap:0;overflow:visible;transition:all .3s ease;cursor:pointer}
+    .captures-container:hover{transform:scale(1.08);box-shadow:0 15px 60px rgba(255,50,50,1),0 0 40px rgba(255,215,0,.6);z-index:200;border-color:#FFD700}
+    .captures-left{left:3%}
+    .captures-right{right:3%}
+    .captures-lower-container{position:absolute;top:1795px;width:100px;min-height:980px;background:rgba(20,10,10,.85);border:3px solid #ff3333;border-radius:12px;padding:8px;backdrop-filter:blur(10px);z-index:120;box-shadow:0 5px 25px rgba(255,50,50,.5);display:flex;flex-direction:column;gap:8px;overflow:visible;transition:all .3s ease}
+    .captures-lower-left{left:3%}
+    .captures-lower-right{right:3%}
+    .captures-lower-container:hover{box-shadow:0 15px 60px rgba(255,50,50,1),0 0 40px rgba(255,215,0,.6);border-color:#FFD700}
+    
+    /* === COUNTER TOTALI RUBATI - sopra le torri emoji === */
+    .stolen-total-box{position:absolute;top:285px;width:100px;height:60px;background:linear-gradient(135deg,#FFD700,#FFA500);border:3px solid #B8860B;border-radius:10px;padding:5px;z-index:15;box-shadow:0 5px 20px rgba(255,215,0,.6),inset 0 0 15px rgba(255,255,255,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transition:all .3s ease;cursor:pointer}
+    .stolen-total-box:hover{transform:scale(1.15);box-shadow:0 10px 40px rgba(255,215,0,1),0 0 30px rgba(255,0,0,.5);z-index:200}
+    .stolen-total-left{left:3%}
+    .stolen-total-right{right:3%}
+    .stolen-total-label{font-size:10px;font-weight:700;color:#8B0000;text-transform:uppercase;letter-spacing:0.5px}
+    .stolen-total-value{font-size:16px;font-weight:900;color:#8B0000;text-shadow:0 0 5px rgba(139,0,0,.5)}
+    
+    /* Singolo piano emoji - altezza fissa 112px */
+    .emoji-floor{width:100%;height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-bottom:1px dashed rgba(255,100,100,.3);position:relative}
+    .emoji-floor:last-child{border-bottom:none}
+    .emoji-floor-number{position:absolute;top:2px;right:4px;font-size:10px;color:rgba(255,255,255,.4);font-weight:700}
+    .emoji-slot{font-size:40px;opacity:0.12;transition:all .4s}
+    .emoji-slot.active{opacity:1 !important;filter:drop-shadow(0 0 20px #ffff00) drop-shadow(0 0 40px #ff6600) !important;font-size:48px !important;animation:emojiAppear .5s ease-out}
+    .emoji-floor-0{background:rgba(0,100,0,.2);border:2px solid rgba(0,255,0,.4)}
+    .emoji-floor-0 .emoji-slot{opacity:1 !important;font-size:50px;filter:drop-shadow(0 0 15px rgba(0,255,0,.8)) !important}
+    .emoji-counter{background:#ffd700;color:#000;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700;margin-top:4px;opacity:0;transition:opacity .3s}
+    .emoji-counter.visible{opacity:1}
+    @keyframes emojiAppear{0%{transform:scale(0);opacity:0}50%{transform:scale(1.5)}100%{transform:scale(1);opacity:1}}
+    
+    /* === SCALA A PIOLI - Banner orizzontali tra torri emoji === */
+    .scaffold-rung{position:absolute;left:calc(3% + 110px);right:calc(3% + 110px);height:20px;background:linear-gradient(90deg,#8B0000,#cc0000,#8B0000);border:2px solid #ff3333;border-radius:4px;z-index:150;box-shadow:0 2px 10px rgba(255,0,0,.4),inset 0 2px 4px rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center}
+    .scaffold-rung::before,.scaffold-rung::after{content:'';position:absolute;width:15px;height:100%;background:linear-gradient(180deg,#8B0000,#660000);border-radius:2px}
+    .scaffold-rung::before{left:-17px}
+    .scaffold-rung::after{right:-17px}
+    .scaffold-rung-text{color:#FFD700;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 5px rgba(0,0,0,.8)}
+    /* Banner finale con messaggio */
+    .scaffold-banner-final{position:absolute;left:calc(3% + 170px);right:calc(3% + 170px);height:35px;background:linear-gradient(135deg,#003366,#004488,#003366);border:3px solid #FFD700;border-radius:8px;z-index:150;box-shadow:0 4px 20px rgba(255,215,0,.5);display:flex;align-items:center;justify-content:center}
+    .scaffold-banner-final-text{color:#FFD700;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;text-shadow:0 0 10px rgba(255,215,0,.8)}
+    
+    /* === BLOG COLLABORATIVO - Invito contributi utenti === */
+    .blog-collaboration{position:absolute;top:6640px;bottom:auto;left:calc(3% + 150px);right:calc(3% + 150px);margin:0;background:linear-gradient(180deg,#d4a574 0%,#c4956a 15%,#f5deb3 30%,#deb887 50%,#f5deb3 70%,#c4956a 85%,#a0522d 100%);border:4px solid #8b4513;border-radius:15px;padding:25px;z-index:160;box-shadow:0 10px 40px rgba(0,0,0,.6),inset 0 5px 15px rgba(255,255,255,.3)}
+    .blog-collaboration-title{text-align:center;font-family:'Times New Roman',serif;font-size:clamp(18px,2.2vw,24px);font-weight:900;color:#4a3728;text-shadow:1px 1px 2px rgba(255,255,255,.5);margin-bottom:20px;letter-spacing:2px;line-height:1.15}
+    .blog-collaboration-invite{font-family:'Times New Roman',serif;font-size:clamp(14px,1.6vw,18px);color:#4a3728;text-shadow:1px 1px 2px rgba(255,255,255,.5);margin-bottom:20px;line-height:1.6}
+    .blog-collaboration-form{display:flex;flex-direction:column;gap:15px;max-width:600px;margin:0 auto}
+    .blog-collaboration-input{padding:12px 15px;border:2px solid #8b4513;border-radius:8px;font-size:14px;background:rgba(255,255,255,.9);font-family:'Times New Roman',serif}
+    .blog-collaboration-textarea{padding:12px 15px;border:2px solid #8b4513;border-radius:8px;font-size:14px;background:rgba(255,255,255,.9);font-family:'Times New Roman',serif;min-height:100px;resize:vertical}
+    .blog-collaboration-submit{padding:12px 25px;background:linear-gradient(135deg,#003366,#004488);border:2px solid #FFD700;border-radius:8px;color:#FFD700;font-size:16px;font-weight:700;cursor:pointer;transition:all .3s;text-transform:uppercase;letter-spacing:1px}
+    .blog-collaboration-submit:hover{background:linear-gradient(135deg,#004488,#0066aa);box-shadow:0 5px 20px rgba(255,215,0,.5);transform:translateY(-2px)}
+    .blog-collaboration-responses{margin-top:25px;border-top:2px dashed #8b4513;padding-top:20px}
+    .blog-response{background:rgba(255,255,255,.7);border:1px solid #c4956a;border-radius:8px;padding:15px;margin-bottom:15px}
+    .blog-response-bank{font-weight:700;color:#003366;font-size:14px}
+    .blog-response-address{font-size:13px;color:#4a3728;margin-top:5px;word-break:break-all}
+    .blog-response-date{font-size:11px;color:#8b4513;margin-top:8px;text-align:right}
+    
+    /* === ROTOLO DI PAPIRO - Invito allo scroll === */
+    .papyrus-scroll{position:absolute;top:1640px;left:0;right:0;height:120px;z-index:160;display:flex;flex-direction:column;align-items:center;justify-content:center;pointer-events:none}
+    .papyrus-roll{width:100%;height:60px;background:linear-gradient(180deg,#d4a574 0%,#c4956a 15%,#f5deb3 30%,#deb887 50%,#f5deb3 70%,#c4956a 85%,#a0522d 100%);border-top:8px solid #8b4513;border-bottom:8px solid #654321;box-shadow:0 10px 30px rgba(0,0,0,.6),inset 0 5px 15px rgba(255,255,255,.3),inset 0 -5px 15px rgba(0,0,0,.2);position:relative}
+    .papyrus-roll::before,.papyrus-roll::after{content:'';position:absolute;top:-15px;width:40px;height:90px;background:linear-gradient(90deg,#654321,#8b4513,#a0522d,#8b4513,#654321);border-radius:50%;box-shadow:0 5px 15px rgba(0,0,0,.5)}
+    .papyrus-roll::before{left:20px}
+    .papyrus-roll::after{right:20px}
+    .papyrus-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Times New Roman',serif;font-size:16px;font-weight:700;color:#4a3728;text-shadow:1px 1px 2px rgba(255,255,255,.5);letter-spacing:2px;white-space:nowrap}
+    .papyrus-arrow{font-size:30px;color:#8b4513;animation:scrollArrow 1.5s ease-in-out infinite;margin-top:10px;text-shadow:0 2px 5px rgba(0,0,0,.3)}
+    @keyframes scrollArrow{0%,100%{transform:translateY(0);opacity:0.6}50%{transform:translateY(10px);opacity:1}}
+    
+    /* === TRAVI VERTICALI SCAFFOLD - Colonne emoji gialle ai lati della scala === */
+    .scaffold-column{position:absolute;top:570px;width:100px;height:1070px;background:rgba(20,10,10,.85);border:3px solid #ff3333;border-radius:12px;padding:8px;backdrop-filter:blur(10px);z-index:140;box-shadow:0 5px 25px rgba(255,50,50,.5);display:flex;flex-direction:column;gap:0;overflow:visible}
+    .scaffold-column-left{left:3%}
+    .scaffold-column-right{right:3%}
+    .scaffold-emoji-slot{width:100%;height:100px;display:flex;align-items:center;justify-content:center;border-bottom:1px dashed rgba(255,215,0,.4);font-size:40px;opacity:0.7;transition:all .3s}
+    .scaffold-emoji-slot:last-child{border-bottom:none}
+    .scaffold-emoji-slot:hover{opacity:1;transform:scale(1.2);filter:drop-shadow(0 0 15px rgba(255,215,0,.8))}
+    
+    /* Grid sigle bancarie - TORRI BANCHE FISSE - allargato 10% */
+    .bank-logos-container{position:absolute;top:400px;width:110px;height:1070px;background:rgba(135,206,235,.8);border:3px solid #4db8ff;border-radius:12px;padding:8px;backdrop-filter:blur(10px);z-index:10;box-shadow:0 5px 25px rgba(74,144,226,.4);display:flex;flex-direction:column;gap:0;overflow:visible}
+    .bank-logos-container:hover{box-shadow:0 10px 45px rgba(74,144,226,.9);z-index:20}
+    .bank-logos-left{left:15%;z-index:100}
+    .bank-logos-right{right:15%;z-index:100}
+    /* Torri banche BOTTOM - sotto il papiro */
+    .bank-logos-bottom{position:absolute;top:6685px;bottom:auto;width:110px;height:448px;background:rgba(135,206,235,.8);border:3px solid #4db8ff;border-radius:12px;padding:8px;backdrop-filter:blur(10px);z-index:130;box-shadow:0 5px 25px rgba(74,144,226,.4);display:flex;flex-direction:column;gap:0;overflow:visible}
+    .bank-logos-bottom:hover{box-shadow:0 10px 45px rgba(74,144,226,.9);z-index:20}
+    .bank-logos-bottom-left{left:calc(3% + 18px);z-index:130}
+    .bank-logos-bottom-right{right:calc(3% + 18px);z-index:130}
+    
+    /* Singolo piano banca - altezza fissa 112px - VISIBILE */
+    .bank-floor{width:100%;height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-bottom:1px dashed rgba(74,144,226,.4);position:relative;transition:all .3s}
+    .bank-floor:last-child{border-bottom:none}
+    .bank-floor-number{position:absolute;top:2px;right:4px;font-size:10px;color:rgba(0,51,153,.6);font-weight:700}
+    /* Contenuto banca VISIBILE - icone caricate subito */
+    .bank-floor a{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;width:100%;height:100%;transition:all .3s}
+    .bank-floor-flag{position:absolute;bottom:2px;left:4px;width:16px;height:12px;border-radius:2px;overflow:hidden;transition:all .3s}
+    .bank-floor:hover{transform:scale(1.8);z-index:1000;background:rgba(255,255,255,.95);border-radius:8px;box-shadow:0 10px 40px rgba(74,144,226,.8),0 0 30px rgba(135,206,235,.7)}
+    .bank-floor img{max-width:90%;max-height:60px;object-fit:contain;background:#fff;padding:4px;border-radius:4px}
+    .bank-floor-acronym{font-size:11px;font-weight:700;color:#003399;text-shadow:0 0 5px rgba(0,51,153,.5)}
+    .bank-floor-acronym-small{font-size:9px;font-weight:700;color:#003399;margin-top:2px}
+    .bank-acronym-box{width:80px;height:50px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:#fff;border-radius:6px;text-shadow:0 1px 2px rgba(0,0,0,.5);box-shadow:0 2px 8px rgba(0,0,0,.3)}
+    .bank-floor-flag img{width:100%;height:100%;object-fit:cover}
+    .bank-floor.captured{background:rgba(255,50,50,.3);border:2px solid #ff3333}
+    .bank-floor.captured::after{content:'😢';position:absolute;top:2px;left:4px;font-size:14px}
+    .bank-floor-0{background:rgba(0,100,0,.2);border:2px solid rgba(0,255,0,.4)}
+    /* Popup etichetta icone banca */
+    .bank-popup{position:absolute;bottom:110%;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#1a3d5c,#0a1f2e);border:2px solid #4db8ff;border-radius:8px;padding:8px 12px;color:#fff;font-size:11px;font-weight:600;white-space:nowrap;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,.5);display:none;text-align:center}
+    .bank-popup::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:8px solid transparent;border-top-color:#4db8ff}
+    .bank-popup.visible{display:block;animation:popupFadeIn .3s ease}
+    @keyframes popupFadeIn{0%{opacity:0;transform:translateX(-50%) translateY(10px)}100%{opacity:1;transform:translateX(-50%) translateY(0)}}
+    @keyframes captureFlash{
+      0%{background:rgba(255,255,0,.8);transform:scale(1.2)}
+      50%{background:rgba(255,50,50,.6)}
+      100%{background:rgba(255,50,50,.3);transform:scale(1)}
+    }
+    
+    /* Titolo BANK - SOPRA torri al piano COMPLAINTS */
+    .bank-title{position:absolute;top:373px;font-size:23px;font-weight:900;color:#FFD700;text-shadow:0 0 10px #FFD700,0 0 20px #FFD700;z-index:11;text-transform:uppercase;letter-spacing:3px}
+    .bank-title-left{left:15%;transform:translateX(20px)}
+    .bank-title-right{right:15%;transform:translateX(-20px)}
+    .bank-logos-title{text-align:center;font-size:14px;font-weight:900;color:#003399;margin-bottom:10px;text-transform:uppercase;line-height:1.2;text-shadow:0 0 10px #003399,0 0 20px #003399,0 0 30px #003399;letter-spacing:1px;cursor:pointer;transition:all .3s}
+    .bank-logos-title:hover{transform:scale(2);z-index:100;animation:titlePulse 0.5s ease-in-out infinite}
+    @keyframes titlePulse{
+      0%,100%{opacity:1;text-shadow:0 0 10px #003399,0 0 20px #003399}
+      50%{opacity:0.7;text-shadow:0 0 20px #ff0000,0 0 40px #ff0000}
+    }
+    
+    /* === SEZIONE COMPLAINTS/RECLAMI (345-395px) === */
+    .complaint-banner{position:absolute;top:350px;height:45px;background:linear-gradient(135deg,rgba(0,50,80,.95),rgba(0,80,120,.9));border:3px solid #00FFFF;border-radius:10px 10px 0 0;padding:6px 10px;z-index:100;box-shadow:0 0 20px rgba(0,255,255,.6);display:flex;align-items:center;justify-content:center}
+    .complaint-banner-left{left:3%;width:145px}
+    .complaint-banner-right{right:3%;width:116px}
+    .complaint-banner-title{font-size:16px;font-weight:900;color:#00FFFF;text-transform:uppercase;text-align:center;letter-spacing:1px;text-shadow:0 0 15px #00FFFF,0 0 30px #00FFFF,0 0 45px #00FFFF;animation:cyanGlow 2s ease-in-out infinite}
+    @keyframes cyanGlow{
+      0%,100%{text-shadow:0 0 15px #00FFFF,0 0 30px #00FFFF,0 0 45px #00FFFF;opacity:1}
+      50%{text-shadow:0 0 25px #00FFFF,0 0 50px #00FFFF,0 0 75px #00FFFF,0 0 100px rgba(0,255,255,.5);opacity:0.9}
+    }
+    
+    /* Emoji piangente animata che rimbalza - sopra la N di BANK */
+    .crying-bounce{position:absolute;font-size:38.5px;z-index:101;filter:drop-shadow(0 4px 8px rgba(0,0,0,.5))}
+    .crying-bounce-left{left:calc(15% + 30px);top:317px}
+    .crying-bounce-right{right:calc(15% + 30px);top:317px}
+    @keyframes cryBounceLeft{
+      0%,100%{transform:translateY(0);opacity:1}
+      25%{transform:translateY(-20px);opacity:0.9}
+      50%{transform:translateY(0);opacity:1}
+    }
+    @keyframes cryBounceRight{
+      0%,50%{transform:translateY(0);opacity:1}
+      75%{transform:translateY(-20px);opacity:0.9}
+      100%{transform:translateY(0);opacity:1}
+    }
+    
+    /* === FORZIERI DEI PIRATI - BASE ALLINEATA AL BANNER ROSSO === */
+    .treasure-chest{position:absolute;top:223px;width:80px;height:60px;z-index:156;perspective:300px}
+    .treasure-chest-left{left:5%}
+    .treasure-chest-right{right:5%}
+    .chest-body{position:absolute;bottom:0;width:100%;height:45px;background:linear-gradient(180deg,#8B4513 0%,#654321 50%,#4a2c0f 100%);border:3px solid #DAA520;border-radius:5px 5px 8px 8px;box-shadow:inset 0 -8px 15px rgba(0,0,0,.5),0 5px 15px rgba(0,0,0,.5)}
+    .chest-body::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:25px;height:20px;background:linear-gradient(135deg,#FFD700,#FFA500);border:2px solid #B8860B;border-radius:3px}
+    .chest-body::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:8px;height:12px;background:#2a1a0a;border-radius:0 0 4px 4px}
+    .chest-lid{position:absolute;top:0;width:100%;height:35px;background:linear-gradient(180deg,#A0522D 0%,#8B4513 100%);border:3px solid #DAA520;border-radius:50% 50% 0 0/100% 100% 0 0;transform-origin:bottom;transform:rotateX(-70deg);box-shadow:inset 0 5px 10px rgba(255,215,0,.3),0 -3px 10px rgba(0,0,0,.3);animation:lidBounce 3s ease-in-out infinite}
+    .chest-lid::after{content:'';position:absolute;bottom:0;left:0;right:0;height:8px;background:linear-gradient(90deg,#DAA520,#FFD700,#DAA520);border-radius:0 0 3px 3px}
+    @keyframes lidBounce{0%,100%{transform:rotateX(-70deg)}50%{transform:rotateX(-60deg)}}
+    
+    /* Monete dentro il forziere */
+    .chest-coins{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);width:70px;height:30px;overflow:visible;z-index:103}
+    .chest-coin{position:absolute;font-size:18px;animation:coinSparkle 2s ease-in-out infinite;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))}
+    .chest-coin:nth-child(1){left:5%;bottom:0;animation-delay:0s}
+    .chest-coin:nth-child(2){left:25%;bottom:5px;animation-delay:0.3s}
+    .chest-coin:nth-child(3){left:45%;bottom:2px;animation-delay:0.6s}
+    .chest-coin:nth-child(4){left:65%;bottom:8px;animation-delay:0.9s}
+    .chest-coin:nth-child(5){left:15%;bottom:15px;animation-delay:0.2s}
+    .chest-coin:nth-child(6){left:35%;bottom:18px;animation-delay:0.5s}
+    .chest-coin:nth-child(7){left:55%;bottom:12px;animation-delay:0.8s}
+    .chest-coin:nth-child(8){left:75%;bottom:3px;animation-delay:1.1s}
+    @keyframes coinSparkle{0%,100%{transform:scale(1);filter:drop-shadow(0 2px 4px rgba(0,0,0,.5)) brightness(1)}50%{transform:scale(1.1);filter:drop-shadow(0 0 8px rgba(255,215,0,.8)) brightness(1.3)}}
+    
+    /* Flusso monete dal centro ai forzieri */
+    .coin-flow-container{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:200;overflow:hidden}
+    .flowing-coin{position:absolute;font-size:22px;opacity:0;filter:drop-shadow(0 3px 6px rgba(0,0,0,.5));z-index:201}
+    .flowing-coin.to-left{animation:flowToLeft 2.5s ease-in-out forwards}
+    .flowing-coin.to-right{animation:flowToRight 2.5s ease-in-out forwards}
+    @keyframes flowToLeft{
+      0%{left:50%;top:1088px;opacity:0;transform:scale(0.5) rotate(0deg)}
+      20%{opacity:1;transform:scale(1) rotate(90deg)}
+      80%{opacity:1;transform:scale(1) rotate(270deg)}
+      100%{left:8%;top:270px;opacity:0;transform:scale(0.8) rotate(360deg)}
+    }
+    @keyframes flowToRight{
+      0%{right:50%;top:1088px;opacity:0;transform:scale(0.5) rotate(0deg)}
+      20%{opacity:1;transform:scale(1) rotate(-90deg)}
+      80%{opacity:1;transform:scale(1) rotate(-270deg)}
+      100%{right:8%;top:270px;opacity:0;transform:scale(0.8) rotate(-360deg)}
+    }
+    .bank-logos-grid{display:flex;flex-direction:column;gap:8px;align-items:center}
+    .bank-logo-item{width:100%;background:linear-gradient(135deg,#87CEEB 0%,#5BA3D0 50%,#4A90E2 100%);border:2px solid #4db8ff;border-radius:8px;padding:clamp(4px,0.5vw,6px);text-align:center;transition:all .3s;animation:bankPulse 2s ease-in-out infinite;display:flex;flex-direction:column;align-items:center;gap:4px;box-shadow:0 4px 12px rgba(74,144,226,.3);position:relative;cursor:pointer}
+    .bank-logo-item:hover{transform:scale(1.8);z-index:1000;box-shadow:0 10px 40px rgba(74,144,226,.8),0 0 30px rgba(135,206,235,.7);animation:none;background:#fff}
+    .bank-acronym{font-size:30px;font-weight:900;color:#ffd700;text-shadow:0 0 8px rgba(255,215,0,.8);line-height:1}
+    .bank-status{font-size:9px;font-weight:700;color:#ff3333;text-transform:uppercase;line-height:1.1}
+    @keyframes bankPulse{
+      0%,100%{transform:scale(1);box-shadow:0 4px 12px rgba(74,144,226,.3)}
+      50%{transform:scale(1.05);box-shadow:0 6px 20px rgba(74,144,226,.6),0 0 15px rgba(135,206,235,.5)}
+    }
+    .captures-title{text-align:center;font-size:clamp(9px,0.9vw,11px);font-weight:700;color:#ff6666;margin-bottom:clamp(6px,0.8vw,10px);text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:5px}
+    .captures-grid{display:flex;flex-direction:column;gap:clamp(5px,0.6vw,8px);align-items:center;flex-shrink:0}
+    .captured-item{display:flex;flex-direction:column;align-items:center;gap:4px;background:rgba(255,50,50,.15);border:2px solid rgba(255,100,100,.4);border-radius:8px;padding:clamp(4px,0.5vw,6px);width:100%;min-height:60px;flex-shrink:0;transition:all .3s;animation:emojiPulse 6s ease-in-out infinite}
+    .captured-item:hover{transform:scale(1.6);z-index:1000;box-shadow:0 8px 30px rgba(255,100,100,.8);animation:none;background:rgba(255,50,50,.3)}
+    .captured-emoji{font-size:clamp(22px,2.5vw,30px);text-align:center}
+    .captured-counter{background:#ffd700;color:#000;padding:clamp(2px,0.3vw,3px) clamp(5px,0.6vw,8px);border-radius:6px;font-size:clamp(9px,0.9vw,11px);font-weight:700;box-shadow:0 2px 8px rgba(255,215,0,.5);text-align:center;min-width:clamp(50px,5vw,65px)}
+    
+    /* Animazione pulsazione sequenziale dal basso verso l'alto - Colonna SINISTRA */
+    .captures-left .captured-item:nth-last-child(1){animation-delay:0s}
+    .captures-left .captured-item:nth-last-child(2){animation-delay:1.2s}
+    .captures-left .captured-item:nth-last-child(3){animation-delay:2.4s}
+    .captures-left .captured-item:nth-last-child(4){animation-delay:3.6s}
+    .captures-left .captured-item:nth-last-child(5){animation-delay:4.8s}
+    .captures-left .captured-item:nth-last-child(6){animation-delay:6s}
+    .captures-left .captured-item:nth-last-child(7){animation-delay:7.2s}
+    .captures-left .captured-item:nth-last-child(8){animation-delay:8.4s}
+    .captures-left .captured-item:nth-last-child(9){animation-delay:9.6s}
+    .captures-left .captured-item:nth-last-child(10){animation-delay:10.8s}
+    
+    /* Animazione pulsazione sequenziale dal basso verso l'alto - Colonna DESTRA (risposta con offset 0.6s) */
+    .captures-right .captured-item:nth-last-child(1){animation-delay:0.6s}
+    .captures-right .captured-item:nth-last-child(2){animation-delay:1.8s}
+    .captures-right .captured-item:nth-last-child(3){animation-delay:3s}
+    .captures-right .captured-item:nth-last-child(4){animation-delay:4.2s}
+    .captures-right .captured-item:nth-last-child(5){animation-delay:5.4s}
+    .captures-right .captured-item:nth-last-child(6){animation-delay:6.6s}
+    .captures-right .captured-item:nth-last-child(7){animation-delay:7.8s}
+    .captures-right .captured-item:nth-last-child(8){animation-delay:9s}
+    .captures-right .captured-item:nth-last-child(9){animation-delay:10.2s}
+    .captures-right .captured-item:nth-last-child(10){animation-delay:11.4s}
+    
+    @keyframes emojiPulse{
+      0%,100%{transform:scale(1)}
+      2%{transform:scale(1.2)}
+      4%{transform:scale(1)}
+      6%{transform:scale(1.2)}
+      8%{transform:scale(1)}
+      10%{transform:scale(1.2)}
+      12%,98%{transform:scale(1)}
+    }
+
+    /* TETTI DELLE TORRI - Terrazze per le piramidi di monete */
+    .tower-roof{position:absolute;top:340px;width:200px;height:40px;background:linear-gradient(180deg,#8B4513 0%,#654321 50%,#4a3728 100%);border:3px solid #FFD700;border-radius:8px 8px 0 0;z-index:15;box-shadow:0 -5px 20px rgba(255,215,0,.5),inset 0 5px 15px rgba(255,255,255,.2)}
+    .tower-roof-left{left:3%}
+    .tower-roof-right{right:3%}
+    .tower-roof::before{content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:90%;height:8px;background:linear-gradient(90deg,#FFD700,#FFA500,#FFD700);border-radius:4px 4px 0 0;box-shadow:0 0 15px rgba(255,215,0,.8)}
+    
+    /* Caselle vuote sopra i tetti per accumulare monete */
+    .roof-coin-slots{position:absolute;top:200px;width:200px;display:flex;flex-direction:column;gap:8px;z-index:14}
+    .roof-coin-slots-left{left:3%}
+    .roof-coin-slots-right{right:3%}
+    .roof-coin-slot{width:100%;height:40px;background:rgba(0,0,0,.3);border:2px dashed rgba(255,215,0,.4);border-radius:6px;display:flex;align-items:center;justify-content:center}
+    
+    /* Dollar rows - simboli $ in disposizione PIRAMIDALE sopra i TETTI */
+    .dollar-row{position:absolute;top:140px;display:flex;flex-direction:column;align-items:center;gap:6px;z-index:16}
+    .dollar-row-left{left:5%} /* Sopra tetto SINISTRO */
+    .dollar-row-right{right:5%} /* Sopra tetto DESTRO */
+    .dollar-pyramid-row{display:flex;gap:8px;justify-content:center}
+    .dollar-item{display:flex;flex-direction:column;align-items:center;gap:4px}
+    .dollar-symbol{font-size:28px;font-weight:900;color:#ffd700;text-shadow:0 0 10px rgba(255,215,0,.8),0 0 20px rgba(255,215,0,.5);animation:dollarAppear .5s ease-out forwards}
+    .dollar-symbol.pound-symbol{color:#ff4444;text-shadow:0 0 10px rgba(255,68,68,.8),0 0 20px rgba(255,68,68,.5)}
+    @keyframes dollarAppear{
+      0%{opacity:0;transform:scale(0) rotate(-180deg)}
+      60%{transform:scale(1.3) rotate(10deg)}
+      100%{opacity:1;transform:scale(1) rotate(0deg)}
+    }
+    .money-coins{display:grid;grid-template-columns:repeat(2,16px);grid-template-rows:repeat(3,16px);gap:3px;margin-top:4px}
+    .mini-coin{width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;box-shadow:0 2px 6px rgba(0,0,0,.4);animation:coinPop .3s ease-out forwards}
+    .mini-coin.dollar{background:linear-gradient(135deg,#ffd700,#ffed4e);color:#000}
+    .mini-coin.pound{background:linear-gradient(135deg,#ff6b6b,#ff4444);color:#fff}
+    @keyframes coinPop{
+      0%{opacity:0;transform:scale(0)}
+      100%{opacity:1;transform:scale(1)}
+    }
+    
+    /* DEPRESSION boxes - PIANO 10 (centro 330px) - LINEA ORIZZONTALE allineata ai banner */
+    .depression-horizontal{position:absolute;top:330px;left:50%;transform:translateX(-50%);display:flex;flex-direction:row;align-items:flex-start;gap:10px;z-index:100;opacity:0;transition:opacity .5s}
+    .depression-horizontal.visible{opacity:1}
+    .depression-box{margin-top:46px;background:linear-gradient(135deg,rgba(0,50,80,.95),rgba(0,80,120,.9));border:3px solid #00FFFF;border-radius:10px;padding:clamp(4px,0.5vw,6px) clamp(5px,0.7vw,8px);text-align:center;font-size:clamp(16px,1.8vw,22px);font-weight:900;color:#00FFFF;text-shadow:0 0 15px #00FFFF,0 0 30px #00FFFF,0 0 45px #00FFFF;box-shadow:0 0 20px rgba(0,255,255,.6);letter-spacing:1px;min-width:clamp(35px,3.5vw,42px);opacity:0;transform:scale(0);transition:all .4s cubic-bezier(0.68,-0.55,0.265,1.55)}
+    .depression-box.show{opacity:1;transform:scale(1)}
+    .depression-box.pulse{animation:depressionPulse 1.5s ease-in-out infinite}
+    @keyframes depressionPulse{
+      0%,100%{transform:scale(1);box-shadow:0 0 20px rgba(0,255,255,.6)}
+      50%{transform:scale(1.08);box-shadow:0 0 25px #00FFFF,0 0 50px #00FFFF,0 0 75px rgba(0,255,255,.5)}
+    }
+    
+    /* SOS buttons integrati nella riga orizzontale */
+    .sos-inline{position:relative;margin-top:54px;background:#660000;border:3px solid #ff0000;border-radius:10px;padding:clamp(5px,0.6vw,8px) clamp(5px,0.6vw,8px);color:#ff0000;font-size:clamp(11px,1.1vw,13.2px);font-weight:700;text-align:center;box-shadow:0 4px 15px rgba(255,0,0,.5);transition:all .3s;cursor:pointer;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:4px;line-height:1.2}
+    .sos-inline:hover{transform:scale(1.02);z-index:200;box-shadow:0 4px 15px rgba(255,0,0,.6)}
+    .sos-psychology{min-width:90px}
+    .sos-psychology:hover{transform:scale(1.02);z-index:200;background:#004400;border-color:#00FF00;box-shadow:0 4px 15px rgba(0,255,0,.6);color:#00FF00}
+    .sos-psychiatry{min-width:90px}
+    .sos-psychiatry:hover{transform:scale(1.02);z-index:200;background:#003366;border-color:#00FFFF;box-shadow:0 4px 15px rgba(0,255,255,.6);color:#00FFFF}
+    .sos-inline.hit{animation:hitFlash 0.3s ease-out;box-shadow:0 0 30px rgba(0,255,255,1),0 0 60px rgba(0,255,255,.7)}
+    /* Animazione hover alternata in loop */
+    .sos-psychology.pulse-loop{animation:psychologyPulse 2s ease-in-out infinite}
+    .sos-psychiatry.pulse-loop{animation:psychiatryPulse 2s ease-in-out infinite 1s}
+    @keyframes psychologyPulse{
+      0%,100%{transform:scale(1);background:#660000;border-color:#ff0000;box-shadow:0 4px 15px rgba(255,0,0,.5)}
+      50%{transform:scale(1.4);z-index:1000;background:#004400;border-color:#00FF00;box-shadow:0 12px 45px rgba(0,255,0,.9),0 0 60px rgba(0,255,0,.6);color:#00FF00}
+    }
+    @keyframes psychiatryPulse{
+      0%,100%{transform:scale(1);background:#660000;border-color:#ff0000;box-shadow:0 4px 15px rgba(255,0,0,.5)}
+      50%{transform:scale(1.4);z-index:1000;background:#003366;border-color:#00FFFF;box-shadow:0 12px 45px rgba(0,255,255,.9),0 0 60px rgba(0,255,255,.6);color:#00FFFF}
+    }
+    .depression-box.hit{animation:hitFlash 0.3s ease-out;box-shadow:0 0 30px rgba(0,255,255,1),0 0 60px rgba(0,255,255,.7)}
+    @keyframes hitFlash{
+      0%{transform:scale(1);filter:brightness(1)}
+      50%{transform:scale(1.3);filter:brightness(2)}
+      100%{transform:scale(1);filter:brightness(1)}
+    }
+    
+    /* Messaggio scams finale - SOTTO TORRE (1600px) */
+    .scams-message{position:absolute;top:1720px;left:calc(3% + 110px);right:calc(3% + 110px);width:auto;transform:none;background:linear-gradient(135deg,rgba(0,0,0,.95),rgba(20,0,0,.9));border:3px solid #ff0000;border-radius:12px;padding:10px 20px;text-align:center;font-size:clamp(14px,1.6vw,18px);font-weight:900;color:#ff0000;text-shadow:0 0 20px rgba(255,0,0,1),0 0 40px rgba(255,0,0,.7);box-shadow:0 8px 40px rgba(255,0,0,.6),inset 0 0 20px rgba(255,0,0,.2);z-index:155;opacity:0;transition:all .3s;letter-spacing:1px;overflow:hidden}
+    .scams-message:hover{transform:scale(1.02);z-index:200;box-shadow:0 12px 60px rgba(255,0,0,.9)}
+    .scams-message.visible{opacity:1}
+
+    .adsense-guide{position:absolute;top:1795px;left:calc(3% + 135px);right:calc(3% + 135px);padding:28px 32px;background:linear-gradient(180deg,rgba(9,25,45,.96) 0%,rgba(14,34,58,.97) 50%,rgba(8,22,38,.96) 100%);border:3px solid #ffd700;border-radius:18px;z-index:158;box-shadow:0 12px 45px rgba(0,0,0,.55),0 0 24px rgba(255,215,0,.22)}
+    .adsense-guide-header{margin-bottom:22px;text-align:center}
+    .adsense-guide-kicker{display:inline-block;margin-bottom:10px;padding:6px 12px;border-radius:999px;background:rgba(255,215,0,.12);border:1px solid rgba(255,215,0,.45);color:#ffd700;font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}
+    .adsense-guide-title{margin:0;color:#f5f7ff;font-size:clamp(26px,3vw,38px);line-height:1.15;text-shadow:0 0 14px rgba(77,184,255,.35)}
+    .adsense-guide-subtitle{max-width:920px;margin:12px auto 0;color:#d5e7ff;font-size:clamp(15px,1.5vw,18px);line-height:1.7}
+    .adsense-toc-shell{margin:0 0 26px;padding:20px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(130,190,255,.25);box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+    .adsense-toc-intro{text-align:center;margin-bottom:18px}
+    .adsense-toc-title{color:#ffd700;font-size:clamp(18px,2vw,24px);font-weight:900;letter-spacing:.4px}
+    .adsense-toc-copy{max-width:760px;margin:8px auto 0;color:#d8ebff;font-size:14px;line-height:1.65}
+    .adsense-toc-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .adsense-toc-group{padding:16px 16px 14px;border-radius:16px;background:linear-gradient(180deg,rgba(2,44,86,.46),rgba(6,28,53,.56));border:1px solid rgba(77,184,255,.28)}
+    .adsense-toc-group h3{margin:0 0 12px;color:#f8fbff;font-size:16px;font-weight:800;line-height:1.35}
+    .adsense-toc-buttons{display:flex;flex-wrap:wrap;gap:9px}
+    .adsense-toc-buttons a{display:block;padding:8px 11px;background:linear-gradient(135deg,rgba(0,61,120,.94),rgba(0,88,164,.92));border:1px solid rgba(77,184,255,.7);border-radius:999px;color:#eef8ff;font-size:11px;font-weight:700;letter-spacing:.2px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+    .adsense-toc-buttons a:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.35);border-color:#ffd700}
+    .adsense-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .adsense-topic-divider{grid-column:1/-1;padding:16px 18px;border-radius:16px;background:linear-gradient(135deg,rgba(255,215,0,.08),rgba(77,184,255,.08));border:1px solid rgba(255,215,0,.24);box-shadow:0 8px 22px rgba(0,0,0,.18)}
+    .adsense-topic-kicker{display:inline-block;margin-bottom:8px;padding:4px 10px;border-radius:999px;background:rgba(255,215,0,.12);border:1px solid rgba(255,215,0,.32);color:#ffd700;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+    .adsense-topic-divider h3{margin:0;color:#f6fbff;font-size:clamp(20px,2.1vw,26px);line-height:1.25}
+    .adsense-topic-seo{margin:8px 0 0;color:#8dd9ff;font-size:12px;font-weight:800;letter-spacing:.35px;line-height:1.5;text-transform:uppercase}
+    .adsense-topic-copy{margin:8px 0 0;color:#d9ecff;font-size:14px;line-height:1.65}
+    .adsense-card{padding:20px 22px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(130,190,255,.28);border-radius:16px;backdrop-filter:blur(5px);scroll-margin-top:24px}
+    .adsense-card:target{border-color:#ffd700;box-shadow:0 0 0 2px rgba(255,215,0,.28),0 10px 24px rgba(0,0,0,.28)}
+    .adsense-card h3{margin:0 0 12px;color:#ffd700;font-size:clamp(19px,2vw,24px);line-height:1.25}
+    .adsense-card p{margin:0 0 12px;color:#edf4ff;font-size:15px;line-height:1.7}
+    .adsense-card p:last-child{margin-bottom:0}
+    .adsense-card strong{color:#8dd9ff}
+    .adsense-card ul{margin:14px 0 0;padding-left:18px;color:#edf4ff}
+    .adsense-card ol{margin:14px 0 0;padding-left:20px;color:#edf4ff}
+    .adsense-card li{margin-bottom:8px;line-height:1.6}
+    .adsense-card-highlight{margin-top:16px;padding:14px 16px;border-radius:14px;background:linear-gradient(135deg,rgba(0,156,88,.14),rgba(77,184,255,.12));border:1px solid rgba(120,222,180,.3);color:#f4fbff;font-size:14px;line-height:1.7}
+    .adsense-template-box{margin-top:18px;padding:16px 16px 14px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,215,0,.24);border-radius:14px}
+    .adsense-template-lead{margin:0 0 10px;color:#ffd700;font-size:14px;font-weight:800;letter-spacing:.2px}
+    .adsense-template-box ul{margin-top:0}
+    .video-avatar-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+    .video-avatar-card{padding:14px;border-radius:16px;background:linear-gradient(180deg,rgba(5,25,46,.85),rgba(8,38,66,.68));border:1px solid rgba(77,184,255,.24);box-shadow:0 10px 24px rgba(0,0,0,.22)}
+    .video-avatar-media{position:relative;border-radius:12px;overflow:hidden;border:1px solid rgba(141,217,255,.28);background:#031120;box-shadow:0 8px 20px rgba(0,0,0,.24)}
+    .video-avatar-card video{display:block;width:100%;aspect-ratio:16 / 9;border-radius:12px;background:#031120}
+    .video-avatar-thumb{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:14px;background:linear-gradient(180deg,rgba(1,9,21,.18),rgba(4,19,34,.82) 48%,rgba(0,0,0,.9));pointer-events:none;transition:opacity .25s ease,transform .25s ease}
+    .video-avatar-card.is-previewing .video-avatar-thumb,.video-avatar-card.is-playing .video-avatar-thumb{opacity:0;transform:scale(1.02)}
+    .video-avatar-chip{align-self:flex-start;padding:5px 10px;border-radius:999px;background:rgba(255,215,0,.14);border:1px solid rgba(255,215,0,.32);color:#ffd700;font-size:11px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
+    .video-avatar-thumb-title{max-width:88%;color:#f8fbff;font-size:18px;font-weight:900;line-height:1.25;text-shadow:0 6px 14px rgba(0,0,0,.55)}
+    .video-avatar-play{position:absolute;right:14px;bottom:14px;display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:rgba(0,170,85,.88);border:1px solid rgba(199,255,222,.56);color:#fff;font-size:18px;box-shadow:0 10px 22px rgba(0,0,0,.28)}
+    .video-avatar-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .video-avatar-card h4{margin:12px 0 8px;color:#f8fbff;font-size:16px;line-height:1.35}
+    .video-avatar-card p{margin:0;color:#dcecff;font-size:13px;line-height:1.65}
+    .security-pill{margin-top:18px;padding:16px 16px 14px;background:linear-gradient(180deg,rgba(0,34,68,.4),rgba(0,18,36,.42));border:1px solid rgba(255,215,0,.28);border-radius:14px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
+    .security-pill-kicker{display:inline-block;margin-bottom:10px;padding:4px 10px;border-radius:999px;background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.28);color:#ffd700;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+    .security-pill h4{margin:0 0 10px;color:#f7fbff;font-size:18px;line-height:1.3}
+    .security-pill p{margin:0 0 10px;color:#e8f2ff;font-size:14px;line-height:1.7}
+    .security-pill ul{margin:10px 0 0;padding-left:20px;color:#edf4ff}
+    .security-pill li{margin-bottom:8px;line-height:1.6}
+    .news-card-date{margin:0 0 10px;color:#9fd3ff;font-size:12px;font-weight:700;letter-spacing:.35px;text-transform:uppercase}
+    .adsense-back-link{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:8px 12px;border-radius:999px;background:rgba(77,184,255,.12);border:1px solid rgba(77,184,255,.45);color:#cfeeff;font-size:13px;font-weight:700;text-decoration:none;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+    .adsense-back-link:hover{transform:translateY(-1px);background:rgba(77,184,255,.2);border-color:#ffd700}
+    .adsense-action-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;padding:11px 18px;border-radius:999px;background:linear-gradient(135deg,rgba(0,170,85,.95),rgba(19,196,99,.92));border:1px solid rgba(170,255,205,.55);color:#f8fff9;font-size:14px;font-weight:800;letter-spacing:.15px;text-decoration:none;box-shadow:0 10px 24px rgba(0,255,136,.22);transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+    .adsense-action-link:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,255,136,.3);filter:brightness(1.05)}
+    .adsense-defense-note{margin-top:22px;padding:18px 20px;background:linear-gradient(135deg,rgba(255,215,0,.1),rgba(0,191,255,.08));border:1px solid rgba(255,215,0,.4);border-radius:16px;color:#f5f7ff;font-size:15px;line-height:1.75}
+    .adsense-defense-note strong{color:#ffd700}
+
+    @media (max-width:1024px){
+      .wrap{padding:16px 12px}
+      .scene{min-height:8200px}
+      .scams-message-top{left:10%;right:10%;font-size:clamp(16px,2.4vw,22px)}
+      .adsense-guide{left:calc(2.4% + 118px);right:calc(2.4% + 118px);padding:24px 20px}
+      .adsense-toc-shell{padding:18px}
+      .adsense-toc-groups{gap:12px}
+      .adsense-toc-group{padding:14px 14px 12px}
+      .adsense-toc-group h3{font-size:15px}
+      .adsense-toc-buttons{gap:7px}
+      .adsense-toc-buttons a{padding:7px 10px;font-size:10px}
+      .adsense-guide-title{font-size:clamp(24px,2.8vw,34px)}
+      .adsense-guide-subtitle{font-size:15px;line-height:1.65}
+      .adsense-card{padding:18px 18px}
+      .video-avatar-grid{grid-template-columns:1fr}
+    }
+
+    @media (min-width:769px) and (max-width:1024px) and (orientation:portrait){
+      .scene{min-height:8600px}
+      #central-static-banner{width:62%;padding:24px 14px}
+      #central-static-banner p{font-size:1.5rem;line-height:1.25}
+      .captures-container,.captures-lower-container,.stolen-total-box,.scaffold-column{width:92px}
+      .bank-logos-container,.bank-logos-bottom{width:102px}
+      .captures-left,.captures-lower-left,.stolen-total-left,.scaffold-column-left{left:2.4%}
+      .captures-right,.captures-lower-right,.stolen-total-right,.scaffold-column-right{right:2.4%}
+      .bank-logos-left,.bank-title-left{left:14%}
+      .bank-logos-right,.bank-title-right{right:14%}
+      .crying-bounce-left{left:calc(14% + 26px)}
+      .crying-bounce-right{right:calc(14% + 26px)}
+      .treasure-chest-left{left:4.2%}
+      .treasure-chest-right{right:4.2%}
+      .complaint-banner-left{left:2.4%;width:137px}
+      .complaint-banner-right{right:2.4%;width:108px}
+      .scaffold-rung{left:calc(2.4% + 102px);right:calc(2.4% + 102px)}
+      .scaffold-banner-final{left:calc(2.4% + 154px);right:calc(2.4% + 154px)}
+      .scams-message{left:calc(2.4% + 102px);right:calc(2.4% + 102px)}
+      .adsense-guide{left:calc(2.4% + 110px);right:calc(2.4% + 110px);padding:22px 18px}
+      .bank-logos-bottom{top:7400px}
+      .blog-collaboration{top:7350px}
+      .adsense-toc-groups,.adsense-guide-grid{grid-template-columns:1fr}
+      .read-petition-left{left:24.5%}
+      .read-petition-right{right:24.5%}
+    }
+    
+    /* === NEWS TICKER SCORREVOLE - ADIACENTE AI FORZIERI === */
+    .scams-message-top{position:absolute;top:254px;left:13%;right:13%;width:auto;transform:none;background:linear-gradient(135deg,rgba(0,0,0,.95),rgba(20,0,0,.9));border:3px solid #ff0000;border-radius:12px;padding:14px 0;text-align:center;font-size:clamp(18px,2.1vw,25px);font-weight:900;color:#ff0000;text-shadow:0 0 20px rgba(255,0,0,1),0 0 40px rgba(255,0,0,.7);box-shadow:0 8px 40px rgba(255,0,0,.6),inset 0 0 20px rgba(255,0,0,.2);z-index:155;opacity:1;letter-spacing:1px;overflow:hidden;height:63px;display:flex;align-items:center}
+    .scams-message-top:hover{z-index:200;box-shadow:0 12px 60px rgba(255,0,0,.9)}
+    /* Ticker scorrevole interno */
+    .ticker-wrapper{width:100%;overflow:hidden;position:relative}
+    .ticker-content{display:inline-flex;white-space:nowrap;animation:tickerScroll 60s linear infinite}
+    .ticker-content:hover{animation-play-state:paused}
+    .ticker-item{padding:0 30px;display:inline-flex;align-items:center;gap:10px}
+    .ticker-brand{color:#00FF00;text-shadow:0 0 15px #00FF00,0 0 30px #00FF00}
+    .ticker-separator{color:#FFD700;font-size:23px}
+    @keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    
+    /* Pulsanti READ PETITION 645/888 - SOPRA I BLU, ACCOSTATI ALLE COLONNE BANCHE */
+    .read-petition-container{position:absolute;top:1114px;z-index:145}
+    .read-petition-left{left:25%}
+    .read-petition-right{right:25%}
+    
+    /* === FRECCE LAMPEGGIANTI - Invito clic sui banner blu === */
+    .petition-arrow-container{position:absolute;top:1040px;left:50%;transform:translateX(-50%);z-index:200;display:flex;justify-content:space-between;width:190px;pointer-events:none}
+    .petition-arrow{font-size:40px;color:#FFD700;text-shadow:0 0 15px rgba(255,215,0,.8),0 0 30px rgba(255,215,0,.5)}
+    .petition-arrow-left{transform:translateX(0);animation:petitionArrowBlinkLeft 2s ease-in-out infinite}
+    .petition-arrow-right{transform:translateX(0);animation:petitionArrowBlinkRight 2s ease-in-out infinite}
+    @keyframes petitionArrowBlinkLeft{0%,100%{opacity:0;transform:translateX(-60px) scale(0.8)}50%{opacity:1;transform:translateX(-60px) scale(1.1)}}
+    @keyframes petitionArrowBlinkRight{0%,100%{opacity:0;transform:translateX(70px) scale(0.8)}50%{opacity:1;transform:translateX(70px) scale(1.1)}}
+    /* === BANK + CARAVAGGIO + MEDUSA - Scritte centrate tra i banner blu === */
+    .bank-text{position:absolute;top:1088px;left:50%;transform:translateX(-50%);font-size:clamp(27px,3.27vw,35px);font-weight:900;color:#FFD700;text-align:center;letter-spacing:2px;z-index:180;width:200px;pointer-events:none}
+    .caravaggio-text{position:absolute;top:322px;left:50%;transform:translateX(-50%);font-size:clamp(20px,2.42vw,26px);font-weight:900;color:#ff0000;text-align:center;letter-spacing:2px;z-index:180;width:200px;pointer-events:none}
+    .medusa-text-center{position:absolute;top:318px;left:50%;transform:translateX(-50%);font-size:clamp(18px,2.2vw,24px);font-weight:900;color:#00ff00;text-align:center;letter-spacing:2px;z-index:180;width:200px;pointer-events:none}
+    .hypno-emoji{position:absolute;top:1080px;font-size:48px;z-index:181;pointer-events:none}
+    .hypno-emoji-left{left:50%;transform:translateX(-125px)}
+    .hypno-emoji-right{left:50%;transform:translateX(67px)}
+    /* EU Council / Petitions Approved - SOTTO LO SHIELD, VICINI AL CENTRO */
+    .read-petition-council{top:1312px;left:26%}
+    .read-petition-council .read-petition-btn{padding:clamp(4px,0.6vw,8px) clamp(8px,1vw,12px);min-width:clamp(70px,6vw,85px)}
+    .read-petition-council .petition-label{font-size:14px}
+    .read-petition-approved{top:1312px;right:26%}
+    .read-petition-btn{display:flex;flex-direction:column;align-items:center;gap:6px;text-decoration:none;background:#003399;border:3px solid #FFD700;border-radius:12px;padding:clamp(6px,0.8vw,10px) clamp(12px,1.5vw,20px);box-shadow:0 5px 18px rgba(255,215,0,.6);transition:all .3s;min-width:clamp(85px,8vw,105px)}
+    .read-petition-left .read-petition-btn,.read-petition-right .read-petition-btn{transform:scale(0.81);transform-origin:center center}
+    .read-petition-btn:hover{transform:scale(1.5);z-index:1000;box-shadow:0 12px 45px rgba(255,215,0,.9)}
+    .read-petition-btn .petition-eu-circle{width:37px;height:37px}
+    .read-petition-btn .petition-eu-circle svg{width:24px;height:24px}
+    .read-petition-btn .petition-label{color:#FFD700;font-size:18px;font-weight:700;text-align:center;line-height:1.3}
+    
+    /* Pulsante GIOCA! Multilingua - joystick centrato, testi su 2 colonne */
+    .replay-button{position:absolute;top:420px;left:50%;transform:translateX(-50%);width:231px;background:linear-gradient(135deg,#FF4500,#FF6600);border:2px solid #FFD700;border-radius:10px;padding:6px 10px;text-align:center;font-size:14px;font-weight:700;color:#FFD700;text-shadow:0 0 8px rgba(255,215,0,.7);box-shadow:0 3px 12px rgba(255,69,0,.5),inset 0 0 10px rgba(255,215,0,.15);cursor:pointer;z-index:150;opacity:0;transition:all .3s;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:8px}
+    .play-game-btn .play-icon{font-size:29px;animation:bounce-icon 1s ease-in-out infinite;flex-shrink:0}
+    .play-game-btn .play-col{display:flex;flex-direction:column;gap:2px}
+    .play-game-btn .play-col-left{align-items:flex-end}
+    .play-game-btn .play-col-right{align-items:flex-start}
+    .play-game-btn .play-text{font-size:13px;font-weight:900;letter-spacing:-0.3px;line-height:1.1}
+    .play-game-btn .play-text[data-lang="it"]{color:#00FF00}
+    .play-game-btn .play-text[data-lang="en"]{color:#FFD700}
+    .play-game-btn .play-text[data-lang="fr"]{color:#00BFFF}
+    .play-game-btn .play-text[data-lang="de"]{color:#FFFFFF}
+    .play-game-btn .play-subtitle{display:none}
+    @keyframes bounce-icon{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    .replay-button.visible{opacity:1}
+    .replay-button:hover{transform:translateX(-50%) scale(1.05);box-shadow:0 5px 20px rgba(0,255,255,.7)}
+    .mobile-victims-module,
+    .mobile-banks-module{display:none;position:fixed;left:50%;transform:translateX(-50%);align-items:center;justify-content:center;width:min(388px,calc(100vw - 10px));padding:10px 12px;border-radius:18px;border:2px solid rgba(255,72,72,.92);background:linear-gradient(180deg,rgba(7,10,20,.98),rgba(15,4,8,.96));box-shadow:0 0 18px rgba(255,58,58,.32),inset 0 0 12px rgba(255,255,255,.05);pointer-events:none;overflow:hidden}
+    .mobile-victims-module{z-index:284}
+    .mobile-banks-module{z-index:285}
+    .mobile-victims-module::before,
+    .mobile-banks-module::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(255,255,255,.05),transparent 62%);pointer-events:none}
+    .mobile-victims-track{position:relative;display:grid;grid-template-columns:repeat(10,minmax(0,1fr));align-items:center;justify-items:center;column-gap:4px;width:100%;z-index:1}
+    .mobile-victim-slot{display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:999px;color:#ffd7d7;opacity:.14;filter:drop-shadow(0 0 6px rgba(255,120,120,.25));transition:opacity .16s ease,transform .16s ease,filter .16s ease}
+    .mobile-victim-slot.revealed{opacity:1;transform:scale(1.18);filter:drop-shadow(0 0 10px rgba(255,180,180,.85))}
+    .mobile-victim-emoji{font-size:20px;line-height:1;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
+    .mobile-banks-track{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));align-items:center;justify-items:center;column-gap:10px;width:100%;z-index:1}
+    .mobile-banks-slot{position:relative;display:flex;align-items:center;justify-content:center;min-width:0;z-index:1;pointer-events:none;padding:0 2px}
+    .mobile-banks-slot.hit .mobile-banks-letter{transform:scale(1.16)}
+    .mobile-banks-slot.color-cyan{color:#68f7ff}
+    .mobile-banks-slot.color-yellow{color:#ffe66d}
+    .mobile-banks-slot.color-red{color:#ff5252}
+    .mobile-banks-slot.color-violet{color:#c98bff}
+    .mobile-banks-slot.color-green{color:#7dff73}
+    .mobile-banks-letter{display:block;transform:scale(.4);font-size:42px;font-weight:900;line-height:1;font-family:"Arial Black","Segoe UI",sans-serif;text-shadow:0 0 10px currentColor,0 0 18px rgba(255,255,255,.28);opacity:0;transition:opacity .14s ease,transform .14s ease}
+    .mobile-banks-letter.revealed{opacity:1;transform:scale(1)}
+    .mobile-banks-module-laser{position:fixed;height:7px;border-radius:999px;transform-origin:0 50%;pointer-events:none;z-index:279;opacity:0}
+    .mobile-banks-module-laser.from-left{background:linear-gradient(90deg,rgba(255,105,105,0),#ffb0b0 20%,#ff5252 58%,rgba(255,82,82,.12));box-shadow:0 0 12px rgba(255,120,120,.96),0 0 26px rgba(255,82,82,.58)}
+    .mobile-banks-module-laser.from-right{background:linear-gradient(90deg,rgba(90,255,255,0),#b7ffff 20%,#68f7ff 58%,rgba(104,247,255,.12));box-shadow:0 0 12px rgba(125,255,255,.96),0 0 26px rgba(104,247,255,.58)}
+    .mobile-banks-module-laser.active{animation:mobileBanksLaserShot .28s ease-out forwards}
+    @keyframes mobileBanksLaserShot{0%{opacity:1;width:0}65%{opacity:1}100%{opacity:0}}
+    .mobile-static-scenario{display:none;position:fixed;inset:0;z-index:620;padding:88px 18px 24px;background:radial-gradient(circle at 50% 18%,rgba(255,70,70,.24),transparent 24%),linear-gradient(180deg,rgba(9,16,28,.98),rgba(17,24,38,.98) 48%,rgba(5,9,18,.99));overflow-y:auto}
+    .mobile-static-scenario::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.04),transparent 38%,rgba(0,240,255,.04) 72%,transparent);pointer-events:none}
+    .mobile-static-menu-shell{position:relative;max-width:420px;margin:0 auto;padding:22px 18px 20px;border:1px solid rgba(255,204,102,.45);border-radius:28px;background:linear-gradient(180deg,rgba(18,24,40,.96),rgba(10,14,26,.98));box-shadow:0 18px 42px rgba(0,0,0,.42),0 0 28px rgba(255,90,90,.2)}
+    .mobile-static-menu-badge{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,189,89,.45);background:rgba(92,39,12,.45);color:#ffd88a;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    .mobile-static-menu-title{margin:14px 0 10px;color:#f7fbff;font-size:30px;line-height:1.02;font-family:Georgia,"Times New Roman",serif;text-shadow:0 0 18px rgba(255,255,255,.08)}
+    .mobile-static-menu-copy{margin:0 0 18px;color:#bed6ea;font-size:15px;line-height:1.5}
+    .mobile-static-menu-actions{display:grid;gap:12px}
+    .mobile-static-menu-button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:15px 16px;border:none;border-radius:18px;background:linear-gradient(135deg,#c1472e,#ff7a42);color:#fff9ef;font-size:16px;font-weight:800;letter-spacing:.02em;cursor:pointer;box-shadow:0 10px 24px rgba(193,71,46,.28);transition:transform .2s ease,box-shadow .2s ease}
+    .mobile-static-menu-button:hover{transform:translateY(-1px);box-shadow:0 14px 28px rgba(193,71,46,.34)}
+    .mobile-static-menu-button.secondary{background:linear-gradient(135deg,#0e5c7e,#1aa3b8);box-shadow:0 10px 24px rgba(15,108,148,.28)}
+    .mobile-static-menu-button.tertiary{background:linear-gradient(135deg,#27344c,#3c4e6b);box-shadow:0 10px 24px rgba(39,52,76,.26)}
+    .mobile-static-menu-button-label{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+    .mobile-static-menu-button-title{font-size:16px;line-height:1.15}
+    .mobile-static-menu-button-subtitle{font-size:11px;line-height:1.3;font-weight:600;opacity:.8;text-transform:uppercase;letter-spacing:.08em}
+    .mobile-static-menu-button-icon{font-size:24px;line-height:1;flex:none}
+    .mobile-static-menu-note{margin:16px 0 0;color:#95adbf;font-size:12px;line-height:1.45}
+    
+    /* Laser finale dalla medusa centrale */
+    .final-laser{position:absolute;height:6px;background:linear-gradient(90deg,#00FFFF,#00E5E5,#00FFFF);border-radius:3px;transform-origin:0 50%;opacity:0;z-index:120;box-shadow:0 0 15px rgba(0,255,255,.9),0 0 30px rgba(0,255,255,.6);animation:laserShoot 0.4s ease-out forwards}
+    @keyframes laserShoot{
+      0%{opacity:1;width:0}
+      60%{opacity:1}
+      100%{opacity:0}
+    }
+    
+    /* Laser elettrico celeste per le emoji - più intenso */
+    .emoji-laser{position:absolute;height:8px;background:linear-gradient(90deg,#00FFFF,#00E5FF,#00FFFF,#00BFFF,#00FFFF);border-radius:4px;transform-origin:0 50%;opacity:0;z-index:250;box-shadow:0 0 20px rgba(0,255,255,1),0 0 40px rgba(0,255,255,.8),0 0 60px rgba(0,191,255,.5);animation:emojiLaserShoot 0.35s ease-out forwards}
+    @keyframes emojiLaserShoot{
+      0%{opacity:1;width:0}
+      50%{opacity:1}
+      100%{opacity:0}
+    }
+    /* Effetto hit sulle emoji colpite dal laser */
+    .emoji-slot.laser-hit{animation:emojiLaserHit 0.4s ease-out}
+    @keyframes emojiLaserHit{
+      0%{transform:scale(1);filter:brightness(1) drop-shadow(0 0 0 transparent)}
+      50%{transform:scale(1.5);filter:brightness(2.5) drop-shadow(0 0 30px #00FFFF) drop-shadow(0 0 60px #00E5FF)}
+      100%{transform:scale(1);filter:brightness(1) drop-shadow(0 0 10px rgba(0,255,255,.5))}
+    }
+    
+    /* Freccia rossa indicativa nuova banca */
+    .bank-arrow-indicator{position:absolute;font-size:56px;font-weight:900;color:#ff0000;text-shadow:0 0 15px rgba(255,0,0,.9),0 0 30px rgba(255,0,0,.6);z-index:200;animation:arrowPulse 0.5s ease-in-out infinite alternate;pointer-events:none;top:50%;transform:translateY(-50%)}
+    .bank-arrow-indicator.arrow-left{right:100%;margin-right:12px}
+    .bank-arrow-indicator.arrow-right{left:100%;margin-left:12px}
+    @keyframes arrowPulse{
+      0%{transform:translateY(-50%) scale(1);opacity:0.8}
+      100%{transform:translateY(-50%) scale(1.2);opacity:1}
+    }
+    
+    /* Due parole BANKS orizzontali centrate */
+    .banks-words-container{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;gap:15px;z-index:199;pointer-events:none;align-items:center}
+    .banks-word{font-size:42px;font-weight:900;color:#ff0000;text-shadow:0 0 20px rgba(255,0,0,.9),0 0 40px rgba(255,0,0,.6);letter-spacing:8px;opacity:0;transition:opacity 0.3s ease-in;animation:wordPulse 0.5s ease-in-out infinite alternate}
+    .banks-word.visible{opacity:1}
+    @keyframes wordPulse{
+      0%{text-shadow:0 0 20px rgba(255,0,0,.9),0 0 40px rgba(255,0,0,.6)}
+      100%{text-shadow:0 0 30px rgba(255,0,0,1),0 0 60px rgba(255,0,0,.8)}
+    }
+    
+    /* Laser rossi da BANKS alle frecce rosse */
+    .banks-laser{position:fixed;height:6px;background:linear-gradient(90deg,#FF0000,#FF3333,#FF0000);border-radius:3px;transform-origin:0 50%;z-index:198;box-shadow:0 0 15px rgba(255,0,0,.9),0 0 30px rgba(255,0,0,.6);pointer-events:none;opacity:0}
+    .banks-laser.active{opacity:1;animation:banksLaserShoot 0.5s ease-out}
+    @keyframes banksLaserShoot{
+      0%{opacity:1;width:0}
+      40%{opacity:1}
+      100%{opacity:0}
+    }
+
+    @keyframes mobileClockLaserSweep{
+      0%,3%{opacity:0;transform:rotate(-135deg) scaleX(.24);background:linear-gradient(90deg,rgba(110,238,255,0),rgba(110,238,255,.65),#44d8ff,rgba(110,238,255,.12));box-shadow:0 0 10px rgba(110,238,255,.36),0 0 20px rgba(68,216,255,.22)}
+      4%,7%{opacity:1;transform:rotate(-135deg) scaleX(1);background:linear-gradient(90deg,rgba(110,238,255,0),#a7f8ff 22%,#44d8ff 58%,rgba(110,238,255,.18) 100%);box-shadow:0 0 16px rgba(110,238,255,.92),0 0 32px rgba(68,216,255,.52)}
+      8%,11%{opacity:0;transform:rotate(-135deg) scaleX(.3);background:linear-gradient(90deg,rgba(110,238,255,0),rgba(110,238,255,.65),#44d8ff,rgba(110,238,255,.12));box-shadow:0 0 10px rgba(110,238,255,.36),0 0 20px rgba(68,216,255,.22)}
+      12%,15%{opacity:1;transform:rotate(-120deg) scaleX(1);background:linear-gradient(90deg,rgba(190,130,255,0),#d1a1ff 22%,#8a4dff 58%,rgba(190,130,255,.18) 100%);box-shadow:0 0 16px rgba(190,130,255,.92),0 0 32px rgba(138,77,255,.52)}
+      16%,19%{opacity:0;transform:rotate(-120deg) scaleX(.3);background:linear-gradient(90deg,rgba(190,130,255,0),rgba(190,130,255,.68),#8a4dff,rgba(190,130,255,.12));box-shadow:0 0 10px rgba(190,130,255,.36),0 0 20px rgba(138,77,255,.22)}
+      20%,23%{opacity:1;transform:rotate(-105deg) scaleX(1);background:linear-gradient(90deg,rgba(110,238,255,0),#a7f8ff 22%,#44d8ff 58%,rgba(110,238,255,.18) 100%);box-shadow:0 0 16px rgba(110,238,255,.92),0 0 32px rgba(68,216,255,.52)}
+      24%,27%{opacity:0;transform:rotate(-105deg) scaleX(.3);background:linear-gradient(90deg,rgba(110,238,255,0),rgba(110,238,255,.65),#44d8ff,rgba(110,238,255,.12));box-shadow:0 0 10px rgba(110,238,255,.36),0 0 20px rgba(68,216,255,.22)}
+      28%,31%{opacity:1;transform:rotate(-90deg) scaleX(1);background:linear-gradient(90deg,rgba(190,130,255,0),#d1a1ff 22%,#8a4dff 58%,rgba(190,130,255,.18) 100%);box-shadow:0 0 16px rgba(190,130,255,.92),0 0 32px rgba(138,77,255,.52)}
+      32%,35%{opacity:0;transform:rotate(-90deg) scaleX(.3);background:linear-gradient(90deg,rgba(190,130,255,0),rgba(190,130,255,.68),#8a4dff,rgba(190,130,255,.12));box-shadow:0 0 10px rgba(190,130,255,.36),0 0 20px rgba(138,77,255,.22)}
+      36%,39%{opacity:1;transform:rotate(-75deg) scaleX(1);background:linear-gradient(90deg,rgba(110,238,255,0),#a7f8ff 22%,#44d8ff 58%,rgba(110,238,255,.18) 100%);box-shadow:0 0 16px rgba(110,238,255,.92),0 0 32px rgba(68,216,255,.52)}
+      40%,43%{opacity:0;transform:rotate(-75deg) scaleX(.3);background:linear-gradient(90deg,rgba(110,238,255,0),rgba(110,238,255,.65),#44d8ff,rgba(110,238,255,.12));box-shadow:0 0 10px rgba(110,238,255,.36),0 0 20px rgba(68,216,255,.22)}
+      44%,47%{opacity:1;transform:rotate(-60deg) scaleX(1);background:linear-gradient(90deg,rgba(190,130,255,0),#d1a1ff 22%,#8a4dff 58%,rgba(190,130,255,.18) 100%);box-shadow:0 0 16px rgba(190,130,255,.92),0 0 32px rgba(138,77,255,.52)}
+      48%,51%{opacity:0;transform:rotate(-60deg) scaleX(.3);background:linear-gradient(90deg,rgba(190,130,255,0),rgba(190,130,255,.68),#8a4dff,rgba(190,130,255,.12));box-shadow:0 0 10px rgba(190,130,255,.36),0 0 20px rgba(138,77,255,.22)}
+      52%,55%{opacity:1;transform:rotate(-45deg) scaleX(1);background:linear-gradient(90deg,rgba(110,238,255,0),#a7f8ff 22%,#44d8ff 58%,rgba(110,238,255,.18) 100%);box-shadow:0 0 16px rgba(110,238,255,.92),0 0 32px rgba(68,216,255,.52)}
+      56%,59%{opacity:0;transform:rotate(-45deg) scaleX(.3);background:linear-gradient(90deg,rgba(110,238,255,0),rgba(110,238,255,.65),#44d8ff,rgba(110,238,255,.12));box-shadow:0 0 10px rgba(110,238,255,.36),0 0 20px rgba(68,216,255,.22)}
+      60%,63%{opacity:1;transform:rotate(45deg) scaleX(.78);background:linear-gradient(90deg,rgba(190,130,255,0),#d1a1ff 22%,#8a4dff 58%,rgba(190,130,255,.18) 100%);box-shadow:0 0 16px rgba(190,130,255,.92),0 0 32px rgba(138,77,255,.52)}
+      64%,67%{opacity:0;transform:rotate(45deg) scaleX(.24);background:linear-gradient(90deg,rgba(190,130,255,0),rgba(190,130,255,.68),#8a4dff,rgba(190,130,255,.12));box-shadow:0 0 10px rgba(190,130,255,.36),0 0 20px rgba(138,77,255,.22)}
+      68%,71%{opacity:1;transform:rotate(120deg) scaleX(.8);background:linear-gradient(90deg,rgba(110,238,255,0),#a7f8ff 22%,#44d8ff 58%,rgba(110,238,255,.18) 100%);box-shadow:0 0 16px rgba(110,238,255,.92),0 0 32px rgba(68,216,255,.52)}
+      72%,75%{opacity:0;transform:rotate(120deg) scaleX(.24);background:linear-gradient(90deg,rgba(110,238,255,0),rgba(110,238,255,.65),#44d8ff,rgba(110,238,255,.12));box-shadow:0 0 10px rgba(110,238,255,.36),0 0 20px rgba(68,216,255,.22)}
+      76%,79%{opacity:1;transform:rotate(135deg) scaleX(.82);background:linear-gradient(90deg,rgba(190,130,255,0),#d1a1ff 22%,#8a4dff 58%,rgba(190,130,255,.18) 100%);box-shadow:0 0 16px rgba(190,130,255,.92),0 0 32px rgba(138,77,255,.52)}
+      80%,83%{opacity:0;transform:rotate(135deg) scaleX(.24);background:linear-gradient(90deg,rgba(190,130,255,0),rgba(190,130,255,.68),#8a4dff,rgba(190,130,255,.12));box-shadow:0 0 10px rgba(190,130,255,.36),0 0 20px rgba(138,77,255,.22)}
+      84%,87%{opacity:1;transform:rotate(150deg) scaleX(.84);background:linear-gradient(90deg,rgba(110,238,255,0),#a7f8ff 22%,#44d8ff 58%,rgba(110,238,255,.18) 100%);box-shadow:0 0 16px rgba(110,238,255,.92),0 0 32px rgba(68,216,255,.52)}
+      88%,91%{opacity:0;transform:rotate(150deg) scaleX(.24);background:linear-gradient(90deg,rgba(110,238,255,0),rgba(110,238,255,.65),#44d8ff,rgba(110,238,255,.12));box-shadow:0 0 10px rgba(110,238,255,.36),0 0 20px rgba(68,216,255,.22)}
+      92%,95%{opacity:1;transform:rotate(180deg) scaleX(.86);background:linear-gradient(90deg,rgba(190,130,255,0),#d1a1ff 22%,#8a4dff 58%,rgba(190,130,255,.18) 100%);box-shadow:0 0 16px rgba(190,130,255,.92),0 0 32px rgba(138,77,255,.52)}
+      96%,100%{opacity:1;transform:rotate(-135deg) scaleX(1);background:linear-gradient(90deg,rgba(110,238,255,0),#a7f8ff 22%,#44d8ff 58%,rgba(110,238,255,.18) 100%);box-shadow:0 0 16px rgba(110,238,255,.92),0 0 32px rgba(68,216,255,.52)}
+    }
+
+    @keyframes mobileClockLaserCore{
+      0%,3%,8%,11%,16%,19%,24%,27%,32%,35%,40%,43%,48%,51%,56%,59%,64%,67%,72%,75%,80%,83%,88%,91%{opacity:0;transform:rotate(-135deg) scaleX(.18)}
+      4%,7%{opacity:.96;transform:rotate(-135deg) scaleX(.84)}
+      12%,15%{opacity:.96;transform:rotate(-120deg) scaleX(.84)}
+      20%,23%{opacity:.96;transform:rotate(-105deg) scaleX(.84)}
+      28%,31%{opacity:.96;transform:rotate(-90deg) scaleX(.84)}
+      36%,39%{opacity:.96;transform:rotate(-75deg) scaleX(.84)}
+      44%,47%{opacity:.96;transform:rotate(-60deg) scaleX(.84)}
+      52%,55%{opacity:.96;transform:rotate(-45deg) scaleX(.84)}
+      60%,63%{opacity:.96;transform:rotate(45deg) scaleX(.66)}
+      68%,71%{opacity:.96;transform:rotate(120deg) scaleX(.68)}
+      76%,79%{opacity:.96;transform:rotate(135deg) scaleX(.7)}
+      84%,87%{opacity:.96;transform:rotate(150deg) scaleX(.72)}
+      92%,95%{opacity:.96;transform:rotate(180deg) scaleX(.74)}
+      96%,100%{opacity:.96;transform:rotate(-135deg) scaleX(.84)}
+    }
+    
+    @media (max-width:768px){
+      header{flex-direction:column;gap:8px;margin-bottom:8px;padding-left:0;padding-right:0}
+      .lang-buttons-left,.lang-buttons-right{flex-direction:row;gap:5px}
+      .lang-buttons-left,.lang-buttons-right{position:static;align-items:center}
+      .lang-buttons-right{margin-left:0}
+      .lang-btn{padding:4px 9px;font-size:12px}
+      .top-banners{max-width:300px;gap:6px}
+      .banner-main,.banner-link{font-size:12px;padding:6px 10px}
+      .banner-item svg{width:11px;height:11px}
+      .scene{height:auto;min-height:9800px;padding-bottom:80px}
+      body.mobile-hero-collapsed .scene{height:min(640px,100dvh);min-height:min(640px,100dvh);max-height:640px;overflow:hidden;padding-bottom:0}
+      body.mobile-hero-collapsed header{position:relative;z-index:220;display:grid;grid-template-columns:repeat(4,minmax(0,max-content));grid-auto-rows:minmax(0,auto);justify-content:center;align-items:center;column-gap:5px;row-gap:6px;margin-bottom:4px}
+      body.mobile-hero-collapsed .lang-buttons-left,
+      body.mobile-hero-collapsed .lang-buttons-right,
+      body.mobile-hero-collapsed .top-banners{display:contents}
+      body.mobile-hero-collapsed .lang-btn{padding:3px 6px;font-size:10px;line-height:1;min-width:58px;justify-content:center;border-color:#39bfff;color:#7eefff;background:#072136;box-shadow:0 0 10px rgba(68,216,255,.22)}
+      body.mobile-hero-collapsed .lang-btn .music-note{font-size:8px;margin-left:2px}
+      body.mobile-hero-collapsed .lang-btn[data-lang="EN"]{grid-column:1;grid-row:2}
+      body.mobile-hero-collapsed .lang-btn[data-lang="IT"]{grid-column:2;grid-row:2}
+      body.mobile-hero-collapsed .lang-btn[data-lang="FR"]{grid-column:3;grid-row:2}
+      body.mobile-hero-collapsed .lang-btn[data-lang="DE"]{grid-column:4;grid-row:2}
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(5){grid-column:1 / span 2;grid-row:1;justify-self:end;display:flex;padding:5px 9px;font-size:10px;line-height:1;white-space:nowrap;color:#ff6b6b;border-color:#ff3b30;background:linear-gradient(135deg,#2b0505,#4b0808);box-shadow:0 0 14px rgba(255,59,48,.4)}
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(4){grid-column:3 / span 2;grid-row:1;justify-self:start;display:flex;padding:5px 9px;font-size:10px;line-height:1;white-space:nowrap;color:#ffe37a;border-color:#f6c844;background:linear-gradient(135deg,#3a2600,#5a3b00);box-shadow:0 0 14px rgba(246,200,68,.38)}
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(2){position:fixed;right:4px;top:142px;bottom:auto;width:58px;height:58px;z-index:276;display:flex;align-items:center;justify-content:center;padding:4px;font-size:15px;line-height:.92;text-align:center;border-radius:18px;color:#7eefff;border-color:#2aa8ff;background:linear-gradient(180deg,#0a2742,#12385a);box-shadow:0 0 18px rgba(68,216,255,.35)}
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(3){position:fixed;left:4px;top:142px;bottom:auto;width:58px;height:58px;z-index:276;display:flex;align-items:center;justify-content:center;padding:4px;font-size:15px;line-height:.92;text-align:center;border-radius:18px;color:#7eefff;border-color:#2aa8ff;background:linear-gradient(180deg,#0a2742,#12385a);box-shadow:0 0 18px rgba(68,216,255,.35)}
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(1){position:fixed;left:50%;bottom:max(88px,calc(env(safe-area-inset-bottom) + 80px));transform:translateX(-50%);z-index:275;padding:6px 14px;font-size:12px;color:#ffb347;border-color:#ff9f43;background:linear-gradient(135deg,#1a0f00,#2a1500);box-shadow:0 0 16px rgba(255,159,67,.5)}
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(1):hover{transform:translateX(-50%) scale(1.06)}
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(2),
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(3),
+      body.mobile-hero-collapsed .top-banners .banner-item:nth-child(4){display:flex;padding:6px 8px;font-size:11px;line-height:1.05}
+      body.mobile-hero-collapsed .banner-heartbeat{animation:none !important}
+      body.mobile-hero-collapsed::before,
+      body.mobile-hero-collapsed::after{content:'';position:fixed;left:50%;top:224px;pointer-events:none;border-radius:999px;mix-blend-mode:screen}
+      body.mobile-hero-collapsed::before{width:260px;height:10px;transform-origin:10px 50%;z-index:320;animation:mobileClockLaserSweep 4.9s linear infinite}
+      body.mobile-hero-collapsed::after{width:196px;height:4px;transform-origin:10px 50%;z-index:321;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.96) 30%,rgba(255,255,255,.2) 100%);box-shadow:0 0 12px rgba(255,255,255,.85),0 0 22px rgba(170,230,255,.45);animation:mobileClockLaserCore 4.9s linear infinite}
+      body.mobile-hero-collapsed .medusa-caravaggio{display:block !important;top:128px;left:50%;width:224px;height:224px;transform:translate(-50%,-50%);z-index:174;border-width:3px;box-shadow:0 0 42px rgba(255,0,0,.68),0 0 90px rgba(255,0,0,.42)}
+      body.mobile-hero-collapsed .medusa{top:306px;width:106px;height:106px;z-index:180}
+      body.mobile-hero-collapsed .medusa.left{left:5%}
+      body.mobile-hero-collapsed .medusa.right{right:11%}
+      body.mobile-hero-collapsed .treasure-chest{top:246px;width:60px;height:48px;z-index:181}
+      body.mobile-hero-collapsed #central-static-banner{top:240px;width:50%;padding:10px 8px;z-index:182;background:rgba(20,0,0,.84);border-width:2px;box-shadow:0 0 18px rgba(255,0,0,.45),inset 0 0 8px rgba(255,0,0,.25)}
+      body.mobile-hero-collapsed #central-static-banner p{font-size:.84rem;line-height:1.04}
+      body.mobile-hero-collapsed #central-static-banner p:not(.banner-topline){display:none}
+      body.mobile-hero-collapsed #central-static-banner .banner-topline{display:block;font-size:.88rem;line-height:1.08;margin-bottom:0;color:#fff4cf;text-align:center}
+      body.mobile-hero-collapsed .static-banner-side-links,
+      body.mobile-hero-collapsed .static-banner-side-links-right{display:none}
+      body.mobile-hero-collapsed .candlestick-container{display:none}
+      body.mobile-hero-collapsed .candle{width:8px}
+      body.mobile-hero-collapsed .candle .upper-wick{height:8px}
+      body.mobile-hero-collapsed .candle .lower-wick{height:6px}
+      body.mobile-hero-collapsed #candlestick-left{left:10px}
+      body.mobile-hero-collapsed #candlestick-right{right:10px}
+      body.mobile-hero-collapsed .scams-message-top{top:456px;left:50%;right:auto;width:min(96vw,336px);transform:translateX(-50%);height:46px;font-size:13px;padding:8px 0;z-index:182}
+      body.mobile-hero-collapsed .ticker-item{padding:0 16px;gap:8px}
+      body.mobile-hero-collapsed .ticker-separator{font-size:16px}
+      body.mobile-hero-collapsed .replay-button{position:fixed;left:50%;top:auto;bottom:max(12px,calc(env(safe-area-inset-bottom) + 8px));width:calc(100vw - 18px);min-height:42px;padding:7px 12px;gap:7px;z-index:260;opacity:1;display:flex;border-radius:14px}
+      body.mobile-hero-collapsed .play-game-btn .play-col{display:contents}
+      body.mobile-hero-collapsed .play-game-btn .play-icon{font-size:18px;animation:none}
+      body.mobile-hero-collapsed .play-game-btn .play-text{font-size:10px;line-height:1;white-space:nowrap}
+      body.mobile-hero-collapsed .mobile-victims-module{display:flex;bottom:max(62px,calc(env(safe-area-inset-bottom) + 58px))}
+      body.mobile-hero-collapsed .mobile-banks-module{display:flex;bottom:max(114px,calc(env(safe-area-inset-bottom) + 110px))}
+      body.mobile-hero-collapsed .gazza-icon{width:38px;height:38px;padding:4px;background:linear-gradient(135deg,#e5d4ff,#b784ff,#7d4dff);box-shadow:0 0 16px rgba(170,110,255,.7),inset 0 0 10px rgba(255,255,255,.25)}
+      body.mobile-hero-collapsed .gazza-left{top:210px;left:17px;animation:none;z-index:182}
+      body.mobile-hero-collapsed .gazza-right{top:210px;right:17px;left:auto;animation:none;z-index:182}
+      body.mobile-hero-collapsed .orbit-outer,
+      body.mobile-hero-collapsed .orbit-inner,
+      body.mobile-hero-collapsed .orbit-safe,
+      body.mobile-hero-collapsed .final-laser,
+      body.mobile-hero-collapsed .emoji-laser,
+      body.mobile-hero-collapsed .banks-laser,
+      body.mobile-hero-collapsed .medusa-label,
+      body.mobile-hero-collapsed .adsense-container,
+      body.mobile-hero-collapsed .audio-indicator,
+      body.mobile-hero-collapsed .hidden-gazza,
+      body.mobile-hero-collapsed .photo-arrows,
+      body.mobile-hero-collapsed .whip-tentacle{display:none !important}
+      body.mobile-hero-collapsed .shield-center,
+      body.mobile-hero-collapsed .bank-face-group,
+      body.mobile-hero-collapsed .banks-words-container,
+      body.mobile-hero-collapsed .bank-arrow-indicator,
+      body.mobile-hero-collapsed .bank-text,
+      body.mobile-hero-collapsed .caravaggio-text,
+      body.mobile-hero-collapsed .medusa-text-center,
+      body.mobile-hero-collapsed .hypno-emoji,
+      body.mobile-hero-collapsed .captures-container,
+      body.mobile-hero-collapsed .captures-lower-container,
+      body.mobile-hero-collapsed .bank-logos-container,
+      body.mobile-hero-collapsed .bank-logos-bottom,
+      body.mobile-hero-collapsed .bank-title,
+      body.mobile-hero-collapsed .crying-bounce,
+      body.mobile-hero-collapsed .stolen-total-box,
+      body.mobile-hero-collapsed .complaint-banner,
+      body.mobile-hero-collapsed .read-petition-container,
+      body.mobile-hero-collapsed .petition-arrow-container,
+      body.mobile-hero-collapsed .authorities-search-button,
+      body.mobile-hero-collapsed .global-protection-button,
+      body.mobile-hero-collapsed .click-arrow{display:none !important}
+      body.mobile-static-scenario .scene{height:100dvh;min-height:100dvh;max-height:100dvh;overflow:hidden;padding-bottom:0}
+      body.mobile-static-scenario .mobile-static-scenario{display:block}
+      body.mobile-static-scenario .replay-button,
+      body.mobile-static-scenario .mobile-victims-module,
+      body.mobile-static-scenario .mobile-banks-module{display:none !important}
+      body.mobile-guide-scroll .scene{height:auto;min-height:9800px;max-height:none;overflow:visible;padding-bottom:calc(120px + env(safe-area-inset-bottom))}
+      body.mobile-guide-scroll .replay-button,
+      body.mobile-guide-scroll .mobile-victims-module,
+      body.mobile-guide-scroll .mobile-banks-module{display:none !important}
+      body.mobile-hero-expanded .scene{overflow:visible;padding-bottom:calc(120px + env(safe-area-inset-bottom))}
+      body.mobile-hero-expanded::before,
+      body.mobile-hero-expanded::after{display:none}
+      body.mobile-hero-expanded .top-banners .banner-item:nth-child(1),
+      body.mobile-hero-expanded .top-banners .banner-item:nth-child(2),
+      body.mobile-hero-expanded .top-banners .banner-item:nth-child(3),
+      body.mobile-hero-expanded .replay-button,
+      body.mobile-hero-expanded .hidden-gazza,
+      body.mobile-hero-expanded .medusa-label,
+      body.mobile-hero-expanded .adsense-container,
+      body.mobile-hero-expanded .audio-indicator,
+      body.mobile-hero-expanded .complaint-banner,
+      body.mobile-hero-expanded .crying-bounce,
+      body.mobile-hero-expanded .candlestick-container,
+      body.mobile-hero-expanded .tower-roof,
+      body.mobile-hero-expanded .roof-coin-slots,
+      body.mobile-hero-expanded .dollar-row,
+      body.mobile-hero-expanded .captures-container,
+      body.mobile-hero-expanded .captures-lower-container,
+      body.mobile-hero-expanded .stolen-total-box,
+      body.mobile-hero-expanded .coin-flow-container,
+      body.mobile-hero-expanded .petition-side-container,
+      body.mobile-hero-expanded .read-petition-container,
+      body.mobile-hero-expanded .petition-arrow-container,
+      body.mobile-hero-expanded .authorities-search-button,
+      body.mobile-hero-expanded .global-protection-button,
+      body.mobile-hero-expanded .click-arrow,
+      body.mobile-hero-expanded .bank-logos-bottom,
+      body.mobile-hero-expanded .papyrus-scroll,
+      body.mobile-hero-expanded .scaffold-rung,
+      body.mobile-hero-expanded .scaffold-banner-final{display:none !important}
+      body.mobile-hero-expanded .medusa-caravaggio{top:152px;left:50%;width:214px;height:214px;transform:translate(-50%,-50%);z-index:174}
+      body.mobile-hero-expanded .treasure-chest{top:292px;width:56px;height:44px;z-index:181}
+      body.mobile-hero-expanded .gazza-icon{width:40px;height:40px;padding:4px;background:linear-gradient(135deg,#efe2ff,#b784ff,#6f3df0);box-shadow:0 0 14px rgba(170,110,255,.6),inset 0 0 8px rgba(255,255,255,.22)}
+      body.mobile-hero-expanded .gazza-left{top:252px;left:18px;z-index:182}
+      body.mobile-hero-expanded .gazza-right{top:252px;right:18px;z-index:182}
+      body.mobile-hero-expanded #central-static-banner{top:292px;width:min(42%,188px);padding:9px 7px;z-index:182;background:rgba(20,0,0,.84);border-width:2px}
+      body.mobile-hero-expanded #central-static-banner p:not(.banner-topline){display:none}
+      body.mobile-hero-expanded #central-static-banner .banner-topline{display:block;font-size:.86rem;line-height:1.08;margin-bottom:0;color:#fff4cf;text-align:center}
+      body.mobile-hero-expanded .medusa{top:372px;width:108px;height:108px;z-index:180}
+      body.mobile-hero-expanded .medusa.left{left:8%}
+      body.mobile-hero-expanded .medusa.right{right:8%}
+      body.mobile-hero-expanded .scams-message-top{top:520px;left:50%;right:auto;width:min(90vw,300px);transform:translateX(-50%);height:44px;font-size:12px;padding:7px 0;z-index:182}
+      body.mobile-hero-expanded .ticker-item{padding:0 14px;gap:7px}
+      body.mobile-hero-expanded .bank-logos-container{top:638px;width:clamp(92px,27vw,104px);height:960px;min-height:960px;padding:8px 6px;z-index:110}
+      body.mobile-hero-expanded .bank-logos-left{left:4%}
+      body.mobile-hero-expanded .bank-logos-right{right:4%}
+      body.mobile-hero-expanded .bank-floor{height:95px}
+      body.mobile-hero-expanded .bank-floor:hover{transform:none;z-index:auto;background:transparent;box-shadow:none}
+      body.mobile-hero-expanded .bank-title{top:606px;font-size:12px;letter-spacing:1.2px}
+      body.mobile-hero-expanded .bank-title-left{left:4%;transform:translateX(24px)}
+      body.mobile-hero-expanded .bank-title-right{right:4%;transform:translateX(-24px)}
+      body.mobile-hero-expanded .depression-horizontal{top:586px;left:50%;width:min(92vw,352px);gap:4px;justify-content:center;transform:translateX(-50%) scale(.72);transform-origin:top center;z-index:112}
+      body.mobile-hero-expanded .depression-box{font-size:11px;padding:3px 5px;min-width:24px}
+      body.mobile-hero-expanded .sos-inline{min-width:68px;font-size:8px;padding:4px 5px;gap:2px}
+      body.mobile-hero-expanded .sos-arrow-cyan{top:-28px;font-size:24px;-webkit-text-stroke:2px #00FFFF}
+      body.mobile-hero-expanded .adsense-guide{left:4%;right:4%;top:1710px;padding:18px 14px}
+      body.mobile-hero-expanded .adsense-guide-grid,
+      body.mobile-hero-expanded .adsense-toc-groups{grid-template-columns:1fr}
+      body.mobile-hero-expanded .adsense-card{padding:16px 16px}
+      body.mobile-hero-expanded .adsense-topic-divider{padding:14px 14px}
+      .orbit-outer{width:210px;height:210px;top:26%}
+      .orbit-inner{width:145px;height:145px;top:26%}
+      .orbit-safe{width:160px;height:160px;top:620px}
+      .medusa-caravaggio{width:240px;height:240px;top:792px}
+      .medusa{width:140px;height:140px;top:2%}
+      .medusa.left{left:5%} /* Centrata tra emoji (2%) e banche (8%) mobile */
+      .medusa.right{right:5%} /* Centrata tra emoji (2%) e banche (8%) mobile */
+      .medusa-image-container{width:140px;height:140px}
+      .captures-total{font-size:12px;padding:3px 8px;border:1.5px solid #FFD700;box-shadow:0 3px 10px rgba(255,215,0,.5)}
+      .bank{width:55px;height:55px}
+      .bank-label-top{font-size:7px;top:2px;letter-spacing:0.5px}
+      .bank-label-bottom{font-size:6px;bottom:2px;letter-spacing:0.5px}
+      .emoji-face{font-size:35px}
+      .shield-center{width:90px;height:90px;top:620px}
+      .authorities-search-button{font-size:10px;padding:6px 10px;width:80px;top:1000px;transform:translateX(-115%)}
+      .global-protection-button{font-size:10px;padding:6px 10px;width:80px;top:1000px;transform:translateX(15%)}
+      .click-arrow{display:none}
+      .flag-train-item{width:50px;height:50px}
+      .flag-train-shield,.flag-train-planet,.flag-train-flag{width:40px;height:40px}
+      .captures-container{width:92px;padding:9px 7px;top:380px;min-height:1120px}
+      .captures-lower-container{width:92px;padding:9px 7px;top:1795px;min-height:980px}
+      .captures-left{left:2%} /* Emoji esterne mobile */
+      .captures-right{right:2%} /* Emoji esterne mobile */
+      .bank-logos-container{width:92px;padding:9px 7px;top:380px;min-height:1070px}
+      .bank-logos-left{left:8%} /* Banche interne mobile, allineate con Medusa */
+      .bank-logos-right{right:8%} /* Banche interne mobile, allineate con Medusa */
+      .depression-horizontal{top:21%;gap:6px;transform:translate(-50%,0)}
+      .depression-box{font-size:14px;padding:5px 8px;min-width:35px}
+      .sos-inline{font-size:9px;padding:5px 8px}
+      .bank-title{font-size:14px;top:340px;letter-spacing:2px}
+      .bank-title-left{left:8%;transform:translateX(26px)} /* Centrato con container mobile 92px/2 = 46px, compenso testo */
+      .bank-title-right{right:8%;transform:translateX(-26px)} /* Centrato con container mobile */
+      .bank-logos-title{font-size:14px;margin-bottom:6px;letter-spacing:2px}
+      .crying-bounce{font-size:42px;top:275px}
+      .crying-bounce-left{left:calc(8% + 45px)}
+      .crying-bounce-right{right:calc(8% + 45px)}
+      .treasure-chest{top:200px;width:55px;height:45px}
+      .chest-body{height:28px}
+      .chest-lid{height:22px}
+      .chest-coins{bottom:15px;width:45px;height:20px}
+      .chest-coin{font-size:11px}
+      .bank-logo-item{padding:4px;gap:3px}
+      .bank-acronym{font-size:23px}
+      .bank-status{font-size:7px}
+      .captures-title{font-size:9px;margin-bottom:6px;gap:4px}
+      .captured-item{padding:4px;gap:3px}
+      .captured-emoji{font-size:23px}
+      .captured-counter{font-size:9px;padding:2px 6px;min-width:52px}
+      .tower-roof{width:160px;height:35px;top:340px}
+      .roof-coin-slots{width:160px;top:200px}
+      .roof-coin-slot{height:35px}
+      .dollar-row{top:140px;gap:4px}
+      .dollar-row-left{left:8%}
+      .dollar-row-right{right:8%}
+      .dollar-pyramid-row{gap:5px}
+      .dollar-symbol{font-size:20px}
+      .money-coins{grid-template-columns:repeat(2,12px);grid-template-rows:repeat(3,12px);gap:2px}
+      .mini-coin{width:12px;height:12px;font-size:7px}
+      .sos-btn{padding:8px 12px;font-size:11px;min-width:90px}
+      .petition-left,.petition-right{bottom:60px}
+      .petition-left{left:2%}
+      .petition-right{right:2%}
+      .petition-btn{padding:6px 10px;min-width:80px}
+      .petition-label{font-size:11px}
+      .petition-eu-circle{width:40px;height:40px}
+      .eu-stars-ring{width:50px;height:50px}
+      /* Complaint banners mobile */
+      .complaint-banner{padding:8px 10px;top:21%;border-width:3px}
+      .complaint-banner-left{left:2%;width:180px}
+      .complaint-banner-right{right:2%;width:145px}
+      .complaint-banner-title{font-size:22px;letter-spacing:2px}
+      /* READ PETITION mobile - allineati con EU Council/Petitions Approved */
+      .read-petition-container{top:1050px}
+      .read-petition-left{left:26%}
+      .read-petition-right{right:26%}
+      #central-static-banner{width:72%;padding:18px 10px}
+      #central-static-banner p{font-size:1.08rem;line-height:1.12}
+      #central-static-banner .banner-topline{font-size:.9rem}
+      .replay-button{top:535px;width:220px;padding:8px 12px;z-index:230}
+      .play-game-btn .play-icon{font-size:25px}
+      .play-game-btn .play-text{font-size:12px}
+      .adsense-guide{left:calc(2% + 102px);right:calc(2% + 102px);top:1795px;padding:20px 18px}
+      .bank-logos-bottom{top:8650px;width:92px}
+      .bank-logos-bottom-left{left:calc(2% + 10px)}
+      .bank-logos-bottom-right{right:calc(2% + 10px)}
+      .blog-collaboration{top:8570px;left:calc(2% + 110px);right:calc(2% + 110px);padding:20px 16px}
+      .adsense-guide-grid{grid-template-columns:1fr}
+      .adsense-toc-groups{grid-template-columns:1fr}
+      .adsense-guide-title{font-size:24px}
+      .adsense-guide-subtitle,.adsense-card p,.adsense-card li,.adsense-defense-note{font-size:14px}
+    }
+    
+    /* ===== SISTEMA ZOOM CONTROLLATO E SCROLLING OBBLIGATO ===== */
+    
+    /* Popup avviso limite zoom raggiunto */
+    .zoom-limit-popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);background:linear-gradient(135deg,rgba(0,40,80,.98),rgba(0,20,40,.95));border:3px solid #00FFFF;border-radius:16px;padding:25px 35px;text-align:center;z-index:10000;box-shadow:0 0 40px rgba(0,255,255,.6),0 0 80px rgba(0,255,255,.3),inset 0 0 30px rgba(0,255,255,.1);opacity:0;transition:all .4s cubic-bezier(0.68,-0.55,0.265,1.55);pointer-events:none;max-width:90vw}
+    .zoom-limit-popup.visible{opacity:1;transform:translate(-50%,-50%) scale(1);pointer-events:auto}
+    .zoom-limit-popup h3{color:#00FFFF;font-size:20px;margin-bottom:12px;text-shadow:0 0 15px rgba(0,255,255,.8);letter-spacing:1px}
+    .zoom-limit-popup p{color:#aaeeff;font-size:14px;line-height:1.5;margin-bottom:15px}
+    .zoom-limit-popup .lens-icon{font-size:50px;margin-bottom:10px;animation:lensWiggle 1s ease-in-out infinite}
+    @keyframes lensWiggle{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+    .zoom-limit-popup .close-popup{background:#00FFFF;color:#000;border:none;padding:10px 25px;border-radius:8px;font-weight:700;cursor:pointer;transition:all .3s;font-size:14px}
+    .zoom-limit-popup .close-popup:hover{background:#fff;transform:scale(1.1);box-shadow:0 0 20px rgba(0,255,255,.8)}
+    
+    /* Freccia scrolling obbligato - bianca lampeggiante */
+    .scroll-indicator{display:none;position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:9999;flex-direction:column;align-items:center;gap:8px;opacity:0;transition:opacity .5s;pointer-events:none}
+    .scroll-indicator.visible{opacity:1;pointer-events:auto}
+    .scroll-indicator-text{color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;text-shadow:0 0 10px rgba(255,255,255,.8),0 2px 4px rgba(0,0,0,.8)}
+    .scroll-arrow{font-size:60px;color:#fff;text-shadow:0 0 20px rgba(255,255,255,1),0 0 40px rgba(255,255,255,.7),0 0 60px rgba(255,255,255,.4);animation:scrollBounce 1.2s ease-in-out infinite;cursor:pointer;-webkit-text-stroke:2px rgba(255,255,255,.5)}
+    @keyframes scrollBounce{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(15px);opacity:.7}}
+    .scroll-arrow:hover{animation:none;transform:scale(1.2);text-shadow:0 0 30px #00FFFF,0 0 60px #00FFFF}
+    
+    /* Griglia globale di layout con vincoli zoom */
+    .layout-grid{display:grid;grid-template-rows:auto 1fr auto;min-height:100vh;overflow-x:hidden}
+    .layout-section{position:relative;overflow:hidden}
+    .layout-section.upper{max-height:85vh;overflow:hidden}
+    .layout-section.lower{min-height:50vh;padding-top:20px}
+    
+    /* Indicatore zona scrollabile */
+    .scroll-zone-indicator{position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(to bottom,transparent,rgba(0,255,255,.1));pointer-events:none;z-index:50;opacity:0;transition:opacity .3s}
+    .scroll-zone-indicator.visible{opacity:1}
+    
+    /* Barra progresso scroll */
+    .scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#00FFFF,#FFD700,#00FF00);z-index:10001;width:0%;transition:width .1s;box-shadow:0 0 10px rgba(0,255,255,.8)}
+    
+    /* ======== ADSENSE CONTAINER - DELAYED 10s ======== */
+    .adsense-container{
+      position:absolute;
+      top:-18px;
+      left:calc(4% + clamp(130px,12vw,180px) + 16px);
+      right:calc(4% + clamp(130px,12vw,180px) + 16px);
+      transform:none;
+      width:auto;
+      max-width:none;
+      margin:0;
+      min-height:58px;
+      padding:4px 14px 6px;
+      background:rgba(0,0,0,0.6);
+      border:1px solid rgba(255,215,0,0.3);
+      border-radius:8px;
+      text-align:center;
+      z-index:161;
+      box-shadow:0 0 15px rgba(0,255,255,0.2);
+      opacity:0;
+      transition:opacity 1s ease-out;
+      pointer-events:none;
+    }
+    .adsense-container.visible{
+      opacity:1;
+      pointer-events:auto;
+    }
+    .adsense-label{
+      font-size:10px;
+      color:rgba(255,255,255,0.5);
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin-bottom:5px;
+    }
+    .adsbygoogle{
+      display:block;
+      margin:0 auto;
+    }
+    @media(max-width:768px){
+      .adsense-container{max-width:320px;padding:8px}
+    }
+#central-static-banner {
+    position: absolute;
+  top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 37.35%;
+    max-width: 611px;
+  padding: 13px 14px 15px;
+    background: rgba(20, 0, 0, 0.85);
+    border: 3px solid #ff0000;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7), inset 0 0 10px rgba(255, 0, 0, 0.5);
+    text-align: center;
+    z-index: 160;
+    backdrop-filter: blur(5px);
+}
+
+.static-banner-side-links{
+    position:absolute;
+    top:50%;
+    right:100%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-right:12px;
+    z-index:161;
+}
+
+.static-banner-side-links-right{
+  left:100%;
+  right:auto;
+  margin-right:0;
+  margin-left:12px;
+}
+
+/* #news-summary-button {
+    top: 260px !important;
+    left: calc(13% + 45px) !important;
+    display: flex !important;
+    position: absolute !important;
+    z-index: 162 !important;
+} */
+
+.static-banner-side-link{
+    width:142px;
+    min-height:46px;
+    padding:8px 10px;
+  display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    text-decoration:none;
+    color:#9ff6ff;
+    background:linear-gradient(135deg,rgba(0,50,80,.95),rgba(0,80,120,.9));
+    border:2px solid #00FFFF;
+    border-radius:12px;
+    box-shadow:0 0 16px rgba(0,255,255,.38);
+    font-size:12px;
+    font-weight:900;
+    line-height:1.2;
+    letter-spacing:.7px;
+    text-transform:uppercase;
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.static-banner-side-link:hover{
+    transform:translateY(-1px) scale(1.03);
+    box-shadow:0 0 24px rgba(0,255,255,.62);
+    border-color:#9ffbff;
+}
+
+#central-static-banner p {
+  font-size: 1.34rem;
+    margin: 0;
+    padding: 0;
+  line-height: 1.08;
+}
+
+#central-static-banner .banner-topline {
+  font-size: inherit;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: inherit;
+  white-space: normal;
+  text-shadow: none;
+}
+
+.candlestick-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    height: 80%;
+}
+
+#candlestick-left {
+  left: 12px;
+    animation: flash-left 3s infinite;
+}
+
+#candlestick-right {
+  right: 12px;
+    animation: flash-right 3s infinite;
+}
+
+.candle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12px;
+}
+
+.candle .upper-wick {
+    width: 2px;
+    height: 15px; /* Altezza stoppino superiore */
+    background-color: #555;
+}
+
+.candle .lower-wick {
+    width: 2px;
+    height: 10px; /* Altezza stoppino inferiore */
+    background-color: #555;
+}
+
+.candle .body {
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.candle.green .body { background-color: #26a69a; }
+.candle.green .upper-wick, .candle.green .lower-wick { background-color: #26a69a; }
+.candle.red .body { background-color: #ef5350; }
+.candle.red .upper-wick, .candle.red .lower-wick { background-color: #ef5350; }
+
+/* Dimensioni candele progressive (aumentate del 30%) */
+#candlestick-left .candle:nth-child(1) .body { height: 78px; } /* 1x */
+#candlestick-left .candle:nth-child(2) .body { height: 59px; } /* 0.75x */
+#candlestick-left .candle:nth-child(3) .body { height: 39px; } /* 0.50x */
+#candlestick-left .candle:nth-child(4) .body { height: 20px; } /* 0.25x */
+
+#candlestick-right .candle:nth-child(1) .body { height: 20px; } /* 0.25x */
+#candlestick-right .candle:nth-child(2) .body { height: 39px; } /* 0.50x */
+#candlestick-right .candle:nth-child(3) .body { height: 59px; } /* 0.75x */
+#candlestick-right .candle:nth-child(4) .body { height: 78px; } /* 1x */
+
+
+@keyframes flash-left {
+    0%, 40%, 100% { opacity: 1; filter: drop-shadow(0 0 8px gold); }
+    50%, 90% { opacity: 0.4; filter: none; }
+}
+
+@keyframes flash-right {
+    0%, 40%, 100% { opacity: 0.4; filter: none; }
+    50%, 90% { opacity: 1; filter: drop-shadow(0 0 8px gold); }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Popup Limite Zoom -->
+  <div class="zoom-limit-popup" id="zoomLimitPopup">
+    <div class="lens-icon">🔍</div>
+    <h3>⚠️ ZOOM LIMIT REACHED</h3>
+    <p>Hai raggiunto il limite massimo di zoom.<br>
+    Per ingrandire gli elementi, usa la <strong>LENTE-MOUSE</strong>:<br>
+    passa il cursore sopra qualsiasi elemento per attivare l'ingrandimento lenticolare!</p>
+    <button class="close-popup" onclick="closeZoomPopup()">✓ OK, HO CAPITO</button>
+  </div>
+  
+  <!-- Barra Progresso Scroll -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  
+  <!-- Freccia Scrolling Obbligato -->
+  <div class="scroll-indicator" id="scrollIndicator">
+    <span class="scroll-indicator-text">Scorri per vedere altro</span>
+    <div class="scroll-arrow" onclick="smoothScrollDown()">⬇</div>
+  </div>
+  
+  <!-- Stars -->
+  <div class="stars" id="stars"></div>
+  
+  <div class="wrap">
+    <header>
+      <div class="lang-buttons-left">
+        <button class="lang-btn active" data-lang="EN">EN <span class="music-note">♬</span>
+          <span class="music-tooltip">
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Guglielmo Tell <span class="tooltip-note">♫</span></span>
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Author: Rossini G.</span>
+          </span>
+        </button>
+        <button class="lang-btn" data-lang="IT">IT <span class="music-note">♬</span>
+          <span class="music-tooltip">
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Gazza Ladra <span class="tooltip-note">♫</span></span>
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Author: Rossini G.</span>
+          </span>
+        </button>
+      </div>
+      <div class="top-banners">
+        <div class="banner-item banner-main">
+          <svg viewBox="0 0 100 100" fill="gold"><path d="M50,10 L60,40 L90,40 L67,58 L77,88 L50,70 L23,88 L33,58 L10,40 L40,40 Z"/></svg>
+          <span data-i18n="topStopScam">Stop Scam =</span>
+        </div>
+        <a href="https://www.tutelatruffe.it" target="_blank" rel="noopener noreferrer" class="banner-item banner-link banner-heartbeat" data-i18n="topTutelaTruffe">
+          Tutela Truffe
+        </a>
+        <a href="https://scam-radar.com" target="_blank" rel="noopener noreferrer" class="banner-item banner-link" data-i18n="topScamRadar">
+          Scam Radar
+        </a>
+        <a href="https://globalmoneyweek.org" target="_blank" rel="noopener noreferrer" class="banner-item banner-link banner-gmw banner-heartbeat" data-i18n="topGlobalMoneyWeek">
+          Global Money Week 2026
+        </a>
+        <a href="https://www.tutelatruffe.it/curriculum.html" target="_blank" rel="noopener noreferrer" class="banner-item banner-link banner-avv banner-heartbeat">
+          <span data-i18n="topCopyright">Avv. STANCA Marcello ©</span>
+        </a>
+      </div>
+      <div class="lang-buttons-right">
+        <button class="lang-btn" data-lang="FR">FR <span class="music-note">♬</span>
+          <span class="music-tooltip">
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Gazza Ladra <span class="tooltip-note">♫</span></span>
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Author: Rossini G.</span>
+          </span>
+        </button>
+        <button class="lang-btn" data-lang="DE">DE <span class="music-note">♬</span>
+          <span class="music-tooltip">
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Guglielmo Tell <span class="tooltip-note">♫</span></span>
+            <span class="tooltip-line"><span class="tooltip-note">♫</span> Author: Rossini G.</span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <main class="scene" id="scene">
+      <!-- Orbits -->
+      <div class="orbit orbit-outer"></div>
+      <div class="orbit orbit-inner"></div>
+      <div class="orbit-safe">
+        <img src="images/perseo-medusa.jpg" alt="Perseo con la testa di Medusa" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <div class="photo-arrows" aria-hidden="true">
+        <span class="photo-arrow left">⬅</span>
+        <span class="photo-arrow right">➡</span>
+      </div>
+
+      <!-- Freccia invito click - punta verso il basso verso pulsante verde -->
+      <div class="click-arrow">↓</div>
+
+      <!-- Authorities Search Button - Inside Flag Orbit -->
+      <a href="https://www.tutelatruffe.it" class="authorities-search-button" target="_blank" rel="noopener noreferrer">
+        Search 189<br>Authority
+      </a>
+      
+      <!-- Global Protection Button - base pagina -->
+      <a href="https://avvstancamarcello.github.io/Financial-Authority-Database/referenze.html" class="global-protection-button" target="_blank" rel="noopener noreferrer">
+        Global Protection<br>Authorities
+      </a>
+
+      <!-- Medusa Caravaggio - Centro disco banche - CAUSA della pietrificazione -->
+      <div class="medusa-caravaggio" id="medusa-caravaggio">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa di Caravaggio - Ipnosi Bancaria" crossorigin="anonymous">
+      </div>
+
+      <!-- Shield centrale - tra le due orbite -->
+      <div class="shield-center">
+        <div class="shield-glow"></div>
+        <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ╔══════════════════════════════════════════════════════════════════════════════╗
+  ║  FINANCIAL DEFENSE SHIELD LOGO - PROTECTED INTELLECTUAL PROPERTY            ║
+  ╠══════════════════════════════════════════════════════════════════════════════╣
+  ║  © 2026 Avvocato Marcello Stanca - All Rights Reserved                       ║
+  ║  Author: Avvocato Marcello Stanca                                            ║
+  ║  Email: lawyer@marcellostanca.it                                             ║
+  ║  Website: https://tutelatruffe.it                                            ║
+  ║  Creation Date: January 2026                                                 ║
+  ║  License: Proprietary - Unauthorized reproduction prohibited                 ║
+  ║                                                                              ║
+  ║  LEGAL NOTICE:                                                               ║
+  ║  This logo is protected by Italian Copyright Law (L. 633/1941),              ║
+  ║  EU Directive 2001/29/EC, and International Treaties (Berne Convention).    ║
+  ║  Trademark registration pending at UIBM/EUIPO.                               ║
+  ║  Unauthorized use, reproduction, or distribution is strictly prohibited      ║
+  ║  and will be prosecuted to the fullest extent of the law.                   ║
+  ║                                                                              ║
+  ║  Digital Fingerprint: FD-SHIELD-MS-2026-IT                                   ║
+  ╚══════════════════════════════════════════════════════════════════════════════╝
+-->
+<svg width="205" height="205" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" role="img" aria-labelledby="title desc">
+  <metadata>
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:title>Financial Defense Shield Logo</dc:title>
+        <dc:creator>Avvocato Marcello Stanca</dc:creator>
+        <dc:rights>© 2026 Avvocato Marcello Stanca - All Rights Reserved</dc:rights>
+        <dc:publisher>TutelaTruffe.it</dc:publisher>
+        <dc:date>2026-01-20</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:identifier>FD-SHIELD-MS-2026-IT</dc:identifier>
+        <cc:license rdf:resource="https://tutelatruffe.it/terms.html"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title id="title">Financial Defense Shield Logo - © Avv. Marcello Stanca</title>
+  <desc id="desc">Blue shield with a central golden dollar symbol, two traffic lights tangential to the inner shield sides, Financial Defense text inside, eagle eyes with yellow pupils, and three vertical golden orbits with red, yellow and green planets outside the shield. Protected intellectual property of Avvocato Marcello Stanca.</desc>
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="60%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <!-- Gradient for eagle eye iris -->
+    <radialGradient id="eyeIrisGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="40%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#cc8800"/>
+    </radialGradient>
+    <!-- Gradient for inner orbit (blue like shield) -->
+    <linearGradient id="innerOrbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="#020617"/>
+
+  <!-- Eagle/Cat Eyes - Left eye, inside orbit, parallel to shield lower edge, inner corner down -->
+  <g transform="translate(200, 424) rotate(25)">
+    <!-- White eyebrow -->
+    <path d="M -38 -18 Q 0 -28 38 -14" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <!-- Eye socket/white outline - almond/tapered shape -->
+    <path d="M -38 0 Q -20 -14 0 -14 Q 20 -14 38 0 Q 20 12 0 12 Q -20 12 -38 0 Z" 
+          fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- Eye background (dark) - almond shape -->
+    <path d="M -36 0 Q -18 -12 0 -12 Q 18 -12 36 0 Q 18 10 0 10 Q -18 10 -36 0 Z" 
+          fill="#1a1a1a"/>
+    <!-- Iris (yellow-gold eagle eye) -->
+    <ellipse cx="0" cy="0" rx="18" ry="9" fill="url(#eyeIrisGrad)"/>
+    <!-- Vertical pupil slit (cat/eagle style) -->
+    <ellipse cx="0" cy="0" rx="3" ry="8" fill="#000000"/>
+    <!-- Light reflection -->
+    <ellipse cx="-6" cy="-3" rx="3" ry="2" fill="rgba(255,255,255,0.8)"/>
+  </g>
+
+  <!-- Eagle/Cat Eyes - Right eye, inside orbit, parallel to shield lower edge, inner corner down -->
+  <g transform="translate(312, 424) rotate(-25)">
+    <!-- White eyebrow -->
+    <path d="M -38 -14 Q 0 -28 38 -18" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <!-- Eye socket/white outline - almond/tapered shape -->
+    <path d="M -38 0 Q -20 -14 0 -14 Q 20 -14 38 0 Q 20 12 0 12 Q -20 12 -38 0 Z" 
+          fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- Eye background (dark) - almond shape -->
+    <path d="M -36 0 Q -18 -12 0 -12 Q 18 -12 36 0 Q 18 10 0 10 Q -18 10 -36 0 Z" 
+          fill="#1a1a1a"/>
+    <!-- Iris (yellow-gold eagle eye) -->
+    <ellipse cx="0" cy="0" rx="18" ry="9" fill="url(#eyeIrisGrad)"/>
+    <!-- Vertical pupil slit (cat/eagle style) -->
+    <ellipse cx="0" cy="0" rx="3" ry="8" fill="#000000"/>
+    <!-- Light reflection -->
+    <ellipse cx="-6" cy="-3" rx="3" ry="2" fill="rgba(255,255,255,0.8)"/>
+  </g>
+
+  <!-- Shield shape -->
+  <path d="M256 90
+           L156 120
+           C150 123 144 131 144 139
+           V262
+           C144 330 187 378 256 412
+           C325 378 368 330 368 262
+           V159
+           C368 151 362 143 356 140
+           Z" 
+        fill="url(#shieldGrad)" stroke="#93c5fd" stroke-width="6"/>
+
+  <!-- Dollar symbol -->
+  <text x="256" y="225" text-anchor="middle" fill="#ffe500"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-weight="600" font-size="160" style="filter: drop-shadow(0 0 8px #ffd700);">
+    $
+  </text>
+
+  <!-- Traffic light left (green on), tangent to inner left side of shield -->
+  <g>
+    <rect x="158" y="150" width="33" height="120" rx="8" fill="#020617" stroke="#e5e7eb" stroke-width="3"/>
+    <circle cx="173" cy="175" r="9" fill="#374151" />
+    <circle cx="173" cy="210" r="9" fill="#374151" />
+    <circle cx="173" cy="245" r="9" fill="#22c55e" />
+  </g>
+
+  <!-- Traffic light right (red on), tangent to inner right side of shield -->
+  <g>
+    <rect x="324" y="150" width="33" height="120" rx="8" fill="#020617" stroke="#e5e7eb" stroke-width="3"/>
+    <circle cx="339" cy="175" r="9" fill="#ef4444" />
+    <circle cx="339" cy="210" r="9" fill="#374151" />
+    <circle cx="339" cy="245" r="9" fill="#374151" />
+  </g>
+
+  <!-- Financial Defense label inside shield -->
+  <text x="256" y="310" text-anchor="middle" fill="#e5e7eb"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-weight="600" font-size="30" letter-spacing="2">
+    FINANCIAL
+  </text>
+  <text x="256" y="344" text-anchor="middle" fill="#e5e7eb"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-weight="600" font-size="28" letter-spacing="4">
+    DEFENSE
+  </text>
+  
+  <!-- M and S initials aligned with traffic light bases - Author: Marcello Stanca -->
+  <text x="225" y="270" text-anchor="middle" fill="#39ff14"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-weight="800" font-size="42">
+    M
+  </text>
+  <text x="287" y="270" text-anchor="middle" fill="#39ff14"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-weight="800" font-size="42">
+    S
+  </text>
+
+  <!-- Copyright symbol © at the tip of the shield -->
+  <text x="256" y="395" text-anchor="middle" fill="#39ff14"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-weight="700" font-size="65">
+    ©
+  </text>
+
+  <!-- Three vertical orbits around shield (all outside shield contour) -->
+  <!-- Inner orbit - blue gradient matching shield (thinnest) -->
+  <ellipse cx="256" cy="256" rx="170" ry="210" fill="none" stroke="url(#innerOrbitGrad)" stroke-width="4" opacity="0.95"/>
+  <!-- Middle orbit - golden (medium thickness) -->
+  <ellipse cx="256" cy="256" rx="190" ry="230" fill="none" stroke="#facc15" stroke-width="5.5" opacity="0.95"/>
+  <!-- Outer orbit - red (thickest for 3D depth effect) -->
+  <ellipse cx="256" cy="256" rx="210" ry="250" fill="none" stroke="#ef4444" stroke-width="7" opacity="0.95"/>
+
+  <!-- Planet spheres on distinct vertical orbits: green (east), yellow (west), red (south) -->
+  <g opacity="0.98">
+    <!-- East / right, inner orbit -->
+    <circle cx="426" cy="256" r="20" fill="#22c55e" />
+    <!-- West / left, middle orbit -->
+    <circle cx="66" cy="256" r="20" fill="#facc15" />
+    <!-- South / bottom, inner orbit -->
+    <circle cx="256" cy="466" r="20" fill="#ef4444" />
+  </g>
+</svg>
+      </div>
+
+      <!-- Medusa SINISTRA - Caravaggio vivo -->
+      <div class="medusa left" id="medusa-left">
+        <div class="medusa-image-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Sinistra - Ipnosi" crossorigin="anonymous">
+        </div>
+      </div>
+
+      <!-- Medusa DESTRA - Caravaggio vivo -->
+      <div class="medusa right" id="medusa-right">
+        <div class="medusa-image-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Destra - Ipnosi" crossorigin="anonymous">
+        </div>
+      </div>
+
+      <!-- === BANNER TESTUALE STATICO === -->
+      <div id="central-static-banner">
+        <div class="static-banner-side-links" aria-label="Quick navigation near static banner">
+          <a class="static-banner-side-link" href="#fraud-guide-toc">News e sommario casi</a>
+        </div>
+        <div class="static-banner-side-links static-banner-side-links-right" aria-label="Secondary quick navigation near static banner">
+          <a class="static-banner-side-link" href="#video-avatar-section">Video della pagina</a>
+        </div>
+        <div class="candlestick-container" id="candlestick-left">
+            <div class="candle green"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+            <div class="candle red"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+            <div class="candle green"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+            <div class="candle red"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+        </div>
+        <p>Diventa immune alle trappole digitali.</p>
+        <p>Resisti contro le ipnosi di Medusa</p>
+        <p style="color: #FFD700; font-weight: bold;">Non credere ai grafici falsi</p>
+        <p>Riconosci le manipolazioni.</p>
+        <p>Proteggi il tuo denaro.</p>
+        <div class="candlestick-container" id="candlestick-right">
+            <div class="candle green"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+            <div class="candle red"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+            <div class="candle green"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+            <div class="candle red"><div class="upper-wick"></div><div class="body"></div><div class="lower-wick"></div></div>
+        </div>
+      </div>
+
+      <!-- Tentacoli-frusta per attacchi -->
+      <div class="whip-tentacle" id="whip-left"></div>
+      <div class="whip-tentacle" id="whip-right"></div>
+
+      <!-- === TORRE EMOJI SINISTRA - 11 piani (10-0) === -->
+      <!-- Counter totale rubato SINISTRA -->
+      <div class="stolen-total-box stolen-total-left" id="stolen-total-left">
+        <span class="stolen-total-label">💸 Stolen</span>
+        <span class="stolen-total-value" id="total-left">-0$</span>
+      </div>
+      <div class="captures-container captures-left" id="captures-left">
+        <div class="emoji-floor" data-floor="10"><span class="emoji-floor-number">10</span><span class="emoji-slot" id="emoji-left-10">😐</span><span class="emoji-counter" id="counter-left-10"></span></div>
+        <div class="emoji-floor" data-floor="9"><span class="emoji-floor-number">9</span><span class="emoji-slot" id="emoji-left-9">😐</span><span class="emoji-counter" id="counter-left-9"></span></div>
+        <div class="emoji-floor" data-floor="8"><span class="emoji-floor-number">8</span><span class="emoji-slot" id="emoji-left-8">😐</span><span class="emoji-counter" id="counter-left-8"></span></div>
+        <div class="emoji-floor" data-floor="7"><span class="emoji-floor-number">7</span><span class="emoji-slot" id="emoji-left-7">😐</span><span class="emoji-counter" id="counter-left-7"></span></div>
+        <div class="emoji-floor" data-floor="6"><span class="emoji-floor-number">6</span><span class="emoji-slot" id="emoji-left-6">😐</span><span class="emoji-counter" id="counter-left-6"></span></div>
+        <div class="emoji-floor" data-floor="5"><span class="emoji-floor-number">5</span><span class="emoji-slot" id="emoji-left-5">😐</span><span class="emoji-counter" id="counter-left-5"></span></div>
+        <div class="emoji-floor" data-floor="4"><span class="emoji-floor-number">4</span><span class="emoji-slot" id="emoji-left-4">😐</span><span class="emoji-counter" id="counter-left-4"></span></div>
+        <div class="emoji-floor" data-floor="3"><span class="emoji-floor-number">3</span><span class="emoji-slot" id="emoji-left-3">😐</span><span class="emoji-counter" id="counter-left-3"></span></div>
+        <div class="emoji-floor" data-floor="2"><span class="emoji-floor-number">2</span><span class="emoji-slot" id="emoji-left-2">😐</span><span class="emoji-counter" id="counter-left-2"></span></div>
+        <div class="emoji-floor" data-floor="1"><span class="emoji-floor-number">1</span><span class="emoji-slot" id="emoji-left-1">😐</span><span class="emoji-counter" id="counter-left-1"></span></div>
+        <div class="emoji-floor emoji-floor-0" data-floor="0"><span class="emoji-floor-number">0</span><span class="emoji-slot active" id="emoji-left-0">😊</span><span class="emoji-counter" id="counter-left-0"></span></div>
+      </div>
+      
+      <!-- === TORRE EMOJI DESTRA - 11 piani (10-0) === -->
+      <!-- Counter totale rubato DESTRA -->
+      <div class="stolen-total-box stolen-total-right" id="stolen-total-right">
+        <span class="stolen-total-label">💸 Stolen</span>
+        <span class="stolen-total-value" id="total-right">-0$</span>
+      </div>
+      <div class="captures-container captures-right" id="captures-right">
+        <div class="emoji-floor" data-floor="10"><span class="emoji-floor-number">10</span><span class="emoji-slot" id="emoji-right-10">😐</span><span class="emoji-counter" id="counter-right-10"></span></div>
+        <div class="emoji-floor" data-floor="9"><span class="emoji-floor-number">9</span><span class="emoji-slot" id="emoji-right-9">😐</span><span class="emoji-counter" id="counter-right-9"></span></div>
+        <div class="emoji-floor" data-floor="8"><span class="emoji-floor-number">8</span><span class="emoji-slot" id="emoji-right-8">😐</span><span class="emoji-counter" id="counter-right-8"></span></div>
+        <div class="emoji-floor" data-floor="7"><span class="emoji-floor-number">7</span><span class="emoji-slot" id="emoji-right-7">😐</span><span class="emoji-counter" id="counter-right-7"></span></div>
+        <div class="emoji-floor" data-floor="6"><span class="emoji-floor-number">6</span><span class="emoji-slot" id="emoji-right-6">😐</span><span class="emoji-counter" id="counter-right-6"></span></div>
+        <div class="emoji-floor" data-floor="5"><span class="emoji-floor-number">5</span><span class="emoji-slot" id="emoji-right-5">😐</span><span class="emoji-counter" id="counter-right-5"></span></div>
+        <div class="emoji-floor" data-floor="4"><span class="emoji-floor-number">4</span><span class="emoji-slot" id="emoji-right-4">😐</span><span class="emoji-counter" id="counter-right-4"></span></div>
+        <div class="emoji-floor" data-floor="3"><span class="emoji-floor-number">3</span><span class="emoji-slot" id="emoji-right-3">😐</span><span class="emoji-counter" id="counter-right-3"></span></div>
+        <div class="emoji-floor" data-floor="2"><span class="emoji-floor-number">2</span><span class="emoji-slot" id="emoji-right-2">😐</span><span class="emoji-counter" id="counter-right-2"></span></div>
+        <div class="emoji-floor" data-floor="1"><span class="emoji-floor-number">1</span><span class="emoji-slot" id="emoji-right-1">😐</span><span class="emoji-counter" id="counter-right-1"></span></div>
+        <div class="emoji-floor emoji-floor-0" data-floor="0"><span class="emoji-floor-number">0</span><span class="emoji-slot active" id="emoji-right-0">😊</span><span class="emoji-counter" id="counter-right-0"></span></div>
+      </div>
+      
+      <!-- === ROTOLO DI PAPIRO - Invito a scrollare === -->
+      <div class="papyrus-scroll" id="papyrus-scroll">
+        <div class="papyrus-roll">
+          <span class="papyrus-text" data-i18n="papyrusText">📜 EUROPEAN BANK DATABASE - SCROLL TO EXPLORE 📜</span>
+        </div>
+        <div class="papyrus-arrow">⬇️</div>
+      </div>
+
+      <div class="captures-lower-container captures-lower-left" id="captures-lower-left"></div>
+      <div class="captures-lower-container captures-lower-right" id="captures-lower-right"></div>
+      
+      <!-- === TORRI BANCHE BOTTOM - Sotto il papiro === -->
+      <div class="bank-logos-bottom bank-logos-bottom-left" id="bank-logos-bottom-left">
+        <div class="bank-floor" data-floor="-1" data-bank-index="20"><span class="bank-floor-number">-1</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+        <div class="bank-floor" data-floor="-2" data-bank-index="21"><span class="bank-floor-number">-2</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+        <div class="bank-floor" data-floor="-3" data-bank-index="22"><span class="bank-floor-number">-3</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+        <div class="bank-floor" data-floor="-4" data-bank-index="23"><span class="bank-floor-number">-4</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+      </div>
+      <div class="bank-logos-bottom bank-logos-bottom-right" id="bank-logos-bottom-right">
+        <div class="bank-floor" data-floor="-1" data-bank-index="24"><span class="bank-floor-number">-1</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+        <div class="bank-floor" data-floor="-2" data-bank-index="25"><span class="bank-floor-number">-2</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+        <div class="bank-floor" data-floor="-3" data-bank-index="26"><span class="bank-floor-number">-3</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+        <div class="bank-floor" data-floor="-4" data-bank-index="27"><span class="bank-floor-number">-4</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+      </div>
+      
+      <!-- === SCALA A PIOLI - Impalcatura Database Bancario (sotto il papiro) === -->
+      <!-- Pattern: 2 sì, 2 no, 2 sì, 2 no, 2 sì - visibili solo con scroll -->
+      <div class="scaffold-rung" style="top:5360px"><span class="scaffold-rung-text">🏗️ Building</span></div>
+      <div class="scaffold-rung" style="top:5460px"><span class="scaffold-rung-text">🏗️ EU Banks</span></div>
+      <!-- gap -->
+      <div class="scaffold-rung" style="top:5660px"><span class="scaffold-rung-text">🏗️ Database</span></div>
+      <div class="scaffold-rung" style="top:5760px"><span class="scaffold-rung-text">🏗️ Global</span></div>
+      <!-- gap -->
+      <div class="scaffold-rung" style="top:5960px"><span class="scaffold-rung-text">🏗️ Future</span></div>
+      <div class="scaffold-rung" style="top:6060px"><span class="scaffold-rung-text">🏗️ World</span></div>
+      <!-- Banner finale -->
+      <div class="scaffold-banner-final" style="top:6145px" data-i18n-attr="title" title="Emoji waiting for Bank data">
+        <span class="scaffold-banner-final-text" data-i18n="emojiWaiting">😐 Emoji waiting for Bank 🏦</span>
+      </div>
+
+      <!-- === BLOG COLLABORATIVO - Contributi utenti per Database Bancario === -->
+      <div class="blog-collaboration" id="blog-collaboration">
+        <div class="blog-collaboration-title" data-i18n="blogTitle">🤝 COLLABORATE!<br>HELP US! 🤝</div>
+        <div class="blog-collaboration-invite" data-i18n="blogInvite">
+          Help us complete the Bank Database! Write here the "complaint service" address of the Bank you don't see in the icons on this page!
+        </div>
+        <form class="blog-collaboration-form" id="blog-form" onsubmit="submitBankContribution(event)">
+          <input type="text" class="blog-collaboration-input" id="bank-name-input" placeholder="Bank name" data-i18n-placeholder="bankNamePlaceholder" required>
+          <textarea class="blog-collaboration-textarea" id="bank-address-input" placeholder="Complaint service address (email, postal address, or URL)" data-i18n-placeholder="bankAddressPlaceholder" required></textarea>
+          <input type="text" class="blog-collaboration-input" id="contributor-name-input" placeholder="Your name (optional)" data-i18n-placeholder="contributorNamePlaceholder">
+          <button type="submit" class="blog-collaboration-submit" data-i18n="blogSubmit">📤 SEND CONTRIBUTION</button>
+        </form>
+        <div class="blog-collaboration-responses" id="blog-responses">
+          <!-- Risposte utenti caricate dinamicamente -->
+        </div>
+      </div>
+
+      <!-- Container per flusso monete dai centro ai forzieri -->
+      <div class="coin-flow-container" id="coin-flow-container"></div>
+      
+      <!-- FORZIERE PIRATA SINISTRA - sopra COMPLAINTS -->
+      <div class="treasure-chest treasure-chest-left" id="treasure-left">
+        <div class="chest-lid"></div>
+        <div class="chest-body"></div>
+        <div class="chest-coins">
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+        </div>
+      </div>
+      
+      <!-- Banner COMPLAINTS sopra le colonne banche+emoji SINISTRA -->
+      <div class="complaint-banner complaint-banner-left">
+        <div class="complaint-banner-title">COMPLAINTS</div>
+      </div>
+      <div class="crying-bounce crying-bounce-left">😭</div>
+      
+      <!-- FORZIERE PIRATA DESTRA - sopra RECLAMI -->
+      <div class="treasure-chest treasure-chest-right" id="treasure-right">
+        <div class="chest-lid"></div>
+        <div class="chest-body"></div>
+        <div class="chest-coins">
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+          <span class="chest-coin">🪙</span>
+        </div>
+      </div>
+      
+      <!-- Banner RECLAMI sopra le colonne banche+emoji DESTRA -->
+      <div class="complaint-banner complaint-banner-right">
+        <div class="complaint-banner-title">RECLAMI</div>
+      </div>
+      <div class="crying-bounce crying-bounce-right">😭</div>
+
+      <!-- Etichette BANK sopra le colonne banche -->
+      <div class="bank-title bank-title-left">BANK</div>
+      <div class="bank-title bank-title-right">BANK</div>
+
+      <!-- TORRE BANCHE ITALIANE (SINISTRA) - 10 piani (10-1) -->
+      <div class="bank-logos-container bank-logos-left" id="bank-logos-left">
+        <div class="bank-floor" data-floor="10" data-bank-index="0"><span class="bank-floor-number">10</span></div>
+        <div class="bank-floor" data-floor="9" data-bank-index="1"><span class="bank-floor-number">9</span></div>
+        <div class="bank-floor" data-floor="8" data-bank-index="2"><span class="bank-floor-number">8</span></div>
+        <div class="bank-floor" data-floor="7" data-bank-index="3"><span class="bank-floor-number">7</span></div>
+        <div class="bank-floor" data-floor="6" data-bank-index="4"><span class="bank-floor-number">6</span></div>
+        <div class="bank-floor" data-floor="5" data-bank-index="5"><span class="bank-floor-number">5</span></div>
+        <div class="bank-floor" data-floor="4" data-bank-index="6"><span class="bank-floor-number">4</span></div>
+        <div class="bank-floor" data-floor="3" data-bank-index="7"><span class="bank-floor-number">3</span></div>
+        <div class="bank-floor" data-floor="2" data-bank-index="8"><span class="bank-floor-number">2</span></div>
+        <div class="bank-floor" data-floor="1" data-bank-index="9"><span class="bank-floor-number">1</span></div>
+      </div>
+      
+      <!-- TORRE BANCHE EUROPEE (DESTRA) - 10 piani (10-1) con indici 10-19 -->
+      <div class="bank-logos-container bank-logos-right" id="bank-logos-right">
+        <div class="bank-floor" data-floor="10" data-bank-index="10"><span class="bank-floor-number">10</span></div>
+        <div class="bank-floor" data-floor="9" data-bank-index="11"><span class="bank-floor-number">9</span></div>
+        <div class="bank-floor" data-floor="8" data-bank-index="12"><span class="bank-floor-number">8</span></div>
+        <div class="bank-floor" data-floor="7" data-bank-index="13"><span class="bank-floor-number">7</span></div>
+        <div class="bank-floor" data-floor="6" data-bank-index="14"><span class="bank-floor-number">6</span></div>
+        <div class="bank-floor" data-floor="5" data-bank-index="15"><span class="bank-floor-number">5</span></div>
+        <div class="bank-floor" data-floor="4" data-bank-index="16"><span class="bank-floor-number">4</span></div>
+        <div class="bank-floor" data-floor="3" data-bank-index="17"><span class="bank-floor-number">3</span></div>
+        <div class="bank-floor" data-floor="2" data-bank-index="18"><span class="bank-floor-number">2</span></div>
+        <div class="bank-floor" data-floor="1" data-bank-index="19"><span class="bank-floor-number">1</span></div>
+      </div>
+
+      <!-- DEPRESSION orizzontale - PIANO 10 -->
+      <div class="depression-horizontal" id="depression-horizontal">
+        <a href="https://www.giuseppecastellani.it" class="sos-inline sos-psychology" target="_blank" rel="noopener noreferrer">
+          <div class="sos-arrow-cyan">↓</div>
+          <span style="font-size:clamp(22px,2.2vw,26px);color:#ff0000;text-shadow:0 0 10px #ff0000;font-weight:900;">SOS</span>
+          <span style="font-size:clamp(22px,2.2vw,26px);color:#ffffff;font-weight:900;">PSICHO<br>LOGY</span>
+        </a>
+        <div class="depression-box" data-letter="DE">DE</div>
+        <div class="depression-box" data-letter="PR">PR</div>
+        <div class="depression-box" data-letter="ES">ES</div>
+        <div class="depression-box" data-letter="SI">SI</div>
+        <div class="depression-box" data-letter="ON">ON</div>
+        <a href="https://www.studiomedicoriccardosimoni.it" class="sos-inline sos-psychiatry" target="_blank" rel="noopener noreferrer">
+          <div class="sos-arrow-cyan">↓</div>
+          <span style="font-size:clamp(22px,2.2vw,26px);color:#ff0000;text-shadow:0 0 10px #ff0000;font-weight:900;">SOS</span>
+          <span style="font-size:clamp(22px,2.2vw,26px);color:#ffffff;font-weight:900;">PSICHI<br>ATRIC</span>
+        </a>
+      </div>
+
+      <!-- NEWS TICKER SCORREVOLE - MEDUSA CODEX + messaggi news -->
+      <div class="scams-message-top" id="scams-message-top">
+        <div class="ticker-wrapper">
+          <div class="ticker-content" id="ticker-content">
+            <!-- Contenuto caricato da news_ticker.json -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Messaggio scams finale -->
+      <div class="scams-message" id="scams-message" data-i18n="scamsMessage">Bank List Update in Progress</div>
+
+      <section class="adsense-guide" id="fraud-guide" aria-labelledby="fraud-guide-title">
+        <div class="adsense-guide-header">
+          <div class="adsense-guide-kicker" data-i18n="fraudGuideKicker">Practical anti-fraud guide</div>
+          <h2 class="adsense-guide-title" id="fraud-guide-title" data-i18n="fraudGuideTitle">Common online financial scams and the most useful defense before you pay</h2>
+          <p class="adsense-guide-subtitle" data-i18n="fraudGuideSubtitle">People are rarely trapped by a single trick. In most cases the scammer combines urgency, fake authority and an apparently convenient offer. The real defense is to slow the process down, verify every detail outside the scammer's channel and refuse to move money until the basic checks are complete.</p>
+        </div>
+
+        <div class="adsense-toc-shell" id="fraud-guide-toc">
+          <div class="adsense-toc-intro">
+            <div class="adsense-toc-title" data-i18n="fraudGuideTocTitle">Browse the guide by theme</div>
+            <p class="adsense-toc-copy" data-i18n="fraudGuideTocCopy">Use these thematic buttons to jump directly to the risk area you want to study, then return to the summary from each section.</p>
+          </div>
+          <div class="adsense-toc-groups">
+            <section class="adsense-toc-group">
+              <h3 data-i18n="tocGroupSocial">Social pressure and emotional traps</h3>
+              <div class="adsense-toc-buttons">
+                <a href="#job-scam" data-i18n="tocJobScam">Job scam</a>
+                <a href="#romance-scam" data-i18n="tocRomanceScam">Romance scam</a>
+                <a href="#fake-charity-scam" data-i18n="tocFakeCharityScam">Fake charity</a>
+                <a href="#deepfake-voice-scam" data-i18n="tocDeepfakeVoiceScam">Deepfake voice</a>
+              </div>
+            </section>
+            <section class="adsense-toc-group">
+              <h3 data-i18n="tocGroupAuthority">Authority abuse and impersonation</h3>
+              <div class="adsense-toc-buttons">
+                <a href="#phishing-scam" data-i18n="tocPhishingScam">Phishing</a>
+                <a href="#fake-bank-officer-scam" data-i18n="tocFakeBankOfficerScam">Fake banker</a>
+                <a href="#fake-lawyer-scam" data-i18n="tocFakeLawyerScam">Fake lawyer</a>
+                <a href="#tax-refund-scam" data-i18n="tocTaxRefundScam">Tax refund</a>
+                <a href="#support-scam" data-i18n="tocSupportScam">Tech support</a>
+                <a href="#video-avatar-section" data-i18n="tocVideoAvatar">Video avatar</a>
+                <a href="#financial-shield-card" data-i18n="tocFinancialShieldCard">You$ shield</a>
+                <a href="#authority-check" data-i18n="tocAuthorityCheck">Authority check</a>
+              </div>
+            </section>
+            <section class="adsense-toc-group">
+              <h3 data-i18n="tocGroupInvestments">Investments, credit and recovery traps</h3>
+              <div class="adsense-toc-buttons">
+                <a href="#trading-scam" data-i18n="tocTradingScam">Online trading</a>
+                <a href="#crypto-scam" data-i18n="tocCryptoScam">Crypto scam</a>
+                <a href="#investment-academy-scam" data-i18n="tocInvestmentAcademyScam">Academy scam</a>
+                <a href="#recovery-scam" data-i18n="tocRecoveryScam">Fake recovery</a>
+                <a href="#loan-scam" data-i18n="tocLoanScam">Loan scam</a>
+              </div>
+            </section>
+            <section class="adsense-toc-group">
+              <h3 data-i18n="tocGroupPayments">Shopping, payments and transfer fraud</h3>
+              <div class="adsense-toc-buttons">
+                <a href="#fake-shop-scam" data-i18n="tocFakeShopScam">Fake products</a>
+                <a href="#marketplace-scam" data-i18n="tocMarketplaceScam">Marketplace</a>
+                <a href="#parcel-scam" data-i18n="tocParcelScam">Parcel scam</a>
+                <a href="#qr-code-scam" data-i18n="tocQrCodeScam">QR code</a>
+                <a href="#invoice-scam" data-i18n="tocInvoiceScam">Invoices</a>
+                <a href="#urgent-transfer-scam" data-i18n="tocUrgentTransferScam">Urgent transfer</a>
+                <a href="#gift-card-scam" data-i18n="tocGiftCardScam">Gift cards</a>
+                <a href="#rental-scam" data-i18n="tocRentalScam">Rental scam</a>
+              </div>
+            </section>
+            <section class="adsense-toc-group">
+              <h3 data-i18n="tocGroupIdentity">Identity and account control</h3>
+              <div class="adsense-toc-buttons">
+                <a href="#sim-swap-scam" data-i18n="tocSimSwapScam">SIM swap</a>
+                <a href="#account-takeover-scam" data-i18n="tocAccountTakeoverScam">Account access</a>
+                <a href="#identity-theft-scam" data-i18n="tocIdentityTheftScam">Identity theft</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="adsense-guide-grid">
+          <div class="adsense-topic-divider">
+            <span class="adsense-topic-kicker" data-i18n="topicDividerKicker">Theme</span>
+            <h3 data-i18n="tocGroupSocial">Social pressure and emotional traps</h3>
+            <p class="adsense-topic-seo" data-i18n="topicGroupSocialSeo">Keywords: job scam, romance scam, fake charity</p>
+            <p class="adsense-topic-copy" data-i18n="topicGroupSocialCopy">These frauds work by manipulating trust, urgency, compassion or personal vulnerability before the victim has time to verify the story.</p>
+          </div>
+          <section class="adsense-card" id="job-scam">
+            <h3 data-i18n="fraudJobTitle">Job scam and fake remote work</h3>
+            <p data-i18n="fraudJobBody1">A job scam promises easy money for simple actions: liking content, filling in forms, forwarding bank transfers, renting out your account or buying materials that will allegedly be refunded later. The target is often hooked with a small initial payment to make the scheme look real.</p>
+            <p data-i18n="fraudJobBody2">The safest rule is to reject any offer where the worker must send money first, use a personal account for third parties or hand over documents before a verifiable interview. A real employer does not turn the candidate into a financial intermediary.</p>
+          </section>
+
+          <section class="adsense-card" id="romance-scam">
+            <h3 data-i18n="fraudRomanceTitle">Romance scam, social engineering and fake emergencies</h3>
+            <p data-i18n="fraudRomanceBody1">Relationship scams build trust for weeks or months. Once the emotional bond is strong, the emergency appears: illness, travel trouble, customs problems, a shared investment, a blocked wallet or an urgent loan. At that point the victim is no longer evaluating money, but the relationship.</p>
+            <p data-i18n="fraudRomanceBody2">A healthy response is to add an outside check every time: talk to someone who is not emotionally involved, verify photos and identity and keep one simple rule. Never transfer money to a person you have never met in a verifiable way.</p>
+          </section>
+
+          <section class="adsense-card" id="fake-charity-scam">
+            <h3 data-i18n="fraudFakeCharityTitle">Fake charity and emotional donation fraud</h3>
+            <p data-i18n="fraudFakeCharityBody1">Fraudulent charity campaigns appear after wars, disasters, medical emergencies or public tragedies. They use moving images, copied logos and dramatic appeals to push donors to act quickly before checking who will really receive the money.</p>
+            <p data-i18n="fraudFakeCharityBody2">The safest behavior is to donate only through official websites you reach independently, checking legal identity, bank details and public references. If the request insists on instant transfers to personal accounts, it is a warning, not a cause.</p>
+          </section>
+
+          <div class="adsense-topic-divider">
+            <span class="adsense-topic-kicker" data-i18n="topicDividerKicker">Theme</span>
+            <h3 data-i18n="tocGroupAuthority">Authority abuse and impersonation</h3>
+            <p class="adsense-topic-seo" data-i18n="topicGroupAuthoritySeo">Keywords: phishing, fake banker, tax refund scam</p>
+            <p class="adsense-topic-copy" data-i18n="topicGroupAuthorityCopy">These schemes borrow the tone of banks, lawyers, public bodies and support desks to make unsafe actions look official and urgent.</p>
+          </div>
+
+          <section class="adsense-card" id="phishing-scam">
+            <h3 data-i18n="fraudPhishingTitle">Phishing, bank spoofing and altered IBAN fraud</h3>
+            <p data-i18n="fraudPhishingBody1">Phishing does not live in email alone. It arrives by SMS, phone call, search result, fake certified message and even notes that appear to come from a bank or lawyer. The goal is always the same: make you click, reveal codes or pay to manipulated bank details.</p>
+            <p data-i18n="fraudPhishingBody2">The strongest defense is to ignore the suspicious link and open the website manually instead. Then call the official number found on real documents and compare the IBAN with an independent source before authorising any payment.</p>
+          </section>
+
+          <section class="adsense-card" id="fake-bank-officer-scam">
+            <h3 data-i18n="fraudFakeBankOfficerTitle">Fake bank officer and security-call fraud</h3>
+            <p data-i18n="fraudFakeBankOfficerBody1">In this scam the caller sounds professional, knows basic personal details and claims to be protecting your account from fraud. The conversation is designed to create trust while pushing you to reveal codes, approve a device, move funds to a so-called safe account or install a security app.</p>
+            <p data-i18n="fraudFakeBankOfficerBody2">The right defense is to end the call and contact your bank yourself using the number printed on official documents or the banking app. A real bank employee does not need you to transfer money away from your own account to keep it safe.</p>
+            <div class="security-pill">
+              <span class="security-pill-kicker" data-i18n="romaSmsCallNewsKicker">Real case • Roma Today</span>
+              <p class="news-card-date" data-i18n="romaSmsCallNewsDate">7 October 2025</p>
+              <h4 data-i18n="romaSmsCallNewsTitle">SMS plus fake bank call: twelve transfers to Lithuania</h4>
+              <p data-i18n="romaSmsCallNewsBody1">Roma Today reported the case of a Roman customer tricked by an SMS followed by a fake security call, with twelve transfers sent to a Lithuanian bank in just over two hours.</p>
+              <p data-i18n="romaSmsCallNewsBody2">The ABF then recognised a partial refund, noting that the bank should have detected the anomaly and activated stronger monitoring and automatic blocking.</p>
+              <a class="adsense-action-link" href="https://share.google/qESHONIt9s8nYvSol" target="_blank" rel="noopener noreferrer" data-i18n="romaSmsCallNewsButton">Read the Roma Today article</a>
+            </div>
+          </section>
+
+          <section class="adsense-card" id="fake-lawyer-scam">
+            <h3 data-i18n="fraudFakeLawyerTitle">Fake lawyer scam and invented legal pressure</h3>
+            <p data-i18n="fraudFakeLawyerBody1">This fraud uses legal language, stamps, copied signatures and urgent deadlines to scare the victim into paying. The message may claim to come from a law firm handling debt, copyright, inheritance, recovery or urgent settlement activity.</p>
+            <p data-i18n="fraudFakeLawyerBody2">The correct response is to verify the lawyer independently through an official register or a number you find yourself, never through the contact details included in the threatening message. Real legal communications do not collapse when you ask for verification.</p>
+          </section>
+
+          <section class="adsense-card" id="tax-refund-scam">
+            <h3 data-i18n="fraudTaxRefundTitle">Tax refund scam and fake public authority notices</h3>
+            <p data-i18n="fraudTaxRefundBody1">This scam claims you are entitled to a refund or that a tax irregularity must be fixed immediately. The message imitates an official authority, uses formal language and includes a link or attachment designed to capture banking data, credentials or identity documents.</p>
+            <p data-i18n="fraudTaxRefundBody2">The best defense is to ignore the embedded link and access the public service portal directly from a trusted bookmark or manual search. Official agencies do not need urgency and secrecy to return money that is legitimately yours.</p>
+          </section>
+
+          <section class="adsense-card" id="support-scam">
+            <h3 data-i18n="fraudSupportTitle">Fake technical support and remote access fraud</h3>
+            <p data-i18n="fraudSupportBody1">The fake support scam appears through popups, phone calls or messages warning about viruses, blocked banking apps or compromised devices. The attacker tries to convince the victim to install remote control software or reveal one-time codes during the so-called repair.</p>
+            <p data-i18n="fraudSupportBody2">A real operator does not need to scare you into immediate access. Close the popup, disconnect the call and contact the official support number yourself from a trusted source. If someone asks for remote control while you are logged into banking or email, stop instantly.</p>
+            <div class="security-pill">
+              <span class="security-pill-kicker" data-i18n="whatsAppVotePillKicker">WhatsApp Security Pills</span>
+              <h4 data-i18n="whatsAppVotePillQuestion">Vote for the dancer on WhatsApp? It may be a trap.</h4>
+              <p data-i18n="whatsAppVotePillAnswer">A recent WhatsApp scam asks you to vote for a dancer or a girl in a contest. The message looks harmless and often appears to come from a trusted contact, but the link can capture data from your smartphone and then use the compromised account to send money requests to your contacts.</p>
+              <ul>
+                <li data-i18n="whatsAppVotePillStep1">Do not open the voting link and do not enter codes, names or login data on pages reached from the chat.</li>
+                <li data-i18n="whatsAppVotePillStep2">If you clicked, warn your contacts immediately, review linked devices and secure the account before the scam spreads further.</li>
+                <li data-i18n="whatsAppVotePillStep3">Treat every request to vote, help a dancer or support a contest through a rushed link as suspicious, especially if it is followed by requests for money or verification codes.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="adsense-card" id="authority-check">
+            <h3 data-i18n="fraudAuthorityCheckTitle">How to query financial authorities before you trust a site</h3>
+            <p data-i18n="fraudAuthorityCheckIntro">When a website offers trading, crypto, investments, credit, recovery or financial advice, the most prudent move is to contact the competent authority directly and ask for written confirmation before you pay, register or continue the conversation.</p>
+            <ul>
+              <li data-i18n="fraudAuthorityCheckItem1">Ask whether the entity really exists and whether it is authorised to offer financial services in your country of residence.</li>
+              <li data-i18n="fraudAuthorityCheckItem2">Ask whether the website or domain name you found is officially linked to that entity, or whether it may be a clone or an abusive use of identity.</li>
+              <li data-i18n="fraudAuthorityCheckItem3">Ask for the official public telephone number of the entity you want to verify, so you can call back using an independent contact.</li>
+              <li data-i18n="fraudAuthorityCheckItem4">Ask whether the person who contacted you is registered in the official register of financial promoters or authorised advisers allowed to provide investment advice to the public.</li>
+              <li data-i18n="fraudAuthorityCheckItem5">Ask whether warnings, sanctions or public notices already exist regarding that name, website, phone number or offer.</li>
+            </ul>
+            <p data-i18n="fraudAuthorityCheckOutro">Keep the authority reply, the web address, the phone number used by the caller and the name presented by the contact in the same file. If the answers are incomplete, contradictory or only verbal, do not move money and do not send documents yet.</p>
+            <a class="adsense-action-link" href="https://www.tutelatruffe.it" target="_blank" rel="noopener noreferrer" data-i18n="fraudAuthorityCheckButton">Ask 190 Financial Authorities for confirmation</a>
+          </section>
+
+          <section class="adsense-card" id="financial-shield-card">
+            <h3 data-i18n="financialShieldTitle">You$ - Your Financial Shield</h3>
+            <p data-i18n="financialShieldIntro">This operating card condenses a simple self-defense routine: before you trust a financial website, broker, crypto platform or recovery service, verify the country, the competent authority and the real identity of the operator.</p>
+            <ol>
+              <li data-i18n="financialShieldStep1">Open the Financial Authorities Database (190) and search for the country named by the operator or shown on the website as its registered location.</li>
+              <li data-i18n="financialShieldStep2">Identify the competent financial authority for that country: central bank, supervisory authority or market regulator.</li>
+              <li data-i18n="financialShieldStep3">Send a short written request to the authority, or use the official Avv. Stanca site, and ask for confirmation before paying, registering or sending documents.</li>
+            </ol>
+            <div class="adsense-template-box">
+              <p class="adsense-template-lead" data-i18n="financialShieldTemplateLead">Simple message you can copy and adapt</p>
+              <ul>
+                <li data-i18n="financialShieldTemplate1">Tell me whether this company really exists as a financial or insurance firm.</li>
+                <li data-i18n="financialShieldTemplate2">Tell me whether it is authorised to offer financial services in my country of residence.</li>
+                <li data-i18n="financialShieldTemplate3">Tell me what its official website address is.</li>
+                <li data-i18n="financialShieldTemplate4">Tell me what its official email address is.</li>
+                <li data-i18n="financialShieldTemplate5">Please note any abusive financial activity or possible cloning of a legitimate firm's identity.</li>
+                <li data-i18n="financialShieldTemplate6">You may reply to me by email at the address I provide, and I may or may not require further legal assistance.</li>
+              </ul>
+            </div>
+            <p class="adsense-card-highlight" data-i18n="financialShieldOutro">This internal card is useful for deposits, wallet transfers, fake trading offers, recovery proposals and every situation where the other side asks you to act with urgency.</p>
+            <a class="adsense-action-link" href="https://avvstancamarcello.github.io/Financial-Authority-Database/index.html#database-search-section" target="_blank" rel="noopener noreferrer" data-i18n="financialShieldButton">Open the Financial Authorities Database (190)</a>
+          </section>
+
+          <section class="adsense-card" id="video-avatar-section">
+            <h3 data-i18n="videoAvatarTitle">Video Avatar: educational and motivational short clips</h3>
+            <p data-i18n="videoAvatarIntro">This section collects short local clips, animated avatars and educational motivational videos that can make the page more attractive and keep visitors inside the site while they explore anti-fraud messages.</p>
+            <div class="video-avatar-actions">
+              <a class="adsense-action-link" href="Video-avatar/index.html" target="_blank" rel="noopener noreferrer" data-i18n="videoAvatarHubButton">Open the Video Avatar mini home</a>
+            </div>
+            <div class="video-avatar-grid">
+              <article class="video-avatar-card" data-video-category="avatar">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Laser vincente" data-video-category-label="Avatar">
+                  <source src="Video-avatar/laser-vincente.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Avatar</span><div class="video-avatar-thumb-title">Laser vincente</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>Laser vincente</h4>
+                <p data-i18n="videoAvatarCard1">Short avatar clip with a direct visual signal of defense, reaction and active protection.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="avatar">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Medusa animazione" data-video-category-label="Avatar">
+                  <source src="Video-avatar/Medusa-animazione.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Avatar</span><div class="video-avatar-thumb-title">Medusa animazione</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>Medusa animazione</h4>
+                <p data-i18n="videoAvatarCard2">Animated avatar sequence useful for educational storytelling around risk, manipulation and vigilance.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="motivational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Vespe bonifica web" data-video-category-label="Motivational">
+                  <source src="Video-avatar/Vespe-bonifica-web.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Motivational</span><div class="video-avatar-thumb-title">Vespe bonifica web</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>Vespe bonifica web</h4>
+                <p data-i18n="videoAvatarCard3">Motivational clip built around digital cleanup, counter-action and safer web navigation.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="educational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="I truffatori sondano i punti deboli delle Banche" data-video-category-label="Educational">
+                  <source src="Video-avatar/1. I truffatori sondano i punti deboli delle Banche.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Educational</span><div class="video-avatar-thumb-title">I truffatori sondano i punti deboli delle Banche</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>I truffatori sondano i punti deboli delle Banche</h4>
+                <p data-i18n="videoAvatarCard4">Educational short focused on structural weaknesses, vigilance and the need for stronger banking controls.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="educational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="I truffatori nel web sono piovre in agguato" data-video-category-label="Educational">
+                  <source src="Video-avatar/2. i truffatori nel web sono Piovre in agguato.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Educational</span><div class="video-avatar-thumb-title">I truffatori nel web sono piovre in agguato</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>I truffatori nel web sono piovre in agguato</h4>
+                <p data-i18n="videoAvatarCard5">Short clip with a vivid metaphor designed to improve memory and emotional retention of the anti-fraud message.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="educational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="I truffatori sono pronti a colpire banche in qualsiasi Paese del mondo" data-video-category-label="Educational">
+                  <source src="Video-avatar/3. I truffatori sono pronti a colpire banche in qualsiasi Paese del mondo.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Educational</span><div class="video-avatar-thumb-title">I truffatori sono pronti a colpire banche in qualsiasi Paese del mondo</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>I truffatori sono pronti a colpire banche in qualsiasi Paese del mondo</h4>
+                <p data-i18n="videoAvatarCard6">Global perspective clip that reinforces the cross-border nature of fraud and the value of international verification.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="motivational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="La supervisione e indispensabile" data-video-category-label="Motivational">
+                  <source src="Video-avatar/4. La supervisione è indispensabile per conoscere i confini delle orbite oscure.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Motivational</span><div class="video-avatar-thumb-title">La supervisione e indispensabile</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>La supervisione e indispensabile</h4>
+                <p data-i18n="videoAvatarCard7">Motivational clip about supervision, boundaries and the need to map risk before moving money.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="educational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="L'area di sicurezza e sorvegliata dalle Authorities" data-video-category-label="Educational">
+                  <source src="Video-avatar/5. L'area di sicurezza è sorvegliata dalla Authotiries.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Educational</span><div class="video-avatar-thumb-title">L'area di sicurezza e sorvegliata dalle Authorities</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>L'area di sicurezza e sorvegliata dalle Authorities</h4>
+                <p data-i18n="videoAvatarCard8">Clip that connects the security area message to financial authorities and official oversight.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="motivational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Fragilita emotiva e bersagli dei truffatori" data-video-category-label="Motivational">
+                  <source src="Video-avatar/6.Ogni persona depressa, che non consoce la sua patologia è vittima prescelta dai truffatori.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Motivational</span><div class="video-avatar-thumb-title">Fragilita emotiva e bersagli dei truffatori</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>Fragilita emotiva e bersagli dei truffatori</h4>
+                <p data-i18n="videoAvatarCard9">Sensitive educational clip linking emotional vulnerability, isolation and scam targeting.</p>
+              </article>
+              <article class="video-avatar-card" data-video-category="motivational">
+                <div class="video-avatar-media">
+                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Non sciare fuori pista" data-video-category-label="Motivational">
+                  <source src="Video-avatar/7. Non sciare fuori pista.mp4" type="video/mp4">
+                </video>
+                <div class="video-avatar-thumb"><span class="video-avatar-chip">Motivational</span><div class="video-avatar-thumb-title">Non sciare fuori pista</div><span class="video-avatar-play">▶</span></div>
+                </div>
+                <h4>Non sciare fuori pista</h4>
+                <p data-i18n="videoAvatarCard10">Short motivational warning that encourages users to stay inside verified channels and safe routes.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="adsense-card" id="abf-conciliation">
+            <h3 data-i18n="abfConciliationTitle">Arbitro Bancario Finanziario: out-of-court dispute resolution</h3>
+            <p data-i18n="abfConciliationBody1">The Arbitro Bancario Finanziario is an out-of-court system for resolving disputes between customers and banks or other financial intermediaries. It is useful when you need to challenge unauthorised transfers, abnormal account operations, refund refusals or conduct that may not have met the required banking diligence.</p>
+            <p data-i18n="abfConciliationBody2">Before going to court, this channel can help structure the dispute with documents, chronology and concrete objections. It is especially relevant when the issue concerns anomalous transactions, missing monitoring, delayed blocking or disputed payment operations.</p>
+            <a class="adsense-action-link" href="https://www.arbitrobancariofinanziario.it" target="_blank" rel="noopener noreferrer" data-i18n="abfConciliationButton">Open the ABF official website</a>
+            <a class="adsense-action-link" href="https://youtu.be/qctq8Md0VrA?is=M5ZjlMrBYohht-Pq" target="_blank" rel="noopener noreferrer" data-i18n="abfConciliationVideoButton">Watch the Bank of Italy explainer video</a>
+          </section>
+
+          <div class="adsense-topic-divider">
+            <span class="adsense-topic-kicker" data-i18n="topicDividerKicker">Theme</span>
+            <h3 data-i18n="tocGroupInvestments">Investments, credit and recovery traps</h3>
+            <p class="adsense-topic-seo" data-i18n="topicGroupInvestmentsSeo">Keywords: trading scam, crypto scam, loan scam</p>
+            <p class="adsense-topic-copy" data-i18n="topicGroupInvestmentsCopy">These schemes promise profit, education, rescue or easy credit, but their real objective is always an upfront payment or loss of control over funds.</p>
+          </div>
+
+          <section class="adsense-card" id="trading-scam">
+            <h3 data-i18n="fraudTradingTitle">Online trading, fake brokers and miracle investments</h3>
+            <p data-i18n="fraudTradingBody1">Many financial scams start with aggressive ads on social platforms, search engines or private chats. The fraudster displays a polished platform, a fake adviser and steady profits. As soon as the victim asks to withdraw, invented taxes, technical blocks or new deposit requests appear.</p>
+            <p data-i18n="fraudTradingBody2">The concrete defense is to verify licence, registered office, independent contact details and outside reputation before sending anything. If someone pushes you to deposit immediately so you do not miss the opportunity, the urgency itself is already a warning.</p>
+          </section>
+
+          <section class="adsense-card" id="crypto-scam">
+            <h3 data-i18n="fraudCryptoTitle">Crypto scam, fake wallets and copied exchanges</h3>
+            <p data-i18n="fraudCryptoBody1">Crypto fraud often starts with a fake tutor, a cloned exchange, a private group or a recovery promise. The victim is pushed to move funds to a wallet they do not control or to authorise a temporary transfer that is supposed to unlock profits.</p>
+            <p data-i18n="fraudCryptoBody2">The best defense is simple: never send coins to a wallet shared only in chat and verify the exchange URL character by character. If you cannot confirm the destination independently on a trusted device, do not move anything.</p>
+          </section>
+
+          <section class="adsense-card" id="investment-academy-scam">
+            <h3 data-i18n="fraudInvestmentAcademyTitle">Investment academy scam and paid mentorship traps</h3>
+            <p data-i18n="fraudInvestmentAcademyBody1">These scams imitate educational programs, trading academies or elite investor communities. The victim is first sold a course, then a premium signal group, then a managed opportunity that supposedly works only if more money is deposited quickly.</p>
+            <p data-i18n="fraudInvestmentAcademyBody2">A useful defense is to separate education from custody of funds. You can study finance without giving strangers access to your wallet, exchange account or capital. When learning and money transfer are tied together, caution should rise immediately.</p>
+          </section>
+
+          <section class="adsense-card" id="recovery-scam">
+            <h3 data-i18n="fraudRecoveryTitle">Recovery room, fake fund recovery and double victimisation</h3>
+            <p data-i18n="fraudRecoveryBody1">After the first loss, fake investigators, improvised legal offices, crypto experts or invented associations appear and promise to recover everything in a few days. They request an advance for taxes, notarisation, unlock wallets or fictional international procedures.</p>
+            <p data-i18n="fraudRecoveryBody2">If you have already been scammed, preserve evidence, block the contact channels and speak only with verifiable counterparts. A real recovery path does not rely on pressure in chat and does not guarantee impossible outcomes. The first defense here is not to pay a second time.</p>
+          </section>
+
+          <section class="adsense-card" id="loan-scam">
+            <h3 data-i18n="fraudLoanTitle">Loan scam and fake easy-credit approval</h3>
+            <p data-i18n="fraudLoanBody1">Loan scams target people who need quick liquidity. The fraudster promises guaranteed approval, no checks or instant release of funds, then asks for upfront fees, insurance costs, notarisation or verification payments before the money can supposedly be transferred.</p>
+            <p data-i18n="fraudLoanBody2">A reliable lender deducts legitimate costs transparently or documents them through formal contracts, not urgent chat pressure. If credit is promised to everyone but money must be sent first, the offer is almost certainly a trap.</p>
+          </section>
+
+          <section class="adsense-card" id="whatsapp-security-pill">
+            <div class="security-pill" style="margin-top:0">
+              <span class="security-pill-kicker" data-i18n="whatsAppSecurityPillKicker">WhatsApp Security Pills</span>
+              <h4 data-i18n="whatsAppSecurityPillQuestion">How can you protect your WhatsApp account?</h4>
+              <p data-i18n="whatsAppSecurityPillAnswer">To secure your WhatsApp account, activate two-step verification from Settings, choose a 6-digit PIN, add a recovery email and lock the app with fingerprint or Face ID. Then protect sensitive chats with chat lock and a secret code.</p>
+              <ul>
+                <li data-i18n="whatsAppSecurityPillStep1">Enable two-step verification from Settings > Account > Two-step verification > Turn on, then set a 6-digit PIN and a recovery email.</li>
+                <li data-i18n="whatsAppSecurityPillStep2">Activate app lock with fingerprint or Face ID from Privacy so nobody can open WhatsApp if they get your phone.</li>
+                <li data-i18n="whatsAppSecurityPillStep3">Use chat lock to hide specific chats: press and hold the chat, open the menu and activate the lock.</li>
+                <li data-i18n="whatsAppSecurityPillStep4">Add a secret code for locked chats to hide them further and reduce exposure if someone inspects the app.</li>
+              </ul>
+            </div>
+          </section>
+
+          <div class="adsense-topic-divider">
+            <span class="adsense-topic-kicker" data-i18n="topicDividerKicker">Theme</span>
+            <h3 data-i18n="tocGroupPayments">Shopping, payments and transfer fraud</h3>
+            <p class="adsense-topic-seo" data-i18n="topicGroupPaymentsSeo">Keywords: marketplace fraud, invoice scam, QR code scam</p>
+            <p class="adsense-topic-copy" data-i18n="topicGroupPaymentsCopy">These frauds target everyday purchases, invoices, bookings and transfers, usually by moving the victim outside a trusted payment flow.</p>
+          </div>
+
+          <section class="adsense-card" id="fake-shop-scam">
+            <h3 data-i18n="fraudFakeShopTitle">Fake products, cloned shops and unbelievable offers</h3>
+            <p data-i18n="fraudFakeShopBody1">Clone websites sell phones, cars, appliances, tickets or luxury goods at unrealistic prices. They copy famous logos, generic terms and convincing photos, but behind the surface the goal is to collect payment without delivering anything or to ship something completely different.</p>
+            <p data-i18n="fraudFakeShopBody2">Before buying, check the domain, company data, real address, return policy and independent reviews. If the only accepted method is a transfer to an unknown IBAN, stop the purchase. No discount is worth that risk.</p>
+          </section>
+
+          <section class="adsense-card" id="marketplace-scam">
+            <h3 data-i18n="fraudMarketplaceTitle">Marketplace fraud and fake buyer protection links</h3>
+            <p data-i18n="fraudMarketplaceBody1">Marketplace fraud affects both sellers and buyers. A fake buyer sends a payment link outside the platform, or a fake seller requests a deposit to reserve the item. The conversation feels normal until the victim leaves the protected system and enters a cloned page.</p>
+            <p data-i18n="fraudMarketplaceBody2">Stay inside the marketplace chat, payment flow and shipping tools whenever possible. The moment the other party tries to move the deal to an external link, courier shortcut or instant refund page, stop and re-evaluate the entire transaction.</p>
+          </section>
+
+          <section class="adsense-card" id="parcel-scam">
+            <h3 data-i18n="fraudParcelTitle">Parcel scam and fake delivery problems</h3>
+            <p data-i18n="fraudParcelBody1">Parcel scams exploit curiosity and routine. A text says your shipment is blocked, customs are unpaid or an address must be confirmed. The fee looks tiny, but the real goal is to steal card data, credentials or identity details through a fake courier page.</p>
+            <p data-i18n="fraudParcelBody2">The practical defense is to track deliveries only from the official courier app or website that you open directly. If you were not expecting a parcel, or if the message asks for urgent payment through an unfamiliar link, treat it as suspicious from the start.</p>
+          </section>
+
+          <section class="adsense-card" id="qr-code-scam">
+            <h3 data-i18n="fraudQrCodeTitle">QR code scam and hidden payment redirection</h3>
+            <p data-i18n="fraudQrCodeBody1">QR code scams work because people trust visual shortcuts. A sticker can replace a real payment code at a parking meter, on a poster, in a restaurant or inside a fake invoice. One scan is enough to open a malicious page or to redirect payment to a different beneficiary.</p>
+            <p data-i18n="fraudQrCodeBody2">Before confirming anything, check the destination shown after the scan, inspect the physical code for tampering and prefer typing known addresses manually when the context involves banking or account access. A QR code is a shortcut, not a proof of legitimacy.</p>
+          </section>
+
+          <section class="adsense-card" id="invoice-scam">
+            <h3 data-i18n="fraudInvoiceTitle">Invoice scam and payment redirection fraud</h3>
+            <p data-i18n="fraudInvoiceBody1">In an invoice scam the victim receives a bill that looks routine: same supplier name, same graphics, similar email thread. The crucial change is hidden in the payment details, where the bank account is replaced so the money reaches the attacker.</p>
+            <p data-i18n="fraudInvoiceBody2">A strong defense is to treat every new invoice template, account change or last-minute correction as a separate verification event. Compare the banking details with older records and confirm them by phone with a trusted contact before paying.</p>
+          </section>
+
+          <section class="adsense-card" id="urgent-transfer-scam">
+            <h3 data-i18n="fraudUrgentTransferTitle">Urgent transfer scam and fake supplier IBAN</h3>
+            <p data-i18n="fraudUrgentTransferBody1">This fraud targets families and businesses through altered invoices, fake lawyer emails or urgent messages that appear to come from a manager. One changed IBAN is enough to redirect a large payment before anyone notices the difference.</p>
+            <p data-i18n="fraudUrgentTransferBody2">The correct habit is to confirm every new bank detail by voice, using a phone number you already know and never the one written in the suspicious email. A one-minute callback can save an entire transfer.</p>
+          </section>
+
+          <section class="adsense-card" id="gift-card-scam">
+            <h3 data-i18n="fraudGiftCardTitle">Gift card scam and irreversible code payments</h3>
+            <p data-i18n="fraudGiftCardBody1">Gift card fraud appears when a scammer pretends to be a company, tax office, manager or family member and asks for urgent payment through prepaid cards. The method is chosen because the codes can be redeemed quickly and are difficult to recover once shared.</p>
+            <p data-i18n="fraudGiftCardBody2">The best rule is absolute: no legitimate institution settles debts, fines, security checks or emergency help through gift card codes. The moment that request appears, stop the conversation and verify the story with an independent contact.</p>
+          </section>
+
+          <section class="adsense-card" id="rental-scam">
+            <h3 data-i18n="fraudRentalTitle">Rental scam and fake property listings</h3>
+            <p data-i18n="fraudRentalBody1">Rental scams present attractive apartments, short-term stays or holiday homes at persuasive prices. The fraudster claims strong demand and asks for a deposit before any real viewing, often hiding behind excuses about travel, keys, platform issues or legal urgency.</p>
+            <p data-i18n="fraudRentalBody2">Never transfer a deposit for a property you cannot verify through a real viewing, a trusted platform or documented ownership checks. A home can be urgent, but your payment should never outrun your verification.</p>
+          </section>
+
+          <div class="adsense-topic-divider">
+            <span class="adsense-topic-kicker" data-i18n="topicDividerKicker">Theme</span>
+            <h3 data-i18n="tocGroupIdentity">Identity and account control</h3>
+            <p class="adsense-topic-seo" data-i18n="topicGroupIdentitySeo">Keywords: SIM swap, account takeover, identity theft</p>
+            <p class="adsense-topic-copy" data-i18n="topicGroupIdentityCopy">These risks aim to seize access, intercept verification or harvest documents that later unlock banking, credit and impersonation fraud.</p>
+          </div>
+
+          <section class="adsense-card" id="sim-swap-scam">
+            <h3 data-i18n="fraudSimSwapTitle">SIM swap and hijacked verification codes</h3>
+            <p data-i18n="fraudSimSwapBody1">SIM swap fraud begins when criminals collect enough personal data to convince a phone operator to move your number onto another card. Once they control the line, they intercept one-time passwords and use them to enter banking, email or exchange accounts.</p>
+            <p data-i18n="fraudSimSwapBody2">If your phone suddenly loses signal without explanation, react immediately: contact your operator from another line, block sensitive accounts and change passwords from a secure device. Activating stronger authentication than SMS reduces the damage dramatically.</p>
+          </section>
+
+          <section class="adsense-card" id="account-takeover-scam">
+            <h3 data-i18n="fraudAccountTakeoverTitle">Account takeover and chained identity abuse</h3>
+            <p data-i18n="fraudAccountTakeoverBody1">Account takeover happens when attackers enter one service and then pivot into others: email, banking, shopping platforms and cloud storage. A single compromised mailbox can become the master key for password resets, card fraud and impersonation.</p>
+            <p data-i18n="fraudAccountTakeoverBody2">The best defense is layered: unique passwords, an updated password manager, multi-factor authentication and alert review for new logins. When one account shows suspicious activity, treat every linked service as potentially exposed and rotate credentials in sequence.</p>
+          </section>
+
+          <section class="adsense-card" id="identity-theft-scam">
+            <h3 data-i18n="fraudIdentityTheftTitle">Identity theft and document harvesting fraud</h3>
+            <p data-i18n="fraudIdentityTheftBody1">Identity theft often begins quietly: a fake form, a bogus verification request, a copied login page or an offer that asks for ID cards, selfies and utility bills. Those documents can later be reused for fraudulent accounts, loans, SIM activation or social engineering.</p>
+            <p data-i18n="fraudIdentityTheftBody2">Before uploading any document, ask why it is needed, how it will be stored and whether the request comes from a verified institution. A cautious habit is to share the minimum necessary and to avoid sending sensitive files through ordinary chat whenever possible.</p>
+          </section>
+
+          <section class="adsense-card" id="golden-tree-news">
+            <span class="security-pill-kicker" data-i18n="goldenTreeNewsKicker">Real case • Roma Today</span>
+            <p class="news-card-date" data-i18n="goldenTreeNewsDate">5 February 2026</p>
+            <h3 data-i18n="goldenTreeNewsTitle">Golden Tree: fake bank, fake cards and fake banking app</h3>
+            <p data-i18n="goldenTreeNewsBody1">Operation Golden Tree exposed a fake bank network that looked credible with branded payment cards, offices and even a banking-style app shown to clients.</p>
+            <p data-i18n="goldenTreeNewsBody2">The lesson is practical: cards, apps and polished language do not prove legitimacy. Before trusting a financial operator, check authorisation, public registers and official warnings through independent channels.</p>
+            <a class="adsense-action-link" href="https://share.google/B2SyZb7nyS4KOGmpI" target="_blank" rel="noopener noreferrer" data-i18n="goldenTreeNewsButton">Read the Roma Today article</a>
+          </section>
+        </div>
+
+        <div class="adsense-defense-note" data-i18n="fraudDefenseNote">
+          <strong>Final self-defense rule:</strong> when a money request is driven by urgency, secrecy or the promise of easy profit, pause the operation for at least thirty minutes and recheck everything through an independent channel. That delay alone blocks many scams better than any software.
+        </div>
+      </section>
+      
+      <!-- FRECCE LAMPEGGIANTI - Invito clic sui banner petizioni -->
+      <div class="petition-arrow-container">
+        <span class="petition-arrow petition-arrow-left">⬅</span>
+        <span class="petition-arrow petition-arrow-right">➡</span>
+      </div>
+      
+      <!-- BANK + CARAVAGGIO - Scritte centrate tra i banner blu -->
+      <span class="hypno-emoji hypno-emoji-left">😵‍💫</span>
+      <div class="bank-text">BANK</div>
+      <span class="hypno-emoji hypno-emoji-right">😵‍💫</span>
+      <div class="caravaggio-text">CARAVAGGIO</div>
+      
+      <!-- READ PETITION buttons sotto banner scams -->
+      <div class="read-petition-container read-petition-left" id="read-petition-645">
+        <a href="https://www.europarl.europa.eu/petitions/en/petition/content/0645%252F2025/html/Petition-No%25C2%25A00645%252F2025-by-Marcello-Stanca-%2528Italian%2529%252C-on-behalf-of-%25E2%2580%2598Associazione%25C2%25A0Amev%25C2%25A0Firenze%25E2%2580%2599%252C-on-measures-to-tackle-financial-scams-carried-out-through-bank-transfers-and-credit-cards-in-the-EU" target="_blank" rel="noopener noreferrer" class="read-petition-btn">
+          <div class="petition-eu-circle">
+            <svg viewBox="0 0 24 24" fill="#003399"><circle cx="12" cy="12" r="10"/><text x="12" y="16" font-size="10" fill="#FFD700" text-anchor="middle" font-weight="bold">EU</text></svg>
+            <svg class="eu-stars-ring" viewBox="0 0 60 60">
+              <g fill="#FFD700">
+                <circle cx="30" cy="5" r="2"/><circle cx="43.5" cy="10" r="2"/><circle cx="52" cy="20.5" r="2"/>
+                <circle cx="55" cy="30" r="2"/><circle cx="52" cy="39.5" r="2"/><circle cx="43.5" cy="50" r="2"/>
+                <circle cx="30" cy="55" r="2"/><circle cx="16.5" cy="50" r="2"/><circle cx="8" cy="39.5" r="2"/>
+                <circle cx="5" cy="30" r="2"/><circle cx="8" cy="20.5" r="2"/><circle cx="16.5" cy="10" r="2"/>
+              </g>
+            </svg>
+          </div>
+          <span class="petition-label" data-i18n="readPetition"><span style="font-size:110%">READ</span> the EU<br><span style="font-size:140%">PETITION</span></span>
+          <span class="petition-label"><span style="font-size:200%">645</span>-2025</span>
+        </a>
+      </div>
+      <div class="read-petition-container read-petition-council" id="read-petition-council">
+        <a href="https://www.consilium.europa.eu/it/press/press-releases/2025/11/27/payment-services-council-and-parliament-agree-to-step-up-the-fight-against-fraud-and-increase-transparency/" target="_blank" rel="noopener noreferrer" class="read-petition-btn">
+          <div class="petition-eu-circle">
+            <svg viewBox="0 0 24 24" fill="#003399"><circle cx="12" cy="12" r="10"/><text x="12" y="16" font-size="10" fill="#FFD700" text-anchor="middle" font-weight="bold">EU</text></svg>
+            <svg class="eu-stars-ring" viewBox="0 0 60 60">
+              <g fill="#FFD700">
+                <circle cx="30" cy="5" r="2"/><circle cx="43.5" cy="10" r="2"/><circle cx="52" cy="20.5" r="2"/>
+                <circle cx="55" cy="30" r="2"/><circle cx="52" cy="39.5" r="2"/><circle cx="43.5" cy="50" r="2"/>
+                <circle cx="30" cy="55" r="2"/><circle cx="16.5" cy="50" r="2"/><circle cx="8" cy="39.5" r="2"/>
+                <circle cx="5" cy="30" r="2"/><circle cx="8" cy="20.5" r="2"/><circle cx="16.5" cy="10" r="2"/>
+              </g>
+            </svg>
+          </div>
+          <span class="petition-label" data-i18n="euCouncil">EU Council<br>27-11-2025</span>
+          <span class="petition-label" data-i18n="fightFraud">Fight Fraud</span>
+        </a>
+      </div>
+      <div class="read-petition-container read-petition-right" id="read-petition-888">
+        <a href="https://www.europarl.europa.eu/petitions/en/petition/content/0888%252F2024/html/Petition-No-0888%252F2024-by-Marcello-Stanca-%2528Italian%2529%252C-on-behalf-of-AMEV-Florence%252C-on-banks%25E2%2580%2599-duty-to-protect-customers-against-fake-online-investments" target="_blank" rel="noopener noreferrer" class="read-petition-btn">
+          <div class="petition-eu-circle">
+            <svg viewBox="0 0 24 24" fill="#003399"><circle cx="12" cy="12" r="10"/><text x="12" y="16" font-size="10" fill="#FFD700" text-anchor="middle" font-weight="bold">EU</text></svg>
+            <svg class="eu-stars-ring" viewBox="0 0 60 60">
+              <g fill="#FFD700">
+                <circle cx="30" cy="5" r="2"/><circle cx="43.5" cy="10" r="2"/><circle cx="52" cy="20.5" r="2"/>
+                <circle cx="55" cy="30" r="2"/><circle cx="52" cy="39.5" r="2"/><circle cx="43.5" cy="50" r="2"/>
+                <circle cx="30" cy="55" r="2"/><circle cx="16.5" cy="50" r="2"/><circle cx="8" cy="39.5" r="2"/>
+                <circle cx="5" cy="30" r="2"/><circle cx="8" cy="20.5" r="2"/><circle cx="16.5" cy="10" r="2"/>
+              </g>
+            </svg>
+          </div>
+          <span class="petition-label" data-i18n="readPetition"><span style="font-size:110%">READ</span> the EU<br><span style="font-size:140%">PETITION</span></span>
+          <span class="petition-label"><span style="font-size:200%">888</span>-2024</span>
+        </a>
+      </div>
+      <div class="read-petition-container read-petition-approved" id="read-petition-approved">
+        <a href="https://www.consilium.europa.eu/en/press/press-releases/2025/11/27/payment-services-council-and-parliament-agree-to-step-up-the-fight-against-fraud-and-increase-transparency/" target="_blank" rel="noopener noreferrer" class="read-petition-btn">
+          <div class="petition-eu-circle">
+            <svg viewBox="0 0 24 24" fill="#003399"><circle cx="12" cy="12" r="10"/><text x="12" y="16" font-size="10" fill="#FFD700" text-anchor="middle" font-weight="bold">EU</text></svg>
+            <svg class="eu-stars-ring" viewBox="0 0 60 60">
+              <g fill="#FFD700">
+                <circle cx="30" cy="5" r="2"/><circle cx="43.5" cy="10" r="2"/><circle cx="52" cy="20.5" r="2"/>
+                <circle cx="55" cy="30" r="2"/><circle cx="52" cy="39.5" r="2"/><circle cx="43.5" cy="50" r="2"/>
+                <circle cx="30" cy="55" r="2"/><circle cx="16.5" cy="50" r="2"/><circle cx="8" cy="39.5" r="2"/>
+                <circle cx="5" cy="30" r="2"/><circle cx="8" cy="20.5" r="2"/><circle cx="16.5" cy="10" r="2"/>
+              </g>
+            </svg>
+          </div>
+          <span class="petition-label" data-i18n="petitionsApproved">Petitions<br>Approved</span>
+          <span class="petition-label">EU 27-11</span>
+        </a>
+      </div>
+
+      <!-- Pulsante GIOCA! Multilingua - SEO: Game keyword -->
+      
+      <!-- Gazza Ladra Icons - Sulla cornice rossa del banner scorrevole -->
+      <!-- Gazza SINISTRA - al 10% del banner, guarda verso SINISTRA (forziere sinistro) -->
+      <div class="gazza-icon gazza-left" id="gazzaLeft" title="🎶 La Gazza Ladra - Rossini">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="transform:scaleX(-1)">
+          <!-- Monete d'oro rubate sotto la gazza -->
+          <ellipse cx="65" cy="88" rx="12" ry="4" fill="#B8860B"/>
+          <ellipse cx="65" cy="86" rx="12" ry="4" fill="#FFD700"/>
+          <ellipse cx="55" cy="90" rx="10" ry="3" fill="#B8860B"/>
+          <ellipse cx="55" cy="88" rx="10" ry="3" fill="#FFD700"/>
+          <ellipse cx="75" cy="91" rx="8" ry="3" fill="#B8860B"/>
+          <ellipse cx="75" cy="89" rx="8" ry="3" fill="#FFD700"/>
+          <ellipse cx="60" cy="93" rx="9" ry="3" fill="#B8860B"/>
+          <ellipse cx="60" cy="91" rx="9" ry="3" fill="#FFD700"/>
+          <!-- Corpo gazza - pancia bianca -->
+          <ellipse cx="45" cy="55" rx="18" ry="22" fill="#1a1a2e"/>
+          <ellipse cx="48" cy="58" rx="13" ry="17" fill="#f8f8f2" stroke="#d9d9cf" stroke-width="1.4"/>
+          <!-- Ala con riflessi blu -->
+          <path d="M30 45 Q20 55, 25 70 Q35 65, 40 55 Q38 48, 30 45" fill="#1a1a2e"/>
+          <path d="M32 50 Q25 58, 28 65 Q35 62, 38 55 Q36 52, 32 50" fill="#4169E1"/>
+          <!-- Coda lunga -->
+          <path d="M28 65 Q15 75, 5 95 Q20 90, 30 75 Q28 70, 28 65" fill="#1a1a2e"/>
+          <path d="M26 68 Q18 78, 12 90 Q22 86, 28 74" fill="#2c2c54"/>
+          <!-- Testa -->
+          <circle cx="55" cy="32" r="14" fill="#1a1a2e"/>
+          <!-- Occhio -->
+          <circle cx="60" cy="30" r="4" fill="#ffffff"/>
+          <circle cx="61" cy="29" r="2" fill="#000000"/>
+          <circle cx="62" cy="28" r="0.8" fill="#ffffff"/>
+          <!-- Becco -->
+          <path d="M68 32 L80 35 L68 38 Z" fill="#2c3e50"/>
+          <!-- Zampe -->
+          <path d="M50 75 L55 82 L52 85" stroke="#2c3e50" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M55 82 L58 84" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+          <path d="M42 74 L45 82 L42 86" stroke="#2c3e50" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M45 82 L48 85" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+          <!-- Moneta nel becco -->
+          <ellipse cx="82" cy="35" rx="6" ry="6" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+          <text x="82" y="38" font-size="7" fill="#B8860B" text-anchor="middle" font-weight="bold">€</text>
+        </svg>
+      </div>
+      
+      <!-- Gazza DESTRA - al 90% del banner, guarda verso DESTRA (forziere destro) -->
+      <div class="gazza-icon gazza-right" id="gazzaRight" title="🎶 La Gazza Ladra - Rossini">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Monete d'oro rubate sotto la gazza -->
+          <ellipse cx="65" cy="88" rx="12" ry="4" fill="#B8860B"/>
+          <ellipse cx="65" cy="86" rx="12" ry="4" fill="#FFD700"/>
+          <ellipse cx="55" cy="90" rx="10" ry="3" fill="#B8860B"/>
+          <ellipse cx="55" cy="88" rx="10" ry="3" fill="#FFD700"/>
+          <ellipse cx="75" cy="91" rx="8" ry="3" fill="#B8860B"/>
+          <ellipse cx="75" cy="89" rx="8" ry="3" fill="#FFD700"/>
+          <ellipse cx="60" cy="93" rx="9" ry="3" fill="#B8860B"/>
+          <ellipse cx="60" cy="91" rx="9" ry="3" fill="#FFD700"/>
+          <!-- Corpo gazza - pancia bianca -->
+          <ellipse cx="45" cy="55" rx="18" ry="22" fill="#1a1a2e"/>
+          <ellipse cx="48" cy="58" rx="12" ry="16" fill="#f0f0f0"/>
+          <!-- Ala con riflessi blu -->
+          <path d="M30 45 Q20 55, 25 70 Q35 65, 40 55 Q38 48, 30 45" fill="#1a1a2e"/>
+          <path d="M32 50 Q25 58, 28 65 Q35 62, 38 55 Q36 52, 32 50" fill="#4169E1"/>
+          <!-- Coda lunga -->
+          <path d="M28 65 Q15 75, 5 95 Q20 90, 30 75 Q28 70, 28 65" fill="#1a1a2e"/>
+          <path d="M26 68 Q18 78, 12 90 Q22 86, 28 74" fill="#2c2c54"/>
+          <!-- Testa -->
+          <circle cx="55" cy="32" r="14" fill="#1a1a2e"/>
+          <!-- Occhio -->
+          <circle cx="60" cy="30" r="4" fill="#ffffff"/>
+          <circle cx="61" cy="29" r="2" fill="#000000"/>
+          <circle cx="62" cy="28" r="0.8" fill="#ffffff"/>
+          <!-- Becco -->
+          <path d="M68 32 L80 35 L68 38 Z" fill="#2c3e50"/>
+          <!-- Zampe -->
+          <path d="M50 75 L55 82 L52 85" stroke="#2c3e50" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M55 82 L58 84" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+          <path d="M42 74 L45 82 L42 86" stroke="#2c3e50" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M45 82 L48 85" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+          <!-- Moneta nel becco -->
+          <ellipse cx="82" cy="35" rx="6" ry="6" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+          <text x="82" y="38" font-size="7" fill="#B8860B" text-anchor="middle" font-weight="bold">€</text>
+        </svg>
+      </div>
+      
+      <!-- Scritte MEDUSA accanto alle gazze -->
+      <div class="medusa-label medusa-label-left">MEDUSA</div>
+      
+      <!-- ======== GOOGLE ADSENSE SPACE - tra le MEDUSA ======== -->
+      <div class="adsense-container" id="adsense-container">
+        <div class="adsense-label">Advertisement</div>
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center; width:100%; max-width:728px; height:90px;"
+             data-ad-client="ca-pub-XXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="horizontal"
+             data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <!-- ======== FINE ADSENSE ======== -->
+      
+      <div class="medusa-label medusa-label-right">M E D U S A</div>
+      
+      <button class="replay-button play-game-btn visible" id="replay-button">
+        <span class="play-col play-col-left">
+          <span class="play-text" data-lang="it">GIOCA!</span>
+          <span class="play-text" data-lang="en">PLAY!</span>
+        </span>
+        <span class="play-icon">🎮</span>
+        <span class="play-col play-col-right">
+          <span class="play-text" data-lang="fr">JOUER!</span>
+          <span class="play-text" data-lang="de">SPIELEN!</span>
+        </span>
+      </button>
+
+      <div class="mobile-victims-module" id="mobile-victims-module" aria-hidden="true">
+        <div class="mobile-victims-track">
+          <div class="mobile-victim-slot" data-bank-victim="B"><span class="mobile-victim-emoji">😢</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="B"><span class="mobile-victim-emoji">😭</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="A"><span class="mobile-victim-emoji">😢</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="A"><span class="mobile-victim-emoji">😭</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="N"><span class="mobile-victim-emoji">😢</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="N"><span class="mobile-victim-emoji">😭</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="K"><span class="mobile-victim-emoji">😢</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="K"><span class="mobile-victim-emoji">😭</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="S"><span class="mobile-victim-emoji">😢</span></div>
+          <div class="mobile-victim-slot" data-bank-victim="S"><span class="mobile-victim-emoji">😭</span></div>
+        </div>
+      </div>
+
+      <div class="mobile-banks-module" id="mobile-banks-module" aria-hidden="true">
+        <div class="mobile-banks-track">
+          <div class="mobile-banks-slot color-cyan" data-bank-letter="B"><span class="mobile-banks-letter">B</span></div>
+          <div class="mobile-banks-slot color-yellow" data-bank-letter="A"><span class="mobile-banks-letter">A</span></div>
+          <div class="mobile-banks-slot color-red" data-bank-letter="N"><span class="mobile-banks-letter">N</span></div>
+          <div class="mobile-banks-slot color-violet" data-bank-letter="K"><span class="mobile-banks-letter">K</span></div>
+          <div class="mobile-banks-slot color-green" data-bank-letter="S"><span class="mobile-banks-letter">S</span></div>
+        </div>
+      </div>
+
+      <div class="mobile-static-scenario" id="mobile-static-scenario" aria-hidden="true">
+        <div class="mobile-static-menu-shell">
+          <div class="mobile-static-menu-badge" id="mobile-static-badge">SCENARIO 2</div>
+          <h2 class="mobile-static-menu-title" id="mobile-static-title">Choose the anti-fraud route</h2>
+          <p class="mobile-static-menu-copy" id="mobile-static-copy">Open the practical guide, enter the complaint grid, or return to the mobile home scene.</p>
+          <div class="mobile-static-menu-actions">
+            <button class="mobile-static-menu-button" id="mobile-static-guide-btn" type="button">
+              <span class="mobile-static-menu-button-label">
+                <span class="mobile-static-menu-button-title" id="mobile-static-guide-title">News e Sicurezza</span>
+                <span class="mobile-static-menu-button-subtitle" id="mobile-static-guide-subtitle">Guide cards and real cases</span>
+              </span>
+              <span class="mobile-static-menu-button-icon">📰</span>
+            </button>
+            <button class="mobile-static-menu-button secondary" id="mobile-static-complaints-btn" type="button">
+              <span class="mobile-static-menu-button-label">
+                <span class="mobile-static-menu-button-title" id="mobile-static-complaints-title">Bank Complaints Grid</span>
+                <span class="mobile-static-menu-button-subtitle" id="mobile-static-complaints-subtitle">20 banks + 20 future slots</span>
+              </span>
+              <span class="mobile-static-menu-button-icon">🏦</span>
+            </button>
+            <button class="mobile-static-menu-button tertiary" id="mobile-static-back-btn" type="button">
+              <span class="mobile-static-menu-button-label">
+                <span class="mobile-static-menu-button-title" id="mobile-static-back-title">You$ Financial Shield</span>
+                <span class="mobile-static-menu-button-subtitle" id="mobile-static-back-subtitle">Open the Scam Radar home card</span>
+              </span>
+              <span class="mobile-static-menu-button-icon">✉️</span>
+            </button>
+            <button class="mobile-static-menu-button secondary" id="mobile-static-video-btn" type="button">
+              <span class="mobile-static-menu-button-label">
+                <span class="mobile-static-menu-button-title" id="mobile-static-video-title">Video Avatar</span>
+                <span class="mobile-static-menu-button-subtitle" id="mobile-static-video-subtitle">Educational clips and avatars</span>
+              </span>
+              <span class="mobile-static-menu-button-icon">🎬</span>
+            </button>
+          </div>
+          <p class="mobile-static-menu-note" id="mobile-static-note">The complaint grid keeps 20 empty cells reserved for future bank complaint services.</p>
+        </div>
+      </div>
+      
+      <!-- ♬ Audio Indicator - A DESTRA del pulsante PLAY -->
+      <div class="audio-indicator" id="audioIndicator">
+        <div class="audio-equalizer">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <span class="track-name">Track Name</span>
+        <button class="stop-btn" onclick="stopCurrentAudio()">⏹ STOP</button>
+      </div>
+      <!-- Hidden Gazza - Gazze nascoste che appaiono dopo click sul pulsante PLAY -->
+      <div class="hidden-gazza hidden-gazza-left" id="hiddenGazzaLeft" title="🎶 La Gazza Ladra!">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Corpo -->
+          <ellipse cx="55" cy="50" rx="25" ry="20" fill="#1a1a1a"/>
+          <ellipse cx="55" cy="55" rx="15" ry="12" fill="white"/>
+          <!-- Testa - guarda verso PLAY (destra) -->
+          <circle cx="70" cy="40" r="15" fill="#1a1a1a"/>
+          <circle cx="78" cy="38" r="4" fill="white"/>
+          <circle cx="80" cy="37" r="2" fill="#1a1a1a"/>
+          <!-- Becco -->
+          <polygon points="85,40 95,38 85,45" fill="#4a4a4a"/>
+          <!-- Coda -->
+          <path d="M30,55 Q15,65 12,85" stroke="#1a1a1a" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <!-- Ala -->
+          <ellipse cx="45" cy="48" rx="8" ry="5" fill="white" transform="rotate(-10 45 48)"/>
+        </svg>
+      </div>
+      <div class="hidden-gazza hidden-gazza-right" id="hiddenGazzaRight" title="🎶 La Gazza Ladra!">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Corpo -->
+          <ellipse cx="45" cy="50" rx="25" ry="20" fill="#1a1a1a"/>
+          <ellipse cx="45" cy="55" rx="15" ry="12" fill="white"/>
+          <!-- Testa - guarda verso PLAY (sinistra) -->
+          <circle cx="30" cy="40" r="15" fill="#1a1a1a"/>
+          <circle cx="22" cy="38" r="4" fill="white"/>
+          <circle cx="20" cy="37" r="2" fill="#1a1a1a"/>
+          <!-- Becco -->
+          <polygon points="15,40 5,38 15,45" fill="#4a4a4a"/>
+          <!-- Coda -->
+          <path d="M70,55 Q85,65 88,85" stroke="#1a1a1a" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <!-- Ala -->
+          <ellipse cx="55" cy="48" rx="8" ry="5" fill="white" transform="rotate(10 55 48)"/>
+        </svg>
+      </div>
+            
+      <!-- Banche + Faccine generate da JS -->
+
+    </main>
+  </div>
+
+  <script>
+    // Generate stars
+    const starsContainer = document.getElementById('stars');
+    for(let i=0; i<80; i++){
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random()*100 + '%';
+      star.style.top = Math.random()*100 + '%';
+      star.style.animationDelay = Math.random()*3 + 's';
+      starsContainer.appendChild(star);
+    }
+
+    const scene = document.getElementById('scene');
+    const totalLeftEl = document.getElementById('total-left');
+    const totalRightEl = document.getElementById('total-right');
+    const capturesLeftGrid = document.getElementById('captures-left');
+    const capturesRightGrid = document.getElementById('captures-right');
+    const capturesLowerLeftGrid = document.getElementById('captures-lower-left');
+    const capturesLowerRightGrid = document.getElementById('captures-lower-right');
+    const dollarRowLeft = document.getElementById('dollar-row-left'); // Può essere null
+    const dollarRowRight = document.getElementById('dollar-row-right'); // Può essere null
+    // Le torri banche ora usano floor system - non più grid
+    const medusaCaravaggio = document.getElementById('medusa-caravaggio');
+    let totalLeft = 0;
+    let totalRight = 0;
+    let attacking = false;
+    let currentRotation = 0;
+    let capturedCount = 0;
+    let bankArrows = []; // Array per le frecce rosse indicative
+    let banksWordShown = [false, false]; // Traccia se le due parole BANKS sono visibili
+    let rotationPaused = false;
+    let nextAttackUsesLeft = true; // Alterna catture: sinistra/destra
+    let coinCountLeft = 0; // Contatore monete medusa sinistra
+    let coinCountRight = 0; // Contatore monete medusa destra
+    let emojiTowerCountLeft = 0; // Contatore emoji torre sinistra
+    let emojiTowerCountRight = 0; // Contatore emoji torre destra
+    let attackErrorCount = 0; // Contatore errori attacco per evitare loop infiniti
+    let attackCount = 0; // Contatore attacchi per colore catena
+    // Colori catena: cyan per i primi 2, poi rosso, verde, giallo, blu a rotazione
+    const chainColors = ['cyan', 'cyan', 'red', 'green', 'yellow', 'blue'];
+    // Pattern monete: 6 gruppi per piramide completa (3 $ giallo + 3 £ rosso)
+    const coinPattern = ['$', '$', '£', '$', '£', '£'];
+    
+    // Contatore totale monete nel banner centrale
+    let totalStolenCoins = 0;
+    const MAX_BANNER_COINS = 18; // Massimo 18 monete (3 righe x 6), poi overflow ai forzieri
+    let nextTreasureIsLeft = true; // Alterna forzieri sinistro/destro
+    
+    // Funzione per creare moneta che vola verso il forziere
+    function flowCoinToTreasure(toLeft){
+      const flowContainer = document.getElementById('coin-flow-container');
+      if(!flowContainer) return;
+      
+      const coin = document.createElement('span');
+      coin.className = 'flowing-coin ' + (toLeft ? 'to-left' : 'to-right');
+      coin.textContent = '🪙';
+      flowContainer.appendChild(coin);
+      
+      // Rimuovi dopo animazione
+      setTimeout(() => coin.remove(), 2600);
+      
+      // Aggiungi moneta brillante nel forziere di destinazione
+      setTimeout(() => {
+        const treasureId = toLeft ? 'treasure-left' : 'treasure-right';
+        const treasure = document.getElementById(treasureId);
+        if(treasure){
+          const chestCoins = treasure.querySelector('.chest-coins');
+          if(chestCoins){
+            const newCoin = document.createElement('span');
+            newCoin.className = 'chest-coin';
+            newCoin.textContent = '🪙';
+            newCoin.style.animation = 'none';
+            newCoin.style.transform = 'scale(1.3)';
+            newCoin.style.filter = 'drop-shadow(0 0 10px rgba(255,215,0,.9)) brightness(1.5)';
+            chestCoins.appendChild(newCoin);
+            // Torna a normale dopo flash
+            setTimeout(() => {
+              newCoin.style.animation = 'coinSparkle 2s ease-in-out infinite';
+              newCoin.style.transform = '';
+              newCoin.style.filter = '';
+            }, 500);
+          }
+        }
+      }, 2400);
+    }
+    
+    // Funzione per aggiungere 6 monete rubate al banner centrale
+    function addStolenCoins() {
+    // This function is intentionally left empty to stop the money animation.
+    }
+
+    // ★★★ CARICAMENTO DATI BANCHE DA FILE JSON ESTERNO ★★★
+    // Il file banks_database.json contiene tutti i dati delle banche (loghi e URL reclami)
+    // Modificare quel file per aggiornare link e icone senza toccare questo codice HTML
+    
+    let bancheItaliane = [];
+    let bancheEuropee = [];
+    let allBanks = [];
+    const capturedBanks = new Array(20).fill(false);
+    
+    // Funzione per caricare il database delle banche
+    async function loadBanksDatabase(){
+      try {
+        const response = await fetch('banks_database.json');
+        if(!response.ok) throw new Error('Impossibile caricare banks_database.json');
+        
+        const data = await response.json();
+        console.log('✅ Database banche caricato:', data.version, '-', data.lastUpdate);
+        
+        // Converti formato JSON in formato interno con campi aggiuntivi per animazione
+        bancheItaliane = data.bancheItaliane.map((b, i) => ({
+          name: b.name,
+          acronym: b.acronym,
+          color: b.color,
+          img: 'banca_fragile.svg',
+          logo: b.logo,
+          url: b.url,
+          flag: b.flag,
+          orbit: 'outer',
+          angle: i * 36,
+          counter: 0,
+          emoji: 'happy'
+        }));
+        
+        bancheEuropee = data.bancheEuropee.map((b, i) => ({
+          name: b.name,
+          acronym: b.acronym,
+          color: b.color,
+          img: 'banca_fragile.svg',
+          logo: b.logo,
+          url: b.url,
+          flag: b.flag,
+          orbit: 'outer',
+          angle: i * 36,
+          counter: 0,
+          emoji: 'happy'
+        }));
+        
+        // Componi array completo
+        allBanks = [
+          ...bancheItaliane.map((b, i) => ({...b, originalIndex: i})),
+          ...bancheEuropee.map((b, i) => ({...b, originalIndex: 10 + i}))
+        ];
+        
+        console.log(`📊 Caricate ${bancheItaliane.length} banche italiane e ${bancheEuropee.length} banche europee`);
+        
+        // Popola le torri con i dati caricati
+        populateBankTowers();
+        
+        // ★★★ INIZIALIZZA CICLO 1: Banche Italiane nell'orbita ★★★
+        initCycle1Banks();
+        
+      } catch(err) {
+        console.warn('⚠️ Errore caricamento JSON, uso dati di fallback:', err.message);
+        useFallbackBanksData();
+      }
+    }
+    
+    // Dati di fallback se il JSON non è disponibile
+    function useFallbackBanksData(){
+      bancheItaliane = [
+        {name:'Credit Agricole', acronym:'CR AGR', color:'#006B3F', img:'banca_fragile.svg', logo:'https://www.liblogo.com/img-logo/cr1255c65f-credit-agricole-logo-credit-agricole-logo-png-transparent-amp-svg-vector-freebie-supply.png', url:'https://www.credit-agricole.it/reclami-ricorsi-e-conciliazioni', flag:'it', orbit:'outer', angle:0, counter:0, emoji:'happy'},
+        {name:'FinecoBank', acronym:'FINECO', color:'#00297A', img:'banca_fragile.svg', logo:'FINECO.svg', url:'https://it.finecobank.com/reclami-ricorsi-conciliazione/', flag:'it', orbit:'outer', angle:36, counter:0, emoji:'happy'},
+        {name:'Banca Fideuram', acronym:'FIDEURAM', color:'#35777a', img:'banca_fragile.svg', logo:'banca-fideuram.svg', url:'https://www.fideuram.it/reclami-e-risoluzione-controversie/risoluzione-stragiudiziale-controversie/', flag:'it', orbit:'outer', angle:72, counter:0, emoji:'happy'},
+        {name:'BPER Banca', acronym:'BPER', color:'#00A651', img:'banca_fragile.svg', logo:'icons/bper-640x640.webp', url:'https://www.bper.it/footer/numeri-utili', flag:'it', orbit:'outer', angle:108, counter:0, emoji:'happy'},
+        {name:'Monte Paschi', acronym:'MPS', color:'#8B0000', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idRetgIuKK/w/400/h/400/theme/dark/icon.jpeg', url:'https://www.mps.it/contatti/reclami-e-ricorsi.html', flag:'it', orbit:'outer', angle:144, counter:0, emoji:'happy'},
+        {name:'Banca Mediolanum', acronym:'BMED', color:'#E60000', img:'banca_fragile.svg', logo:'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0015/4758/brand.gif', url:'https://www.bancamediolanum.it/informazioni-al-cliente/reclami-ricorsi-conciliazione', flag:'it', orbit:'outer', angle:180, counter:0, emoji:'happy'},
+        {name:'Intesa Sanpaolo', acronym:'ISP', color:'#006B3F', img:'banca_fragile.svg', logo:'https://www.assistenza-clienti.it/wp-content/uploads/2023/09/intesa-sanpaolo-squarelogo-e1695254957296.png', url:'https://www.intesasanpaolo.com/it/persone-e-famiglie/reclami.html', flag:'it', orbit:'outer', angle:216, counter:0, emoji:'happy'},
+        {name:'BNL BNP Paribas', acronym:'BNL', color:'#00915A', img:'banca_fragile.svg', logo:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/BNP_Paribas.svg/512px-BNP_Paribas.svg.png', url:'https://bnl.it/it/Footer/Reclami-Ricorsi-Conciliazione', flag:'it', orbit:'outer', angle:252, counter:0, emoji:'happy'},
+        {name:'Banca Pop. Sondrio', acronym:'BPS', color:'#004B87', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idnrm2Cz8D/w/400/h/400/theme/dark/icon.png', url:'https://www.popso.it/reclami', flag:'it', orbit:'outer', angle:288, counter:0, emoji:'happy'},
+        {name:'Poste Italiane', acronym:'POSTE', color:'#FFD300', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idQZ0W8Suy/w/400/h/400/theme/dark/icon.png', url:'https://www.poste.it/assistenza/reclami', flag:'it', orbit:'outer', angle:324, counter:0, emoji:'happy'}
+      ];
+      
+      bancheEuropee = [
+        {name:'Deutsche Bank', acronym:'DB', color:'#0018A8', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idS0oo-oct/w/400/h/400/theme/dark/icon.png', url:'https://www.deutsche-bank.de/pk/service/beschwerden.html', flag:'de', orbit:'outer', angle:0, counter:0, emoji:'happy'},
+        {name:'Commerzbank', acronym:'CBK', color:'#FFCC00', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idF5DUXM8b/w/400/h/400/theme/dark/icon.png', url:'https://www.commerzbank.de/hinweisgeber/', flag:'de', orbit:'outer', angle:36, counter:0, emoji:'happy'},
+        {name:'BNP Paribas', acronym:'BNP', color:'#00915A', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idktDnMOP8/w/400/h/400/theme/dark/icon.png', url:'https://mabanque.bnpparibas/fr/reclamation', flag:'fr', orbit:'outer', angle:72, counter:0, emoji:'happy'},
+        {name:'Société Générale', acronym:'SG', color:'#E60000', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idVYmqPxaD/w/400/h/400/theme/dark/icon.png', url:'https://particuliers.societegenerale.fr/reclamations', flag:'fr', orbit:'outer', angle:108, counter:0, emoji:'happy'},
+        {name:'Crédit Mutuel', acronym:'CM', color:'#0055A4', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idjYORqhzw/w/400/h/400/theme/dark/icon.png', url:'https://www.creditmutuel.fr/fr/reclamations.html', flag:'fr', orbit:'outer', angle:144, counter:0, emoji:'happy'},
+        {name:'ING Bank', acronym:'ING', color:'#FF6200', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idawOgYOsG/w/400/h/400/theme/dark/icon.png', url:'https://www.ing.com/About-us/Compliance/Complaints.htm', flag:'nl', orbit:'outer', angle:180, counter:0, emoji:'happy'},
+        {name:'ABN AMRO', acronym:'ABN', color:'#004D40', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idgC0l65rU/w/400/h/400/theme/dark/icon.png', url:'https://www.abnamro.nl/en/personal/contact/complaints.html', flag:'nl', orbit:'outer', angle:216, counter:0, emoji:'happy'},
+        {name:'Banco Santander', acronym:'SAN', color:'#EC0000', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idJfjpn7sc/w/400/h/400/theme/dark/icon.png', url:'https://www.bancosantander.es/particulares/atencion-cliente/reclamaciones', flag:'es', orbit:'outer', angle:252, counter:0, emoji:'happy'},
+        {name:'BBVA', acronym:'BBVA', color:'#004481', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idBP4aBSbX/w/400/h/400/theme/dark/icon.png', url:'https://www.bbva.es/personas/atencion-al-cliente/reclamaciones.html', flag:'es', orbit:'outer', angle:288, counter:0, emoji:'happy'},
+        {name:'Barclays', acronym:'BARC', color:'#00AEEF', img:'banca_fragile.svg', logo:'https://cdn.brandfetch.io/idC3xEZ1Cx/w/400/h/400/theme/dark/icon.png', url:'https://www.barclays.co.uk/help/complaints/', flag:'gb', orbit:'outer', angle:324, counter:0, emoji:'happy'}
+      ];
+      
+      allBanks = [
+        ...bancheItaliane.map((b, i) => ({...b, originalIndex: i})),
+        ...bancheEuropee.map((b, i) => ({...b, originalIndex: 10 + i}))
+      ];
+      
+      populateBankTowers();
+      
+      // ★★★ INIZIALIZZA CICLO 1: Banche Italiane nell'orbita ★★★
+      initCycle1Banks();
+    }
+    
+    // Carica database all'avvio
+    loadBanksDatabase();
+    
+    // ★★★ CARICA NEWS TICKER SCORREVOLE - ADIACENTE AI FORZIERI === */
+    // Il file news_ticker.json contiene tutti i dati delle banche (loghi e URL reclami)
+    // Modificare quel file per aggiornare link e icone senza toccare questo codice HTML
+    
+    let newsTicker = [];
+    const newsTickerContainer = document.getElementById('ticker-content');
+    
+    // Funzione per caricare il ticker
+    async function loadNewsTicker(){
+      try{
+        const response = await fetch('news_ticker.json');
+        if(!response.ok) throw new Error('Failed to load ticker');
+        const data = await response.json();
+        
+        const tickerContent = document.getElementById('ticker-content');
+        if(!tickerContent) return;
+        
+        // Costruisce contenuto: BRAND + separatore + messaggi ripetuti 2x per scroll infinito
+        const brand = `<span class="ticker-brand">${data.brandTitle}</span>`;
+        const separator = `<span class="ticker-separator">${data.settings?.separator || ' ★ '}</span>`;
+        
+        let messagesHTML = '';
+        data.messages.forEach(msg => {
+          if(msg.active && msg.text){
+            messagesHTML += `<span class="ticker-item">${msg.text}</span>`;
+            messagesHTML += separator;
+          }
+        });
+        
+        // Duplica per loop continuo
+        const fullContent = brand + separator + messagesHTML;
+        tickerContent.innerHTML = fullContent + fullContent;
+        
+        console.log('✅ News ticker caricato con', data.messages.length, 'messaggi');
+      }catch(err){
+        console.warn('⚠️ Ticker fallback:', err);
+        const tickerContent = document.getElementById('ticker-content');
+        if(tickerContent){
+          tickerContent.innerHTML = `
+            <span class="ticker-brand">M E D U S A - C O D E X by CARAVAGGIO</span>
+            <span class="ticker-separator"> ★ </span>
+            <span class="ticker-item">70.000 truffe e vittime in Italia nel 2025</span>
+            <span class="ticker-separator"> ★ </span>
+            <span class="ticker-item">Proteggi i tuoi risparmi</span>
+            <span class="ticker-separator"> ★ </span>
+            <span class="ticker-brand">M E D U S A - C O D E X by CARAVAGGIO</span>
+            <span class="ticker-separator"> ★ </span>
+            <span class="ticker-item">70.000 truffe e vittime in Italia nel 2025</span>
+            <span class="ticker-separator"> ★ </span>
+            <span class="ticker-item">Proteggi i tuoi risparmi</span>
+          `;
+        }
+      }
+    }
+    loadNewsTicker();
+    
+    // SISTEMA A 2 CICLI
+    let currentCycle = 1; // 1 = Italiane, 2 = Europee
+    // Assegna originalIndex alle banche italiane (indici 0-9)
+    let visibleBanksInOrbit = [];
+    let cycleCaptures = 0; // Catture nel ciclo corrente (0-10)
+    
+    // ★★★ INIZIALIZZA CICLO 1 CON BANCHE ITALIANE ★★★
+    function initCycle1Banks(){
+      currentCycle = 1;
+      cycleCaptures = 0;
+      visibleBanksInOrbit = bancheItaliane.map((b, i) => ({
+        ...b,
+        originalIndex: i
+      }));
+      console.log(`🏦 Ciclo 1 inizializzato con ${visibleBanksInOrbit.length} banche italiane`);
+    }
+    
+    // ★★★ FUNZIONE SHIFT EMOJI VERSO IL BASSO (piani 10→5, 9→4, 8→3, 7→2, 6→1) ★★★
+    function shiftEmojisDown(){
+      console.log('⬇️ Shift emoji: spostamento dai piani alti (10-6) ai piani bassi (5-1)');
+      
+      ['left', 'right'].forEach(side => {
+        // Sposta emoji dai piani 10-6 ai piani 5-1
+        for(let from = 10; from >= 6; from--){
+          const to = from - 5; // 10→5, 9→4, 8→3, 7→2, 6→1
+          
+          const fromSlot = document.getElementById(`emoji-${side}-${from}`);
+          const toSlot = document.getElementById(`emoji-${side}-${to}`);
+          const fromCounter = document.getElementById(`counter-${side}-${from}`);
+          const toCounter = document.getElementById(`counter-${side}-${to}`);
+          
+          if(fromSlot && toSlot){
+            // Copia contenuto
+            toSlot.textContent = fromSlot.textContent;
+            toSlot.className = fromSlot.className;
+            toSlot.style.cssText = fromSlot.style.cssText;
+            
+            // Svuota il piano superiore
+            fromSlot.textContent = '😐';
+            fromSlot.className = 'emoji-slot';
+            fromSlot.style.cssText = '';
+          }
+          
+          if(fromCounter && toCounter){
+            toCounter.textContent = fromCounter.textContent;
+            toCounter.style.opacity = fromCounter.style.opacity;
+            fromCounter.textContent = '';
+            fromCounter.style.opacity = '0';
+          }
+        }
+      });
+      
+      // Reset contatori emoji tower per ciclo 2
+      emojiTowerCountLeft = 0;
+      emojiTowerCountRight = 0;
+      
+      console.log('✅ Shift completato! Piani 10-6 vuoti, pronti per ciclo 2');
+    }
+    
+    // ★★★ CARICA BANCHE EUROPEE PER CICLO 2 ★★★
+    function loadCycle2Banks(){
+      console.log('🏦 Caricamento CICLO 2: Banche Europee nell\'orbita');
+      
+      currentCycle = 2;
+      cycleCaptures = 0;
+      
+      // Assegna originalIndex per tracciare le banche europee (indici 10-19)
+      visibleBanksInOrbit = bancheEuropee.map((b, i) => ({
+        ...b,
+        originalIndex: 10 + i // Indici 10-19 per europee
+      }));
+      
+      console.log(`🔄 Orbita ricaricata con ${visibleBanksInOrbit.length} banche europee`);
+      placeBanks(); // Ridisegna orbita
+      
+      // ★★★ FIX: Riprendi attacchi dopo caricamento ciclo 2 ★★★
+      setTimeout(() => {
+        attacking = false;
+        performAttack();
+      }, 500);
+    }
+    let banksLaserCount = {left: 0, right: 0}; // Contatore laser BANKS per lato
+    const existingWordsContainer = document.querySelector('.banks-words-container');
+    if(existingWordsContainer) existingWordsContainer.remove();
+    
+    // Funzione per sparare laser rosso da BANKS alle frecce rosse
+    function fireBanksLaser(targetArrow, isLeft){
+      const banksContainer = document.querySelector('.banks-words-container');
+      if(!banksContainer || !targetArrow) return;
+      
+      const banksRect = banksContainer.getBoundingClientRect();
+      const arrowRect = targetArrow.getBoundingClientRect();
+      
+      // Punto di partenza: centro della scritta BANKS
+      const startX = banksRect.left + banksRect.width / 2;
+      const startY = banksRect.top + banksRect.height / 2;
+      
+      // Punto di arrivo: centro della freccia
+      const endX = arrowRect.left + arrowRect.width / 2;
+      const endY = arrowRect.top + arrowRect.height / 2;
+      
+      // Calcola distanza e angolo
+      const dx = endX - startX;
+      const dy = endY - startY;
+      const distance = Math.sqrt(dx*dx + dy*dy);
+      const angle = Math.atan2(dy, dx);
+      
+      // Crea elemento laser
+      const laser = document.createElement('div');
+      laser.className = 'banks-laser';
+      laser.style.left = startX + 'px';
+      laser.style.top = (startY - 3) + 'px'; // -3 per centrare verticalmente (altezza 6px)
+      laser.style.width = distance + 'px';
+      laser.style.transform = `rotate(${angle}deg)`;
+      document.body.appendChild(laser);
+      
+      // Attiva animazione
+      setTimeout(() => laser.classList.add('active'), 10);
+      
+      // Rimuovi dopo animazione
+      setTimeout(() => laser.remove(), 600);
+    }
+
+    // Aggiungi cattura al grid laterale con TRIPLO EFFETTO RIVOLUZIONARIO:
+    // EFFETTO 1: FACCINA TRISTE 😢 nel grid verticale delle catture
+    // EFFETTO 2: SIMBOLO $ + 6 monete ($ o £) nella fila orizzontale
+    // EFFETTO 3: SIGLA BANCARIA nel grid "CASSAFORTI SPACCATE" - MESSAGGIO POTENTE!
+    // ★★★ NUOVO: Rimuove banca dall'orbita e gestisce cicli ★★★
+    function addToCapturesGrid(bankIndex, counterValue, useMedusaLeft, orbitIndex){
+      if(capturedBanks[bankIndex]) return; // Già catturata
+      capturedBanks[bankIndex] = true;
+      capturedCount++;
+      
+      // ★★★ RIMUOVI BANCA DALL'ORBITA - SCOMPARE DAL CERCHIO ★★★
+      if(orbitIndex !== undefined && orbitIndex >= 0){
+        visibleBanksInOrbit.splice(orbitIndex, 1);
+        console.log(`🚀 Banca rimossa dall'orbita! Rimaste: ${visibleBanksInOrbit.length}`);
+      }
+
+      cycleCaptures++; // Incrementa catture ciclo corrente
+      
+      // ★★★ EFFETTO TORRE EMOJI - ESEGUI SUBITO (COUNTDOWN da 10 a 6 nel CICLO 1) ★★★
+      const side = useMedusaLeft ? 'left' : 'right';
+      const emojiCounterVal = useMedusaLeft ? (++emojiTowerCountLeft) : (++emojiTowerCountRight);
+      // Nel ciclo 1: piani 10-6, nel ciclo 2: piani 10-6 (dopo shift)
+      const emojiFloorNum = 11 - emojiCounterVal; // Countdown: 10, 9, 8... 6
+      console.log(`🎯 ATTIVO EMOJI: piano ${emojiFloorNum}, lato ${side} (cattura nr ${emojiCounterVal})`);
+      if(emojiFloorNum >= 1 && emojiFloorNum <= 10) {
+        const emojiId = `emoji-${side}-${emojiFloorNum}`;
+        const counterId = `counter-${side}-${emojiFloorNum}`;
+        const emojiSlot = document.getElementById(emojiId);
+        const counterSlot = document.getElementById(counterId);
+        console.log(`🔍 Elemento ${emojiId}:`, emojiSlot);
+        if(emojiSlot) {
+          emojiSlot.textContent = '😢';
+          emojiSlot.classList.add('active');
+          emojiSlot.style.opacity = '1';
+          emojiSlot.style.filter = 'drop-shadow(0 0 20px #ffff00) drop-shadow(0 0 40px #ff6600)';
+          emojiSlot.style.fontSize = '48px';
+          console.log(`✅ EMOJI ${emojiId} ATTIVATA con stile inline!`);
+        }
+        if(counterSlot) {
+          counterSlot.textContent = counterValue;
+          counterSlot.style.opacity = '1';
+        }
+      }
+      
+      // ★★★ CHECK FINE CICLO - 10 catture = shift + reload orbita ★★★
+      if(cycleCaptures >= 10 && currentCycle === 1){
+        console.log('🔄 CICLO 1 COMPLETATO! Avvio shift emoji verso il basso...');
+        setTimeout(() => {
+          shiftEmojisDown();
+          loadCycle2Banks();
+        }, 1500);
+      }
+      
+      // MOSTRA DEPRESSION dopo i primi 2 raggi
+      if(capturedCount === 2){
+        showDepression();
+      }
+      
+      // Medusa SINISTRA cattura → mostra a SINISTRA
+      // Medusa DESTRA cattura → mostra a DESTRA
+      const targetGrid = useMedusaLeft ? capturesLowerLeftGrid : capturesLowerRightGrid;
+      
+      // EFFETTO 1: Faccina triste nel grid catture (solo se grid esiste)
+      if(targetGrid) {
+        const item = document.createElement('div');
+        item.className = 'captured-item';
+        item.innerHTML = `
+          <div class="captured-emoji">😢</div>
+          <div class="captured-counter">${counterValue}</div>
+        `;
+        targetGrid.appendChild(item);
+      }
+      
+      // EFFETTO 2: Simbolo moneta in disposizione PIRAMIDALE (solo se dollarRow esiste)
+      const targetDollarRow = useMedusaLeft ? dollarRowLeft : dollarRowRight;
+      if(!targetDollarRow) return; // Skip se elemento non esiste
+      
+      const coinIndex = useMedusaLeft ? coinCountLeft : coinCountRight;
+      const currency = coinPattern[coinIndex % 6];
+      
+      // Incrementa contatore
+      if(useMedusaLeft) coinCountLeft++; else coinCountRight++;
+      
+      // Determina la riga della piramide (1: pos 0, 2: pos 1-2, 3: pos 3-5) = triangolo isoscele
+      let rowNum, rowClass;
+      if(coinIndex === 0) { rowNum = 1; rowClass = 'row-1'; }
+      else if(coinIndex <= 2) { rowNum = 2; rowClass = 'row-2'; }
+      else { rowNum = 3; rowClass = 'row-3'; } // pos 3,4,5 = 3 elementi
+      
+      // Trova o crea la riga della piramide
+      let pyramidRow = targetDollarRow.querySelector(`.dollar-pyramid-row.${rowClass}`);
+      if(!pyramidRow) {
+        pyramidRow = document.createElement('div');
+        pyramidRow.className = `dollar-pyramid-row ${rowClass}`;
+        targetDollarRow.appendChild(pyramidRow);
+      }
+      
+      const dollarItem = document.createElement('div');
+      dollarItem.className = 'dollar-item';
+      
+      const dollarSymbol = document.createElement('div');
+      dollarSymbol.className = currency === '£' ? 'dollar-symbol pound-symbol' : 'dollar-symbol';
+      dollarSymbol.textContent = currency;
+      
+      const coinsContainer = document.createElement('div');
+      coinsContainer.className = 'money-coins';
+      
+      dollarItem.appendChild(dollarSymbol);
+      dollarItem.appendChild(coinsContainer);
+      pyramidRow.appendChild(dollarItem);
+      
+      // Genera 6 mini-monete dello stesso tipo
+      const coinClass = currency === '$' ? 'mini-coin dollar' : 'mini-coin pound';
+      for(let i=0; i<6; i++){
+        setTimeout(()=>{
+          const miniCoin = document.createElement('div');
+          miniCoin.className = coinClass;
+          miniCoin.textContent = currency;
+          miniCoin.style.animationDelay = (i * 0.05) + 's';
+          coinsContainer.appendChild(miniCoin);
+        }, i * 80);
+      }
+      
+      // EFFETTO 3: MARCA IL PIANO BANCA COME CATTURATO
+      const bank = allBanks[bankIndex];
+      const bankFloor = document.querySelector(`.bank-floor[data-bank-index="${bankIndex}"]`);
+      if(bankFloor){
+        bankFloor.classList.add('captured');
+        bankFloor.style.animation = 'captureFlash 0.5s ease-out';
+      }
+      
+      // EFFETTO 4: Mostra parola BANKS centrale (una per lato)
+      const wordIndex = useMedusaLeft ? 0 : 1;
+      if(!banksWordShown[wordIndex]){
+        banksWordShown[wordIndex] = true;
+        let wordsContainer = document.querySelector('.banks-words-container');
+        if(!wordsContainer){
+          wordsContainer = document.createElement('div');
+          wordsContainer.className = 'banks-words-container';
+          wordsContainer.innerHTML = '<div class="banks-word" id="banks-word-1">BANKS</div><div class="banks-word" id="banks-word-2">BANKS</div>';
+          scene.appendChild(wordsContainer);
+        }
+        const wordEl = document.getElementById('banks-word-' + (wordIndex + 1));
+        if(wordEl) wordEl.classList.add('visible');
+      }
+      
+      // Check se tutte catturate
+      if(capturedCount >= allBanks.length){
+        // Rimuovi parole BANKS centrali
+        setTimeout(() => {
+          const wordsContainer = document.querySelector('.banks-words-container');
+          if(wordsContainer) wordsContainer.remove();
+          banksWordShown = [false, false];
+        }, 500);
+        console.log('🎮 Gioco terminato! Tutte le 10 faccine catturate! (5 per lato)');
+        rotationPaused = true; // Ferma rotazione a fine gioco
+        
+        // 🎺 AVVIA GUGLIELMO TELL VICTORY LOOP dopo 500ms
+        setTimeout(() => {
+          if(typeof playGuglielmoTellVictoryLoop === 'function'){
+            playGuglielmoTellVictoryLoop();
+          }
+        }, 500);
+        
+        // Mostra DEPRESSION (Beethoven MIDI rimosso - ora solo FLAC)
+        setTimeout(() => {
+          // playBeethovenFifth(); // DISABILITATO - usa La Gazza Ladra FLAC
+          showDepression();
+        }, 1000);
+      }
+    }
+
+    function getEmojiChar(state){
+      if(state === 'happy') return '😊';
+      if(state === 'hypnotized') return '😵';
+      if(state === 'crying') return '😢';
+      return '😊';
+    }
+
+    function placeBanks(){
+      document.querySelectorAll('.bank-face-group').forEach(n=>n.remove());
+      
+      const sceneRect = scene.getBoundingClientRect();
+      const cx = sceneRect.width / 2;
+      const cy = 792; // Centro fisso a 792px - coincide con Medusa Caravaggio (280px, la più grande)
+      const outerRadius = Math.min(sceneRect.width, sceneRect.height) * 0.19; // Ridotto 50%
+
+      // ★★★ USA visibleBanksInOrbit invece di allBanks ★★★
+      visibleBanksInOrbit.forEach((b, orbitIndex) => {
+        // Trova l'indice reale nel dataset completo per compatibilità
+        const i = b.originalIndex !== undefined ? b.originalIndex : orbitIndex;
+        
+        const radius = outerRadius;
+        const angleRad = ((b.angle + currentRotation) * Math.PI) / 180;
+        const x = cx + Math.cos(angleRad) * radius;
+        const y = cy + Math.sin(angleRad) * radius;
+
+        const group = document.createElement('div');
+        group.className = 'bank-face-group';
+        group.style.left = (x - 35) + 'px';
+        group.style.top = (y - 60) + 'px';
+        group.dataset.index = i;
+        group.dataset.orbitIndex = orbitIndex; // Indice nell'orbita corrente
+
+        const counterText = b.counter === 0 ? '$0 / £0' : (b.counter < 0 ? `${b.counter}$` : `+${b.counter}$`);
+        const emojiChar = getEmojiChar(b.emoji);
+        
+        // Nascondere emoji se già catturata
+        const emojiVisible = capturedBanks[i] ? 'style="display:none"' : '';
+        
+        // EFFETTO LENTE PRISMA: ingrandimento x2 in QUATTRO posizioni cardinali - Nord, Sud, Est, Ovest
+        const currentAngle = (b.angle + currentRotation) % 360;
+        const isAt0Degrees = (currentAngle >= 350 || currentAngle <= 10); // Ore 12 (Nord - top, centro tra Meduse)
+        const isAt90Degrees = (currentAngle >= 80 && currentAngle <= 100); // Ore 3 (Est - destra)
+        const isAt180Degrees = (currentAngle >= 170 && currentAngle <= 190); // Ore 6 (Sud - bottom)
+        const isAt270Degrees = (currentAngle >= 260 && currentAngle <= 280); // Ore 9 (Ovest - sinistra)
+        const lensZoomClass = (isAt0Degrees || isAt90Degrees || isAt180Degrees || isAt270Degrees) ? ' lens-zoom' : '';
+
+        // BMED speciale: link cliccabile con logo esterno
+        const isBMED = b.acronym === 'BMED';
+        const bankImg = isBMED && b.logo ? b.logo : b.img;
+        const bankImgStyle = isBMED ? 'style="max-width:90%;max-height:90%;object-fit:contain;background:#fff;padding:2px;border-radius:4px"' : '';
+        const bankContent = `
+          <div class="bank${lensZoomClass}">
+            <div class="bank-label-top">BANK</div>
+            <img src="${bankImg}" alt="${b.name}" ${bankImgStyle}>
+            <div class="bank-label-bottom">Imprudent</div>
+            <div class="flag"><img src="icons/flag-${b.flag}.svg" alt="${b.flag.toUpperCase()}"></div>
+            <div class="bank-counter">${counterText}</div>
+          </div>
+          <div class="emoji-face ${b.emoji}" ${emojiVisible}>${emojiChar}</div>
+        `;
+
+        if(isBMED && b.url){
+          group.innerHTML = `<a href="${b.url}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;cursor:pointer;display:block">${bankContent}</a>`;
+        } else {
+          group.innerHTML = bankContent;
+        }
+
+        scene.appendChild(group);
+      });
+    }
+
+    // Rotazione disco vinile rallentata -30% (2.94 RPM = 0.88°/frame a 50ms) - si ferma durante attacco
+    function rotateBanks(){
+      if(!rotationPaused){
+        currentRotation = (currentRotation + 0.88) % 360; // 2.94 giri/minuto (-30%)
+      }
+      placeBanks();
+      
+      // Ruota sincronicamente la Medusa di Caravaggio con il disco delle banche
+      medusaCaravaggio.style.transform = `translate(-50%,-50%) rotate(${currentRotation}deg)`;
+    }
+
+    // Trova banche attaccabili - QUALSIASI BANCA NON CATTURATA nel cerchio
+    // Il raggio colpisce ovunque si trovi la banca, senza zone angolari specifiche
+    // ★★★ Trova banche attaccabili - SOLO quelle visibili nell'orbita ★★★
+    function getTargetableBanks(){
+      const targets = [];
+      visibleBanksInOrbit.forEach((b, orbitIndex) => {
+        // Calcola l'indice reale per il sistema capturedBanks
+        const realIndex = b.originalIndex !== undefined ? b.originalIndex : orbitIndex;
+        
+        // Skip se già catturata (controllo di sicurezza)
+        if(capturedBanks[realIndex]) return;
+        
+        // Banca valida per attacco
+        targets.push({
+          index: realIndex,
+          orbitIndex: orbitIndex, // Indice nell'array visibleBanksInOrbit
+          useMedusaLeft: nextAttackUsesLeft,
+          bank: b
+        });
+      });
+      return targets;
+    }
+
+    // Attacco medusa con tentacolo-frusta - PAUSA ROTAZIONE durante attacco
+    async function performAttack(){
+      if(attacking) return;
+      
+      const targets = getTargetableBanks();
+      if(targets.length === 0){
+        // Orbita vuota - check se avviare ciclo 2 o fine gioco
+        if(currentCycle === 1 && cycleCaptures >= 10){
+          console.log('🔄 Orbita vuota dopo ciclo 1, attendere ricaricamento...');
+          // Attendi che loadCycle2Banks richiami performAttack
+          return;
+        } else if(currentCycle === 1 && cycleCaptures < 10){
+          // ★★★ FIX: Se orbita vuota durante ciclo 1 ma catture < 10, aspetta e riprova ★★★
+          console.log('⏳ Orbita vuota, attendo ricaricamento...');
+          setTimeout(performAttack, 500);
+          return;
+        } else if(currentCycle === 2 && visibleBanksInOrbit.length === 0){
+          console.log('🏆 GIOCO COMPLETATO! Tutte le 20 banche catturate!');
+          return;
+        }
+        return;
+      }
+
+      attacking = true;
+      
+      // PAUSA ROTAZIONE durante attacco (2 secondi)
+      rotationPaused = true;
+
+      // Scegli target casuale - la medusa è determinata dall'alternanza
+      const targetData = targets[Math.floor(Math.random() * targets.length)];
+      const targetIdx = targetData.index;
+      const orbitIdx = targetData.orbitIndex; // Nuovo: indice nell'orbita
+      const useMedusaLeft = targetData.useMedusaLeft;
+      const bank = targetData.bank || visibleBanksInOrbit[orbitIdx];
+      
+      // Alterna per il prossimo attacco
+      nextAttackUsesLeft = !nextAttackUsesLeft;
+      
+      // Wrap tutto in try-catch per evitare blocchi
+      try {
+      
+      const medusa = useMedusaLeft ? 
+        document.getElementById('medusa-left') : 
+        document.getElementById('medusa-right');
+      const whip = useMedusaLeft ? 
+        document.getElementById('whip-left') : 
+        document.getElementById('whip-right');
+      
+      // Get positions
+      const sceneRect = scene.getBoundingClientRect();
+      const medusaRect = medusa ? medusa.getBoundingClientRect() : null;
+      const medusaOrigin = getSideMedusaOrigin(medusa, sceneRect, useMedusaLeft);
+      if(!medusaRect || !medusaOrigin) {
+        throw new Error('Medusa element not found');
+      }
+      
+      // ★★★ FIX: Calcola le coordinate della banca direttamente dalla sua posizione nell'orbita ★★★
+      // Questo evita problemi con placeBanks() che ricrea gli elementi ogni 50ms
+      const cx = sceneRect.width / 2;
+      const cy = 792; // Centro fisso orbita
+      const outerRadius = Math.min(sceneRect.width, sceneRect.height) * 0.19;
+      const bankAngleRad = ((bank.angle + currentRotation) * Math.PI) / 180;
+      const bankX = cx + Math.cos(bankAngleRad) * outerRadius;
+      const bankY = cy + Math.sin(bankAngleRad) * outerRadius;
+      
+      // Cerca il gruppo nel DOM per ottenere emoji e counter (potrebbe essere ricreato)
+      let targetGroup = document.querySelector(`.bank-face-group[data-index="${targetIdx}"]`);
+      let emojiEl = targetGroup ? targetGroup.querySelector('.emoji-face') : null;
+      let counterEl = targetGroup ? targetGroup.querySelector('.bank-counter') : null;
+      
+      const mx = medusaOrigin.sceneX;
+      const my = medusaOrigin.sceneY;
+      // ★★★ FIX: Usa coordinate calcolate invece di targetRect ★★★
+      const tx = bankX;
+      const ty = bankY;
+      
+      const dx = tx - mx;
+      const dy = ty - my;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      
+      // Angolo DINAMICO verso la banca target (non più fisso!)
+      const angle = Math.atan2(dy, dx);
+      const angleDeg = angle * 180 / Math.PI;
+      
+      // Determina colore catena in base al numero di attacco
+      const colorIndex = attackCount % chainColors.length;
+      const chainColor = chainColors[colorIndex];
+      attackCount++;
+      
+      // Position whip (nascosto, serve solo per riferimento)
+      whip.style.left = mx + 'px';
+      whip.style.top = my + 'px';
+      whip.classList.add('active');
+      
+      // Calcola numero anelli ovali in base alla distanza
+      // Anello ovale: 12px larghezza x 20px altezza, ruotato 90° (asse minore lungo direzione)
+      // Sovrapposizione 3px per effetto catena collegata
+      const ringStep = 9; // 12px - 3px sovrapposizione (asse minore lungo direzione)
+      const numRings = Math.max(6, Math.floor(dist / ringStep));
+      const chainRings = [];
+      
+      for(let i = 0; i < numRings; i++){
+        const ring = document.createElement('div');
+        ring.className = `chain-ring chain-${chainColor}`;
+        const progress = i / (numRings - 1);
+        const rx = mx + Math.cos(angle) * dist * progress;
+        const ry = my + Math.sin(angle) * dist * progress;
+        ring.style.left = (rx + sceneRect.left - 6) + 'px'; // -6 per centrare (12/2)
+        ring.style.top = (ry + sceneRect.top - 10) + 'px'; // -10 per centrare (20/2)
+        ring.style.position = 'fixed';
+        // Ruota l'ovale di 90° rispetto alla direzione (asse maggiore perpendicolare)
+        ring.style.transform = `rotate(${angleDeg + 90}deg)`;
+        document.body.appendChild(ring);
+        chainRings.push(ring);
+      }
+      
+      // Crea emoji faccina all'apice della catena (prende l'emoji della banca target)
+      const chainEmoji = document.createElement('div');
+      chainEmoji.className = 'chain-emoji';
+      chainEmoji.textContent = getEmojiChar(bank.emoji); // 😊 happy
+      chainEmoji.style.position = 'fixed';
+      chainEmoji.style.left = (medusaOrigin.viewportX - 20) + 'px';
+      chainEmoji.style.top = (medusaOrigin.viewportY - 20) + 'px';
+      document.body.appendChild(chainEmoji);
+      
+      // LASER ROSSO DA BANKS - sincronizzato con laser medusa
+      // Spara laser verso i piani banca catturati
+      const laserSideCount = useMedusaLeft ? banksLaserCount.left : banksLaserCount.right;
+      if(laserSideCount < 3){
+        // Trova i piani catturati nel container corretto
+        const containerId = useMedusaLeft ? 'bank-logos-left' : 'bank-logos-right';
+        const containerEl = document.getElementById(containerId);
+        if(containerEl){
+          const capturedFloors = containerEl.querySelectorAll('.bank-floor.captured');
+          if(capturedFloors.length > laserSideCount){
+            // Primo laser
+            setTimeout(() => {
+              fireBanksLaser(capturedFloors[laserSideCount], useMedusaLeft);
+            }, 200);
+            // Secondo laser (ripetizione)
+            setTimeout(() => {
+              fireBanksLaser(capturedFloors[laserSideCount], useMedusaLeft);
+            }, 450);
+            if(useMedusaLeft){
+              banksLaserCount.left++;
+            } else {
+              banksLaserCount.right++;
+            }
+          }
+        }
+      }
+      
+      // FASE 1: Anelli lucciole + emoji avanza (2000ms = 2 secondi)
+      await new Promise(resolve => {
+        let step = 0;
+        const totalSteps = 80; // 2000ms / 25ms = 80 steps
+        
+        // Attiva tutti gli anelli progressivamente
+        let ringsShown = 0;
+        
+        const animChain = setInterval(()=>{
+          step++;
+          
+          // Mostra anelli progressivamente durante l'avanzamento
+          const ringsToShow = Math.floor((step / totalSteps) * numRings);
+          while(ringsShown < ringsToShow && ringsShown < numRings){
+            chainRings[ringsShown].classList.add('active');
+            ringsShown++;
+          }
+          
+          // Effetto lucciole bidirezionale sugli anelli visibili
+          if(ringsShown > 0){
+            const forwardIdx = step % ringsShown;
+            const backwardIdx = Math.max(0, ringsShown - 1 - (step % ringsShown));
+            
+            chainRings.forEach((r, idx) => {
+              if(idx < ringsShown){
+                r.classList.remove('glow');
+                if(idx === forwardIdx || idx === backwardIdx){
+                  r.classList.add('glow');
+                }
+              }
+            });
+          }
+          
+          // Movimento emoji verso banca
+          const progress = Math.min(step / totalSteps, 1);
+          const wx = mx + Math.cos(angle) * dist * progress;
+          const wy = my + Math.sin(angle) * dist * progress;
+          if(chainEmoji) {
+            chainEmoji.style.left = (wx - 20 + sceneRect.left) + 'px';
+            chainEmoji.style.top = (wy - 20 + sceneRect.top) + 'px';
+          }
+          
+          if(step >= totalSteps){
+            clearInterval(animChain);
+            resolve();
+          }
+        }, 25); // 25ms interval per 2 secondi totali
+      });
+      
+      // FASE 2: Ipnosi (contatto catena - 300ms)
+      bank.emoji = 'hypnotized';
+      if(emojiEl) {
+        emojiEl.className = 'emoji-face hypnotized';
+        emojiEl.textContent = getEmojiChar('hypnotized');
+        emojiEl.style.animation = 'hypno-spin 1s ease-in-out';
+      }
+      chainEmoji.textContent = getEmojiChar('hypnotized'); // Cambia in 😵
+      
+      await new Promise(resolve => setTimeout(resolve, 300));
+      
+      // FASE 3: Flusso di monete dalla banca alla medusa (1500ms)
+      const moneyAmount = [1000, 5000][Math.floor(Math.random() * 2)];
+      const currency = Math.random() > 0.5 ? '$' : '£';
+      bank.counter -= moneyAmount;
+      if(counterEl) {
+        counterEl.textContent = `${bank.counter}${currency}`;
+        counterEl.style.color = '#f00';
+      }
+                  
+      // Update medusa total con formato -1.000$
+      if(useMedusaLeft){
+        totalLeft += moneyAmount;
+        if(totalLeftEl) totalLeftEl.textContent = '-' + totalLeft.toLocaleString('it-IT') + '$';
+      } else {
+        totalRight += moneyAmount;
+        if(totalRightEl) totalRightEl.textContent = '-' + totalRight.toLocaleString('it-IT') + '$';
+      }
+      
+      // Le monete ora compaiono statiche sotto il simbolo $ nella fila orizzontale
+      
+      // Cambia emoji in piangente prima del ritorno
+      if(chainEmoji) chainEmoji.textContent = getEmojiChar('crying'); // 😢
+      
+      await new Promise(resolve => setTimeout(resolve, 300)); // Breve pausa
+      
+      // FASE 4: Ritrai catena con effetto lucciole inverso - emoji torna alla medusa (2000ms = 2 secondi)
+      await new Promise(resolve => {
+        let step = 0;
+        const totalSteps = 80; // 2000ms / 25ms = 80 steps
+        
+        const animReturn = setInterval(()=>{
+          step++;
+          
+          // Effetto lucciole bidirezionale (dalla banca alla medusa)
+          const activeRings = chainRings.filter(r => r.style.opacity !== '0').length;
+          if(activeRings > 0){
+            const forwardIdx = (activeRings - 1) - (step % activeRings);
+            const backwardIdx = step % activeRings;
+            
+            chainRings.forEach((r, idx) => {
+              if(r.style.opacity !== '0'){
+                r.classList.remove('glow');
+                if(idx === forwardIdx || idx === backwardIdx){
+                  r.classList.add('glow');
+                }
+              }
+            });
+          }
+          
+          // Movimento emoji indietro verso medusa
+          const progress = 1 - Math.min(step / totalSteps, 1);
+          const wx = mx + Math.cos(angle) * dist * progress;
+          const wy = my + Math.sin(angle) * dist * progress;
+          if(chainEmoji) {
+            chainEmoji.style.left = (wx - 20 + sceneRect.left) + 'px';
+            chainEmoji.style.top = (wy - 20 + sceneRect.top) + 'px';
+          }
+          
+          // Fade out graduale degli anelli dalla banca verso la medusa
+          const ringsToHide = Math.floor((step / totalSteps) * numRings);
+          for(let i = numRings - 1; i >= numRings - ringsToHide && i >= 0; i--){
+            if(chainRings[i]) chainRings[i].style.opacity = '0';
+          }
+          
+          if(step >= totalSteps){
+            clearInterval(animReturn);
+            if(chainEmoji) chainEmoji.style.opacity = '0';
+            resolve();
+          }
+        }, 25); // 25ms interval per 2 secondi totali
+      });
+      
+      await new Promise(resolve => setTimeout(resolve, 100));
+      
+      // FASE 5: Faccina catturata - nascondere e aggiungere al grid
+      bank.emoji = 'crying';
+      
+      // ★★★ FIX: Ri-cerca gli elementi nel DOM che potrebbero essere stati ricreati ★★★
+      targetGroup = document.querySelector(`.bank-face-group[data-index="${targetIdx}"]`);
+      emojiEl = targetGroup ? targetGroup.querySelector('.emoji-face') : null;
+      counterEl = targetGroup ? targetGroup.querySelector('.bank-counter') : null;
+      
+      // Aggiungi al grid catture con counter + orbitIndex per rimuovere da orbita
+      const counterValue = counterEl ? counterEl.textContent : `${bank.counter}$`;
+      addToCapturesGrid(targetIdx, counterValue, useMedusaLeft, orbitIdx);
+      
+      // Attiva pulsazione automatica sul container cattura
+      const captureContainer = useMedusaLeft ? 
+        document.querySelector('.captures-left') : 
+        document.querySelector('.captures-right');
+      if(captureContainer){
+        captureContainer.classList.remove('capture-pulse');
+        void captureContainer.offsetWidth; // Force reflow
+        captureContainer.classList.add('capture-pulse');
+        setTimeout(() => captureContainer.classList.remove('capture-pulse'), 600);
+      }
+      
+      // Nascondi emoji dal disco (resta la banca)
+      if(emojiEl) {
+        emojiEl.style.opacity = '0';
+        setTimeout(()=>{
+          if(emojiEl) emojiEl.style.display = 'none';
+        }, 300);
+      }
+      
+      // Cleanup - rimuovi anelli e emoji
+      if(whip) whip.classList.remove('active');
+      chainRings.forEach(r => r.remove());
+      if(chainEmoji) chainEmoji.remove();
+      
+      // ROTAZIONE 360° della banca colpita - effetto cattura
+      const bankElement = targetGroup ? targetGroup.querySelector('.bank') : null;
+      if(bankElement) {
+        bankElement.style.transition = 'transform 0.8s ease-in-out';
+        bankElement.style.transform = 'rotate(360deg) scale(1)';
+        setTimeout(() => {
+          bankElement.style.transform = 'rotate(0deg) scale(1)';
+        }, 800);
+      }
+      
+      // PAUSA RIDOTTA dopo cattura - no tempi morti!
+      await new Promise(resolve => setTimeout(resolve, 500));
+      
+      // Reset contatore errori dopo cattura riuscita
+      attackErrorCount = 0;
+      
+      // Riprendi rotazione
+      rotationPaused = false;
+      
+      // Attendi solo 300ms prima del prossimo attacco - azione continua!
+      await new Promise(resolve => setTimeout(resolve, 300));
+
+      attacking = false;
+      
+      // Richiama performAttack per il prossimo ciclo (se ci sono ancora banche VISIBILI da catturare)
+      if(visibleBanksInOrbit.length > 0){
+        setTimeout(performAttack, 100);
+      } else if(capturedCount >= 20){
+        // TUTTE LE 20 BANCHE CATTURATE: genera i 2 gruppi di monete nr 6 automaticamente dopo 2 secondi
+        setTimeout(addExtraCoinGroups, 2000);
+      }
+      // Se orbita vuota ma meno di 20 catture, loadCycle2Banks riprenderà gli attacchi
+      
+      } catch(err) {
+        // CATCH CRITICO: se qualcosa va storto, ripristina lo stato e continua
+        console.error('Errore in performAttack:', err);
+        attackErrorCount++;
+        attacking = false;
+        rotationPaused = false;
+        
+        // ★★★ FIX: Più tolleranza errori - max 20 errori consecutivi ★★★
+        if(attackErrorCount < 20 && visibleBanksInOrbit.length > 0){
+          // Ritenta dopo un delay
+          setTimeout(performAttack, 1000);
+        } else {
+          console.log('⚠️ Troppi errori consecutivi o orbita vuota, pausa attacchi');
+        }
+      }
+    }
+    
+    // Funzione per aggiungere i 2 gruppi di monete nr 6 (completamento piramide) automaticamente
+    function addExtraCoinGroups() {
+      // Aggiungi gruppo 6 alla piramide SINISTRA
+      addExtraCoinToPyramid(dollarRowLeft, coinCountLeft, true);
+      coinCountLeft++;
+      
+      // Dopo 1 secondo, aggiungi gruppo 6 alla piramide DESTRA  
+      setTimeout(() => {
+        addExtraCoinToPyramid(dollarRowRight, coinCountRight, false);
+        coinCountRight++;
+      }, 1000);
+    }
+    
+    // Funzione helper per aggiungere un singolo gruppo di monete alla piramide
+    function addExtraCoinToPyramid(targetDollarRow, coinIndex, isLeft) {
+      const currency = coinPattern[coinIndex % 6];
+      
+      // Determina la riga della piramide
+      let rowClass;
+      if(coinIndex === 0) { rowClass = 'row-1'; }
+      else if(coinIndex <= 2) { rowClass = 'row-2'; }
+      else { rowClass = 'row-3'; }
+      
+      // Trova o crea la riga della piramide
+      let pyramidRow = targetDollarRow.querySelector(`.dollar-pyramid-row.${rowClass}`);
+      if(!pyramidRow) {
+        pyramidRow = document.createElement('div');
+        pyramidRow.className = `dollar-pyramid-row ${rowClass}`;
+        targetDollarRow.appendChild(pyramidRow);
+      }
+      
+      const dollarItem = document.createElement('div');
+      dollarItem.className = 'dollar-item';
+      
+      const dollarSymbol = document.createElement('div');
+      dollarSymbol.className = currency === '£' ? 'dollar-symbol pound-symbol' : 'dollar-symbol';
+      dollarSymbol.textContent = currency;
+      
+      const coinsContainer = document.createElement('div');
+      coinsContainer.className = 'money-coins';
+      
+      dollarItem.appendChild(dollarSymbol);
+      dollarItem.appendChild(coinsContainer);
+      pyramidRow.appendChild(dollarItem);
+      
+      // Genera 6 mini-monete dello stesso tipo
+      const coinClass = currency === '$' ? 'mini-coin dollar' : 'mini-coin pound';
+      for(let i=0; i<6; i++){
+        setTimeout(()=>{
+          const miniCoin = document.createElement('div');
+          miniCoin.className = coinClass;
+          miniCoin.textContent = currency;
+          miniCoin.style.animationDelay = (i * 0.05) + 's';
+          coinsContainer.appendChild(miniCoin);
+        }, i * 80);
+      }
+    }
+
+    // Avvia sistema
+    window.addEventListener('resize', placeBanks);
+    placeBanks();
+    
+    // POPOLA TORRI BANCHE con icone, hover e link complaints
+    function populateBankTowers(){
+      // Banche italiane (0-9) → torre sinistra, Banche europee (10-19) → torre destra
+      const leftFloors = document.querySelectorAll('#bank-logos-left .bank-floor[data-bank-index]');
+      const rightFloors = document.querySelectorAll('#bank-logos-right .bank-floor[data-bank-index]');
+      
+      leftFloors.forEach(floor => {
+        const bankIdx = parseInt(floor.dataset.bankIndex);
+        const bank = allBanks[bankIdx];
+        if(!bank) return;
+        populateBankFloor(floor, bank, bankIdx);
+      });
+      
+      rightFloors.forEach(floor => {
+        const bankIdx = parseInt(floor.dataset.bankIndex);
+        const bank = allBanks[bankIdx];
+        if(!bank) return;
+        populateBankFloor(floor, bank, bankIdx);
+      });
+    }
+    
+    function populateBankFloor(floor, bank, bankIdx){
+      // Mantieni il numero di piano
+      const floorNum = floor.querySelector('.bank-floor-number');
+      const numText = floorNum ? floorNum.textContent : '';
+      
+      // URL logo direttamente dal database JSON
+      let logoSrc = bank.logo || bank.img || 'banca_fragile.svg';
+      const url = bank.url || '#';
+      const bgColor = bank.color || '#003399';
+      
+      // Mostra sempre logo con fallback su acronimo se errore caricamento
+      floor.innerHTML = `
+        <span class="bank-floor-number">${numText}</span>
+        <a href="${url}" target="_blank" rel="noopener noreferrer" title="${bank.name} - Reclami">
+          <img src="${logoSrc}" alt="${bank.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" onload="this.dataset.loaded='true';">
+          <div class="bank-acronym-box" style="display:none;background:${bgColor}">${bank.acronym}</div>
+        </a>
+        <div class="bank-floor-flag"><img src="icons/flag-${bank.flag}.svg" alt="${bank.flag.toUpperCase()}"></div>
+      `;
+      
+      // Fallback timeout: se dopo 3s l'immagine non è caricata, mostra acronimo
+      const floorImg = floor.querySelector('img');
+      if(floorImg && logoSrc.includes('http')) {
+        setTimeout(() => {
+          if(floorImg.dataset.loaded !== 'true' && !floorImg.complete) {
+            floorImg.style.display = 'none';
+            const acronymBox = floor.querySelector('.bank-acronym-box');
+            if(acronymBox) acronymBox.style.display = 'flex';
+          }
+        }, 3000);
+      }
+      floor.dataset.bankName = bank.name;
+      floor.dataset.bankUrl = url;
+    }
+    
+    // La chiamata a populateBankTowers() avviene automaticamente dopo il caricamento del JSON
+
+    
+
+    // Inizia ciclo di attacchi automatici (catture alternate con pause)
+    // SIGLA INIZIALE: Audio ora gestito da La Gazza Ladra FLAC (tramite pulsante PLAY)
+    setTimeout(() => {
+      // playBeethovenFifth(); // DISABILITATO - usa La Gazza Ladra FLAC
+      setTimeout(performAttack, 1500); // Primo attacco dopo la sigla
+    }, 500);
+
+    // DEPRESSION boxes - mostrate dopo i primi 2 raggi (linea orizzontale)
+    let depressionShown = false;
+    function showDepression(){
+      if(depressionShown) return; // Evita chiamate multiple
+      depressionShown = true;
+      
+      const container = document.getElementById('depression-horizontal');
+      const scamsMessage = document.getElementById('scams-message');
+      const replayButton = document.getElementById('replay-button');
+      
+      // Mostra il container
+      container.classList.add('visible');
+      
+      // Trova i container SOS per l'animazione alternata
+      const sosPsychology = container.querySelector('.sos-psychology');
+      const sosPsychiatry = container.querySelector('.sos-psychiatry');
+      
+      // Avvia animazione hover alternata in loop sui container SOS
+      if(sosPsychology) sosPsychology.classList.add('pulse-loop');
+      if(sosPsychiatry) sosPsychiatry.classList.add('pulse-loop');
+      
+      // Mostra le caselle una alla volta da sinistra a destra
+      const boxes = container.querySelectorAll('.depression-box');
+      
+      boxes.forEach((box, index) => {
+        setTimeout(() => {
+          box.classList.add('show');
+          // Dopo 0.5s aggiungi pulsazione
+          setTimeout(() => {
+            box.classList.add('pulse');
+          }, 500);
+        }, index * 300); // 300ms di delay tra una casella e l'altra
+      });
+      
+      // Dopo che tutte le caselle sono apparse, lancia la grandine di laser
+      const totalBoxTime = boxes.length * 300 + 1000;
+      setTimeout(() => {
+        launchLaserBarrage();
+      }, totalBoxTime);
+    }
+    
+    // Grandine di 7 laser dalla Medusa centrale ai target orizzontali
+    function launchLaserBarrage(){
+      const medusaCaravaggio = document.getElementById('medusa-caravaggio');
+      const container = document.getElementById('depression-horizontal');
+      const scamsMessage = document.getElementById('scams-message');
+      const replayButton = document.getElementById('replay-button');
+      
+      // Tutti i 7 target: Psychology, DE, PR, ES, SI, ON, Psychiatry
+      const targets = container.querySelectorAll('.sos-inline, .depression-box');
+      
+      const sceneRect = scene.getBoundingClientRect();
+      const medusaRect = medusaCaravaggio.getBoundingClientRect();
+      const mx = medusaRect.left + medusaRect.width/2 - sceneRect.left;
+      const my = medusaRect.top + medusaRect.height/2 - sceneRect.top;
+      
+      targets.forEach((target, index) => {
+        setTimeout(() => {
+          const targetRect = target.getBoundingClientRect();
+          const tx = targetRect.left + targetRect.width/2 - sceneRect.left;
+          const ty = targetRect.top + targetRect.height/2 - sceneRect.top;
+          
+          const dx = tx - mx;
+          const dy = ty - my;
+          const dist = Math.sqrt(dx*dx + dy*dy);
+          const angle = Math.atan2(dy, dx);
+          
+          // Crea laser
+          const laser = document.createElement('div');
+          laser.className = 'final-laser';
+          laser.style.left = mx + 'px';
+          laser.style.top = my + 'px';
+          laser.style.width = dist + 'px';
+          laser.style.transform = `rotate(${angle}rad)`;
+          scene.appendChild(laser);
+          
+          // Effetto hit sul target
+          setTimeout(() => {
+            target.classList.add('hit');
+            setTimeout(() => target.classList.remove('hit'), 300);
+          }, 200);
+          
+          // Rimuovi laser dopo animazione
+          setTimeout(() => laser.remove(), 500);
+          
+        }, index * 500); // 0.5 secondi tra un laser e l'altro
+      });
+      
+      // Dopo tutti i laser (7 * 500ms + buffer), mostra messaggio
+      setTimeout(() => {
+        scamsMessage.classList.add('visible');
+        
+        // Dopo 1 secondo, lancia seconda raffica laser
+        setTimeout(() => {
+          launchSecondLaserBarrage();
+        }, 1000);
+        
+      }, targets.length * 500 + 500);
+    }
+    
+    // Seconda raffica laser dopo il banner 70.000 vittime
+    function launchSecondLaserBarrage(){
+      const medusaCaravaggio = document.getElementById('medusa-caravaggio');
+      const container = document.getElementById('depression-horizontal');
+      const replayButton = document.getElementById('replay-button');
+      
+      const targets = container.querySelectorAll('.sos-inline, .depression-box');
+      
+      const sceneRect = scene.getBoundingClientRect();
+      const medusaRect = medusaCaravaggio.getBoundingClientRect();
+      const mx = medusaRect.left + medusaRect.width/2 - sceneRect.left;
+      const my = medusaRect.top + medusaRect.height/2 - sceneRect.top;
+      
+      targets.forEach((target, index) => {
+        setTimeout(() => {
+          const targetRect = target.getBoundingClientRect();
+          const tx = targetRect.left + targetRect.width/2 - sceneRect.left;
+          const ty = targetRect.top + targetRect.height/2 - sceneRect.top;
+          
+          const dx = tx - mx;
+          const dy = ty - my;
+          const dist = Math.sqrt(dx*dx + dy*dy);
+          const angle = Math.atan2(dy, dx);
+          
+          const laser = document.createElement('div');
+          laser.className = 'final-laser';
+          laser.style.left = mx + 'px';
+          laser.style.top = my + 'px';
+          laser.style.width = dist + 'px';
+          laser.style.transform = `rotate(${angle}rad)`;
+          scene.appendChild(laser);
+          
+          setTimeout(() => {
+            target.classList.add('hit');
+            setTimeout(() => target.classList.remove('hit'), 300);
+          }, 200);
+          
+          setTimeout(() => laser.remove(), 500);
+          
+        }, index * 400); // Leggermente più veloce
+      });
+      
+      // Dopo la seconda raffica: (Beethoven MIDI rimosso)
+      setTimeout(() => {
+        // playBeethovenFifth(); // DISABILITATO - usa La Gazza Ladra FLAC
+        
+        // Dopo 3 secondi: (Beethoven MIDI rimosso)
+        setTimeout(() => {
+          // playBeethovenFifth(); // DISABILITATO - usa La Gazza Ladra FLAC
+          
+          // Mostra replay button
+          setTimeout(() => {
+            replayButton.classList.add('visible');
+            // 🔫 AVVIA IL LOOP LASER VERSO LE EMOJI
+            setTimeout(() => {
+              startEmojiLaserLoop();
+            }, 500);
+          }, 2500);
+        }, 3000);
+        
+      }, targets.length * 400 + 500);
+    }
+    
+    // ★★★ LOOP LASER EMOJI - Raggi celesti dalla Medusa alle 18 emoji ★★★
+    let emojiLaserLoopActive = false;
+    let emojiLaserLoopTimeout = null;
+    
+    function startEmojiLaserLoop(){
+      if(emojiLaserLoopActive) return; // Evita doppio avvio
+      emojiLaserLoopActive = true;
+      console.log('🔫 Avvio loop laser emoji in senso orario');
+      launchEmojiLaserLoop();
+    }
+    
+    function stopEmojiLaserLoop(){
+      emojiLaserLoopActive = false;
+      if(emojiLaserLoopTimeout){
+        clearTimeout(emojiLaserLoopTimeout);
+        emojiLaserLoopTimeout = null;
+      }
+      console.log('🛑 Stop loop laser emoji');
+    }
+    
+    function launchEmojiLaserLoop(){
+      if(!emojiLaserLoopActive) return;
+      
+      const medusaCaravaggio = document.getElementById('medusa-caravaggio');
+      const sceneRect = scene.getBoundingClientRect();
+      const medusaRect = medusaCaravaggio.getBoundingClientRect();
+      const mx = medusaRect.left + medusaRect.width/2 - sceneRect.left;
+      const my = medusaRect.top + medusaRect.height/2 - sceneRect.top;
+      
+      // Ordine orario: destra dall'alto (9→1), poi sinistra dal basso (1→9)
+      // 9 emoji per lato = 18 totali
+      const emojiTargets = [];
+      
+      // DESTRA: dall'alto verso il basso (9, 8, 7, 6, 5, 4, 3, 2, 1)
+      for(let i = 9; i >= 1; i--){
+        const emoji = document.getElementById('emoji-right-' + i);
+        if(emoji) emojiTargets.push(emoji);
+      }
+      
+      // SINISTRA: dal basso verso l'alto (1, 2, 3, 4, 5, 6, 7, 8, 9)
+      for(let i = 1; i <= 9; i++){
+        const emoji = document.getElementById('emoji-left-' + i);
+        if(emoji) emojiTargets.push(emoji);
+      }
+      
+      // Spara laser sequenzialmente con 200ms tra uno e l'altro
+      emojiTargets.forEach((emoji, index) => {
+        if(!emojiLaserLoopActive) return;
+        
+        setTimeout(() => {
+          if(!emojiLaserLoopActive) return;
+          
+          const emojiRect = emoji.getBoundingClientRect();
+          const tx = emojiRect.left + emojiRect.width/2 - sceneRect.left;
+          const ty = emojiRect.top + emojiRect.height/2 - sceneRect.top;
+          
+          const dx = tx - mx;
+          const dy = ty - my;
+          const dist = Math.sqrt(dx*dx + dy*dy);
+          const angle = Math.atan2(dy, dx);
+          
+          // Crea laser celeste elettrico
+          const laser = document.createElement('div');
+          laser.className = 'emoji-laser';
+          laser.style.left = mx + 'px';
+          laser.style.top = my + 'px';
+          laser.style.width = dist + 'px';
+          laser.style.transform = `rotate(${angle}rad)`;
+          scene.appendChild(laser);
+          
+          // Effetto hit sull'emoji
+          setTimeout(() => {
+            emoji.classList.add('laser-hit');
+            setTimeout(() => emoji.classList.remove('laser-hit'), 400);
+          }, 150);
+          
+          // Rimuovi laser dopo animazione
+          setTimeout(() => laser.remove(), 400);
+          
+        }, index * 200); // 200ms tra ogni laser
+      });
+      
+      // Calcola durata totale ciclo: 18 emoji * 200ms + 500ms buffer
+      const cycleDuration = emojiTargets.length * 200 + 500;
+      
+      // Ripeti il loop dopo la fine del ciclo
+      emojiLaserLoopTimeout = setTimeout(() => {
+        if(emojiLaserLoopActive){
+          launchEmojiLaserLoop();
+        }
+      }, cycleDuration);
+    }
+    
+    const MOBILE_BREAKPOINT = 768;
+    const COMPACT_BREAKPOINT = 1024;
+
+    function isMobileViewport(){
+      return window.innerWidth <= MOBILE_BREAKPOINT;
+    }
+
+    function isCompactViewport(){
+      return window.innerWidth <= COMPACT_BREAKPOINT;
+    }
+
+    function getSideMedusaOrigin(medusaElement, sceneRect, useMedusaLeft){
+      const medusaCircle = medusaElement ? medusaElement.querySelector('.medusa-image-container') : null;
+      const sourceRect = medusaCircle ? medusaCircle.getBoundingClientRect() : medusaElement?.getBoundingClientRect();
+
+      if(!sourceRect){
+        return null;
+      }
+
+      const horizontalRatio = useMedusaLeft ? 0.58 : 0.42;
+      const verticalRatio = 0.56;
+
+      return {
+        sceneX: sourceRect.left + sourceRect.width * horizontalRatio - sceneRect.left,
+        sceneY: sourceRect.top + sourceRect.height * verticalRatio - sceneRect.top,
+        viewportX: sourceRect.left + sourceRect.width * horizontalRatio,
+        viewportY: sourceRect.top + sourceRect.height * verticalRatio
+      };
+    }
+
+    const mobileBanksWordSequence = ['B', 'A', 'N', 'K', 'S'];
+    let mobileBanksModuleTimers = [];
+    let mobileBanksModuleRunning = false;
+
+    function clearMobileBanksModuleTimers(){
+      mobileBanksModuleTimers.forEach(timerId => clearTimeout(timerId));
+      mobileBanksModuleTimers = [];
+    }
+
+    function queueMobileBanksModuleAction(callback, delay){
+      const timerId = window.setTimeout(callback, delay);
+      mobileBanksModuleTimers.push(timerId);
+      return timerId;
+    }
+
+    function shouldRunMobileBanksModule(){
+      return isMobileViewport() && document.body.classList.contains('mobile-hero-collapsed');
+    }
+
+    function getMobileBanksTarget(letter){
+      return document.querySelector(`.mobile-banks-slot[data-bank-letter="${letter}"]`);
+    }
+
+    function getMobileBanksVictimTargets(letter){
+      return Array.from(document.querySelectorAll(`.mobile-victim-slot[data-bank-victim="${letter}"]`));
+    }
+
+    function hideMobileBanksLetters(){
+      document.querySelectorAll('.mobile-banks-slot').forEach(slot => slot.classList.remove('hit'));
+      document.querySelectorAll('.mobile-banks-letter').forEach(letter => letter.classList.remove('revealed'));
+      document.querySelectorAll('.mobile-victim-slot').forEach(slot => slot.classList.remove('revealed'));
+    }
+
+    function removeMobileBanksLasers(){
+      document.querySelectorAll('.mobile-banks-module-laser').forEach(laser => laser.remove());
+    }
+
+    function revealMobileBanksPair(letter){
+      const letterTarget = getMobileBanksTarget(letter);
+      const victimTargets = getMobileBanksVictimTargets(letter);
+
+      if(letterTarget) {
+        letterTarget.classList.add('hit');
+        const letterNode = letterTarget.querySelector('.mobile-banks-letter');
+        if(letterNode) letterNode.classList.add('revealed');
+        window.setTimeout(() => letterTarget.classList.remove('hit'), 340);
+      }
+
+      victimTargets.forEach(target => target.classList.add('revealed'));
+    }
+
+    function fireMobileBanksLaser(useMedusaLeft, target){
+      const scene = document.querySelector('.scene');
+      const medusa = document.getElementById(useMedusaLeft ? 'medusa-left' : 'medusa-right');
+      if(!scene || !medusa || !target) return;
+
+      const sceneRect = scene.getBoundingClientRect();
+      const origin = getSideMedusaOrigin(medusa, sceneRect, useMedusaLeft);
+      const targetRect = target.getBoundingClientRect();
+      if(!origin || !targetRect) return;
+
+      const tx = targetRect.left + targetRect.width / 2;
+      const ty = targetRect.top + targetRect.height / 2;
+      const dx = tx - origin.viewportX;
+      const dy = ty - origin.viewportY;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+
+      const laser = document.createElement('div');
+      laser.className = `mobile-banks-module-laser ${useMedusaLeft ? 'from-left' : 'from-right'}`;
+      laser.style.left = `${origin.viewportX}px`;
+      laser.style.top = `${origin.viewportY - 3}px`;
+      laser.style.width = `${distance}px`;
+      laser.style.transform = `rotate(${angle}deg)`;
+      document.body.appendChild(laser);
+
+      requestAnimationFrame(() => laser.classList.add('active'));
+      window.setTimeout(() => laser.remove(), 320);
+    }
+
+    function runMobileBanksCycle(useMedusaLeft, startDelay){
+      mobileBanksWordSequence.forEach((letter, index) => {
+        queueMobileBanksModuleAction(() => {
+          if(!shouldRunMobileBanksModule()) return;
+          const target = getMobileBanksTarget(letter);
+          fireMobileBanksLaser(useMedusaLeft, target);
+          revealMobileBanksPair(letter);
+        }, startDelay + index * 240);
+      });
+
+      return startDelay + mobileBanksWordSequence.length * 240;
+    }
+
+    function scheduleMobileBanksLoop(){
+      if(!mobileBanksModuleRunning || !shouldRunMobileBanksModule()) return;
+
+      hideMobileBanksLetters();
+      removeMobileBanksLasers();
+
+      let cursor = 260;
+      cursor = runMobileBanksCycle(true, cursor);
+      queueMobileBanksModuleAction(() => {
+        if(shouldRunMobileBanksModule()) hideMobileBanksLetters();
+      }, cursor + 3000);
+
+      cursor += 3220;
+      cursor = runMobileBanksCycle(false, cursor);
+      queueMobileBanksModuleAction(() => {
+        if(shouldRunMobileBanksModule()) hideMobileBanksLetters();
+      }, cursor + 220);
+
+      queueMobileBanksModuleAction(() => {
+        if(mobileBanksModuleRunning) scheduleMobileBanksLoop();
+      }, cursor + 980);
+    }
+
+    function startMobileBanksWordModule(){
+      if(mobileBanksModuleRunning || !shouldRunMobileBanksModule()) return;
+      mobileBanksModuleRunning = true;
+      hideMobileBanksLetters();
+      scheduleMobileBanksLoop();
+    }
+
+    function stopMobileBanksWordModule(){
+      mobileBanksModuleRunning = false;
+      clearMobileBanksModuleTimers();
+      hideMobileBanksLetters();
+      removeMobileBanksLasers();
+    }
+
+    function syncMobileBanksWordModule(){
+      if(shouldRunMobileBanksModule()){
+        startMobileBanksWordModule();
+      } else {
+        stopMobileBanksWordModule();
+      }
+    }
+
+    let lowerSceneLayoutFrame = null;
+    let lowerSceneLayoutTimeout = null;
+
+    function scheduleLowerSceneLayout(delay = 90){
+      if(lowerSceneLayoutFrame !== null){
+        cancelAnimationFrame(lowerSceneLayoutFrame);
+      }
+
+      if(lowerSceneLayoutTimeout !== null){
+        clearTimeout(lowerSceneLayoutTimeout);
+      }
+
+      lowerSceneLayoutFrame = requestAnimationFrame(() => {
+        lowerSceneLayoutFrame = null;
+        updateLowerSceneLayout();
+      });
+
+      lowerSceneLayoutTimeout = window.setTimeout(() => {
+        lowerSceneLayoutTimeout = null;
+        updateLowerSceneLayout();
+      }, delay);
+    }
+
+    // Replay animation
+    document.getElementById('replay-button').addEventListener('click', function(){
+      console.log('🔄 REPLAY BUTTON CLICKED!');
+
+      if(isMobileViewport()){
+        openMobileStaticScenario();
+        return;
+      }
+      
+      // 🛑 FERMA IL LOOP LASER EMOJI
+      stopEmojiLaserLoop();
+      
+      // 🐦 Mostra le gazze nascoste vicino al pulsante PLAY
+      const hiddenGazzaLeft = document.getElementById('hiddenGazzaLeft');
+      const hiddenGazzaRight = document.getElementById('hiddenGazzaRight');
+      if(hiddenGazzaLeft) hiddenGazzaLeft.classList.add('visible');
+      if(hiddenGazzaRight) hiddenGazzaRight.classList.add('visible');
+      
+      // 🎵 Avvia La Gazza Ladra dopo un breve ritardo
+      setTimeout(() => {
+        if(typeof playLangMusic === 'function' && typeof currentLang !== 'undefined') {
+          playLangMusic(currentLang);
+        }
+      }, 500);
+      
+      try {
+        // Nascondi messaggio e pulsante
+        const scamsMsg = document.getElementById('scams-message');
+        if(scamsMsg) scamsMsg.classList.remove('visible');
+        this.classList.remove('visible');
+        
+        // Nascondi depression container
+        const container = document.getElementById('depression-horizontal');
+        if(container){
+          container.classList.remove('visible');
+          container.querySelectorAll('.depression-box').forEach(box => {
+            box.classList.remove('show', 'pulse');
+          });
+          // Rimuovi animazione loop dai SOS
+          container.querySelectorAll('.sos-psychology, .sos-psychiatry').forEach(sos => {
+            sos.classList.remove('pulse-loop');
+          });
+        }
+      
+      // Reset variabili
+      depressionShown = false;
+      capturedCount = 0;
+      capturedBanks.fill(false);
+      currentCycle = 1; // Reset ciclo
+      cycleCaptures = 0; // Reset contatore ciclo
+      visibleBanksInOrbit = []; // Reset orbita
+      initCycle1Banks(); // ★★★ Ripopola orbita con banche italiane ★★★
+      bankArrows = []; // Reset frecce
+      banksWordShown = [false, false]; // Reset parole BANKS
+      banksLaserCount = {left: 0, right: 0}; // Reset contatore laser BANKS
+      const existingWordsContainer = document.querySelector('.banks-words-container');
+      if(existingWordsContainer) existingWordsContainer.remove();
+      coinCountLeft = 0;
+      coinCountRight = 0;
+      emojiTowerCountLeft = 0; // Reset contatore torri emoji
+      emojiTowerCountRight = 0;
+      attackCount = 0; // Reset colori catena
+      totalLeft = 0;
+      totalRight = 0;
+      totalLeftEl.textContent = '-0$';
+      totalRightEl.textContent = '-0$';
+      rotationPaused = false;
+      attacking = false;
+      
+      // Pulisci grid catture e monete (se esistono)
+      // Non resettare capturesLeftGrid/Right che contengono gli emoji floor
+      if(dollarRowLeft) dollarRowLeft.innerHTML = '';
+      if(dollarRowRight) dollarRowRight.innerHTML = '';
+      // Rimuovi classe captured da tutti i piani banca
+      document.querySelectorAll('.bank-floor.captured').forEach(f => f.classList.remove('captured'));
+      
+      // Reset emoji nelle torri laterali (piano 1-10)
+      for(let i = 1; i <= 10; i++) {
+        ['left', 'right'].forEach(side => {
+          const emojiSlot = document.getElementById(`emoji-${side}-${i}`);
+          const counterSlot = document.getElementById(`counter-${side}-${i}`);
+          if(emojiSlot) {
+            emojiSlot.classList.remove('active');
+            emojiSlot.textContent = '😐';
+            emojiSlot.style.opacity = '';
+            emojiSlot.style.filter = '';
+            emojiSlot.style.fontSize = '';
+          }
+          if(counterSlot) {
+            counterSlot.textContent = '';
+            counterSlot.style.opacity = '';
+            counterSlot.classList.remove('visible');
+          }
+        });
+      }
+      
+      // Ricrea le banche
+      allBanks.forEach(bank => {
+        bank.counter = 0;
+        bank.emoji = 'happy';
+      });
+
+      placeBanks();
+      populateBankTowers(); // Re-popola le torri banche con icone
+      
+      // Riparte animazione (Beethoven MIDI rimosso - usa La Gazza Ladra FLAC)
+      // playBeethovenFifth(); // DISABILITATO
+      setTimeout(performAttack, 1500);
+      
+      } catch(err) {
+        console.error('❌ Errore replay:', err);
+      }
+    });
+    
+    // Beethoven 5° Sinfonia - Prime 8 note (Sol-Sol-Sol-Mib / Fa-Fa-Fa-Re)
+    function playBeethovenFifth(){
+      const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      
+      // Frequenze delle note
+      const G4 = 392.00; // Sol
+      const Eb4 = 311.13; // Mi bemolle
+      const F4 = 349.23; // Fa
+      const D4 = 293.66; // Re
+      
+      // Durate in secondi
+      const shortNote = 0.15;
+      const longNote = 0.6;
+      const gap = 0.05;
+      const pauseBetween = 0.4; // Pausa tra i due motivi
+      
+      function playTone(frequency, startTime, duration){
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+        
+        oscillator.type = 'sine';
+        oscillator.frequency.value = frequency;
+        
+        // Envelope per suono più naturale
+        gainNode.gain.setValueAtTime(0, startTime);
+        gainNode.gain.linearRampToValueAtTime(0.3, startTime + 0.01);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, startTime + duration);
+        
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+        
+        oscillator.start(startTime);
+        oscillator.stop(startTime + duration);
+      }
+      
+      // Primo motivo: Ta-Ta-Ta-Taaaa (Sol-Sol-Sol-Mib)
+      const now = audioContext.currentTime;
+      playTone(G4, now, shortNote);                    // Ta (Sol)
+      playTone(G4, now + shortNote + gap, shortNote);   // Ta (Sol)
+      playTone(G4, now + (shortNote + gap) * 2, shortNote); // Ta (Sol)
+      playTone(Eb4, now + (shortNote + gap) * 3, longNote); // Taaaa (Mi bemolle)
+      
+      // Secondo motivo: Ta-Ta-Ta-Taaaa (Fa-Fa-Fa-Re)
+      const secondStart = now + (shortNote + gap) * 3 + longNote + pauseBetween;
+      playTone(F4, secondStart, shortNote);                    // Ta (Fa)
+      playTone(F4, secondStart + shortNote + gap, shortNote);   // Ta (Fa)
+      playTone(F4, secondStart + (shortNote + gap) * 2, shortNote); // Ta (Fa)
+      playTone(D4, secondStart + (shortNote + gap) * 3, longNote); // Taaaa (Re)
+    }
+
+    // Language buttons - Sistema traduzioni
+    const translations = {
+      EN: {
+        stolenMoney: '💰 STOLEN MONEY 💰',
+        scamsMessage: 'Bank List Update in Progress',
+        topStopScam: 'Stop Scam =',
+        topTutelaTruffe: 'Fraud Shield',
+        topScamRadar: 'Scam Radar',
+        topGlobalMoneyWeek: 'Global Money Week 2026',
+        topCopyright: 'Avv. STANCA Marcello ©',
+        readPetition: 'READ The<br>EU PETITION',
+        euCouncil: 'EU Council<br>27-11-2025',
+        fightFraud: 'Fight Fraud',
+        petitionsApproved: 'Petitions<br>Approved',
+        bankListUpdate: 'Bank List Update in Progress',
+        emojiWaiting: '😐 Emoji waiting for Bank 🏦',
+        papyrusText: '📜 EUROPEAN BANK DATABASE - SCROLL TO EXPLORE 📜',
+        blogTitle: '🤝 COLLABORATE!<br>HELP US! 🤝',
+        blogInvite: 'Help us complete the Bank Database! Write here the "complaint service" address of the Bank you don\'t see in the icons on this page!',
+        bankNamePlaceholder: 'Bank name',
+        bankAddressPlaceholder: 'Complaint service address (email, postal address, or URL)',
+        contributorNamePlaceholder: 'Your name (optional)',
+        blogSubmit: '📤 SEND CONTRIBUTION',
+        fraudGuideKicker: 'Practical anti-fraud guide',
+        fraudGuideTitle: 'Financial scam guide: phishing, fake bank calls, ABF, bank complaints and trading fraud',
+        fraudGuideSubtitle: 'Use this multilingual financial scam guide to recognise phishing, fake bank calls, SMS spoofing, online trading fraud, crypto scam and unauthorised transfers, then move from bank complaints to ABF, verification and safer payment decisions before you send money.',
+        fraudGuideTocTitle: 'Browse the guide by theme',
+        fraudGuideTocCopy: 'Use these thematic buttons to jump directly to the risk area you want to study, then return to the summary from each section.',
+        tocGroupSocial: 'Job scam, romance scam and emotional traps',
+        tocGroupAuthority: 'Bank phishing, SMS spoofing and fake bank calls',
+        tocGroupInvestments: 'Trading scam, crypto fraud, loans and fake recovery',
+        tocGroupPayments: 'Transfers, invoice fraud, marketplace scams and QR codes',
+        tocGroupIdentity: 'SIM swap, account takeover and identity theft',
+        topicDividerKicker: 'Theme',
+        topicGroupSocialCopy: 'These frauds work by manipulating trust, urgency, compassion or personal vulnerability before the victim has time to verify the story.',
+        topicGroupSocialSeo: 'Keywords: job scam, romance scam, fake charity, deepfake voice',
+        topicGroupAuthorityCopy: 'These schemes borrow the tone of banks, lawyers, public bodies and support desks to make unsafe actions look official and urgent.',
+        topicGroupAuthoritySeo: 'Keywords: phishing, SMS spoofing, fake bank call, ABF, bank complaints',
+        topicGroupInvestmentsCopy: 'These schemes promise profit, education, rescue or easy credit, but their real objective is always an upfront payment or loss of control over funds.',
+        topicGroupInvestmentsSeo: 'Keywords: trading scam, crypto scam, fake recovery, loan scam',
+        topicGroupPaymentsCopy: 'These frauds target everyday purchases, invoices, bookings and transfers, usually by moving the victim outside a trusted payment flow.',
+        topicGroupPaymentsSeo: 'Keywords: unauthorised transfer, invoice scam, marketplace fraud, QR code scam',
+        topicGroupIdentityCopy: 'These risks aim to seize access, intercept verification or harvest documents that later unlock banking, credit and impersonation fraud.',
+        topicGroupIdentitySeo: 'Keywords: SIM swap, account takeover, identity theft, document fraud',
+        tocJobScam: 'Job scam',
+        tocTradingScam: 'Online trading',
+        tocFakeShopScam: 'Fake products',
+        tocPhishingScam: 'Phishing',
+        tocRomanceScam: 'Romance scam',
+        tocRecoveryScam: 'Fake recovery',
+        tocCryptoScam: 'Crypto scam',
+        tocSupportScam: 'Tech support',
+        tocUrgentTransferScam: 'Urgent transfer',
+        tocFakeCharityScam: 'Fake charity',
+        tocInvoiceScam: 'Invoices',
+        tocSimSwapScam: 'SIM swap',
+        tocAccountTakeoverScam: 'Account access',
+        tocFakeLawyerScam: 'Fake lawyer',
+        tocParcelScam: 'Parcel scam',
+        tocMarketplaceScam: 'Marketplace',
+        tocIdentityTheftScam: 'Identity theft',
+        tocFakeBankOfficerScam: 'Fake banker',
+        tocVideoAvatar: 'Video avatar',
+        tocFinancialShieldCard: 'You$ shield',
+        tocAuthorityCheck: 'Authority check',
+        tocInvestmentAcademyScam: 'Academy scam',
+        tocQrCodeScam: 'QR code',
+        tocGiftCardScam: 'Gift cards',
+        tocLoanScam: 'Loan scam',
+        tocTaxRefundScam: 'Tax refund',
+        tocRentalScam: 'Rental scam',
+        tocDeepfakeVoiceScam: 'Deepfake voice',
+        fraudJobTitle: 'Job scam and fake remote work',
+        fraudJobBody1: 'A job scam promises easy money for simple actions: liking content, filling in forms, forwarding bank transfers, renting out your account or buying materials that will allegedly be refunded later. The target is often hooked with a small initial payment to make the scheme look real.',
+        fraudJobBody2: 'The safest rule is to reject any offer where the worker must send money first, use a personal account for third parties or hand over documents before a verifiable interview. A real employer does not turn the candidate into a financial intermediary.',
+        fraudTradingTitle: 'Online trading, fake brokers and miracle investments',
+        fraudTradingBody1: 'Many financial scams start with aggressive ads on social platforms, search engines or private chats. The fraudster displays a polished platform, a fake adviser and steady profits. As soon as the victim asks to withdraw, invented taxes, technical blocks or new deposit requests appear.',
+        fraudTradingBody2: 'The concrete defense is to verify licence, registered office, independent contact details and outside reputation before sending anything. If someone pushes you to deposit immediately so you do not miss the opportunity, the urgency itself is already a warning.',
+        fraudFakeShopTitle: 'Fake products, cloned shops and unbelievable offers',
+        fraudFakeShopBody1: 'Clone websites sell phones, cars, appliances, tickets or luxury goods at unrealistic prices. They copy famous logos, generic terms and convincing photos, but behind the surface the goal is to collect payment without delivering anything or to ship something completely different.',
+        fraudFakeShopBody2: 'Before buying, check the domain, company data, real address, return policy and independent reviews. If the only accepted method is a transfer to an unknown IBAN, stop the purchase. No discount is worth that risk.',
+        fraudPhishingTitle: 'Phishing, bank spoofing and altered IBAN fraud',
+        fraudPhishingBody1: 'Phishing does not live in email alone. It arrives by SMS, phone call, search result, fake certified message and even notes that appear to come from a bank or lawyer. The goal is always the same: make you click, reveal codes or pay to manipulated bank details.',
+        fraudPhishingBody2: 'The strongest defense is to ignore the suspicious link and open the website manually instead. Then call the official number found on real documents and compare the IBAN with an independent source before authorising any payment.',
+        fraudRomanceTitle: 'Romance scam, social engineering and fake emergencies',
+        fraudRomanceBody1: 'Relationship scams build trust for weeks or months. Once the emotional bond is strong, the emergency appears: illness, travel trouble, customs problems, a shared investment, a blocked wallet or an urgent loan. At that point the victim is no longer evaluating money, but the relationship.',
+        fraudRomanceBody2: 'A healthy response is to add an outside check every time: talk to someone who is not emotionally involved, verify photos and identity and keep one simple rule. Never transfer money to a person you have never met in a verifiable way.',
+        fraudRecoveryTitle: 'Recovery room, fake fund recovery and double victimisation',
+        fraudRecoveryBody1: 'After the first loss, fake investigators, improvised legal offices, crypto experts or invented associations appear and promise to recover everything in a few days. They request an advance for taxes, notarisation, unlock wallets or fictional international procedures.',
+        fraudRecoveryBody2: 'If you have already been scammed, preserve evidence, block the contact channels and speak only with verifiable counterparts. A real recovery path does not rely on pressure in chat and does not guarantee impossible outcomes. The first defense here is not to pay a second time.',
+        fraudCryptoTitle: 'Crypto scam, fake wallets and copied exchanges',
+        fraudCryptoBody1: 'Crypto fraud often starts with a fake tutor, a cloned exchange, a private group or a recovery promise. The victim is pushed to move funds to a wallet they do not control or to authorise a temporary transfer that is supposed to unlock profits.',
+        fraudCryptoBody2: 'The best defense is simple: never send coins to a wallet shared only in chat and verify the exchange URL character by character. If you cannot confirm the destination independently on a trusted device, do not move anything.',
+        fraudSupportTitle: 'Fake technical support and remote access fraud',
+        fraudSupportBody1: 'The fake support scam appears through popups, phone calls or messages warning about viruses, blocked banking apps or compromised devices. The attacker tries to convince the victim to install remote control software or reveal one-time codes during the so-called repair.',
+        fraudSupportBody2: 'A real operator does not need to scare you into immediate access. Close the popup, disconnect the call and contact the official support number yourself from a trusted source. If someone asks for remote control while you are logged into banking or email, stop instantly.',
+        whatsAppVotePillKicker: 'WhatsApp Security Pills',
+        whatsAppVotePillQuestion: 'Vote for the dancer on WhatsApp? It may be a trap.',
+        whatsAppVotePillAnswer: 'A recent WhatsApp scam asks you to vote for a dancer or a girl in a contest. The message looks harmless and often appears to come from a trusted contact, but the link can capture data from your smartphone and then use the compromised account to send money requests to your contacts.',
+        whatsAppVotePillStep1: 'Do not open the voting link and do not enter codes, names or login data on pages reached from the chat.',
+        whatsAppVotePillStep2: 'If you clicked, warn your contacts immediately, review linked devices and secure the account before the scam spreads further.',
+        whatsAppVotePillStep3: 'Treat every request to vote, help a dancer or support a contest through a rushed link as suspicious, especially if it is followed by requests for money or verification codes.',
+        whatsAppSecurityPillKicker: 'WhatsApp Security Pills',
+        whatsAppSecurityPillQuestion: 'How can you protect your WhatsApp account?',
+        whatsAppSecurityPillAnswer: 'To secure your WhatsApp account, activate two-step verification from Settings, choose a 6-digit PIN, add a recovery email and lock the app with fingerprint or Face ID. Then protect sensitive chats with chat lock and a secret code.',
+        whatsAppSecurityPillStep1: 'Enable two-step verification from Settings > Account > Two-step verification > Turn on, then set a 6-digit PIN and a recovery email.',
+        whatsAppSecurityPillStep2: 'Activate app lock with fingerprint or Face ID from Privacy so nobody can open WhatsApp if they get your phone.',
+        whatsAppSecurityPillStep3: 'Use chat lock to hide specific chats: press and hold the chat, open the menu and activate the lock.',
+        whatsAppSecurityPillStep4: 'Add a secret code for locked chats to hide them further and reduce exposure if someone inspects the app.',
+        fraudAuthorityCheckTitle: 'How to query financial authorities before you trust a site',
+        fraudAuthorityCheckIntro: 'When a website offers trading, crypto, investments, credit, recovery or financial advice, the most prudent move is to contact the competent authority directly and ask for written confirmation before you pay, register or continue the conversation.',
+        fraudAuthorityCheckItem1: 'Ask whether the entity really exists and whether it is authorised to offer financial services in your country of residence.',
+        fraudAuthorityCheckItem2: 'Ask whether the website or domain name you found is officially linked to that entity, or whether it may be a clone or an abusive use of identity.',
+        fraudAuthorityCheckItem3: 'Ask for the official public telephone number of the entity you want to verify, so you can call back using an independent contact.',
+        fraudAuthorityCheckItem4: 'Ask whether the person who contacted you is registered in the official register of financial promoters or authorised advisers allowed to provide investment advice to the public.',
+        fraudAuthorityCheckItem5: 'Ask whether warnings, sanctions or public notices already exist regarding that name, website, phone number or offer.',
+        fraudAuthorityCheckOutro: 'Keep the authority reply, the web address, the phone number used by the caller and the name presented by the contact in the same file. If the answers are incomplete, contradictory or only verbal, do not move money and do not send documents yet.',
+        fraudAuthorityCheckButton: 'Ask 190 Financial Authorities for confirmation',
+        financialShieldTitle: 'You$ - Your Financial Shield',
+        financialShieldIntro: 'This operating card condenses a simple self-defense routine: before you trust a financial website, broker, crypto platform or recovery service, verify the country, the competent authority and the real identity of the operator.',
+        financialShieldStep1: 'Open the Financial Authorities Database (190) and search for the country named by the operator or shown on the website as its registered location.',
+        financialShieldStep2: 'Identify the competent financial authority for that country: central bank, supervisory authority or market regulator.',
+        financialShieldStep3: 'Send a short written request to the authority, or use the official Avv. Stanca site, and ask for confirmation before paying, registering or sending documents.',
+        financialShieldTemplateLead: 'Simple message you can copy and adapt',
+        financialShieldTemplate1: 'Tell me whether this company really exists as a financial or insurance firm.',
+        financialShieldTemplate2: 'Tell me whether it is authorised to offer financial services in my country of residence.',
+        financialShieldTemplate3: 'Tell me what its official website address is.',
+        financialShieldTemplate4: 'Tell me what its official email address is.',
+        financialShieldTemplate5: 'Please note any abusive financial activity or possible cloning of a legitimate firm\'s identity.',
+        financialShieldTemplate6: 'You may reply to me by email at the address I provide, and I may or may not require further legal assistance.',
+        financialShieldOutro: 'This internal card is useful for deposits, wallet transfers, fake trading offers, recovery proposals and every situation where the other side asks you to act with urgency.',
+        financialShieldButton: 'Open the Financial Authorities Database (190)',
+        videoAvatarTitle: 'Video Avatar: educational and motivational short clips',
+        videoAvatarIntro: 'This section collects short local clips, animated avatars and educational motivational videos that can make the page more attractive and keep visitors inside the site while they explore anti-fraud messages.',
+        videoAvatarHubButton: 'Open the Video Avatar mini home',
+        videoAvatarCard1: 'Short avatar clip with a direct visual signal of defense, reaction and active protection.',
+        videoAvatarCard2: 'Animated avatar sequence useful for educational storytelling around risk, manipulation and vigilance.',
+        videoAvatarCard3: 'Motivational clip built around digital cleanup, counter-action and safer web navigation.',
+        videoAvatarCard4: 'Educational short focused on structural weaknesses, vigilance and the need for stronger banking controls.',
+        videoAvatarCard5: 'Short clip with a vivid metaphor designed to improve memory and emotional retention of the anti-fraud message.',
+        videoAvatarCard6: 'Global perspective clip that reinforces the cross-border nature of fraud and the value of international verification.',
+        videoAvatarCard7: 'Motivational clip about supervision, boundaries and the need to map risk before moving money.',
+        videoAvatarCard8: 'Clip that connects the security area message to financial authorities and official oversight.',
+        videoAvatarCard9: 'Sensitive educational clip linking emotional vulnerability, isolation and scam targeting.',
+        videoAvatarCard10: 'Short motivational warning that encourages users to stay inside verified channels and safe routes.',
+        abfConciliationTitle: 'Arbitro Bancario Finanziario: out-of-court dispute resolution',
+        abfConciliationBody1: 'The Arbitro Bancario Finanziario is an out-of-court system for resolving disputes between customers and banks or other financial intermediaries. It is useful when you need to challenge unauthorised transfers, abnormal account operations, refund refusals or conduct that may not have met the required banking diligence.',
+        abfConciliationBody2: 'Before going to court, this channel can help structure the dispute with documents, chronology and concrete objections. It is especially relevant when the issue concerns anomalous transactions, missing monitoring, delayed blocking or disputed payment operations.',
+        abfConciliationButton: 'Open the ABF official website',
+        abfConciliationVideoButton: 'Watch the Bank of Italy explainer video',
+        fraudUrgentTransferTitle: 'Urgent transfer scam and fake supplier IBAN',
+        fraudUrgentTransferBody1: 'This fraud targets families and businesses through altered invoices, fake lawyer emails or urgent messages that appear to come from a manager. One changed IBAN is enough to redirect a large payment before anyone notices the difference.',
+        fraudUrgentTransferBody2: 'The correct habit is to confirm every new bank detail by voice, using a phone number you already know and never the one written in the suspicious email. A one-minute callback can save an entire transfer.',
+        fraudFakeCharityTitle: 'Fake charity and emotional donation fraud',
+        fraudFakeCharityBody1: 'Fraudulent charity campaigns appear after wars, disasters, medical emergencies or public tragedies. They use moving images, copied logos and dramatic appeals to push donors to act quickly before checking who will really receive the money.',
+        fraudFakeCharityBody2: 'The safest behavior is to donate only through official websites you reach independently, checking legal identity, bank details and public references. If the request insists on instant transfers to personal accounts, it is a warning, not a cause.',
+        fraudInvoiceTitle: 'Invoice scam and payment redirection fraud',
+        fraudInvoiceBody1: 'In an invoice scam the victim receives a bill that looks routine: same supplier name, same graphics, similar email thread. The crucial change is hidden in the payment details, where the bank account is replaced so the money reaches the attacker.',
+        fraudInvoiceBody2: 'A strong defense is to treat every new invoice template, account change or last-minute correction as a separate verification event. Compare the banking details with older records and confirm them by phone with a trusted contact before paying.',
+        fraudSimSwapTitle: 'SIM swap and hijacked verification codes',
+        fraudSimSwapBody1: 'SIM swap fraud begins when criminals collect enough personal data to convince a phone operator to move your number onto another card. Once they control the line, they intercept one-time passwords and use them to enter banking, email or exchange accounts.',
+        fraudSimSwapBody2: 'If your phone suddenly loses signal without explanation, react immediately: contact your operator from another line, block sensitive accounts and change passwords from a secure device. Activating stronger authentication than SMS reduces the damage dramatically.',
+        fraudAccountTakeoverTitle: 'Account takeover and chained identity abuse',
+        fraudAccountTakeoverBody1: 'Account takeover happens when attackers enter one service and then pivot into others: email, banking, shopping platforms and cloud storage. A single compromised mailbox can become the master key for password resets, card fraud and impersonation.',
+        fraudAccountTakeoverBody2: 'The best defense is layered: unique passwords, an updated password manager, multi-factor authentication and alert review for new logins. When one account shows suspicious activity, treat every linked service as potentially exposed and rotate credentials in sequence.',
+        fraudFakeLawyerTitle: 'Fake lawyer scam and invented legal pressure',
+        fraudFakeLawyerBody1: 'This fraud uses legal language, stamps, copied signatures and urgent deadlines to scare the victim into paying. The message may claim to come from a law firm handling debt, copyright, inheritance, recovery or urgent settlement activity.',
+        fraudFakeLawyerBody2: 'The correct response is to verify the lawyer independently through an official register or a number you find yourself, never through the contact details included in the threatening message. Real legal communications do not collapse when you ask for verification.',
+        fraudParcelTitle: 'Parcel scam and fake delivery problems',
+        fraudParcelBody1: 'Parcel scams exploit curiosity and routine. A text says your shipment is blocked, customs are unpaid or an address must be confirmed. The fee looks tiny, but the real goal is to steal card data, credentials or identity details through a fake courier page.',
+        fraudParcelBody2: 'The practical defense is to track deliveries only from the official courier app or website that you open directly. If you were not expecting a parcel, or if the message asks for urgent payment through an unfamiliar link, treat it as suspicious from the start.',
+        fraudMarketplaceTitle: 'Marketplace fraud and fake buyer protection links',
+        fraudMarketplaceBody1: 'Marketplace fraud affects both sellers and buyers. A fake buyer sends a payment link outside the platform, or a fake seller requests a deposit to reserve the item. The conversation feels normal until the victim leaves the protected system and enters a cloned page.',
+        fraudMarketplaceBody2: 'Stay inside the marketplace chat, payment flow and shipping tools whenever possible. The moment the other party tries to move the deal to an external link, courier shortcut or instant refund page, stop and re-evaluate the entire transaction.',
+        fraudIdentityTheftTitle: 'Identity theft and document harvesting fraud',
+        fraudIdentityTheftBody1: 'Identity theft often begins quietly: a fake form, a bogus verification request, a copied login page or an offer that asks for ID cards, selfies and utility bills. Those documents can later be reused for fraudulent accounts, loans, SIM activation or social engineering.',
+        fraudIdentityTheftBody2: 'Before uploading any document, ask why it is needed, how it will be stored and whether the request comes from a verified institution. A cautious habit is to share the minimum necessary and to avoid sending sensitive files through ordinary chat whenever possible.',
+        goldenTreeNewsKicker: 'Real case • Roma Today',
+        goldenTreeNewsDate: '5 February 2026',
+        goldenTreeNewsTitle: 'Golden Tree: fake bank, fake cards and fake banking app',
+        goldenTreeNewsBody1: 'Operation Golden Tree exposed a fake bank network that looked credible with branded payment cards, offices and even a banking-style app shown to clients.',
+        goldenTreeNewsBody2: 'The lesson is practical: cards, apps and polished language do not prove legitimacy. Before trusting a financial operator, check authorisation, public registers and official warnings through independent channels.',
+        goldenTreeNewsButton: 'Read the Roma Today article',
+        fraudFakeBankOfficerTitle: 'Fake bank officer and security-call fraud',
+        fraudFakeBankOfficerBody1: 'In this scam the caller sounds professional, knows basic personal details and claims to be protecting your account from fraud. The conversation is designed to create trust while pushing you to reveal codes, approve a device, move funds to a so-called safe account or install a security app.',
+        fraudFakeBankOfficerBody2: 'The right defense is to end the call and contact your bank yourself using the number printed on official documents or the banking app. A real bank employee does not need you to transfer money away from your own account to keep it safe.',
+        romaSmsCallNewsKicker: 'Real case • Roma Today',
+        romaSmsCallNewsDate: '7 October 2025',
+        romaSmsCallNewsTitle: 'SMS plus fake bank call: twelve transfers to Lithuania',
+        romaSmsCallNewsBody1: 'Roma Today reported the case of a Roman customer tricked by an SMS followed by a fake security call, with twelve transfers sent to a Lithuanian bank in just over two hours.',
+        romaSmsCallNewsBody2: 'The ABF then recognised a partial refund, noting that the bank should have detected the anomaly and activated stronger monitoring and automatic blocking.',
+        romaSmsCallNewsButton: 'Read the Roma Today article',
+        fraudInvestmentAcademyTitle: 'Investment academy scam and paid mentorship traps',
+        fraudInvestmentAcademyBody1: 'These scams imitate educational programs, trading academies or elite investor communities. The victim is first sold a course, then a premium signal group, then a managed opportunity that supposedly works only if more money is deposited quickly.',
+        fraudInvestmentAcademyBody2: 'A useful defense is to separate education from custody of funds. You can study finance without giving strangers access to your wallet, exchange account or capital. When learning and money transfer are tied together, caution should rise immediately.',
+        fraudQrCodeTitle: 'QR code scam and hidden payment redirection',
+        fraudQrCodeBody1: 'QR code scams work because people trust visual shortcuts. A sticker can replace a real payment code at a parking meter, on a poster, in a restaurant or inside a fake invoice. One scan is enough to open a malicious page or to redirect payment to a different beneficiary.',
+        fraudQrCodeBody2: 'Before confirming anything, check the destination shown after the scan, inspect the physical code for tampering and prefer typing known addresses manually when the context involves banking or account access. A QR code is a shortcut, not a proof of legitimacy.',
+        fraudGiftCardTitle: 'Gift card scam and irreversible code payments',
+        fraudGiftCardBody1: 'Gift card fraud appears when a scammer pretends to be a company, tax office, manager or family member and asks for urgent payment through prepaid cards. The method is chosen because the codes can be redeemed quickly and are difficult to recover once shared.',
+        fraudGiftCardBody2: 'The best rule is absolute: no legitimate institution settles debts, fines, security checks or emergency help through gift card codes. The moment that request appears, stop the conversation and verify the story with an independent contact.',
+        fraudLoanTitle: 'Loan scam and fake easy-credit approval',
+        fraudLoanBody1: 'Loan scams target people who need quick liquidity. The fraudster promises guaranteed approval, no checks or instant release of funds, then asks for upfront fees, insurance costs, notarisation or verification payments before the money can supposedly be transferred.',
+        fraudLoanBody2: 'A reliable lender deducts legitimate costs transparently or documents them through formal contracts, not urgent chat pressure. If credit is promised to everyone but money must be sent first, the offer is almost certainly a trap.',
+        fraudTaxRefundTitle: 'Tax refund scam and fake public authority notices',
+        fraudTaxRefundBody1: 'This scam claims you are entitled to a refund or that a tax irregularity must be fixed immediately. The message imitates an official authority, uses formal language and includes a link or attachment designed to capture banking data, credentials or identity documents.',
+        fraudTaxRefundBody2: 'The best defense is to ignore the embedded link and access the public service portal directly from a trusted bookmark or manual search. Official agencies do not need urgency and secrecy to return money that is legitimately yours.',
+        fraudRentalTitle: 'Rental scam and fake property listings',
+        fraudRentalBody1: 'Rental scams present attractive apartments, short-term stays or holiday homes at persuasive prices. The fraudster claims strong demand and asks for a deposit before any real viewing, often hiding behind excuses about travel, keys, platform issues or legal urgency.',
+        fraudRentalBody2: 'Never transfer a deposit for a property you cannot verify through a real viewing, a trusted platform or documented ownership checks. A home can be urgent, but your payment should never outrun your verification.',
+        fraudDeepfakeVoiceTitle: 'Deepfake voice scam and cloned family emergency calls',
+        fraudDeepfakeVoiceBody1: 'Voice cloning lets criminals simulate a relative, a manager or a trusted colleague well enough to trigger panic. The call sounds emotional, rushed and specific. The victim is pushed to send money fast before asking questions that would expose the deception.',
+        fraudDeepfakeVoiceBody2: 'Create a verification habit before emergencies happen: use a family code word, call back on a known number and confirm the request through a second channel. The more urgent the story sounds, the more disciplined the verification must become.',
+        fraudBackToToc: 'Back to table of contents',
+        fraudDefenseNote: '<strong>Final self-defense rule:</strong> when a money request is driven by urgency, secrecy or the promise of easy profit, pause the operation for at least thirty minutes and recheck everything through an independent channel. That delay alone blocks many scams better than any software.'
+      },
+      IT: {
+        stolenMoney: '💰 SOLDI RUBATI 💰',
+        scamsMessage: 'Elenco Banche in fase di aggiornamento',
+        topStopScam: 'Stop Scam =',
+        topTutelaTruffe: 'Tutela Truffe',
+        topScamRadar: 'Scam Radar',
+        topGlobalMoneyWeek: 'Global Money Week 2026',
+        topCopyright: 'Avv. STANCA Marcello ©',
+        readPetition: 'LEGGI La<br>PETIZIONE UE',
+        euCouncil: 'Consiglio UE<br>27-11-2025',
+        fightFraud: 'Lotta alle Frodi',
+        petitionsApproved: 'Petizioni<br>Approvate',
+        bankListUpdate: 'Elenco Banche in fase di aggiornamento',
+        emojiWaiting: '😐 Emoji in attesa di Banca 🏦',
+        papyrusText: '📜 DATABASE BANCARIO EUROPEO - SCORRI PER ESPLORARE 📜',
+        blogTitle: '🤝 COLLABORA!<br>AIUTACI! 🤝',
+        blogInvite: 'Aiutaci a completare la banca dati! Scrivi qui l\'indirizzo del servizio reclami della banca che non vedi nelle icone di questa pagina.',
+        bankNamePlaceholder: 'Nome della banca',
+        bankAddressPlaceholder: 'Indirizzo servizio reclami (email, indirizzo postale o URL)',
+        contributorNamePlaceholder: 'Il tuo nome (opzionale)',
+        blogSubmit: '📤 INVIA CONTRIBUTO',
+        fraudGuideKicker: 'Guida pratica anti-truffa',
+        fraudGuideTitle: 'Guida truffe finanziarie: phishing bancario, false telefonate, ABF, reclami banca e trading scam',
+        fraudGuideSubtitle: 'Usa questa guida multilanguage per riconoscere phishing bancario, falsa telefonata della banca, sms spoofing, trading scam, crypto scam e bonifici non autorizzati, poi passa da reclamo banca a ABF, verifica indipendente e scelte di pagamento piu sicure.',
+        fraudGuideTocTitle: 'Esplora la guida per tema',
+        fraudGuideTocCopy: 'Usa questi pulsanti tematici per raggiungere subito l\'area di rischio che vuoi studiare, poi torna al sommario da ogni sezione.',
+        tocGroupSocial: 'Job scam, romance scam e trappole emotive',
+        tocGroupAuthority: 'Phishing bancario, sms spoofing e falsa telefonata',
+        tocGroupInvestments: 'Trading scam, crypto, prestiti e falsi recuperi',
+        tocGroupPayments: 'Bonifici, invoice scam, marketplace e QR code',
+        tocGroupIdentity: 'SIM swap, account takeover e identity theft',
+        topicDividerKicker: 'Tema',
+        topicGroupSocialCopy: 'Queste truffe funzionano manipolando fiducia, urgenza, compassione o vulnerabilita personale prima che la vittima abbia il tempo di verificare la storia.',
+        topicGroupSocialSeo: 'Keyword: job scam, romance scam, fake charity, deepfake voice',
+        topicGroupAuthorityCopy: 'Questi schemi imitano il tono di banche, avvocati, enti pubblici e assistenza tecnica per far sembrare ufficiali e urgenti azioni pericolose.',
+        topicGroupAuthoritySeo: 'Keyword: phishing bancario, sms spoofing, falsa telefonata banca, ABF, reclami banca',
+        topicGroupInvestmentsCopy: 'Questi schemi promettono profitto, formazione, recupero o credito facile, ma il loro vero obiettivo resta sempre un pagamento anticipato o la perdita di controllo sui fondi.',
+        topicGroupInvestmentsSeo: 'Keyword: trading scam, crypto scam, fake recovery, loan scam',
+        topicGroupPaymentsCopy: 'Queste frodi colpiscono acquisti quotidiani, fatture, prenotazioni e bonifici, di solito spingendo la vittima fuori da un flusso di pagamento affidabile.',
+        topicGroupPaymentsSeo: 'Keyword: bonifici non autorizzati, invoice scam, marketplace fraud, QR code scam',
+        topicGroupIdentityCopy: 'Questi rischi puntano a prendere accesso, intercettare verifiche o raccogliere documenti che in seguito sbloccano frodi bancarie, creditizie e di impersonificazione.',
+        topicGroupIdentitySeo: 'Keyword: SIM swap, account takeover, identity theft, furto documenti',
+        tocJobScam: 'Job scam',
+        tocTradingScam: 'Trading online',
+        tocFakeShopScam: 'Falsi prodotti',
+        tocPhishingScam: 'Phishing',
+        tocRomanceScam: 'Romance scam',
+        tocRecoveryScam: 'Fake recovery',
+        tocCryptoScam: 'Crypto scam',
+        tocSupportScam: 'Tech support',
+        tocUrgentTransferScam: 'Bonifico urgente',
+        tocFakeCharityScam: 'Fake charity',
+        tocInvoiceScam: 'Fatture',
+        tocSimSwapScam: 'SIM swap',
+        tocAccountTakeoverScam: 'Accesso account',
+        tocFakeLawyerScam: 'Fake lawyer',
+        tocParcelScam: 'Parcel scam',
+        tocMarketplaceScam: 'Marketplace',
+        tocIdentityTheftScam: 'Identity theft',
+        tocFakeBankOfficerScam: 'Fake banker',
+        tocVideoAvatar: 'Video avatar',
+        tocFinancialShieldCard: 'Scudo You$',
+        tocAuthorityCheck: 'Verifica Autorita',
+        tocInvestmentAcademyScam: 'Academy scam',
+        tocQrCodeScam: 'QR code',
+        tocGiftCardScam: 'Gift cards',
+        tocLoanScam: 'Loan scam',
+        tocTaxRefundScam: 'Tax refund',
+        tocRentalScam: 'Rental scam',
+        tocDeepfakeVoiceScam: 'Deepfake voice',
+        fraudJobTitle: 'Job scam e falso lavoro da remoto',
+        fraudJobBody1: 'La job scam promette guadagni facili per azioni semplici: mettere like, compilare moduli, inoltrare bonifici, noleggiare il proprio conto o comprare materiali che dovrebbero essere rimborsati in seguito. La vittima viene spesso agganciata con un piccolo pagamento iniziale per rendere credibile il sistema.',
+        fraudJobBody2: 'La regola piu sicura e rifiutare ogni proposta in cui il lavoratore deve anticipare denaro, usare un conto personale per conto terzi o consegnare documenti prima di un colloquio verificabile. Un vero datore di lavoro non trasforma il candidato in un intermediario finanziario.',
+        fraudTradingTitle: 'Trading online, broker finti e investimenti miracolosi',
+        fraudTradingBody1: 'Molte truffe finanziarie iniziano con pubblicita aggressive sui social, sui motori di ricerca o in chat private. Il truffatore mostra una piattaforma curata, un falso consulente e profitti costanti. Quando la vittima prova a prelevare, compaiono tasse inventate, blocchi tecnici o nuove richieste di versamento.',
+        fraudTradingBody2: 'La difesa concreta e verificare sempre licenza, sede legale, recapiti indipendenti e reputazione esterna prima di inviare denaro. Se qualcuno ti spinge a versare subito per non perdere l\'occasione, l\'urgenza stessa e gia un segnale di allarme.',
+        fraudFakeShopTitle: 'Falsi prodotti in vendita, e-commerce clone e offerte irripetibili',
+        fraudFakeShopBody1: 'I siti clone vendono telefoni, auto, elettrodomestici, biglietti o beni di lusso a prezzi irreali. Copiano loghi noti, condizioni generiche e fotografie convincenti, ma dietro la facciata l\'obiettivo e incassare il pagamento senza consegnare nulla o spedire un bene completamente diverso.',
+        fraudFakeShopBody2: 'Prima di comprare, controlla dominio, dati societari, indirizzo reale, politica di reso e recensioni indipendenti. Se l\'unico metodo accettato e il bonifico verso un IBAN sconosciuto, interrompi l\'acquisto. Nessuno sconto vale questo rischio.',
+        fraudPhishingTitle: 'Phishing, spoofing bancario e frode con IBAN alterato',
+        fraudPhishingBody1: 'Il phishing non vive solo nelle email. Arriva via SMS, telefonata, risultato di ricerca, finta PEC e perfino messaggi che sembrano provenire dalla banca o da un avvocato. L\'obiettivo e sempre lo stesso: farti cliccare, rivelare codici o pagare su coordinate manipolate.',
+        fraudPhishingBody2: 'La difesa piu forte e ignorare il link sospetto e aprire invece il sito digitando l\'indirizzo a mano. Poi richiama il numero ufficiale trovato su documenti reali e confronta l\'IBAN con una fonte indipendente prima di autorizzare qualunque pagamento.',
+        fraudRomanceTitle: 'Romance scam, social engineering e false emergenze personali',
+        fraudRomanceBody1: 'Le truffe relazionali costruiscono fiducia per settimane o mesi. Quando il legame emotivo e forte, arriva l\'emergenza: malattia, problemi di viaggio, dogana, investimento condiviso, wallet bloccato o prestito urgente. In quel momento la vittima non valuta piu il denaro, ma la relazione.',
+        fraudRomanceBody2: 'La risposta piu sana e introdurre sempre un controllo esterno: parlare con una persona non coinvolta emotivamente, verificare foto e identita e tenere una regola semplice. Mai trasferire denaro a chi non hai incontrato in modo verificabile.',
+        fraudRecoveryTitle: 'Recovery room, falso recupero fondi e doppia vittimizzazione',
+        fraudRecoveryBody1: 'Dopo la prima perdita compaiono falsi investigatori, studi legali improvvisati, sedicenti esperti crypto o associazioni inventate che promettono di recuperare tutto in pochi giorni. Chiedono un anticipo per tasse, notarizzazioni, wallet di sblocco o procedure internazionali inesistenti.',
+        fraudRecoveryBody2: 'Se hai gia subito una truffa, conserva le prove, blocca i canali di contatto e parla solo con interlocutori verificabili. Un recupero serio non usa pressioni in chat e non garantisce risultati impossibili. La prima difesa, in questa fase, e non pagare una seconda volta.',
+        fraudCryptoTitle: 'Crypto scam, wallet falsi ed exchange copiati',
+        fraudCryptoBody1: 'La frode crypto inizia spesso con un falso tutor, un exchange clonato, un gruppo privato o una promessa di recupero. La vittima viene spinta a spostare fondi verso un wallet che non controlla oppure ad autorizzare un trasferimento temporaneo che dovrebbe sbloccare i profitti.',
+        fraudCryptoBody2: 'La difesa migliore e semplice: non inviare mai coin a un wallet comunicato solo in chat e verifica l\'URL dell\'exchange carattere per carattere. Se non riesci a confermare la destinazione in modo indipendente da un dispositivo affidabile, non spostare nulla.',
+        fraudSupportTitle: 'Finto supporto tecnico e frode con accesso remoto',
+        fraudSupportBody1: 'La truffa del falso supporto compare con popup, telefonate o messaggi che parlano di virus, app bancaria bloccata o dispositivo compromesso. L\'aggressore cerca di convincere la vittima a installare software di controllo remoto o a comunicare codici usa e getta durante la presunta assistenza.',
+        fraudSupportBody2: 'Un vero operatore non ha bisogno di spaventarti per ottenere accesso immediato. Chiudi il popup, interrompi la chiamata e contatta tu stesso il numero ufficiale da una fonte affidabile. Se qualcuno chiede il controllo remoto mentre sei collegato a banca o email, fermati subito.',
+        whatsAppVotePillKicker: 'Pillole di sicurezza - WhatsApp',
+        whatsAppVotePillQuestion: 'Ti chiedono di votare una ballerina su WhatsApp? Potrebbe essere una trappola.',
+        whatsAppVotePillAnswer: 'Una recente truffa su WhatsApp ti chiede di votare una ballerina o una ragazza in gara. Il messaggio sembra innocuo e spesso arriva da un contatto fidato, ma il link puo catturare dati dal tuo smartphone e poi usare l\'account compromesso per inviare richieste di denaro ai tuoi contatti.',
+        whatsAppVotePillStep1: 'Non aprire il link per il voto e non inserire codici, nomi o dati di accesso nelle pagine raggiunte dalla chat.',
+        whatsAppVotePillStep2: 'Se hai cliccato, avvisa subito i tuoi contatti, controlla i dispositivi collegati e metti in sicurezza l\'account prima che la truffa si diffonda.',
+        whatsAppVotePillStep3: 'Considera sospetta ogni richiesta di votare, aiutare una ballerina o sostenere un concorso tramite un link urgente, soprattutto se dopo arrivano richieste di denaro o codici di verifica.',
+        whatsAppSecurityPillKicker: 'Pillole di sicurezza - WhatsApp',
+        whatsAppSecurityPillQuestion: 'Come proteggere il tuo account WhatsApp?',
+        whatsAppSecurityPillAnswer: 'Per mettere in sicurezza il tuo account WhatsApp, attiva la verifica in due passaggi dalle Impostazioni, scegli un PIN a 6 cifre, inserisci un\'e-mail di recupero e blocca l\'app con impronta digitale o Face ID. Poi proteggi le chat sensibili con il lucchetto chat e con un codice segreto.',
+        whatsAppSecurityPillStep1: 'Attiva la verifica in due passaggi da Impostazioni > Account > Verifica in due passaggi > Attiva, poi imposta un PIN a 6 cifre e un\'e-mail di recupero.',
+        whatsAppSecurityPillStep2: 'Attiva il blocco app con impronta digitale o Face ID dalla sezione Privacy, cosi nessuno puo aprire WhatsApp se prende in mano il tuo telefono.',
+        whatsAppSecurityPillStep3: 'Usa il lucchetto chat per nascondere conversazioni specifiche: tieni premuta la chat, apri il menu e attiva il blocco.',
+        whatsAppSecurityPillStep4: 'Imposta un codice segreto per le chat bloccate, cosi restano ancora meno visibili anche se qualcuno ispeziona l\'app.',
+        fraudAuthorityCheckTitle: 'Come interrogare le Autorita finanziarie prima di fidarti di un sito',
+        fraudAuthorityCheckIntro: 'Quando un sito offre trading, crypto, investimenti, credito, recupero fondi o consulenza finanziaria, la mossa piu prudente e contattare direttamente l\'Autorita competente e chiedere una conferma scritta prima di pagare, registrarti o proseguire la conversazione.',
+        fraudAuthorityCheckItem1: 'Chiedi se l\'entita esiste davvero e se e autorizzata a offrire servizi finanziari nel tuo Paese di residenza.',
+        fraudAuthorityCheckItem2: 'Chiedi se il sito o il dominio che hai trovato e collegato ufficialmente a quell\'entita, oppure se potrebbe essere un clone o un abuso di identita.',
+        fraudAuthorityCheckItem3: 'Chiedi il recapito telefonico ufficiale pubblico dell\'entita che vuoi controllare, cosi da poter richiamare usando un contatto indipendente.',
+        fraudAuthorityCheckItem4: 'Chiedi se la persona che ti ha contattato e iscritta nel registro ufficiale dei promotori finanziari o dei consulenti autorizzati a fornire consulenza finanziaria al pubblico.',
+        fraudAuthorityCheckItem5: 'Chiedi se esistono gia avvisi, sanzioni o segnalazioni pubbliche relative a quel nome, sito, numero telefonico o offerta.',
+        fraudAuthorityCheckOutro: 'Conserva nella stessa cartella la risposta dell\'Autorita, l\'indirizzo web, il numero usato dal chiamante e il nome con cui si e presentato il contatto. Se le risposte sono incomplete, contraddittorie o solo verbali, non spostare denaro e non inviare ancora documenti.',
+        fraudAuthorityCheckButton: 'Chiedi conferma a 190 Autorita finanziarie',
+        financialShieldTitle: 'You$ - Il tuo Scudo Finanziario',
+        financialShieldIntro: 'Questa scheda operativa condensa una routine semplice di autodifesa: prima di fidarti di un sito finanziario, di un broker, di una piattaforma crypto o di un servizio di recupero, verifica il Paese, l\'Autorita competente e la vera identita dell\'operatore.',
+        financialShieldStep1: 'Apri il Database Autorita Finanziarie (190) e cerca il Paese indicato dall\'operatore o mostrato dal sito come sede dichiarata.',
+        financialShieldStep2: 'Individua l\'Autorita finanziaria competente di quel Paese: banca centrale, autorita di vigilanza o regolatore dei mercati.',
+        financialShieldStep3: 'Invia una breve richiesta scritta all\'Autorita, oppure usa il sito ufficiale dell\'Avv. Stanca, e chiedi conferma prima di pagare, registrarti o inviare documenti.',
+        financialShieldTemplateLead: 'Messaggio semplice da copiare e adattare',
+        financialShieldTemplate1: 'Dimmi se questa impresa esiste davvero come societa finanziaria o assicurativa.',
+        financialShieldTemplate2: 'Dimmi se e autorizzata a offrire servizi finanziari nel mio Paese di residenza.',
+        financialShieldTemplate3: 'Dimmi qual e il suo indirizzo web ufficiale.',
+        financialShieldTemplate4: 'Dimmi qual e il suo indirizzo e-mail ufficiale.',
+        financialShieldTemplate5: 'Segnala l\'eventuale abuso di servizio finanziario o la possibile clonazione di identita di un\'impresa legittima.',
+        financialShieldTemplate6: 'Potete rispondermi via e-mail all\'indirizzo che vi forniro e posso essere, o non essere, interessato a ulteriore assistenza legale.',
+        financialShieldOutro: 'Questa scheda interna e utile per depositi, trasferimenti verso wallet, offerte di trading sospette, proposte di recupero fondi e in ogni situazione in cui l\'altra parte ti chiede di agire con urgenza.',
+        financialShieldButton: 'Apri il Database Autorita Finanziarie (190)',
+        videoAvatarTitle: 'Video Avatar: clip educational e motivational',
+        videoAvatarIntro: 'Questa sezione raccoglie clip locali brevi, avatar animati e video educational-motivational che possono rendere la pagina piu attrattiva e trattenere l\'utente nel sito mentre esplora i messaggi anti-truffa.',
+        videoAvatarHubButton: 'Apri la mini home Video Avatar',
+        videoAvatarCard1: 'Breve clip avatar con un segnale visivo diretto di difesa, reazione e protezione attiva.',
+        videoAvatarCard2: 'Sequenza avatar animata utile per storytelling educativo su rischio, manipolazione e vigilanza.',
+        videoAvatarCard3: 'Clip motivational costruita intorno a bonifica digitale, contro-azione e navigazione web piu sicura.',
+        videoAvatarCard4: 'Short educational focalizzato su debolezze strutturali, vigilanza e bisogno di controlli bancari piu forti.',
+        videoAvatarCard5: 'Clip breve con metafora visiva forte, pensata per migliorare memoria e impatto emotivo del messaggio anti-truffa.',
+        videoAvatarCard6: 'Clip con prospettiva globale che rafforza la natura transfrontaliera delle frodi e il valore della verifica internazionale.',
+        videoAvatarCard7: 'Clip motivational su supervisione, confini e necessita di mappare il rischio prima di spostare denaro.',
+        videoAvatarCard8: 'Clip che collega l\'idea di area di sicurezza alle autorita finanziarie e alla vigilanza ufficiale.',
+        videoAvatarCard9: 'Clip educational delicata che collega vulnerabilita emotiva, isolamento e targeting da parte dei truffatori.',
+        videoAvatarCard10: 'Breve avviso motivational che invita a restare dentro canali verificati e percorsi sicuri.',
+        abfConciliationTitle: 'Arbitro Bancario Finanziario: risoluzione stragiudiziale delle controversie',
+        abfConciliationBody1: 'L\'Arbitro Bancario Finanziario e un sistema di risoluzione stragiudiziale delle controversie tra clienti, banche e altri intermediari finanziari. E utile quando devi contestare bonifici non autorizzati, movimentazioni anomale del conto, rifiuti di rimborso o condotte che potrebbero non aver rispettato la diligenza richiesta alla banca.',
+        abfConciliationBody2: 'Prima di andare in giudizio, questo canale puo aiutare a strutturare la contestazione con documenti, cronologia e obiezioni concrete. E particolarmente rilevante quando il problema riguarda transazioni anomale, assenza di monitoraggio, blocchi tardivi o operazioni di pagamento disconosciute.',
+        abfConciliationButton: 'Apri il sito ufficiale ABF',
+        abfConciliationVideoButton: 'Guarda il video esplicativo di Banca d\'Italia',
+        fraudUrgentTransferTitle: 'Truffa del bonifico urgente e falso IBAN del fornitore',
+        fraudUrgentTransferBody1: 'Questa frode colpisce famiglie e imprese tramite fatture alterate, email di falsi avvocati o messaggi urgenti che sembrano arrivare da un dirigente. Basta un solo IBAN cambiato per deviare un pagamento importante prima che qualcuno noti la differenza.',
+        fraudUrgentTransferBody2: 'L\'abitudine corretta e confermare ogni nuovo dato bancario a voce, usando un numero che gia conosci e mai quello scritto nell\'email sospetta. Una richiamata di un minuto puo salvare un intero bonifico.',
+        fraudFakeCharityTitle: 'Fake charity e falsa raccolta solidale',
+        fraudFakeCharityBody1: 'Le finte raccolte benefiche compaiono dopo guerre, calamita, emergenze mediche o tragedie pubbliche. Usano immagini toccanti, loghi copiati e appelli drammatici per spingere chi dona ad agire in fretta prima di controllare chi ricevera davvero il denaro.',
+        fraudFakeCharityBody2: 'Il comportamento piu sicuro e donare solo tramite siti ufficiali raggiunti in modo indipendente, verificando identita giuridica, coordinate bancarie e riferimenti pubblici. Se la richiesta insiste su trasferimenti immediati verso conti personali, non e una causa: e un allarme.',
+        fraudInvoiceTitle: 'Invoice scam e deviazione del pagamento',
+        fraudInvoiceBody1: 'Nell\'invoice scam la vittima riceve una fattura che sembra normale: stesso fornitore, stessa grafica, conversazione email simile. La modifica decisiva e nascosta nei dati di pagamento, dove il conto bancario viene sostituito per far arrivare il denaro al truffatore.',
+        fraudInvoiceBody2: 'Una difesa solida consiste nel trattare ogni nuovo modello di fattura, cambio conto o correzione dell\'ultimo minuto come un evento da verificare a parte. Confronta le coordinate con gli archivi precedenti e confermale al telefono con un contatto fidato prima di pagare.',
+        fraudSimSwapTitle: 'SIM swap e codici di verifica intercettati',
+        fraudSimSwapBody1: 'La frode SIM swap inizia quando i criminali raccolgono abbastanza dati personali da convincere un operatore telefonico a spostare il tuo numero su un\'altra scheda. Una volta ottenuto il controllo della linea, intercettano gli OTP ed entrano in banca, email o account exchange.',
+        fraudSimSwapBody2: 'Se il telefono perde improvvisamente il segnale senza spiegazione, reagisci subito: contatta il tuo operatore da un\'altra linea, blocca gli account sensibili e cambia le password da un dispositivo sicuro. Attivare autenticazioni piu forti degli SMS riduce molto il danno.',
+        fraudAccountTakeoverTitle: 'Account takeover e abuso a catena dell\'identita digitale',
+        fraudAccountTakeoverBody1: 'L\'account takeover si verifica quando gli aggressori entrano in un servizio e poi passano agli altri: email, banca, e-commerce e cloud. Una sola casella di posta compromessa puo diventare la chiave maestra per reset password, frodi con carte e impersonificazione.',
+        fraudAccountTakeoverBody2: 'La difesa migliore e stratificata: password uniche, password manager aggiornato, autenticazione a piu fattori e controllo degli avvisi di nuovo accesso. Quando un account mostra attivita sospette, considera esposti tutti i servizi collegati e ruota le credenziali in sequenza.',
+        fraudFakeLawyerTitle: 'Fake lawyer e pressione legale inventata',
+        fraudFakeLawyerBody1: 'Questa truffa usa linguaggio legale, timbri, firme copiate e scadenze urgenti per spaventare la vittima e indurla a pagare. Il messaggio puo fingere di provenire da uno studio che gestisce debiti, copyright, eredita, recuperi o transazioni urgenti.',
+        fraudFakeLawyerBody2: 'La risposta corretta e verificare l\'avvocato in modo indipendente tramite un albo ufficiale o un numero trovato da te, mai attraverso i contatti inclusi nel messaggio minaccioso. Una comunicazione legale reale non crolla se chiedi una verifica.',
+        fraudParcelTitle: 'Parcel scam e falsi problemi di consegna',
+        fraudParcelBody1: 'Le truffe del pacco sfruttano curiosita e routine. Un messaggio dice che la spedizione e bloccata, che la dogana non e stata pagata o che l\'indirizzo va confermato. La somma richiesta sembra minima, ma il vero obiettivo e rubare dati carta, credenziali o identita tramite una falsa pagina del corriere.',
+        fraudParcelBody2: 'La difesa pratica e seguire le consegne solo dall\'app o dal sito ufficiale del corriere aperto direttamente da te. Se non aspettavi alcun pacco, o se il messaggio chiede un pagamento urgente tramite un link insolito, trattalo come sospetto fin dall\'inizio.',
+        fraudMarketplaceTitle: 'Marketplace fraud e falsi link di protezione acquisti',
+        fraudMarketplaceBody1: 'La frode sui marketplace colpisce sia venditori sia acquirenti. Un finto compratore invia un link di pagamento esterno alla piattaforma, oppure un falso venditore chiede un acconto per riservare l\'oggetto. La conversazione sembra normale finche la vittima esce dal sistema protetto ed entra in una pagina clonata.',
+        fraudMarketplaceBody2: 'Resta dentro la chat del marketplace, nel flusso di pagamento e negli strumenti di spedizione ogni volta che e possibile. Nel momento in cui l\'altra parte prova a spostare la trattativa su un link esterno, un corriere improvvisato o una pagina di rimborso rapido, fermati e rivaluta tutta l\'operazione.',
+        fraudIdentityTheftTitle: 'Identity theft e furto di documenti personali',
+        fraudIdentityTheftBody1: 'Il furto d\'identita spesso inizia in silenzio: un modulo falso, una richiesta di verifica inventata, una login page copiata o un\'offerta che chiede carta d\'identita, selfie e bollette. Quei documenti possono poi essere riutilizzati per conti fraudolenti, prestiti, attivazioni SIM o social engineering.',
+        fraudIdentityTheftBody2: 'Prima di caricare un documento, chiediti perche serve, come verra conservato e se la richiesta proviene da un ente verificato. Un\'abitudine prudente e condividere il minimo necessario ed evitare, quando possibile, l\'invio di file sensibili tramite chat ordinaria.',
+        goldenTreeNewsKicker: 'Caso reale • Roma Today',
+        goldenTreeNewsDate: '5 febbraio 2026',
+        goldenTreeNewsTitle: 'Golden Tree: falsa banca, false carte e falsa app bancaria',
+        goldenTreeNewsBody1: 'L\'operazione Golden Tree ha fatto emergere una rete di falsa banca resa credibile da carte di pagamento brandizzate, sedi fisiche e perfino un\'app in stile banking mostrata ai clienti.',
+        goldenTreeNewsBody2: 'La lezione pratica e semplice: carte, app e linguaggio professionale non provano la legittimita. Prima di fidarti di un operatore finanziario, controlla autorizzazione, registri pubblici e avvisi ufficiali da canali indipendenti.',
+        goldenTreeNewsButton: 'Leggi l\'articolo di Roma Today',
+        fraudFakeBankOfficerTitle: 'Fake bank officer e falsa chiamata di sicurezza',
+        fraudFakeBankOfficerBody1: 'In questa truffa chi chiama sembra professionale, conosce alcuni dati personali e sostiene di voler proteggere il tuo conto da una frode. La conversazione serve a creare fiducia mentre ti spinge a rivelare codici, autorizzare un dispositivo, spostare fondi verso un presunto conto sicuro o installare un\'app di sicurezza.',
+        fraudFakeBankOfficerBody2: 'La difesa corretta e chiudere la chiamata e contattare personalmente la banca usando il numero presente sui documenti ufficiali o nell\'app bancaria. Un vero operatore bancario non ha bisogno che tu sposti il denaro fuori dal tuo conto per tenerlo al sicuro.',
+        romaSmsCallNewsKicker: 'Caso reale • Roma Today',
+        romaSmsCallNewsDate: '7 ottobre 2025',
+        romaSmsCallNewsTitle: 'Sms e finta chiamata bancaria: dodici bonifici in Lituania',
+        romaSmsCallNewsBody1: 'Roma Today ha raccontato il caso di un cittadino romano raggirato da un sms seguito da una falsa telefonata di sicurezza, con dodici bonifici diretti verso una banca lituana in poco piu di due ore.',
+        romaSmsCallNewsBody2: 'L\'Abf ha poi riconosciuto un rimborso parziale, sottolineando che la banca avrebbe dovuto rilevare l\'anomalia e attivare monitoraggio rafforzato e blocco automatico.',
+        romaSmsCallNewsButton: 'Leggi l\'articolo di Roma Today',
+        fraudInvestmentAcademyTitle: 'Investment academy scam e trappole da mentorship a pagamento',
+        fraudInvestmentAcademyBody1: 'Queste truffe imitano programmi formativi, accademie di trading o comunita esclusive di investitori. Alla vittima viene prima venduto un corso, poi un gruppo premium di segnali, poi un\'opportunita gestita che funzionerebbe solo depositando altro denaro in fretta.',
+        fraudInvestmentAcademyBody2: 'Una difesa utile e separare la formazione dalla custodia dei fondi. Puoi studiare la finanza senza dare a estranei accesso al tuo wallet, al tuo exchange o al tuo capitale. Quando apprendimento e trasferimento di denaro vengono legati, la prudenza deve salire subito.',
+        fraudQrCodeTitle: 'QR code scam e deviazione nascosta del pagamento',
+        fraudQrCodeBody1: 'Le truffe con QR code funzionano perche le persone si fidano delle scorciatoie visive. Un adesivo puo sostituire il codice reale su un parchimetro, su un manifesto, in un ristorante o dentro una falsa fattura. Basta una scansione per aprire una pagina malevola o deviare il pagamento verso un beneficiario diverso.',
+        fraudQrCodeBody2: 'Prima di confermare qualunque operazione, controlla la destinazione mostrata dopo la scansione, osserva se il codice fisico e stato manomesso e preferisci digitare a mano gli indirizzi noti quando il contesto riguarda banca o accesso account. Un QR code e una scorciatoia, non una prova di legittimita.',
+        fraudGiftCardTitle: 'Gift card scam e pagamenti irreversibili con codici prepagati',
+        fraudGiftCardBody1: 'La truffa delle gift card compare quando un truffatore finge di essere un\'azienda, un ufficio fiscale, un dirigente o un familiare e chiede un pagamento urgente tramite carte prepagate. Questo metodo viene scelto perche i codici possono essere riscossi rapidamente ed e difficile recuperarli dopo la condivisione.',
+        fraudGiftCardBody2: 'La regola migliore e assoluta: nessuna istituzione legittima risolve debiti, multe, controlli di sicurezza o emergenze tramite codici di gift card. Nel momento in cui compare questa richiesta, interrompi il dialogo e verifica la storia con un contatto indipendente.',
+        fraudLoanTitle: 'Loan scam e falso credito facile approvato',
+        fraudLoanBody1: 'Le truffe del prestito colpiscono chi ha bisogno di liquidita rapida. Il truffatore promette approvazione garantita, nessun controllo o erogazione immediata, poi chiede spese anticipate, polizze, costi notarili o pagamenti di verifica prima del presunto trasferimento del denaro.',
+        fraudLoanBody2: 'Un finanziatore affidabile espone i costi in modo trasparente o li documenta con contratti formali, non con pressioni urgenti in chat. Se il credito viene promesso a chiunque ma prima bisogna inviare denaro, l\'offerta e quasi certamente una trappola.',
+        fraudTaxRefundTitle: 'Tax refund scam e falsi avvisi dell\'autorita pubblica',
+        fraudTaxRefundBody1: 'Questa truffa sostiene che tu abbia diritto a un rimborso oppure che una irregolarita fiscale debba essere corretta subito. Il messaggio imita un ente ufficiale, usa linguaggio formale e contiene un link o un allegato pensato per catturare dati bancari, credenziali o documenti personali.',
+        fraudTaxRefundBody2: 'La difesa migliore e ignorare il link incorporato e accedere al portale pubblico direttamente da un preferito affidabile o da una ricerca manuale. Un ente ufficiale non ha bisogno di urgenza e segretezza per restituirti denaro che ti spetta davvero.',
+        fraudRentalTitle: 'Rental scam e falsi annunci immobiliari',
+        fraudRentalBody1: 'Le truffe sull\'affitto presentano appartamenti, soggiorni brevi o case vacanza a prezzi molto persuasivi. Il truffatore parla di forte domanda e chiede una caparra prima di qualunque visita reale, nascondendosi dietro scuse su viaggi, chiavi, problemi di piattaforma o urgenze legali.',
+        fraudRentalBody2: 'Non inviare mai una caparra per un immobile che non puoi verificare con una visita reale, una piattaforma affidabile o controlli documentati sulla proprieta. Una casa puo essere urgente, ma il pagamento non deve mai correre piu veloce della verifica.',
+        fraudDeepfakeVoiceTitle: 'Deepfake voice scam e false chiamate di emergenza familiare',
+        fraudDeepfakeVoiceBody1: 'La clonazione vocale permette ai criminali di simulare un parente, un dirigente o un collega fidato abbastanza bene da provocare panico. La chiamata suona emotiva, urgente e specifica. La vittima viene spinta a inviare denaro prima di fare domande che farebbero emergere l\'inganno.',
+        fraudDeepfakeVoiceBody2: 'Costruisci un\'abitudine di verifica prima che l\'emergenza accada: usa una parola in codice familiare, richiama su un numero noto e conferma la richiesta tramite un secondo canale. Quanto piu la storia sembra urgente, tanto piu la verifica deve essere disciplinata.',
+        fraudBackToToc: 'Torna al sommario',
+        fraudDefenseNote: '<strong>Regola finale di autodifesa:</strong> quando una richiesta di denaro nasce da fretta, segretezza o promessa di guadagno facile, sospendi l\'operazione per almeno trenta minuti e ricontrolla tutto da un canale indipendente. Questa pausa, da sola, blocca molte truffe meglio di qualsiasi software.'
+      },
+      FR: {
+        stolenMoney: '💰 ARGENT VOLE 💰',
+        scamsMessage: 'Liste des banques en cours de mise a jour',
+        topStopScam: 'Stop Arnaque =',
+        topTutelaTruffe: 'Protection Fraude',
+        topScamRadar: 'Radar Arnaque',
+        topGlobalMoneyWeek: 'Global Money Week 2026',
+        topCopyright: 'Avv. STANCA Marcello ©',
+        readPetition: 'LIRE La<br>PETITION UE',
+        euCouncil: 'Conseil UE<br>27-11-2025',
+        fightFraud: 'Lutte anti-fraude',
+        petitionsApproved: 'Petitions<br>approuvees',
+        bankListUpdate: 'Liste des banques en cours de mise a jour',
+        emojiWaiting: '😐 Emoji en attente de Banque 🏦',
+        papyrusText: '📜 BASE BANCAIRE EUROPEENNE - FAITES DEFILER POUR EXPLORER 📜',
+        blogTitle: '🤝 COLLABOREZ!<br>AIDEZ-NOUS! 🤝',
+        blogInvite: 'Aidez-nous a completer la base bancaire! Ecrivez ici l\'adresse du service reclamations de la banque que vous ne voyez pas dans les icones de cette page.',
+        bankNamePlaceholder: 'Nom de la banque',
+        bankAddressPlaceholder: 'Adresse du service reclamations (email, adresse postale ou URL)',
+        contributorNamePlaceholder: 'Votre nom (optionnel)',
+        blogSubmit: '📤 ENVOYER LA CONTRIBUTION',
+        fraudGuideKicker: 'Guide pratique anti-fraude',
+        fraudGuideTitle: 'Guide des fraudes financieres : phishing bancaire, faux appels, ABF, reclamations bancaires et trading frauduleux',
+        fraudGuideSubtitle: 'Utilisez ce guide multilingue pour reconnaitre le phishing bancaire, les faux appels de banque, le SMS spoofing, le trading frauduleux, la crypto-arnaque et les virements non autorises, puis passer des reclamations bancaires a l\'ABF, a la verification independante et a des paiements plus prudents.',
+        fraudGuideTocTitle: 'Explorer le guide par theme',
+        fraudGuideTocCopy: 'Utilisez ces boutons thematiques pour rejoindre directement la zone de risque qui vous interesse, puis revenez au sommaire depuis chaque section.',
+        tocGroupSocial: 'Job scam, romance scam et pieges emotionnels',
+        tocGroupAuthority: 'Phishing bancaire, SMS spoofing et faux appels bancaires',
+        tocGroupInvestments: 'Trading frauduleux, crypto, credit et faux recouvrement',
+        tocGroupPayments: 'Virements, fraudes facture, marketplace et QR code',
+        tocGroupIdentity: 'SIM swap, prise de compte et vol d\'identite',
+        topicDividerKicker: 'Theme',
+        topicGroupSocialCopy: 'Ces fraudes fonctionnent en manipulant confiance, urgence, compassion ou vulnerabilite personnelle avant que la victime n\'ait le temps de verifier l\'histoire.',
+        topicGroupSocialSeo: 'Mots-cles: job scam, romance scam, fausse charite, deepfake vocal',
+        topicGroupAuthorityCopy: 'Ces schemas empruntent le ton des banques, avocats, autorites publiques et services d\'assistance pour rendre des actions dangereuses officielles et urgentes.',
+        topicGroupAuthoritySeo: 'Mots-cles: phishing bancaire, SMS spoofing, faux appel bancaire, ABF, reclamations bancaires',
+        topicGroupInvestmentsCopy: 'Ces schemas promettent profit, education, recuperation ou credit facile, mais leur veritable objectif reste toujours un paiement anticipe ou la perte de controle sur les fonds.',
+        topicGroupInvestmentsSeo: 'Mots-cles: trading frauduleux, crypto scam, faux recouvrement, arnaque au pret',
+        topicGroupPaymentsCopy: 'Ces fraudes visent les achats courants, les factures, les reservations et les virements, en poussant souvent la victime hors d\'un parcours de paiement fiable.',
+        topicGroupPaymentsSeo: 'Mots-cles: virements non autorises, fraude facture, marketplace fraud, arnaque QR code',
+        topicGroupIdentityCopy: 'Ces risques cherchent a prendre le controle d\'un acces, intercepter une verification ou collecter des documents qui debloquent ensuite des fraudes bancaires, de credit ou d\'usurpation.',
+        topicGroupIdentitySeo: 'Mots-cles: SIM swap, prise de compte, vol d\'identite, fraude documentaire',
+        tocJobScam: 'Job scam',
+        tocTradingScam: 'Trading en ligne',
+        tocFakeShopScam: 'Faux produits',
+        tocPhishingScam: 'Phishing',
+        tocRomanceScam: 'Romance scam',
+        tocRecoveryScam: 'Faux recouvrement',
+        tocCryptoScam: 'Crypto scam',
+        tocSupportScam: 'Support technique',
+        tocUrgentTransferScam: 'Arnaque au virement urgent',
+        tocFakeCharityScam: 'Fausse charite',
+        tocInvoiceScam: 'Factures',
+        tocSimSwapScam: 'SIM swap',
+        tocAccountTakeoverScam: 'Acces compte',
+        tocFakeLawyerScam: 'Faux avocat',
+        tocParcelScam: 'Arnaque au colis',
+        tocMarketplaceScam: 'Marketplace',
+        tocIdentityTheftScam: 'Vol d\'identite',
+        tocFakeBankOfficerScam: 'Faux banquier',
+        tocVideoAvatar: 'Video avatar',
+        tocFinancialShieldCard: 'Bouclier You$',
+        tocAuthorityCheck: 'Controle autorite',
+        tocInvestmentAcademyScam: 'Academie investissement',
+        tocQrCodeScam: 'QR code',
+        tocGiftCardScam: 'Cartes-cadeaux',
+        tocLoanScam: 'Arnaque au pret',
+        tocTaxRefundScam: 'Remboursement fiscal',
+        tocRentalScam: 'Arnaque a la location',
+        tocDeepfakeVoiceScam: 'Voix deepfake',
+        fraudJobTitle: 'Job scam et faux travail a distance',
+        fraudJobBody1: 'La job scam promet de l\'argent facile pour des actions simples: aimer du contenu, remplir des formulaires, transferer des virements, louer son compte ou acheter du materiel qui serait rembourse plus tard. La victime est souvent accrochee par un petit paiement initial pour rendre le systeme credible.',
+        fraudJobBody2: 'La regle la plus sure est de refuser toute offre ou le travailleur doit envoyer de l\'argent d\'abord, utiliser un compte personnel pour des tiers ou remettre des documents avant un entretien verifiable. Un vrai employeur ne transforme pas le candidat en intermediaire financier.',
+        fraudTradingTitle: 'Trading en ligne, faux courtiers et investissements miraculeux',
+        fraudTradingBody1: 'De nombreuses fraudes financieres commencent par des publicites agressives sur les reseaux sociaux, les moteurs de recherche ou les discussions privees. L\'escroc montre une plateforme soignee, un faux conseiller et des profits reguliers. Quand la victime veut retirer, apparaissent des taxes inventees, des blocages techniques ou de nouvelles demandes de depot.',
+        fraudTradingBody2: 'La defense concrete consiste a verifier la licence, le siege social, les coordonnees independantes et la reputation externe avant d\'envoyer quoi que ce soit. Si quelqu\'un vous pousse a deposer tout de suite pour ne pas rater l\'occasion, l\'urgence est deja un avertissement.',
+        fraudFakeShopTitle: 'Faux produits, boutiques clonees et offres incroyables',
+        fraudFakeShopBody1: 'Les sites clones vendent telephones, voitures, appareils, billets ou produits de luxe a des prix irrealistes. Ils copient des logos connus, des conditions generiques et des photos convaincantes, mais leur objectif reel est d\'encaisser le paiement sans rien livrer ou d\'envoyer un objet completement different.',
+        fraudFakeShopBody2: 'Avant d\'acheter, verifiez le domaine, les donnees de l\'entreprise, l\'adresse reelle, la politique de retour et les avis independants. Si le seul moyen accepte est un virement vers un IBAN inconnu, arretez l\'achat. Aucune remise ne vaut ce risque.',
+        fraudPhishingTitle: 'Phishing, usurpation bancaire et fraude a l\'IBAN modifie',
+        fraudPhishingBody1: 'Le phishing ne vit pas seulement dans les emails. Il arrive par SMS, appel telephonique, resultat de recherche, faux message certifie et meme notes qui semblent venir d\'une banque ou d\'un avocat. Le but reste le meme: vous faire cliquer, reveler des codes ou payer sur des coordonnees modifiees.',
+        fraudPhishingBody2: 'La meilleure defense est d\'ignorer le lien suspect et d\'ouvrir le site en tapant vous-meme l\'adresse. Ensuite, appelez le numero officiel trouve sur des documents reels et comparez l\'IBAN avec une source independante avant d\'autoriser un paiement.',
+        fraudRomanceTitle: 'Romance scam, ingenierie sociale et fausses urgences',
+        fraudRomanceBody1: 'Les arnaques relationnelles construisent la confiance pendant des semaines ou des mois. Quand le lien affectif devient fort, l\'urgence apparait: maladie, probleme de voyage, douane, investissement partage, wallet bloque ou pret urgent. A ce moment-la, la victime n\'evalue plus l\'argent mais la relation.',
+        fraudRomanceBody2: 'La reponse la plus saine consiste a ajouter un controle externe a chaque fois: parler a une personne qui n\'est pas impliquee emotionnellement, verifier les photos et l\'identite, et garder une regle simple. Ne transferez jamais d\'argent a une personne que vous n\'avez jamais rencontree de maniere verifiable.',
+        fraudRecoveryTitle: 'Recovery room, faux recouvrement de fonds et double victimisation',
+        fraudRecoveryBody1: 'Apres la premiere perte, de faux enqueteurs, cabinets improvises, experts crypto ou associations inventees apparaissent et promettent de tout recuperer en quelques jours. Ils demandent une avance pour des taxes, des notarisation, des wallets de deblocage ou des procedures internationales fictives.',
+        fraudRecoveryBody2: 'Si vous avez deja ete victime d\'une arnaque, conservez les preuves, bloquez les canaux de contact et ne parlez qu\'a des interlocuteurs verifiables. Une vraie procedure de recuperation ne repose pas sur la pression en chat et ne garantit pas l\'impossible. La premiere defense ici est de ne pas payer une seconde fois.',
+        fraudCryptoTitle: 'Crypto scam, faux wallets et plateformes copiees',
+        fraudCryptoBody1: 'La fraude crypto commence souvent par un faux mentor, une plateforme clonee, un groupe prive ou une promesse de recuperation. La victime est poussee a envoyer les fonds vers un wallet qu\'elle ne controle pas ou a autoriser un transfert temporaire cense debloquer les gains.',
+        fraudCryptoBody2: 'La meilleure defense est simple: n\'envoyez jamais de crypto vers un wallet communique uniquement par chat et verifiez l\'URL de la plateforme caractere par caractere. Si vous ne pouvez pas confirmer la destination de maniere independante sur un appareil fiable, ne deplacez rien.',
+        fraudSupportTitle: 'Faux support technique et fraude a l\'acces a distance',
+        fraudSupportBody1: 'La fausse assistance technique apparait sous forme de popups, d\'appels ou de messages parlant de virus, d\'application bancaire bloquee ou d\'appareil compromis. L\'attaquant essaie de convaincre la victime d\'installer un logiciel de controle a distance ou de reveler des codes a usage unique pendant la pseudo reparation.',
+        fraudSupportBody2: 'Un vrai operateur n\'a pas besoin de vous effrayer pour obtenir un acces immediat. Fermez la fenetre, coupez l\'appel et contactez vous-meme le support officiel depuis une source fiable. Si quelqu\'un demande le controle a distance pendant que vous etes connecte a votre banque ou a votre email, arretez tout de suite.',
+        whatsAppVotePillKicker: 'Pastilles de securite - WhatsApp',
+        whatsAppVotePillQuestion: 'On vous demande de voter pour une danseuse sur WhatsApp ? Cela peut etre un piege.',
+        whatsAppVotePillAnswer: 'Une arnaque recente sur WhatsApp vous demande de voter pour une danseuse ou une jeune fille dans un concours. Le message semble anodin et vient souvent d\'un contact de confiance, mais le lien peut capturer des donnees sur votre smartphone puis utiliser le compte compromis pour envoyer des demandes d\'argent a vos contacts.',
+        whatsAppVotePillStep1: 'N\'ouvrez pas le lien de vote et ne saisissez ni codes, ni noms, ni donnees de connexion sur les pages ouvertes depuis la discussion.',
+        whatsAppVotePillStep2: 'Si vous avez clique, prevenez immediatement vos contacts, examinez les appareils lies et securisez le compte avant que l\'arnaque ne se propage davantage.',
+        whatsAppVotePillStep3: 'Considerez comme suspecte toute demande de voter, d\'aider une danseuse ou de soutenir un concours via un lien urgent, surtout si elle est suivie de demandes d\'argent ou de codes de verification.',
+        whatsAppSecurityPillKicker: 'Pastilles de securite - WhatsApp',
+        whatsAppSecurityPillQuestion: 'Comment proteger votre compte WhatsApp ?',
+        whatsAppSecurityPillAnswer: 'Pour securiser votre compte WhatsApp, activez la verification en deux etapes dans les Parametres, choisissez un code PIN a 6 chiffres, ajoutez un e-mail de recuperation et verrouillez l\'application avec empreinte ou Face ID. Ensuite, protegez les discussions sensibles avec le verrouillage des chats et un code secret.',
+        whatsAppSecurityPillStep1: 'Activez la verification en deux etapes via Parametres > Compte > Verification en deux etapes > Activer, puis definissez un code PIN a 6 chiffres et un e-mail de recuperation.',
+        whatsAppSecurityPillStep2: 'Activez le verrouillage de l\'application par empreinte ou Face ID dans la section Confidentialite afin que personne ne puisse ouvrir WhatsApp s\'il prend votre telephone.',
+        whatsAppSecurityPillStep3: 'Utilisez le verrouillage des chats pour masquer des conversations precises : maintenez le chat, ouvrez le menu et activez le verrou.',
+        whatsAppSecurityPillStep4: 'Ajoutez un code secret pour les chats verrouilles afin qu\'ils restent encore moins visibles si quelqu\'un inspecte l\'application.',
+        fraudAuthorityCheckTitle: 'Comment interroger les autorites financieres avant de faire confiance a un site',
+        fraudAuthorityCheckIntro: 'Quand un site propose trading, crypto, investissement, credit, recuperation de fonds ou conseil financier, le reflexe le plus prudent consiste a contacter directement l\'autorite competente et a demander une confirmation ecrite avant de payer, de vous inscrire ou de poursuivre la conversation.',
+        fraudAuthorityCheckItem1: 'Demandez si l\'entite existe reellement et si elle est autorisee a offrir des services financiers dans votre pays de residence.',
+        fraudAuthorityCheckItem2: 'Demandez si le site ou le nom de domaine que vous avez trouve est officiellement lie a cette entite, ou s\'il peut s\'agir d\'un clone ou d\'une usurpation d\'identite.',
+        fraudAuthorityCheckItem3: 'Demandez le numero de telephone public officiel de l\'entite que vous voulez verifier, afin de pouvoir rappeler via un contact independant.',
+        fraudAuthorityCheckItem4: 'Demandez si la personne qui vous a contacte est inscrite au registre officiel des demarcheurs financiers ou des conseillers autorises a fournir un conseil financier au public.',
+        fraudAuthorityCheckItem5: 'Demandez s\'il existe deja des avertissements, sanctions ou avis publics concernant ce nom, ce site, ce numero de telephone ou cette offre.',
+        fraudAuthorityCheckOutro: 'Conservez dans le meme dossier la reponse de l\'autorite, l\'adresse web, le numero utilise par l\'appelant et le nom sous lequel le contact s\'est presente. Si les reponses sont incompletes, contradictoires ou seulement verbales, ne deplacez pas d\'argent et n\'envoyez pas encore de documents.',
+        fraudAuthorityCheckButton: 'Demandez confirmation a 190 autorites financieres',
+        financialShieldTitle: 'You$ - Votre Bouclier Financier',
+        financialShieldIntro: 'Cette fiche operationnelle resume une routine simple d\'autodefense : avant de faire confiance a un site financier, a un courtier, a une plateforme crypto ou a un service de recuperation, verifiez le pays, l\'autorite competente et la veritable identite de l\'operateur.',
+        financialShieldStep1: 'Ouvrez la base de donnees des autorites financieres (190) et recherchez le pays indique par l\'operateur ou affiche par le site comme siege declare.',
+        financialShieldStep2: 'Identifiez l\'autorite financiere competente de ce pays : banque centrale, autorite de surveillance ou regulateur des marches.',
+        financialShieldStep3: 'Envoyez une courte demande ecrite a l\'autorite, ou utilisez le site officiel de l\'Avv. Stanca, et demandez une confirmation avant de payer, de vous inscrire ou d\'envoyer des documents.',
+        financialShieldTemplateLead: 'Message simple a copier et adapter',
+        financialShieldTemplate1: 'Dites-moi si cette entreprise existe reellement comme societe financiere ou d assurance.',
+        financialShieldTemplate2: 'Dites-moi si elle est autorisee a offrir des services financiers dans mon pays de residence.',
+        financialShieldTemplate3: 'Dites-moi quelle est son adresse web officielle.',
+        financialShieldTemplate4: 'Dites-moi quelle est son adresse e-mail officielle.',
+        financialShieldTemplate5: 'Veuillez signaler tout abus de service financier ou toute possible usurpation d identite d une entreprise legitime.',
+        financialShieldTemplate6: 'Vous pouvez me repondre par e-mail a l adresse que je fournirai, et je peux etre, ou non, interesse par une assistance juridique supplementaire.',
+        financialShieldOutro: 'Cette fiche interne est utile pour les depots, les transferts vers des wallets, les fausses offres de trading, les promesses de recuperation et chaque situation ou l\'autre partie vous demande d\'agir dans l\'urgence.',
+        financialShieldButton: 'Ouvrir la base de donnees des autorites financieres (190)',
+        videoAvatarTitle: 'Video Avatar : clips educatifs et motivationnels',
+        videoAvatarIntro: 'Cette section rassemble des clips locaux courts, des avatars animes et des videos educatives et motivationnelles capables de rendre la page plus attractive et de garder l\'utilisateur sur le site pendant l\'exploration des messages anti-fraude.',
+        videoAvatarHubButton: 'Ouvrir la mini home Video Avatar',
+        videoAvatarCard1: 'Clip avatar court avec un signal visuel direct de defense, de reaction et de protection active.',
+        videoAvatarCard2: 'Sequence d\'avatar anime utile pour un recit pedagogique autour du risque, de la manipulation et de la vigilance.',
+        videoAvatarCard3: 'Clip motivationnel construit autour du nettoyage numerique, de la contre-action et d\'une navigation web plus sure.',
+        videoAvatarCard4: 'Clip educatif centre sur les faiblesses structurelles, la vigilance et la necessite de controles bancaires plus forts.',
+        videoAvatarCard5: 'Clip court avec une metaphore visuelle forte, concu pour renforcer la memoire et l\'impact emotionnel du message anti-fraude.',
+        videoAvatarCard6: 'Clip a perspective globale qui renforce la nature transfrontaliere de la fraude et la valeur de la verification internationale.',
+        videoAvatarCard7: 'Clip motivationnel sur la supervision, les limites et la necessite de cartographier le risque avant de deplacer de l\'argent.',
+        videoAvatarCard8: 'Clip qui relie l\'idee de zone de securite aux autorites financieres et a la surveillance officielle.',
+        videoAvatarCard9: 'Clip educatif sensible reliant vulnerabilite emotionnelle, isolement et ciblage par les fraudeurs.',
+        videoAvatarCard10: 'Bref avertissement motivationnel qui encourage a rester dans des canaux verifies et des parcours surs.',
+        abfConciliationTitle: 'Arbitro Bancario Finanziario : resolution extrajudiciaire des litiges',
+        abfConciliationBody1: 'L\'Arbitro Bancario Finanziario est un systeme extrajudiciaire de resolution des litiges entre les clients, les banques et les autres intermediaires financiers. Il est utile pour contester des virements non autorises, des mouvements anormaux du compte, des refus de remboursement ou des comportements qui n\'auraient pas respecte la diligence bancaire attendue.',
+        abfConciliationBody2: 'Avant d\'aller en justice, ce canal peut aider a structurer le litige avec des documents, une chronologie et des objections concretes. Il est particulierement pertinent lorsque le probleme concerne des transactions anormales, l\'absence de surveillance, un blocage tardif ou des operations de paiement contestees.',
+        abfConciliationButton: 'Ouvrir le site officiel de l\'ABF',
+        abfConciliationVideoButton: 'Voir la video explicative de la Banque d\'Italie',
+        fraudUrgentTransferTitle: 'Arnaque au virement urgent et faux IBAN fournisseur',
+        fraudUrgentTransferBody1: 'Cette fraude vise les familles et les entreprises avec des factures modifiees, de faux emails d\'avocat ou des messages urgents qui semblent venir d\'un dirigeant. Un seul IBAN change suffit a detourner un paiement important avant que quelqu\'un ne remarque la difference.',
+        fraudUrgentTransferBody2: 'La bonne habitude consiste a confirmer tout nouveau detail bancaire a voix haute, en utilisant un numero que vous connaissez deja et jamais celui ecrit dans l\'email suspect. Un rappel d\'une minute peut sauver un virement entier.',
+        fraudFakeCharityTitle: 'Fausse charite et fraude au don emotionnel',
+        fraudFakeCharityBody1: 'Les fausses collectes caritatives apparaissent apres des guerres, catastrophes, urgences medicales ou tragedies publiques. Elles utilisent des images bouleversantes, des logos copies et des appels dramatiques pour pousser les donateurs a agir vite avant de verifier qui recevra vraiment l\'argent.',
+        fraudFakeCharityBody2: 'Le comportement le plus sur consiste a donner uniquement via des sites officiels atteints independamment, en verifiant l\'identite legale, les coordonnees bancaires et les references publiques. Si la demande insiste sur des virements immediats vers des comptes personnels, ce n\'est pas une cause: c\'est une alerte.',
+        fraudInvoiceTitle: 'Fraude a la facture et redirection du paiement',
+        fraudInvoiceBody1: 'Dans une fraude a la facture, la victime recoit un document qui parait habituel: meme fournisseur, meme graphisme, fil d\'email tres proche. Le changement crucial se cache dans les donnees de paiement, ou le compte bancaire est remplace pour que l\'argent arrive chez l\'attaquant.',
+        fraudInvoiceBody2: 'Une defense solide consiste a traiter tout nouveau modele de facture, changement de compte ou correction de derniere minute comme un evenement a verifier separement. Comparez les coordonnees avec les archives precedentes et confirmez-les par telephone avec un contact de confiance avant de payer.',
+        fraudSimSwapTitle: 'SIM swap et codes de verification detournes',
+        fraudSimSwapBody1: 'La fraude SIM swap commence lorsque des criminels rassemblent assez de donnees personnelles pour convaincre un operateur de transferer votre numero vers une autre carte. Une fois la ligne controlee, ils interceptent les mots de passe a usage unique et entrent dans vos comptes bancaires, email ou plateformes.',
+        fraudSimSwapBody2: 'Si votre telephone perd soudainement le reseau sans explication, reagissez immediatement: contactez votre operateur depuis une autre ligne, bloquez les comptes sensibles et changez les mots de passe depuis un appareil sur. Une authentification plus forte que les SMS limite fortement les degats.',
+        fraudAccountTakeoverTitle: 'Prise de compte et abus en chaine de l\'identite numerique',
+        fraudAccountTakeoverBody1: 'La prise de compte se produit lorsque des attaquants entrent dans un service puis basculent vers d\'autres: email, banque, plateformes d\'achat et cloud. Une seule boite mail compromise peut devenir la cle maitresse des reinitialisations de mot de passe, de la fraude a la carte et de l\'usurpation.',
+        fraudAccountTakeoverBody2: 'La meilleure defense est multicouche: mots de passe uniques, gestionnaire de mots de passe a jour, authentification multi-facteurs et controle des alertes de nouvelle connexion. Lorsqu\'un compte montre une activite suspecte, considerez tous les services relies comme exposes et changez les identifiants en sequence.',
+        fraudFakeLawyerTitle: 'Faux avocat et pression juridique inventee',
+        fraudFakeLawyerBody1: 'Cette fraude utilise un langage juridique, des tampons, des signatures copiees et des delais urgents pour effrayer la victime et la pousser a payer. Le message peut pretendre venir d\'un cabinet traitant des dettes, du droit d\'auteur, d\'un heritage, d\'un recouvrement ou d\'un reglement urgent.',
+        fraudFakeLawyerBody2: 'La bonne reponse consiste a verifier l\'avocat de maniere independante via un registre officiel ou un numero trouve par vous-meme, jamais a travers les coordonnees contenues dans le message menaçant. Une vraie communication juridique ne s\'effondre pas lorsque vous demandez une verification.',
+        fraudParcelTitle: 'Arnaque au colis et faux problemes de livraison',
+        fraudParcelBody1: 'Les arnaques au colis exploitent la curiosite et la routine. Un message affirme que l\'envoi est bloque, que la douane n\'est pas payee ou que l\'adresse doit etre confirmee. Le montant semble minime, mais le veritable objectif est de voler les donnees de carte, les identifiants ou l\'identite via une fausse page de transporteur.',
+        fraudParcelBody2: 'La defense pratique consiste a suivre les livraisons uniquement depuis l\'application ou le site officiel du transporteur que vous ouvrez vous-meme. Si vous n\'attendiez aucun colis, ou si le message demande un paiement urgent via un lien inhabituel, considerez-le comme suspect des le depart.',
+        fraudMarketplaceTitle: 'Fraude marketplace et faux liens de protection acheteur',
+        fraudMarketplaceBody1: 'La fraude marketplace touche vendeurs et acheteurs. Un faux acheteur envoie un lien de paiement hors plateforme, ou un faux vendeur demande un acompte pour reserver l\'objet. La conversation parait normale jusqu\'au moment ou la victime quitte le systeme protege et entre dans une page clonee.',
+        fraudMarketplaceBody2: 'Restez dans le chat du marketplace, le flux de paiement et les outils d\'expedition chaque fois que possible. Des que l\'autre partie tente de deplacer l\'operation vers un lien externe, un raccourci de transporteur ou une page de remboursement instantanee, arretez et re-evaluez toute la transaction.',
+        fraudIdentityTheftTitle: 'Vol d\'identite et collecte frauduleuse de documents',
+        fraudIdentityTheftBody1: 'Le vol d\'identite commence souvent discretement: un faux formulaire, une demande de verification inventee, une page de connexion copiee ou une offre demandant piece d\'identite, selfie et facture. Ces documents peuvent ensuite etre reutilises pour des comptes frauduleux, des prets, une activation SIM ou du social engineering.',
+        fraudIdentityTheftBody2: 'Avant d\'envoyer un document, demandez pourquoi il est necessaire, comment il sera conserve et si la demande vient bien d\'une institution verifiee. Une habitude prudente consiste a partager le strict minimum et a eviter, si possible, l\'envoi de fichiers sensibles par chat ordinaire.',
+        goldenTreeNewsKicker: 'Cas reel • Roma Today',
+        goldenTreeNewsDate: '5 fevrier 2026',
+        goldenTreeNewsTitle: 'Golden Tree : fausse banque, fausses cartes et fausse application bancaire',
+        goldenTreeNewsBody1: 'L\'operation Golden Tree a revele un faux reseau bancaire rendu credible par des cartes de paiement personnalisees, des bureaux et meme une application de type bancaire presentee aux clients.',
+        goldenTreeNewsBody2: 'La lecon est concrete : cartes, applications et langage professionnel ne prouvent pas la legitimite. Avant de faire confiance a un operateur financier, verifiez l\'autorisation, les registres publics et les alertes officielles par des canaux independants.',
+        goldenTreeNewsButton: 'Lire l\'article de Roma Today',
+        fraudFakeBankOfficerTitle: 'Faux employe bancaire et faux appel de securite',
+        fraudFakeBankOfficerBody1: 'Dans cette fraude, l\'appelant semble professionnel, connait quelques donnees personnelles et pretend proteger votre compte contre une fraude. La conversation est construite pour creer la confiance tout en vous poussant a reveler des codes, approuver un appareil, deplacer des fonds vers un pretendu compte securise ou installer une application de securite.',
+        fraudFakeBankOfficerBody2: 'La bonne defense consiste a mettre fin a l\'appel et a contacter vous-meme votre banque avec le numero figurant sur des documents officiels ou dans l\'application bancaire. Un vrai employe bancaire n\'a pas besoin que vous deplaciez votre argent hors de votre compte pour le proteger.',
+        romaSmsCallNewsKicker: 'Cas reel • Roma Today',
+        romaSmsCallNewsDate: '7 octobre 2025',
+        romaSmsCallNewsTitle: 'SMS et faux appel bancaire : douze virements vers la Lituanie',
+        romaSmsCallNewsBody1: 'Roma Today a rapporte le cas d\'un habitant de Rome piege par un SMS suivi d\'un faux appel de securite, avec douze virements envoyes vers une banque lituanienne en un peu plus de deux heures.',
+        romaSmsCallNewsBody2: 'L\'ABF a ensuite reconnu un remboursement partiel, en soulignant que la banque aurait du detecter l\'anomalie et activer un controle renforce ainsi qu\'un blocage automatique.',
+        romaSmsCallNewsButton: 'Lire l\'article de Roma Today',
+        fraudInvestmentAcademyTitle: 'Arnaque academie d\'investissement et pieges de mentorat payant',
+        fraudInvestmentAcademyBody1: 'Ces fraudes imitent des programmes educatifs, des academies de trading ou des communautes d\'investisseurs d\'elite. La victime se voit d\'abord vendre un cours, puis un groupe premium de signaux, puis une opportunite geree qui ne fonctionnerait qu\'en ajoutant rapidement plus d\'argent.',
+        fraudInvestmentAcademyBody2: 'Une defense utile consiste a separer l\'education de la garde des fonds. Vous pouvez etudier la finance sans donner a des inconnus acces a votre wallet, a votre compte d\'exchange ou a votre capital. Quand apprentissage et transfert d\'argent sont lies, la prudence doit augmenter immediatement.',
+        fraudQrCodeTitle: 'Arnaque au QR code et redirection cachee du paiement',
+        fraudQrCodeBody1: 'Les arnaques au QR code fonctionnent parce que les gens font confiance aux raccourcis visuels. Un autocollant peut remplacer le vrai code de paiement sur un horodateur, une affiche, dans un restaurant ou dans une fausse facture. Un seul scan suffit pour ouvrir une page malveillante ou rediriger le paiement vers un autre beneficiaire.',
+        fraudQrCodeBody2: 'Avant de confirmer quoi que ce soit, verifiez la destination affichee apres le scan, inspectez le code physique pour detecter une alteration et preferez saisir manuellement les adresses connues lorsque le contexte touche la banque ou l\'acces a un compte. Un QR code est un raccourci, pas une preuve de legitimite.',
+        fraudGiftCardTitle: 'Arnaque aux cartes-cadeaux et paiements irreversibles par code',
+        fraudGiftCardBody1: 'La fraude aux cartes-cadeaux apparait lorsqu\'un escroc pretend etre une entreprise, un service fiscal, un responsable ou un proche et demande un paiement urgent via des cartes prepayees. Cette methode est choisie parce que les codes peuvent etre utilises tres vite et sont difficiles a recuperer une fois transmis.',
+        fraudGiftCardBody2: 'La meilleure regle est absolue: aucune institution legitime ne regle dettes, amendes, controles de securite ou urgences par codes de cartes-cadeaux. Au moment ou cette demande apparait, arretez l\'echange et verifiez l\'histoire avec un contact independant.',
+        fraudLoanTitle: 'Arnaque au pret et fausse approbation de credit facile',
+        fraudLoanBody1: 'Les arnaques au pret ciblent les personnes qui ont besoin de liquidites rapides. L\'escroc promet une approbation garantie, aucun controle ou un versement immediat, puis demande des frais anticipes, une assurance, des couts de notarisation ou des paiements de verification avant le pretendu transfert des fonds.',
+        fraudLoanBody2: 'Un preteur fiable presente les frais de maniere transparente ou les documente dans un contrat formel, pas sous pression urgente dans une conversation. Si le credit est promis a tout le monde mais qu\'il faut d\'abord envoyer de l\'argent, l\'offre est presque surement un piege.',
+        fraudTaxRefundTitle: 'Arnaque au remboursement fiscal et faux avis d\'autorite publique',
+        fraudTaxRefundBody1: 'Cette fraude affirme que vous avez droit a un remboursement ou qu\'une irregularite fiscale doit etre corrigee immediatement. Le message imite une autorite officielle, utilise un langage formel et contient un lien ou une piece jointe concus pour capturer donnees bancaires, identifiants ou documents d\'identite.',
+        fraudTaxRefundBody2: 'La meilleure defense consiste a ignorer le lien integre et a acceder au portail public directement depuis un favori fiable ou une recherche manuelle. Une administration officielle n\'a pas besoin d\'urgence ni de secret pour vous rendre un argent qui vous appartient reellement.',
+        fraudRentalTitle: 'Arnaque a la location et fausses annonces immobilieres',
+        fraudRentalBody1: 'Les arnaques a la location presentent des appartements, sejours courts ou maisons de vacances a des prix tres attractifs. L\'escroc affirme qu\'il y a beaucoup de demande et exige un depot avant toute visite reelle, souvent avec des excuses liees au voyage, aux cles, a la plateforme ou a une urgence juridique.',
+        fraudRentalBody2: 'N\'envoyez jamais d\'acompte pour un bien que vous ne pouvez pas verifier par une vraie visite, une plateforme fiable ou des controles documentes de propriete. Un logement peut etre urgent, mais votre paiement ne doit jamais courir plus vite que votre verification.',
+        fraudDeepfakeVoiceTitle: 'Arnaque vocale deepfake et faux appels d\'urgence familiale',
+        fraudDeepfakeVoiceBody1: 'Le clonage vocal permet aux criminels de simuler un proche, un dirigeant ou un collegue de confiance avec assez de realisme pour provoquer la panique. L\'appel semble emotionnel, urgent et precis. La victime est poussee a envoyer de l\'argent vite, avant de poser les questions qui reveleraient la tromperie.',
+        fraudDeepfakeVoiceBody2: 'Installez une habitude de verification avant qu\'une urgence ne survienne: utilisez un mot de passe familial, rappelez sur un numero connu et confirmez la demande par un second canal. Plus l\'histoire parait urgente, plus la verification doit etre rigoureuse.',
+        fraudBackToToc: 'Retour au sommaire',
+        fraudDefenseNote: '<strong>Regle finale d\'autoprotection:</strong> lorsqu\'une demande d\'argent repose sur l\'urgence, le secret ou la promesse d\'un gain facile, interrompez l\'operation pendant au moins trente minutes et verifiez tout par un canal independant. Cette pause bloque a elle seule de nombreuses fraudes mieux que n\'importe quel logiciel.'
+      },
+      DE: {
+        stolenMoney: '💰 GESTOHLENES GELD 💰',
+        scamsMessage: 'Bankenliste wird aktualisiert',
+        topStopScam: 'Stop Betrug =',
+        topTutelaTruffe: 'Betrugsschutz',
+        topScamRadar: 'Betrugsradar',
+        topGlobalMoneyWeek: 'Global Money Week 2026',
+        topCopyright: 'Avv. STANCA Marcello ©',
+        readPetition: 'LESEN Sie die<br>EU-PETITION',
+        euCouncil: 'EU-Rat<br>27-11-2025',
+        fightFraud: 'Betrugsbekampfung',
+        petitionsApproved: 'Petitionen<br>Genehmigt',
+        bankListUpdate: 'Bankenliste wird aktualisiert',
+        emojiWaiting: '😐 Emoji wartet auf Bank 🏦',
+        papyrusText: '📜 EUROPAISCHE BANKDATENBANK - ZUM ENTDECKEN SCROLLEN 📜',
+        blogTitle: '🤝 ZUSAMMENARBEITEN!<br>HELFEN SIE UNS! 🤝',
+        blogInvite: 'Helfen Sie uns, die Bankdatenbank zu vervollstandigen! Schreiben Sie hier die Adresse des Beschwerdeservice der Bank, die Sie in den Symbolen dieser Seite nicht sehen.',
+        bankNamePlaceholder: 'Name der Bank',
+        bankAddressPlaceholder: 'Adresse des Beschwerdeservice (E-Mail, Postanschrift oder URL)',
+        contributorNamePlaceholder: 'Ihr Name (optional)',
+        blogSubmit: '📤 BEITRAG SENDEN',
+        fraudGuideKicker: 'Praktischer Anti-Betrugs-Leitfaden',
+        fraudGuideTitle: 'Leitfaden zu Finanzbetrug: Bank-Phishing, falsche Anrufe, ABF, Bankbeschwerden und Trading-Betrug',
+        fraudGuideSubtitle: 'Nutzen Sie diesen mehrsprachigen Leitfaden, um Bank-Phishing, falsche Bankanrufe, SMS-Spoofing, Trading-Betrug, Krypto-Betrug und nicht autorisierte Uberweisungen zu erkennen und dann von Bankbeschwerden zu ABF, unabhangiger Prufung und sichereren Zahlungsentscheidungen uberzugehen.',
+        fraudGuideTocTitle: 'Leitfaden nach Themen durchsuchen',
+        fraudGuideTocCopy: 'Nutzen Sie diese Themen-Schaltflachen, um direkt zum gewunschten Risikobereich zu springen, und kehren Sie von jeder Sektion zum Inhaltsverzeichnis zuruck.',
+        tocGroupSocial: 'Job Scam, Romance Scam und emotionale Fallen',
+        tocGroupAuthority: 'Bank-Phishing, SMS-Spoofing und falsche Bankanrufe',
+        tocGroupInvestments: 'Trading-Betrug, Krypto, Kredite und Fake Recovery',
+        tocGroupPayments: 'Uberweisungen, Rechnungsbetrug, Marketplace und QR-Code',
+        tocGroupIdentity: 'SIM swap, Kontoubernahme und Identitatsdiebstahl',
+        topicDividerKicker: 'Thema',
+        topicGroupSocialCopy: 'Diese Betruge wirken, indem sie Vertrauen, Zeitdruck, Mitgefuhl oder personliche Verletzlichkeit ausnutzen, bevor das Opfer die Geschichte prufen kann.',
+        topicGroupSocialSeo: 'Keywords: Job Scam, Romance Scam, falsche Wohltatigkeit, Deepfake-Stimme',
+        topicGroupAuthorityCopy: 'Diese Maschen ubernehmen den Ton von Banken, Anwalten, Behorden und Supportstellen, damit gefahrliche Handlungen offiziell und dringend wirken.',
+        topicGroupAuthoritySeo: 'Keywords: Bank-Phishing, SMS-Spoofing, falscher Bankanruf, ABF, Bankbeschwerden',
+        topicGroupInvestmentsCopy: 'Diese Systeme versprechen Gewinn, Bildung, Rettung oder leichten Kredit, doch ihr wahres Ziel bleibt immer eine Vorauszahlung oder der Verlust der Kontrolle uber Geld.',
+        topicGroupInvestmentsSeo: 'Keywords: Trading-Betrug, Crypto Scam, Fake Recovery, Kreditbetrug',
+        topicGroupPaymentsCopy: 'Diese Betrugsformen zielen auf alltagliche Kaufe, Rechnungen, Buchungen und Uberweisungen und drangen das Opfer meist aus einem vertrauenswurdigen Zahlungsablauf heraus.',
+        topicGroupPaymentsSeo: 'Keywords: nicht autorisierte Uberweisung, Rechnungsbetrug, Marketplace-Fraud, QR-Code-Betrug',
+        topicGroupIdentityCopy: 'Diese Risiken sollen Zugange ubernehmen, Verifizierungen abfangen oder Dokumente sammeln, die spater Bank-, Kredit- und Identitatsbetrug ermoglichen.',
+        topicGroupIdentitySeo: 'Keywords: SIM swap, Kontoubernahme, Identitatsdiebstahl, Dokumentenbetrug',
+        tocJobScam: 'Job scam',
+        tocTradingScam: 'Online-Trading',
+        tocFakeShopScam: 'Falsche Produkte',
+        tocPhishingScam: 'Phishing',
+        tocRomanceScam: 'Romance Scam',
+        tocRecoveryScam: 'Fake Recovery',
+        tocCryptoScam: 'Crypto scam',
+        tocSupportScam: 'Tech-Support',
+        tocUrgentTransferScam: 'Dringende Uberweisung',
+        tocFakeCharityScam: 'Falsche Wohltatigkeit',
+        tocInvoiceScam: 'Rechnung',
+        tocSimSwapScam: 'SIM swap',
+        tocAccountTakeoverScam: 'Kontozugriff',
+        tocFakeLawyerScam: 'Falscher Anwalt',
+        tocParcelScam: 'Paketbetrug',
+        tocMarketplaceScam: 'Marketplace',
+        tocIdentityTheftScam: 'Identitatsdiebstahl',
+        tocFakeBankOfficerScam: 'Falscher Banker',
+        tocVideoAvatar: 'Video Avatar',
+        tocFinancialShieldCard: 'You$ Schutz',
+        tocAuthorityCheck: 'Behorden-Check',
+        tocInvestmentAcademyScam: 'Akademie-Betrug',
+        tocQrCodeScam: 'QR-Code',
+        tocGiftCardScam: 'Geschenkkarten',
+        tocLoanScam: 'Kreditbetrug',
+        tocTaxRefundScam: 'Steuerruckzahlung',
+        tocRentalScam: 'Mietbetrug',
+        tocDeepfakeVoiceScam: 'Deepfake-Stimme',
+        fraudJobTitle: 'Job scam und falsche Remote-Arbeit',
+        fraudJobBody1: 'Ein Job scam verspricht leichtes Geld fur einfache Aufgaben: Inhalte liken, Formulare ausfullen, Uberweisungen weiterleiten, das eigene Konto vermieten oder Material kaufen, das spater erstattet werden soll. Oft wird das Opfer mit einer kleinen Anfangszahlung gekodert, damit das System echt wirkt.',
+        fraudJobBody2: 'Die sicherste Regel ist, jedes Angebot abzulehnen, bei dem der Arbeitnehmer zuerst Geld senden, ein privates Konto fur Dritte nutzen oder Dokumente vor einem uberprufbaren Gesprach abgeben soll. Ein echter Arbeitgeber macht den Bewerber nicht zum Finanzintermediar.',
+        fraudTradingTitle: 'Online-Trading, falsche Broker und Wunderinvestitionen',
+        fraudTradingBody1: 'Viele Finanzbetruge beginnen mit aggressiver Werbung in sozialen Netzwerken, Suchmaschinen oder privaten Chats. Der Betruger zeigt eine polierte Plattform, einen falschen Berater und regelmassige Gewinne. Sobald das Opfer auszahlen will, tauchen erfundene Steuern, technische Sperren oder neue Einzahlungspflichten auf.',
+        fraudTradingBody2: 'Die konkrete Abwehr besteht darin, Lizenz, Firmensitz, unabhangige Kontaktdaten und externe Reputation zu prufen, bevor etwas gesendet wird. Wenn jemand Sie drangt, sofort einzuzahlen, damit Sie die Gelegenheit nicht verpassen, ist genau dieser Zeitdruck bereits ein Warnsignal.',
+        fraudFakeShopTitle: 'Falsche Produkte, geklonte Shops und unglaubliche Angebote',
+        fraudFakeShopBody1: 'Geklonte Websites verkaufen Telefone, Autos, Haushaltsgerate, Tickets oder Luxuswaren zu unrealistischen Preisen. Sie kopieren bekannte Logos, allgemeine Bedingungen und uberzeugende Fotos, doch ihr wahres Ziel ist es, Geld zu kassieren, ohne etwas zu liefern, oder etwas ganz anderes zu versenden.',
+        fraudFakeShopBody2: 'Prufen Sie vor dem Kauf die Domain, Firmendaten, reale Adresse, Ruckgaberegeln und unabhangige Bewertungen. Wenn nur eine Uberweisung an eine unbekannte IBAN akzeptiert wird, brechen Sie den Kauf ab. Kein Rabatt ist dieses Risiko wert.',
+        fraudPhishingTitle: 'Phishing, Bank-Spoofing und Betrug mit veranderter IBAN',
+        fraudPhishingBody1: 'Phishing lebt nicht nur in E-Mails. Es kommt per SMS, Telefonanruf, Suchergebnis, gefalschter zertifizierter Nachricht und sogar in Mitteilungen, die scheinbar von einer Bank oder einem Anwalt stammen. Das Ziel bleibt gleich: Sie sollen klicken, Codes offenlegen oder an manipulierte Kontodaten zahlen.',
+        fraudPhishingBody2: 'Die starkste Abwehr ist, den verdaechtigen Link zu ignorieren und die Website stattdessen selbst einzugeben. Rufen Sie dann die offizielle Nummer aus echten Unterlagen an und vergleichen Sie die IBAN mit einer unabhangigen Quelle, bevor Sie eine Zahlung freigeben.',
+        fraudRomanceTitle: 'Romance scam, Social Engineering und falsche Notfalle',
+        fraudRomanceBody1: 'Beziehungsbetrug baut uber Wochen oder Monate Vertrauen auf. Sobald die emotionale Bindung stark ist, erscheint der Notfall: Krankheit, Reiseproblem, Zoll, gemeinsame Investition, gesperrtes Wallet oder dringendes Darlehen. In diesem Moment bewertet das Opfer nicht mehr das Geld, sondern die Beziehung.',
+        fraudRomanceBody2: 'Die gesunde Reaktion besteht darin, jedes Mal eine externe Kontrolle einzubauen: mit jemandem sprechen, der emotional nicht beteiligt ist, Fotos und Identitat prufen und eine einfache Regel behalten. Uberweisen Sie niemals Geld an eine Person, die Sie nie in uberprufbarer Form getroffen haben.',
+        fraudRecoveryTitle: 'Recovery room, falsche Geldruckholung und doppelte Viktimisierung',
+        fraudRecoveryBody1: 'Nach dem ersten Verlust tauchen falsche Ermittler, improvisierte Kanzleien, angebliche Krypto-Experten oder erfundene Vereine auf und versprechen, alles in wenigen Tagen zuruckzuholen. Sie verlangen einen Vorschuss fur Steuern, Beglaubigungen, Entsperr-Wallets oder erfundene internationale Verfahren.',
+        fraudRecoveryBody2: 'Wenn Sie bereits betrogen wurden, sichern Sie Beweise, blockieren Sie die Kontaktkanale und sprechen Sie nur mit uberprufbaren Ansprechpartnern. Eine echte Ruckholung arbeitet nicht mit Druck im Chat und garantiert keine unmoglichen Ergebnisse. Die erste Abwehr in dieser Phase ist, nicht ein zweites Mal zu zahlen.',
+        fraudCryptoTitle: 'Crypto scam, falsche Wallets und kopierte Borsen',
+        fraudCryptoBody1: 'Krypto-Betrug beginnt oft mit einem falschen Mentor, einer geklonten Borse, einer privaten Gruppe oder einem Ruckholversprechen. Das Opfer wird dazu gedrangt, Geld an ein Wallet zu senden, das es nicht kontrolliert, oder eine angeblich vorubergehende Ubertragung freizugeben, die Gewinne entsperren soll.',
+        fraudCryptoBody2: 'Die beste Abwehr ist einfach: Senden Sie niemals Coins an ein Wallet, das nur im Chat mitgeteilt wurde, und prufen Sie die URL der Borse Zeichen fur Zeichen. Wenn Sie das Ziel nicht unabhangig auf einem vertrauenswurdigen Gerat bestatigen konnen, bewegen Sie nichts.',
+        fraudSupportTitle: 'Falscher technischer Support und Fernzugriffs-Betrug',
+        fraudSupportBody1: 'Der falsche Support erscheint uber Popups, Anrufe oder Nachrichten uber Viren, blockierte Banking-Apps oder kompromittierte Gerate. Der Angreifer versucht, das Opfer zur Installation einer Fernsteuerungssoftware oder zur Preisgabe von Einmalcodes wahrend der angeblichen Reparatur zu bewegen.',
+        fraudSupportBody2: 'Ein echter Mitarbeiter muss Sie nicht erschrecken, um sofortigen Zugriff zu erhalten. Schliessen Sie das Popup, beenden Sie den Anruf und kontaktieren Sie selbst die offizielle Supportnummer aus einer vertrauenswurdigen Quelle. Wenn jemand Fernzugriff verlangt, wahrend Sie in Banking oder E-Mail eingeloggt sind, stoppen Sie sofort.',
+        whatsAppVotePillKicker: 'Sicherheitsimpulse - WhatsApp',
+        whatsAppVotePillQuestion: 'Sie sollen auf WhatsApp fur eine Tanzerin abstimmen? Das kann eine Falle sein.',
+        whatsAppVotePillAnswer: 'Eine aktuelle WhatsApp-Betrugsmasche bittet Sie, fur eine Tanzerin oder ein Madchen in einem Wettbewerb abzustimmen. Die Nachricht wirkt harmlos und kommt oft von einem vertrauten Kontakt, doch der Link kann Daten von Ihrem Smartphone abgreifen und das kompromittierte Konto danach fur Geldforderungen an Ihre Kontakte nutzen.',
+        whatsAppVotePillStep1: 'Offnen Sie den Abstimmungslink nicht und geben Sie auf Seiten aus dem Chat keine Codes, Namen oder Zugangsdaten ein.',
+        whatsAppVotePillStep2: 'Wenn Sie geklickt haben, warnen Sie sofort Ihre Kontakte, prufen Sie verbundene Gerate und sichern Sie das Konto, bevor sich der Betrug weiter ausbreitet.',
+        whatsAppVotePillStep3: 'Behandeln Sie jede Bitte, per Eillink fur eine Tanzerin zu stimmen oder einen Wettbewerb zu unterstutzen, als verdachtig, besonders wenn danach Geld oder Verifizierungscodes verlangt werden.',
+        whatsAppSecurityPillKicker: 'Sicherheitsimpulse - WhatsApp',
+        whatsAppSecurityPillQuestion: 'Wie schutzen Sie Ihr WhatsApp-Konto?',
+        whatsAppSecurityPillAnswer: 'Um Ihr WhatsApp-Konto zu sichern, aktivieren Sie die Bestatigung in zwei Schritten in den Einstellungen, wahlen Sie eine 6-stellige PIN, fugen Sie eine Wiederherstellungs-E-Mail hinzu und sperren Sie die App mit Fingerabdruck oder Face ID. Schutzen Sie sensible Chats danach mit Chatsperre und Geheimcode.',
+        whatsAppSecurityPillStep1: 'Aktivieren Sie die Bestatigung in zwei Schritten uber Einstellungen > Konto > Bestatigung in zwei Schritten > Aktivieren und richten Sie danach eine 6-stellige PIN und eine Wiederherstellungs-E-Mail ein.',
+        whatsAppSecurityPillStep2: 'Aktivieren Sie die App-Sperre mit Fingerabdruck oder Face ID im Bereich Datenschutz, damit niemand WhatsApp offnen kann, wenn er Ihr Telefon in die Hand bekommt.',
+        whatsAppSecurityPillStep3: 'Nutzen Sie die Chatsperre, um bestimmte Gesprache auszublenden: Chat gedruckt halten, Menu offnen und Sperre aktivieren.',
+        whatsAppSecurityPillStep4: 'Legen Sie fur gesperrte Chats einen Geheimcode fest, damit sie noch schwerer sichtbar sind, falls jemand die App durchsucht.',
+        fraudAuthorityCheckTitle: 'Wie man Finanzaufsichtsbehorden befragt, bevor man einer Website vertraut',
+        fraudAuthorityCheckIntro: 'Wenn eine Website Trading, Krypto, Investments, Kredit, Geldruckholung oder Finanzberatung anbietet, ist der vorsichtigste Schritt, die zustandige Behorde direkt zu kontaktieren und vor Zahlung, Registrierung oder weiterer Kommunikation eine schriftliche Bestatigung zu verlangen.',
+        fraudAuthorityCheckItem1: 'Fragen Sie, ob die Einheit wirklich existiert und ob sie berechtigt ist, in Ihrem Wohnsitzland Finanzdienstleistungen anzubieten.',
+        fraudAuthorityCheckItem2: 'Fragen Sie, ob die gefundene Website oder Domain offiziell zu dieser Einheit gehort oder ob es sich um einen Klon oder Identitatsmissbrauch handeln konnte.',
+        fraudAuthorityCheckItem3: 'Fragen Sie nach der offiziellen offentlichen Telefonnummer der Einheit, die Sie prufen wollen, damit Sie uber einen unabhangigen Kontakt zuruckrufen konnen.',
+        fraudAuthorityCheckItem4: 'Fragen Sie, ob die Person, die Sie kontaktiert hat, im offiziellen Register der Finanzvermittler oder autorisierten Berater eingetragen ist, die der Offentlichkeit Anlageberatung geben durfen.',
+        fraudAuthorityCheckItem5: 'Fragen Sie, ob bereits Warnungen, Sanktionen oder offentliche Hinweise zu diesem Namen, dieser Website, dieser Telefonnummer oder diesem Angebot vorliegen.',
+        fraudAuthorityCheckOutro: 'Bewahren Sie die Antwort der Behorde, die Webadresse, die vom Anrufer verwendete Telefonnummer und den genannten Namen in derselben Unterlage auf. Wenn die Antworten unvollstandig, widerspruchlich oder nur mundlich sind, uberweisen Sie kein Geld und senden Sie noch keine Dokumente.',
+        fraudAuthorityCheckButton: '190 Finanzaufsichtsbehorden um Bestatigung bitten',
+        financialShieldTitle: 'You$ - Ihr Finanzschutzschild',
+        financialShieldIntro: 'Diese praktische Karte fasst eine einfache Selbstschutz-Routine zusammen: Bevor Sie einer Finanz-Website, einem Broker, einer Krypto-Plattform oder einem Recovery-Dienst vertrauen, prufen Sie Land, zustandige Behorde und die echte Identitat des Anbieters.',
+        financialShieldStep1: 'Offnen Sie die Datenbank der Finanzaufsichtsbehorden (190) und suchen Sie nach dem Land, das der Anbieter nennt oder das die Website als Sitz angibt.',
+        financialShieldStep2: 'Ermitteln Sie die zustandige Finanzbehorde dieses Landes: Zentralbank, Aufsichtsbehorde oder Marktregulierer.',
+        financialShieldStep3: 'Senden Sie eine kurze schriftliche Anfrage an die Behorde oder nutzen Sie die offizielle Website von Avv. Stanca und bitten Sie vor Zahlung, Registrierung oder Dokumentenversand um Bestatigung.',
+        financialShieldTemplateLead: 'Einfache Nachricht zum Kopieren und Anpassen',
+        financialShieldTemplate1: 'Sagen Sie mir bitte, ob dieses Unternehmen wirklich als Finanz- oder Versicherungsfirma existiert.',
+        financialShieldTemplate2: 'Sagen Sie mir bitte, ob es berechtigt ist, in meinem Wohnsitzland Finanzdienstleistungen anzubieten.',
+        financialShieldTemplate3: 'Sagen Sie mir bitte, wie seine offizielle Website lautet.',
+        financialShieldTemplate4: 'Sagen Sie mir bitte, wie seine offizielle E-Mail-Adresse lautet.',
+        financialShieldTemplate5: 'Bitte weisen Sie auf missbrauchliche Finanzdienstleistungen oder eine mogliche Identitatsklonung eines legitimen Unternehmens hin.',
+        financialShieldTemplate6: 'Sie konnen mir per E-Mail an die von mir angegebene Adresse antworten, und ich kann an weiterer rechtlicher Unterstutzung interessiert sein oder auch nicht.',
+        financialShieldOutro: 'Diese interne Karte ist nutzlich fur Einzahlungen, Wallet-Transfers, falsche Trading-Angebote, Recovery-Versprechen und jede Situation, in der die Gegenseite Sie zu schnellem Handeln drangt.',
+        financialShieldButton: 'Datenbank der Finanzaufsichtsbehorden (190) offnen',
+        videoAvatarTitle: 'Video Avatar: lehrreiche und motivierende Kurzclips',
+        videoAvatarIntro: 'Dieser Bereich sammelt kurze lokale Clips, animierte Avatare und motivierende Lehrvideos, die die Seite attraktiver machen und Besucher langer auf der Website halten konnen, wahrend sie Anti-Betrugs-Botschaften erkunden.',
+        videoAvatarHubButton: 'Video-Avatar-Mini-Home offnen',
+        videoAvatarCard1: 'Kurzer Avatar-Clip mit einem direkten visuellen Signal fur Abwehr, Reaktion und aktiven Schutz.',
+        videoAvatarCard2: 'Animierte Avatar-Sequenz fur lehrreiches Storytelling rund um Risiko, Manipulation und Wachsamkeit.',
+        videoAvatarCard3: 'Motivierender Clip uber digitale Bereinigung, Gegenmassnahmen und sicherere Webnavigation.',
+        videoAvatarCard4: 'Lehrclip uber strukturelle Schwachen, Wachsamkeit und die Notwendigkeit starkerer Bankkontrollen.',
+        videoAvatarCard5: 'Kurzer Clip mit starker Metapher, der Erinnerung und emotionale Wirkung der Anti-Betrugs-Botschaft verbessern soll.',
+        videoAvatarCard6: 'Clip mit globaler Perspektive, der die grenzuberschreitende Natur von Betrug und den Wert internationaler Verifikation unterstreicht.',
+        videoAvatarCard7: 'Motivierender Clip uber Aufsicht, Grenzen und die Notwendigkeit, Risiken vor Geldbewegungen zu kartieren.',
+        videoAvatarCard8: 'Clip, der die Sicherheitszone mit Finanzaufsicht und offizieller Kontrolle verbindet.',
+        videoAvatarCard9: 'Sensibler Lehrclip uber emotionale Vulnerabilitat, Isolation und gezielte Auswahl durch Betruger.',
+        videoAvatarCard10: 'Kurze motivierende Warnung, die dazu anhalt, in verifizierten Kanalen und sicheren Routen zu bleiben.',
+        abfConciliationTitle: 'Arbitro Bancario Finanziario: aussergerichtliche Streitbeilegung',
+        abfConciliationBody1: 'Der Arbitro Bancario Finanziario ist ein aussergerichtliches System zur Beilegung von Streitigkeiten zwischen Kunden, Banken und anderen Finanzintermediaren. Er ist nutzlich, wenn Sie nicht autorisierte Uberweisungen, anomale Kontobewegungen, verweigerte Erstattungen oder ein Verhalten beanstanden wollen, das moglicherweise nicht der erforderlichen banklichen Sorgfalt entsprach.',
+        abfConciliationBody2: 'Bevor Sie vor Gericht gehen, kann dieser Weg helfen, den Streit mit Unterlagen, Chronologie und konkreten Einwanden zu strukturieren. Er ist besonders relevant, wenn es um anomale Transaktionen, fehlendes Monitoring, verspaetete Sperren oder bestrittene Zahlungsvorgange geht.',
+        abfConciliationButton: 'Offizielle ABF-Website offnen',
+        abfConciliationVideoButton: 'Erklarvideo der Bank von Italien ansehen',
+        fraudUrgentTransferTitle: 'Dringender Uberweisungsbetrug und falsche Lieferanten-IBAN',
+        fraudUrgentTransferBody1: 'Dieser Betrug trifft Familien und Unternehmen uber veranderte Rechnungen, gefalschte Anwaltsschreiben oder dringende Nachrichten, die scheinbar von einer Fuhrungskraft stammen. Eine einzige geanderte IBAN reicht aus, um eine grosse Zahlung umzuleiten, bevor jemand den Unterschied bemerkt.',
+        fraudUrgentTransferBody2: 'Die richtige Gewohnheit ist, jede neue Bankverbindung telefonisch zu bestatigen, und zwar mit einer Nummer, die Sie bereits kennen, niemals mit der Nummer aus der verdaechtigen E-Mail. Ein Ruckruf von einer Minute kann eine komplette Uberweisung retten.',
+        fraudFakeCharityTitle: 'Falsche Wohltatigkeit und emotionaler Spendenbetrug',
+        fraudFakeCharityBody1: 'Gefalschte Spendenkampagnen tauchen nach Kriegen, Katastrophen, medizinischen Notlagen oder offentlichen Tragödien auf. Sie nutzen bewegende Bilder, kopierte Logos und dramatische Appelle, um Spender zum schnellen Handeln zu drangen, bevor gepruft wird, wer das Geld wirklich erhalt.',
+        fraudFakeCharityBody2: 'Das sicherste Verhalten ist, nur uber offizielle Websites zu spenden, die Sie unabhangig aufrufen, und dabei rechtliche Identitat, Bankdaten und offentliche Referenzen zu prufen. Wenn sofortige Uberweisungen auf Privatkonten gefordert werden, ist das keine gute Sache, sondern ein Warnsignal.',
+        fraudInvoiceTitle: 'Rechnungsbetrug und Umleitung von Zahlungen',
+        fraudInvoiceBody1: 'Beim Rechnungsbetrug erhalt das Opfer eine Rechnung, die ganz normal wirkt: gleicher Lieferant, gleiche Gestaltung, ahnlicher E-Mail-Verlauf. Die entscheidende Anderung steckt in den Zahlungsdaten, wo das Bankkonto ersetzt wird, damit das Geld beim Angreifer landet.',
+        fraudInvoiceBody2: 'Eine starke Abwehr besteht darin, jedes neue Rechnungslayout, jede Kontanderung oder Korrektur in letzter Minute als eigenes Verifikationsereignis zu behandeln. Vergleichen Sie die Bankdaten mit fruheren Unterlagen und bestatigen Sie sie telefonisch mit einem vertrauten Kontakt, bevor Sie zahlen.',
+        fraudSimSwapTitle: 'SIM swap und abgefangene Verifizierungscodes',
+        fraudSimSwapBody1: 'SIM-swap-Betrug beginnt, wenn Kriminelle genug personliche Daten sammeln, um einen Mobilfunkanbieter davon zu uberzeugen, Ihre Nummer auf eine andere Karte zu ubertragen. Sobald sie die Leitung kontrollieren, fangen sie Einmalcodes ab und gelangen in Bank-, E-Mail- oder Borsenkonten.',
+        fraudSimSwapBody2: 'Wenn Ihr Telefon plotzlich ohne Erklarung das Netz verliert, reagieren Sie sofort: Kontaktieren Sie den Anbieter uber eine andere Leitung, sperren Sie sensible Konten und andern Sie Passworter von einem sicheren Gerat aus. Starkere Verfahren als SMS reduzieren den Schaden deutlich.',
+        fraudAccountTakeoverTitle: 'Kontoubernahme und verketteter Identitatsmissbrauch',
+        fraudAccountTakeoverBody1: 'Eine Kontoubernahme entsteht, wenn Angreifer in einen Dienst eindringen und dann zu weiteren wechseln: E-Mail, Banking, Shopping-Plattformen und Cloud-Speicher. Ein einziges kompromittiertes Postfach kann zum Generalschlussel fur Passwort-Resets, Kartenbetrug und Identitatsmissbrauch werden.',
+        fraudAccountTakeoverBody2: 'Die beste Abwehr ist mehrschichtig: einzigartige Passworter, ein aktueller Passwort-Manager, Mehrfaktor-Authentifizierung und die Kontrolle von Warnungen uber neue Anmeldungen. Wenn ein Konto verdachtige Aktivitaten zeigt, betrachten Sie alle verknupften Dienste als potenziell betroffen und wechseln Sie die Zugangsdaten nacheinander.',
+        fraudFakeLawyerTitle: 'Falscher Anwalt und erfundener Rechtsdruck',
+        fraudFakeLawyerBody1: 'Dieser Betrug nutzt juristische Sprache, Stempel, kopierte Unterschriften und dringende Fristen, um das Opfer einzuschuchtern und zur Zahlung zu bewegen. Die Nachricht kann vorgeben, von einer Kanzlei zu stammen, die Schulden, Urheberrecht, Erbschaften, Ruckholung oder einen dringenden Vergleich bearbeitet.',
+        fraudFakeLawyerBody2: 'Die richtige Reaktion ist, den Anwalt unabhangig uber ein offizielles Register oder eine selbst gefundene Nummer zu prufen, niemals uber die Kontaktdaten aus der drohenden Nachricht. Eine echte juristische Mitteilung bricht nicht zusammen, wenn Sie eine Verifikation verlangen.',
+        fraudParcelTitle: 'Paketbetrug und falsche Lieferprobleme',
+        fraudParcelBody1: 'Paketbetrug nutzt Neugier und Routine aus. Eine Nachricht behauptet, die Sendung sei blockiert, der Zoll sei unbezahlt oder die Adresse musse bestatigt werden. Der Betrag wirkt klein, doch das eigentliche Ziel ist der Diebstahl von Kartendaten, Zugangsdaten oder Identitatsdaten uber eine gefalschte Kurierseite.',
+        fraudParcelBody2: 'Die praktische Abwehr besteht darin, Sendungen nur uber die offizielle App oder Website des Zustellers zu verfolgen, die Sie selbst offnen. Wenn Sie kein Paket erwarten oder wenn die Nachricht eine dringende Zahlung uber einen ungewohnten Link fordert, behandeln Sie sie von Anfang an als verdaechtig.',
+        fraudMarketplaceTitle: 'Marketplace-Betrug und gefalschte Kaufer-Schutzlinks',
+        fraudMarketplaceBody1: 'Marketplace-Betrug betrifft Verkaufer und Kaufer. Ein falscher Kaufer sendet einen Zahlungslink ausserhalb der Plattform, oder ein falscher Verkaufer fordert eine Anzahlung zur Reservierung des Artikels. Das Gesprach wirkt normal, bis das Opfer das geschutzte System verlasst und eine geklonte Seite betritt.',
+        fraudMarketplaceBody2: 'Bleiben Sie nach Moglichkeit im Chat des Marketplace, im Zahlungsablauf und in den Versandwerkzeugen der Plattform. In dem Moment, in dem die andere Seite den Vorgang auf einen externen Link, einen Kurier-Trick oder eine Sofort-Erstattungsseite verlagern will, stoppen Sie und bewerten die gesamte Transaktion neu.',
+        fraudIdentityTheftTitle: 'Identitatsdiebstahl und betrugerische Dokumentensammlung',
+        fraudIdentityTheftBody1: 'Identitatsdiebstahl beginnt oft leise: mit einem gefalschten Formular, einer erfundenen Verifikationsanfrage, einer kopierten Login-Seite oder einem Angebot, das Ausweise, Selfies und Rechnungen verlangt. Diese Dokumente konnen spater fur betrugerische Konten, Kredite, SIM-Aktivierungen oder Social Engineering missbraucht werden.',
+        fraudIdentityTheftBody2: 'Bevor Sie ein Dokument hochladen, fragen Sie sich, warum es gebraucht wird, wie es gespeichert wird und ob die Anfrage wirklich von einer verifizierten Stelle stammt. Eine vorsichtige Gewohnheit ist es, nur das Minimum zu teilen und sensible Dateien moglichst nicht uber normalen Chat zu versenden.',
+        goldenTreeNewsKicker: 'Realfall • Roma Today',
+        goldenTreeNewsDate: '5. Februar 2026',
+        goldenTreeNewsTitle: 'Golden Tree: falsche Bank, falsche Karten und falsche Banking-App',
+        goldenTreeNewsBody1: 'Die Operation Golden Tree deckte ein falsches Bankennetz auf, das durch gebrandete Zahlungskarten, Buros und sogar eine Banking-App fur Kunden glaubwurdig wirkte.',
+        goldenTreeNewsBody2: 'Die praktische Lehre ist klar: Karten, Apps und professionelle Sprache beweisen keine Legitimitat. Bevor Sie einem Finanzanbieter vertrauen, prufen Sie Zulassung, offentliche Register und offizielle Warnhinweise uber unabhangige Kanale.',
+        goldenTreeNewsButton: 'Roma-Today-Artikel lesen',
+        fraudFakeBankOfficerTitle: 'Falscher Bankmitarbeiter und Sicherheitsanruf-Betrug',
+        fraudFakeBankOfficerBody1: 'Bei diesem Betrug klingt der Anrufer professionell, kennt einige personliche Daten und behauptet, Ihr Konto vor Betrug zu schutzen. Das Gesprach soll Vertrauen schaffen, wahrend Sie dazu gedrangt werden, Codes preiszugeben, ein Geraet zu bestaetigen, Geld auf ein angeblich sicheres Konto zu verschieben oder eine Sicherheits-App zu installieren.',
+        fraudFakeBankOfficerBody2: 'Die richtige Abwehr ist, das Gesprach zu beenden und Ihre Bank selbst uber die Nummer auf offiziellen Unterlagen oder in der Banking-App zu kontaktieren. Ein echter Bankmitarbeiter braucht nicht, dass Sie Geld aus Ihrem eigenen Konto wegbewegen, um es zu schutzen.',
+        romaSmsCallNewsKicker: 'Realfall • Roma Today',
+        romaSmsCallNewsDate: '7. Oktober 2025',
+        romaSmsCallNewsTitle: 'SMS und falscher Bankanruf: zwolf Uberweisungen nach Litauen',
+        romaSmsCallNewsBody1: 'Roma Today berichtete uber den Fall eines Romers, der durch eine SMS und einen anschliessenden falschen Sicherheitsanruf getauscht wurde, wobei innerhalb von etwas mehr als zwei Stunden zwolf Uberweisungen an eine litauische Bank gingen.',
+        romaSmsCallNewsBody2: 'Das ABF erkannte anschliessend eine teilweise Erstattung an und betonte, dass die Bank die Anomalie hatte erkennen sowie verstarktes Monitoring und eine automatische Sperre aktivieren mussen.',
+        romaSmsCallNewsButton: 'Roma-Today-Artikel lesen',
+        fraudInvestmentAcademyTitle: 'Investment-Akademie-Betrug und kostenpflichtige Mentoring-Fallen',
+        fraudInvestmentAcademyBody1: 'Diese Betruge imitieren Bildungsprogramme, Trading-Akademien oder exklusive Investorengemeinschaften. Dem Opfer wird zuerst ein Kurs verkauft, dann eine Premium-Signalgruppe und danach eine verwaltete Gelegenheit, die angeblich nur funktioniert, wenn schnell noch mehr Geld eingezahlt wird.',
+        fraudInvestmentAcademyBody2: 'Eine nutzliche Abwehr besteht darin, Bildung und Verwahrung von Geldern zu trennen. Sie konnen Finanzen lernen, ohne Fremden Zugriff auf Ihr Wallet, Ihr Exchange-Konto oder Ihr Kapital zu geben. Wenn Lernen und Geldtransfer miteinander verknupft werden, sollte die Vorsicht sofort steigen.',
+        fraudQrCodeTitle: 'QR-Code-Betrug und versteckte Zahlungsumleitung',
+        fraudQrCodeBody1: 'QR-Code-Betrug funktioniert, weil Menschen visuellen Abkurzungen vertrauen. Ein Aufkleber kann den echten Zahlungscode an einem Parkautomaten, auf einem Plakat, in einem Restaurant oder in einer gefalschten Rechnung ersetzen. Ein einziger Scan genugt, um eine schadliche Seite zu offnen oder eine Zahlung zu einem anderen Empfanger umzuleiten.',
+        fraudQrCodeBody2: 'Bevor Sie etwas bestatigen, prufen Sie das nach dem Scan angezeigte Ziel, kontrollieren Sie den physischen Code auf Manipulationen und tippen Sie bekannte Adressen lieber manuell ein, wenn es um Banking oder Kontozugriff geht. Ein QR-Code ist eine Abkurzung, kein Legitimationsnachweis.',
+        fraudGiftCardTitle: 'Geschenkkarten-Betrug und irreversible Code-Zahlungen',
+        fraudGiftCardBody1: 'Geschenkkarten-Betrug taucht auf, wenn ein Betruger vorgibt, eine Firma, ein Finanzamt, ein Vorgesetzter oder ein Familienmitglied zu sein, und eine dringende Zahlung uber Prepaid-Karten verlangt. Diese Methode wird gewahlt, weil die Codes schnell eingelost werden konnen und nach der Weitergabe schwer zuruckzuholen sind.',
+        fraudGiftCardBody2: 'Die beste Regel ist absolut: Keine legitime Institution regelt Schulden, Bussgelder, Sicherheitsprufungen oder Nothilfe uber Geschenkkarten-Codes. In dem Moment, in dem diese Forderung auftaucht, beenden Sie das Gesprach und prufen die Geschichte uber einen unabhangigen Kontakt.',
+        fraudLoanTitle: 'Kreditbetrug und falsche Sofortzusage',
+        fraudLoanBody1: 'Kreditbetrug richtet sich an Menschen, die schnell Liquiditat brauchen. Der Betruger verspricht garantierte Zusage, keine Prufung oder sofortige Auszahlung und verlangt dann Vorausgebuhren, Versicherungen, Notarkosten oder Verifikationszahlungen, bevor das Geld angeblich uberwiesen werden kann.',
+        fraudLoanBody2: 'Ein serioser Kreditgeber stellt legitime Kosten transparent dar oder dokumentiert sie in formellen Vertragen, nicht durch dringenden Chat-Druck. Wenn Kredit allen versprochen wird, aber zuerst Geld gesendet werden muss, ist das Angebot fast sicher eine Falle.',
+        fraudTaxRefundTitle: 'Steuererstattungsbetrug und falsche Behordenhinweise',
+        fraudTaxRefundBody1: 'Dieser Betrug behauptet, dass Ihnen eine Erstattung zusteht oder dass ein Steuerproblem sofort behoben werden muss. Die Nachricht imitiert eine offizielle Behorde, verwendet formale Sprache und enthalt einen Link oder Anhang, der Bankdaten, Zugangsdaten oder Ausweisdokumente abgreifen soll.',
+        fraudTaxRefundBody2: 'Die beste Abwehr besteht darin, den eingebetteten Link zu ignorieren und das Behordenportal direkt uber ein vertrauenswurdiges Lesezeichen oder eine manuelle Suche aufzurufen. Eine offizielle Stelle braucht weder Zeitdruck noch Geheimhaltung, um Ihnen rechtmassig zustehendes Geld zu uberweisen.',
+        fraudRentalTitle: 'Mietbetrug und gefalschte Immobilienanzeigen',
+        fraudRentalBody1: 'Mietbetrug prasentiert attraktive Wohnungen, Kurzzeitunterkunfte oder Ferienhauser zu uberzeugenden Preisen. Der Betruger behauptet starke Nachfrage und verlangt eine Anzahlung vor jeder echten Besichtigung, oft mit Ausreden uber Reisen, Schlussel, Plattformprobleme oder rechtliche Eile.',
+        fraudRentalBody2: 'Uberweisen Sie niemals eine Anzahlung fur eine Immobilie, die Sie nicht uber eine echte Besichtigung, eine vertrauenswurdige Plattform oder dokumentierte Eigentumsprufungen verifizieren konnen. Wohnraum kann dringend sein, aber Ihre Zahlung darf der Verifikation nie vorauslaufen.',
+        fraudDeepfakeVoiceTitle: 'Deepfake-Stimmenbetrug und geklonte Familien-Notrufe',
+        fraudDeepfakeVoiceBody1: 'Stimmenklonung erlaubt es Kriminellen, einen Verwandten, Vorgesetzten oder vertrauten Kollegen so echt zu simulieren, dass Panik entsteht. Der Anruf klingt emotional, eilig und konkret. Das Opfer wird dazu gedrangt, schnell Geld zu senden, bevor Fragen gestellt werden, die den Betrug aufdecken wurden.',
+        fraudDeepfakeVoiceBody2: 'Bauen Sie eine Verifikationsgewohnheit auf, bevor Notfalle eintreten: Nutzen Sie ein Familien-Codewort, rufen Sie uber eine bekannte Nummer zuruck und bestatigen Sie die Anfrage uber einen zweiten Kanal. Je dringender die Geschichte klingt, desto disziplinierter muss die Verifikation sein.',
+        fraudBackToToc: 'Zuruck zum Inhaltsverzeichnis',
+        fraudDefenseNote: '<strong>Letzte Selbstschutzregel:</strong> wenn eine Geldforderung auf Zeitdruck, Geheimhaltung oder dem Versprechen leichter Gewinne basiert, unterbrechen Sie den Vorgang fur mindestens dreissig Minuten und prufen Sie alles uber einen unabhangigen Kanal neu. Diese Pause allein blockiert viele Betruge besser als jede Software.'
+      }
+    };
+    
+    let currentLang = 'EN';
+    const mobileStaticScenarioCopy = {
+      EN: {
+        badge: 'SCENARIO 2',
+        title: 'Choose the anti-fraud route',
+        copy: 'Open the practical guide, enter the complaint grid, jump to the internal You$ Financial Shield card, or watch the local video avatar clips.',
+        guideTitle: 'News and Security',
+        guideSubtitle: 'Guide cards and real cases',
+        complaintsTitle: 'Bank Complaints Grid',
+        complaintsSubtitle: '20 banks plus 20 future slots',
+        backTitle: 'You$ Financial Shield',
+        backSubtitle: 'Open the internal shield card',
+        videoTitle: 'Video Avatar',
+        videoSubtitle: 'Educational clips and avatars',
+        note: 'The complaint grid keeps 20 empty cells reserved for future bank complaint services.'
+      },
+      IT: {
+        badge: 'SCENARIO 2',
+        title: 'Scegli il percorso anti-truffa',
+        copy: 'Apri la guida pratica, entra nella complaint grid, vai alla scheda interna You$ - Il tuo Scudo Finanziario oppure guarda i clip locali video-avatar.',
+        guideTitle: 'News e Sicurezza',
+        guideSubtitle: 'Schede guida e casi reali',
+        complaintsTitle: 'Bank Complaints Grid',
+        complaintsSubtitle: '20 banche piu 20 slot futuri',
+        backTitle: 'You$ - Il tuo Scudo Finanziario',
+        backSubtitle: 'Apri la scheda interna nel desktop guide',
+        videoTitle: 'Video Avatar',
+        videoSubtitle: 'Clip educational e motivational',
+        note: 'La complaint grid mantiene 20 caselle vuote riservate ai futuri servizi reclami delle banche.'
+      },
+      FR: {
+        badge: 'SCENARIO 2',
+        title: 'Choisissez le parcours anti-fraude',
+        copy: 'Ouvrez le guide pratique, entrez dans la grille des reclamations, accedez a la fiche interne You$ ou regardez les clips video avatar locaux.',
+        guideTitle: 'Actualites et Securite',
+        guideSubtitle: 'Cartes guide et cas reels',
+        complaintsTitle: 'Grille Bank Complaints',
+        complaintsSubtitle: '20 banques plus 20 emplacements futurs',
+        backTitle: 'Bouclier Financier You$',
+        backSubtitle: 'Ouvrir la fiche interne de protection',
+        videoTitle: 'Video Avatar',
+        videoSubtitle: 'Clips educatifs et avatars',
+        note: 'La grille des reclamations conserve 20 cases vides reservees aux futurs services reclamations des banques.'
+      },
+      DE: {
+        badge: 'SZENARIO 2',
+        title: 'Wahlen Sie den Anti-Betrugs-Pfad',
+        copy: 'Offnen Sie den Praxisleitfaden, gehen Sie ins Beschwerde-Raster, springen Sie zur internen You$-Schutzkarte oder sehen Sie sich lokale Video-Avatar-Clips an.',
+        guideTitle: 'News und Sicherheit',
+        guideSubtitle: 'Leitkarten und reale Falle',
+        complaintsTitle: 'Bank Complaints Raster',
+        complaintsSubtitle: '20 Banken plus 20 freie Felder',
+        backTitle: 'You$ Finanzschild',
+        backSubtitle: 'Interne Schutzkarte offnen',
+        videoTitle: 'Video Avatar',
+        videoSubtitle: 'Lehrclips und Avatare',
+        note: 'Das Beschwerde-Raster behalt 20 leere Felder fur zukunftige Beschwerdestellen von Banken.'
+      }
+    };
+
+    document.querySelectorAll('.adsense-card').forEach(card => {
+      if(card.querySelector('.adsense-back-link')) return;
+      const backLink = document.createElement('a');
+      backLink.href = '#fraud-guide-toc';
+      backLink.className = 'adsense-back-link';
+      backLink.setAttribute('data-i18n', 'fraudBackToToc');
+      backLink.textContent = 'Back to table of contents';
+      card.appendChild(backLink);
+    });
+    
+    function applyTranslations(lang){
+      currentLang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if(translations[lang] && translations[lang][key]){
+          el.innerHTML = translations[lang][key];
+        }
+      });
+      // Traduci anche i placeholder degli input
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if(translations[lang] && translations[lang][key]){
+          el.placeholder = translations[lang][key];
+        }
+      });
+      // Aggiorna anche i popup delle icone banca
+      updateBankPopups(lang);
+      renderMobileStaticScenarioText();
+      scheduleLowerSceneLayout(80);
+    }
+
+    function renderMobileStaticScenarioText(){
+      const copy = mobileStaticScenarioCopy[currentLang] || mobileStaticScenarioCopy.EN;
+      const mappings = {
+        'mobile-static-badge': copy.badge,
+        'mobile-static-title': copy.title,
+        'mobile-static-copy': copy.copy,
+        'mobile-static-guide-title': copy.guideTitle,
+        'mobile-static-guide-subtitle': copy.guideSubtitle,
+        'mobile-static-complaints-title': copy.complaintsTitle,
+        'mobile-static-complaints-subtitle': copy.complaintsSubtitle,
+        'mobile-static-back-title': copy.backTitle,
+        'mobile-static-back-subtitle': copy.backSubtitle,
+        'mobile-static-video-title': copy.videoTitle,
+        'mobile-static-video-subtitle': copy.videoSubtitle,
+        'mobile-static-note': copy.note
+      };
+
+      Object.entries(mappings).forEach(([id, value]) => {
+        const element = document.getElementById(id);
+        if(element) element.textContent = value;
+      });
+    }
+
+    function openMobileStaticScenario(){
+      const overlay = document.getElementById('mobile-static-scenario');
+      if(!overlay) return;
+
+      renderMobileStaticScenarioText();
+      document.body.classList.remove('mobile-hero-collapsed');
+      document.body.classList.remove('mobile-hero-expanded');
+      document.body.classList.remove('mobile-guide-scroll');
+      document.body.classList.add('mobile-static-scenario');
+      overlay.setAttribute('aria-hidden', 'false');
+      stopMobileBanksWordModule();
+
+      if(typeof stopEmojiLaserLoop === 'function'){
+        stopEmojiLaserLoop();
+      }
+
+      window.scrollTo(0, 0);
+    }
+
+    function closeMobileStaticScenario(destination = 'home'){
+      const overlay = document.getElementById('mobile-static-scenario');
+      if(overlay) overlay.setAttribute('aria-hidden', 'true');
+
+      document.body.classList.remove('mobile-static-scenario');
+      document.body.classList.remove('mobile-hero-expanded');
+      document.body.classList.remove('mobile-guide-scroll');
+
+      if(destination === 'home'){
+        document.body.classList.add('mobile-hero-collapsed');
+        syncMobileBanksWordModule();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        return;
+      }
+
+      if(destination === 'guide'){
+        stopMobileBanksWordModule();
+        document.body.classList.remove('mobile-hero-collapsed');
+        document.body.classList.add('mobile-guide-scroll');
+        scheduleLowerSceneLayout(180);
+
+        const guide = document.getElementById('fraud-guide');
+        if(guide){
+          window.setTimeout(() => {
+            guide.scrollIntoView({behavior: 'smooth', block: 'start'});
+          }, 80);
+        }
+      }
+
+      if(destination === 'shield-card'){
+        stopMobileBanksWordModule();
+        document.body.classList.remove('mobile-hero-collapsed');
+        document.body.classList.add('mobile-guide-scroll');
+        scheduleLowerSceneLayout(180);
+
+        const card = document.getElementById('financial-shield-card');
+        if(card){
+          window.setTimeout(() => {
+            card.scrollIntoView({behavior: 'smooth', block: 'start'});
+          }, 80);
+        }
+      }
+
+      if(destination === 'video-avatar'){
+        stopMobileBanksWordModule();
+        document.body.classList.remove('mobile-hero-collapsed');
+        document.body.classList.add('mobile-guide-scroll');
+        scheduleLowerSceneLayout(180);
+
+        const card = document.getElementById('video-avatar-section');
+        if(card){
+          window.setTimeout(() => {
+            card.scrollIntoView({behavior: 'smooth', block: 'start'});
+          }, 80);
+        }
+      }
+    }
+
+    const mobileStaticGuideButton = document.getElementById('mobile-static-guide-btn');
+    if(mobileStaticGuideButton){
+      mobileStaticGuideButton.addEventListener('click', () => {
+        closeMobileStaticScenario('guide');
+      });
+    }
+
+    const mobileStaticComplaintsButton = document.getElementById('mobile-static-complaints-btn');
+    if(mobileStaticComplaintsButton){
+      mobileStaticComplaintsButton.addEventListener('click', () => {
+        window.location.href = `complaints-grid.html?lang=${encodeURIComponent(currentLang)}`;
+      });
+    }
+
+    const mobileStaticBackButton = document.getElementById('mobile-static-back-btn');
+    if(mobileStaticBackButton){
+      mobileStaticBackButton.addEventListener('click', () => {
+        closeMobileStaticScenario('shield-card');
+      });
+    }
+
+    const mobileStaticVideoButton = document.getElementById('mobile-static-video-btn');
+    if(mobileStaticVideoButton){
+      mobileStaticVideoButton.addEventListener('click', () => {
+        closeMobileStaticScenario('video-avatar');
+      });
+    }
+
+    function buildVideoPoster(title, category){
+      const palette = {
+        avatar: {start: '#003b7a', end: '#00a6ff', accent: '#ffd700'},
+        motivational: {start: '#0d4f2f', end: '#13a85a', accent: '#ffe082'},
+        educational: {start: '#3b245f', end: '#6c4ccf', accent: '#8dd9ff'}
+      };
+      const colors = palette[category] || palette.educational;
+      const safeTitle = String(title || 'Video Avatar')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+          <defs>
+            <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="${colors.start}"/>
+              <stop offset="100%" stop-color="${colors.end}"/>
+            </linearGradient>
+          </defs>
+          <rect width="1280" height="720" fill="url(#bg)"/>
+          <circle cx="1060" cy="160" r="92" fill="rgba(255,255,255,0.08)"/>
+          <circle cx="170" cy="560" r="130" fill="rgba(255,255,255,0.06)"/>
+          <rect x="72" y="76" width="240" height="46" rx="23" fill="rgba(0,0,0,0.22)" stroke="${colors.accent}"/>
+          <text x="110" y="107" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="${colors.accent}">${category.toUpperCase()}</text>
+          <text x="84" y="310" font-family="Arial, sans-serif" font-size="60" font-weight="800" fill="#ffffff">Video Avatar</text>
+          <foreignObject x="84" y="340" width="880" height="220">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,sans-serif;font-size:44px;line-height:1.2;font-weight:800;color:white;">${safeTitle}</div>
+          </foreignObject>
+          <circle cx="1098" cy="548" r="78" fill="rgba(0,0,0,0.28)" stroke="${colors.accent}" stroke-width="4"/>
+          <polygon points="1076,510 1076,586 1142,548" fill="#ffffff"/>
+        </svg>`;
+      return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+    }
+
+    function setupVideoAvatarPreviews(){
+      const cards = Array.from(document.querySelectorAll('.video-avatar-card'));
+      const desktopOnly = window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth > MOBILE_BREAKPOINT;
+
+      cards.forEach(card => {
+        const video = card.querySelector('.video-avatar-player');
+        if(!video) return;
+
+        const title = video.dataset.videoTitle || card.querySelector('h4')?.textContent || 'Video Avatar';
+        const category = card.dataset.videoCategory || 'educational';
+        video.poster = buildVideoPoster(title, category);
+        video.muted = true;
+        video.playsInline = true;
+
+        if(card.dataset.previewBound === 'true') return;
+        card.dataset.previewBound = 'true';
+
+        video.addEventListener('play', () => card.classList.add('is-playing'));
+        video.addEventListener('pause', () => card.classList.remove('is-playing'));
+        video.addEventListener('ended', () => card.classList.remove('is-playing'));
+
+        card.addEventListener('mouseenter', () => {
+          if(!desktopOnly) return;
+          card.classList.add('is-previewing');
+          video.currentTime = 0;
+          const playAttempt = video.play();
+          if(playAttempt && typeof playAttempt.catch === 'function'){
+            playAttempt.catch(() => {});
+          }
+        });
+
+        card.addEventListener('mouseleave', () => {
+          if(!desktopOnly) return;
+          card.classList.remove('is-previewing');
+          video.pause();
+          video.currentTime = 0;
+          card.classList.remove('is-playing');
+        });
+      });
+    }
+
+    setupVideoAvatarPreviews();
+
+    function updateLowerSceneLayout(){
+      const scene = document.querySelector('.scene');
+      const guide = document.getElementById('fraud-guide');
+      const blog = document.getElementById('blog-collaboration');
+      const bottomLeft = document.getElementById('bank-logos-bottom-left');
+      const bottomRight = document.getElementById('bank-logos-bottom-right');
+      const finalBanner = document.querySelector('.scaffold-banner-final');
+      const rungs = Array.from(document.querySelectorAll('.scaffold-rung'));
+
+      if(!scene || !guide || !blog || !bottomLeft || !bottomRight || !finalBanner || rungs.length < 6){
+        return;
+      }
+
+      const guideBottom = guide.offsetTop + guide.offsetHeight;
+      const narrowViewport = isMobileViewport();
+      const compactViewport = isCompactViewport();
+      const bankTop = guideBottom + (narrowViewport ? 110 : compactViewport ? 130 : 150);
+      const rungStart = bankTop + (narrowViewport ? 520 : 560);
+      const rungOffsets = [0, 100, 300, 400, 600, 700];
+      const finalTop = rungStart + 785;
+      const blogTop = finalTop + 120;
+      const requiredHeight = blogTop + blog.offsetHeight + 220;
+
+      bottomLeft.style.top = `${bankTop}px`;
+      bottomRight.style.top = `${bankTop}px`;
+
+      rungs.forEach((rung, index) => {
+        rung.style.top = `${rungStart + rungOffsets[index]}px`;
+      });
+
+      finalBanner.style.top = `${finalTop}px`;
+      blog.style.top = `${blogTop}px`;
+      scene.style.minHeight = `${requiredHeight}px`;
+    }
+    
+    // ===== POPUP ICONE BANCA =====
+    function showBankPopup(side){
+      const popup = document.getElementById('bank-popup-' + side);
+      if(popup){
+        // Toggle visibilità
+        if(popup.classList.contains('visible')){
+          popup.classList.remove('visible');
+        } else {
+          // Chiudi altri popup aperti
+          document.querySelectorAll('.bank-popup').forEach(p => p.classList.remove('visible'));
+          popup.classList.add('visible');
+          // Auto-chiudi dopo 3 secondi
+          setTimeout(() => popup.classList.remove('visible'), 3000);
+        }
+      }
+    }
+    
+    function updateBankPopups(lang){
+      const text = translations[lang] && translations[lang].bankListUpdate ? translations[lang].bankListUpdate : 'Bank List Update in Progress';
+      document.querySelectorAll('.bank-popup').forEach(p => p.textContent = text);
+    }
+    
+    // ===== BLOG COLLABORATIVO - Contributi utenti =====
+    const blogResponses = [];
+    
+    function submitBankContribution(event){
+      event.preventDefault();
+      const bankName = document.getElementById('bank-name-input').value.trim();
+      const bankAddress = document.getElementById('bank-address-input').value.trim();
+      const contributorName = document.getElementById('contributor-name-input').value.trim() || 'Anonimo';
+      
+      if(!bankName || !bankAddress) return;
+      
+      const response = {
+        bank: bankName,
+        address: bankAddress,
+        contributor: contributorName,
+        date: new Date().toLocaleDateString(currentLang === 'IT' ? 'it-IT' : currentLang === 'FR' ? 'fr-FR' : currentLang === 'DE' ? 'de-DE' : 'en-GB')
+      };
+      
+      blogResponses.unshift(response);
+      renderBlogResponses();
+      
+      // Reset form
+      document.getElementById('blog-form').reset();
+      
+      // Mostra conferma
+      const messages = {
+        EN: 'Thank you for your contribution! 🎉',
+        IT: 'Grazie per il tuo contributo! 🎉',
+        FR: 'Merci pour votre contribution! 🎉',
+        DE: 'Danke für Ihren Beitrag! 🎉'
+      };
+      alert(messages[currentLang] || messages.EN);
+    }
+    
+    function renderBlogResponses(){
+      const container = document.getElementById('blog-responses');
+      if(!container) return;
+      
+      container.innerHTML = blogResponses.map(r => `
+        <div class="blog-response">
+          <div class="blog-response-bank">🏦 ${r.bank}</div>
+          <div class="blog-response-address">📧 ${r.address}</div>
+          <div class="blog-response-date">👤 ${r.contributor} - ${r.date}</div>
+        </div>
+      `).join('');
+    }
+
+    // ===== SISTEMA AUDIO - MARCHIO MUSICALE ITALIANO =====
+    // La Gazza Ladra di Gioacchino Rossini - Per IT e FR
+    // Guglielmo Tell di Gioacchino Rossini - Per EN e DE
+    const audioTracks = {
+      gazzaLadra: {
+        name: 'La Gazza Ladra - G. Rossini',
+        start: 259,  // 04:19
+        end: 366,    // 06:06
+        src: 'audio/la-gazza-ladra.flac'
+      },
+      guglielmoTell: {
+        name: 'Guglielmo Tell - G. Rossini',
+        start: 0,    // dall'inizio del segmento 3:40-5:10
+        end: 90,     // 1:30 di durata
+        src: 'audio/Guglielmo Tell-3_40-5_10-roger-norrington-guillaume-tell-overture.ogg'
+      }
+    };
+    
+    // Mappa lingue -> traccia audio
+    const langToTrack = {
+      'IT': audioTracks.gazzaLadra,
+      'FR': audioTracks.gazzaLadra,
+      'EN': audioTracks.guglielmoTell,
+      'DE': audioTracks.guglielmoTell
+    };
+    
+    let currentAudio = null;
+    let currentLangPlaying = null;
+    let victoryAudio = null; // Audio vittoria Guglielmo Tell
+    
+    // ★★★ GUGLIELMO TELL AUTOPLAY LOOP - Parte all'apertura pagina (tipo TikTok) ★★★
+    function playGuglielmoTellVictoryLoop(){
+      // Ferma qualsiasi audio precedente
+      if(currentAudio){
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+      if(victoryAudio){
+        victoryAudio.pause();
+        victoryAudio.currentTime = 0;
+        victoryAudio = null;
+      }
+      
+      // Crea audio Guglielmo Tell
+      // Il file è tagliato da 3:40 a 5:10 dell'originale (90 secondi totali)
+      // Riproduce INTERO FILE in loop: 00:00 - 05:10 (relativo al taglio)
+      victoryAudio = new Audio('audio/Guglielmo Tell-3_40-5_10-roger-norrington-guillaume-tell-overture.ogg');
+      const startTime = 0;   // Inizio del file tagliato (03:40 dell'originale)
+      const endTime = 90;    // Fine del file tagliato (05:10 dell'originale)
+      
+      // Funzione per avviare l'audio
+      function startAudio(){
+        victoryAudio.currentTime = startTime;
+        victoryAudio.play().then(()=>{
+          console.log('🎺 GUGLIELMO TELL - Autoplay Loop avviato!');
+          showAudioIndicator('Guglielmo Tell - G. Rossini', 'AUTOPLAY');
+          // Rimuovi tutti i listener una volta partito
+          removeAutoplayListeners();
+        }).catch(e => {
+          console.log('⚠️ Audio in attesa di interazione utente');
+        });
+      }
+      
+      // Listener per qualsiasi interazione utente
+      function onUserInteraction(){
+        startAudio();
+      }
+      
+      function removeAutoplayListeners(){
+        document.removeEventListener('click', onUserInteraction);
+        document.removeEventListener('touchstart', onUserInteraction);
+        document.removeEventListener('keydown', onUserInteraction);
+        document.removeEventListener('scroll', onUserInteraction);
+        document.removeEventListener('mousemove', onUserInteractionOnce);
+      }
+      
+      // Mousemove solo una volta (evita spam)
+      let mouseMoved = false;
+      function onUserInteractionOnce(e){
+        if(!mouseMoved){
+          mouseMoved = true;
+          onUserInteraction();
+        }
+      }
+      
+      victoryAudio.addEventListener('loadedmetadata', function(){
+        // Prova autoplay immediato
+        startAudio();
+        
+        // Se fallisce, attendi qualsiasi interazione utente
+        document.addEventListener('click', onUserInteraction, {once: true});
+        document.addEventListener('touchstart', onUserInteraction, {once: true});
+        document.addEventListener('keydown', onUserInteraction, {once: true});
+        document.addEventListener('scroll', onUserInteraction, {once: true});
+        document.addEventListener('mousemove', onUserInteractionOnce);
+      });
+      
+      victoryAudio.load();
+      
+      // Loop: quando raggiunge endTime, ricomincia da startTime
+      victoryAudio.addEventListener('timeupdate', function(){
+        if(this.currentTime >= endTime){
+          this.currentTime = startTime;
+          console.log('🔄 Guglielmo Tell - Loop restart');
+        }
+      });
+      
+      victoryAudio.addEventListener('error', function(e){
+        console.error('❌ Errore caricamento Guglielmo Tell:', e);
+      });
+    }
+    
+    function stopVictoryAudio(){
+      if(victoryAudio){
+        victoryAudio.pause();
+        victoryAudio.currentTime = 0;
+        victoryAudio = null;
+        hideAudioIndicator();
+        console.log('🛑 Guglielmo Tell Victory fermato');
+      }
+    }
+    
+    function playLangMusic(lang){
+      // Seleziona traccia in base alla lingua
+      const track = langToTrack[lang] || audioTracks.gazzaLadra;
+      
+      // Ferma audio precedente
+      if(currentAudio){
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('playing'));
+        document.querySelectorAll('.gazza-icon').forEach(g=>g.classList.remove('gazza-playing'));
+      }
+      
+      // Se clicchi la stessa lingua, stop
+      if(currentLangPlaying === lang){
+        hideAudioIndicator();
+        currentLangPlaying = null;
+        return;
+      }
+      
+      // Crea nuovo audio
+      currentAudio = new Audio(track.src);
+      currentLangPlaying = lang;
+      
+      // 🔧 Debug: evento errore per capire se caricamento fallisce
+      currentAudio.addEventListener('error', function(e){
+        console.error('❌ ERRORE AUDIO:', e);
+        console.error('File:', track.src);
+        console.error('Codice errore:', this.error ? this.error.code : 'sconosciuto');
+      //  alert('Audio non disponibile - verifica che il file esista: ' + track.src);
+      });
+      
+      // Aggiungi classe playing al bottone e alle gazze
+      const btn = document.querySelector(`.lang-btn[data-lang="${lang}"]`);
+      if(btn) btn.classList.add('playing');
+      document.querySelectorAll('.gazza-icon').forEach(g=>g.classList.add('gazza-playing'));
+      
+      // Mostra indicatore
+      showAudioIndicator(track.name, lang);
+      
+      // ★★★ PLAY! Attendi caricamento poi riproduci dal punto giusto ★★★
+      currentAudio.addEventListener('loadedmetadata', function(){
+        this.currentTime = track.start;
+        this.play().then(()=>{
+          console.log('🎵 LA GAZZA LADRA - Riproduzione avviata!');
+        }).catch(e => {
+          console.log('⚠️ Audio bloccato dal browser - clicca ancora:', e);
+          // Riprova con interazione utente
+          document.addEventListener('click', function retryPlay(){
+            currentAudio.play();
+            document.removeEventListener('click', retryPlay);
+          }, {once: true});
+        });
+      });
+      
+      // Fallback: se loadedmetadata non scatta, prova comunque
+      currentAudio.load();
+      
+      // Ferma alla fine del segmento
+      currentAudio.addEventListener('timeupdate', function(){
+        if(this.currentTime >= track.end){
+          this.pause();
+          hideAudioIndicator();
+          document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('playing'));
+          document.querySelectorAll('.gazza-icon').forEach(g=>g.classList.remove('gazza-playing'));
+          currentLangPlaying = null;
+        }
+      });
+      
+      // Quando finisce naturalmente
+      currentAudio.addEventListener('ended', function(){
+        hideAudioIndicator();
+        document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('playing'));
+        document.querySelectorAll('.gazza-icon').forEach(g=>g.classList.remove('gazza-playing'));
+        currentLangPlaying = null;
+      });
+    }
+    
+    function showAudioIndicator(trackName, lang){
+      const indicator = document.getElementById('audioIndicator');
+      if(indicator){
+        indicator.querySelector('.track-name').textContent = trackName;
+        indicator.classList.add('visible');
+      }
+    }
+    
+    function hideAudioIndicator(){
+      const indicator = document.getElementById('audioIndicator');
+      if(indicator) indicator.classList.remove('visible');
+    }
+    
+    function stopCurrentAudio(){
+      if(currentAudio){
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+      // Ferma anche l'audio vittoria
+      if(victoryAudio){
+        victoryAudio.pause();
+        victoryAudio.currentTime = 0;
+        victoryAudio = null;
+      }
+      hideAudioIndicator();
+      document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('playing'));
+      document.querySelectorAll('.gazza-icon').forEach(g=>g.classList.remove('gazza-playing'));
+      currentLangPlaying = null;
+    }
+    
+    // Click sulle icone gazza avvia/ferma la musica
+    document.querySelectorAll('.gazza-icon').forEach(icon=>{
+      icon.addEventListener('click', ()=>{
+        if(currentLangPlaying){
+          stopCurrentAudio();
+        } else {
+          playLangMusic(currentLang);
+        }
+      });
+    });
+    
+    // Esponi globalmente
+    window.stopCurrentAudio = stopCurrentAudio;
+    
+    document.querySelectorAll('.lang-btn').forEach(btn=>{
+      let lastTouchSelection = 0;
+
+      const onLangSelect = (event) => {
+        if(event.type === 'click' && Date.now() - lastTouchSelection < 450){
+          return;
+        }
+
+        if(event.type === 'touchend'){
+          lastTouchSelection = Date.now();
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+        if(typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+
+        if(isMobileViewport()){
+          document.body.classList.remove('mobile-hero-expanded');
+          document.body.classList.add('mobile-hero-collapsed');
+          syncMobileBanksWordModule();
+        }
+
+        // 🛑 Ferma il loop laser emoji quando si cambia lingua
+        if(typeof stopEmojiLaserLoop === 'function') stopEmojiLaserLoop();
+        
+        document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const lang = btn.getAttribute('data-lang') || btn.textContent.trim().replace(/[♬\s]/g,'');
+        applyTranslations(lang);
+        // Riproduci musica classica per la lingua selezionata
+        playLangMusic(lang);
+      };
+
+      btn.addEventListener('click', onLangSelect);
+      btn.addEventListener('touchend', onLangSelect, {passive: false});
+    });
+    
+    // 🛑 FERMA LOOP LASER EMOJI quando si clicca su link di navigazione
+    document.querySelectorAll('.authorities-search-button, .global-protection-button, .sos-inline, a[href]').forEach(link=>{
+      link.addEventListener('click', ()=>{
+        if(typeof stopEmojiLaserLoop === 'function') stopEmojiLaserLoop();
+      });
+    });
+    
+    // ===== SISTEMA ZOOM CONTROLLATO E SCROLLING OBBLIGATO =====
+    
+    // Variabili di stato
+    let lastZoomLevel = 1;
+    let zoomPopupShown = false;
+    const MAX_ZOOM = 1.5; // Limite zoom oltre cui mostrare il popup
+    
+    // Rileva livello di zoom del browser
+    function detectZoom(){
+      const ratio = window.devicePixelRatio || 1;
+      const screenWidth = window.screen.width;
+      const windowWidth = window.innerWidth;
+      // Calcola zoom stimato
+      const estimatedZoom = screenWidth / windowWidth;
+      return Math.round(estimatedZoom * 100) / 100;
+    }
+    
+    // Mostra popup limite zoom
+    function showZoomPopup(){
+      const popup = document.getElementById('zoomLimitPopup');
+      if(popup && !zoomPopupShown){
+        popup.classList.add('visible');
+        zoomPopupShown = true;
+        // Auto-chiudi dopo 8 secondi
+        setTimeout(()=>{ closeZoomPopup(); }, 8000);
+      }
+    }
+    
+    // Chiudi popup zoom
+    function closeZoomPopup(){
+      const popup = document.getElementById('zoomLimitPopup');
+      if(popup){
+        popup.classList.remove('visible');
+      }
+    }
+    
+    // Controlla se la pagina necessita scrolling
+    function checkScrollNeeded(){
+      const scrollIndicator = document.getElementById('scrollIndicator');
+      const documentHeight = document.documentElement.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const scrollableDistance = documentHeight - windowHeight;
+      
+      // Mostra freccia se c'è contenuto da scrollare e non siamo già in fondo
+      if(scrollableDistance > 50 && scrollTop < scrollableDistance - 50){
+        scrollIndicator.classList.add('visible');
+      } else {
+        scrollIndicator.classList.remove('visible');
+      }
+      
+      // Aggiorna barra progresso scroll
+      updateScrollProgress();
+    }
+    
+    // Aggiorna barra progresso
+    function updateScrollProgress(){
+      const scrollProgress = document.getElementById('scrollProgress');
+      const documentHeight = document.documentElement.scrollHeight;
+      const windowHeight = window.innerHeight;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const scrollableDistance = documentHeight - windowHeight;
+      
+      if(scrollableDistance > 0){
+        const percentage = (scrollTop / scrollableDistance) * 100;
+        scrollProgress.style.width = percentage + '%';
+      }
+    }
+    
+    // Scroll fluido verso il basso
+    function smoothScrollDown(){
+      const currentScroll = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const targetScroll = currentScroll + windowHeight * 0.7; // Scrolla del 70% della viewport
+      
+      window.scrollTo({
+        top: targetScroll,
+        behavior: 'smooth'
+      });
+    }
+    
+    // Monitora cambiamenti di zoom
+    function monitorZoom(){
+      const currentZoom = detectZoom();
+      
+      // Se zoom supera il limite, mostra popup
+      if(currentZoom > MAX_ZOOM && currentZoom !== lastZoomLevel){
+        showZoomPopup();
+      }
+      
+      lastZoomLevel = currentZoom;
+    }
+    
+    // Blocca zoom oltre il limite con wheel + Ctrl
+    document.addEventListener('wheel', function(e){
+      if(e.ctrlKey){
+        const currentZoom = detectZoom();
+        if(currentZoom >= MAX_ZOOM && e.deltaY < 0){
+          // Tentativo di zoom in oltre il limite
+          e.preventDefault();
+          showZoomPopup();
+        }
+      }
+    }, {passive: false});
+    
+    // Blocca pinch-zoom su touch devices
+    document.addEventListener('touchstart', function(e){
+      if(e.touches.length > 1){
+        const currentZoom = detectZoom();
+        if(currentZoom >= MAX_ZOOM){
+          e.preventDefault();
+          showZoomPopup();
+        }
+      }
+    }, {passive: false});
+    
+    function syncMobileHeroFocus(){
+      if(!isMobileViewport()){
+        document.body.classList.remove('mobile-hero-collapsed');
+        document.body.classList.remove('mobile-hero-expanded');
+        document.body.classList.remove('mobile-static-scenario');
+        document.body.classList.remove('mobile-guide-scroll');
+        syncMobileBanksWordModule();
+        return;
+      }
+
+      if(document.body.classList.contains('mobile-static-scenario') || document.body.classList.contains('mobile-guide-scroll')){
+        document.body.classList.remove('mobile-hero-collapsed');
+        document.body.classList.remove('mobile-hero-expanded');
+        stopMobileBanksWordModule();
+        return;
+      }
+
+      if(document.body.classList.contains('mobile-hero-expanded')){
+        document.body.classList.remove('mobile-hero-collapsed');
+        syncMobileBanksWordModule();
+        return;
+      }
+
+      document.body.classList.add('mobile-hero-collapsed');
+      syncMobileBanksWordModule();
+    }
+
+    // Event listeners
+    window.addEventListener('resize', function(){
+      syncMobileHeroFocus();
+      monitorZoom();
+      checkScrollNeeded();
+      scheduleLowerSceneLayout(120);
+    });
+
+    window.addEventListener('orientationchange', function(){
+      setTimeout(() => {
+        syncMobileHeroFocus();
+        checkScrollNeeded();
+        scheduleLowerSceneLayout(180);
+      }, 120);
+    });
+
+    if(window.visualViewport){
+      window.visualViewport.addEventListener('resize', function(){
+        syncMobileHeroFocus();
+        scheduleLowerSceneLayout(120);
+      });
+    }
+
+    window.addEventListener('load', function(){
+      scheduleLowerSceneLayout(180);
+    });
+    
+    window.addEventListener('scroll', function(){
+      checkScrollNeeded();
+    });
+    
+    // Inizializza al caricamento
+    document.addEventListener('DOMContentLoaded', function(){
+      const requestedLang = new URLSearchParams(window.location.search).get('lang');
+      if(requestedLang && translations[requestedLang]){
+        document.querySelectorAll('.lang-btn').forEach(b => {
+          b.classList.toggle('active', (b.getAttribute('data-lang') || '').toUpperCase() === requestedLang);
+        });
+        applyTranslations(requestedLang);
+      } else {
+        renderMobileStaticScenarioText();
+      }
+
+      syncMobileHeroFocus();
+      checkScrollNeeded();
+      monitorZoom();
+      scheduleLowerSceneLayout(140);
+      
+      // Controlla periodicamente lo zoom
+      setInterval(monitorZoom, 1000);
+      
+      // 🎺 GUGLIELMO TELL AUTOPLAY - Parte subito all'apertura pagina (tipo TikTok)
+      setTimeout(function(){
+        if(typeof playGuglielmoTellVictoryLoop === 'function'){
+          playGuglielmoTellVictoryLoop();
+          console.log('🎵 Guglielmo Tell - Autoplay avviato all\'apertura pagina');
+        }
+      }, 100); // 100ms di delay minimo per permettere caricamento
+      
+      // ★★★ ADSENSE DELAY 10 SECONDI - UX Magnetizzazione attenzione ★★★
+      setTimeout(function(){
+        const adsenseContainer = document.getElementById('adsense-container');
+        if(adsenseContainer){
+          adsenseContainer.classList.add('visible');
+          console.log('📺 AdSense banner visibile dopo 10 secondi');
+        }
+      }, 10000); // 10 secondi di delay
+    });
+    
+    // Esponi funzioni globalmente
+    window.closeZoomPopup = closeZoomPopup;
+    window.smoothScrollDown = smoothScrollDown;
+  </script>
+  
+  <!-- ♬ Audio Indicator spostato dentro il layout accanto a PLAY -->
+  
+  <!-- 
+  ╔═══════════════════════════════════════════════════════════════════╗
+  ║  🎵 MARCHIO MUSICALE ITALIANO - LA GAZZA LADRA                    ║
+  ╠═══════════════════════════════════════════════════════════════════╣
+  ║  🇮🇹 Gioacchino Rossini - La Gazza Ladra (Overture)               ║
+  ║                                                                   ║
+  ║  File: audio/1 - La gazza ladra_ Overture.flac                    ║
+  ║  Segmento: 04:19 - 06:06 (~107 secondi)                           ║
+  ║                                                                   ║
+  ║  ✓ Stesso brano per TUTTE le lingue (EN, IT, FR, DE)              ║
+  ║  ✓ Icone GAZZA animate durante la riproduzione                    ║
+  ║  ✓ Click su qualsiasi pulsante lingua avvia la musica             ║
+  ║  ✓ Click sull'icona gazza = play/stop                             ║
+  ║                                                                   ║
+  ║  "Un Marchio Musicale Italiano Inconfondibile"                    ║
+  ╚═══════════════════════════════════════════════════════════════════╝
+  -->
+  
+  <!-- === FOOTER - Privacy, Terms & Legal === -->
+  <footer style="position:relative;margin-top:40px;background:linear-gradient(180deg,#0a0a1a,#000);border-top:2px solid #FFD700;padding:30px 20px;text-align:center;z-index:200">
+    <div style="max-width:800px;margin:0 auto">
+      <div style="display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-bottom:20px">
+        <a href="../privacy.html" style="color:#FFD700;text-decoration:none;font-size:14px;transition:all .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#FFD700'">🔒 Privacy Policy</a>
+        <a href="../terms.html" style="color:#FFD700;text-decoration:none;font-size:14px;transition:all .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#FFD700'">📜 Terms of Service</a>
+        <a href="mailto:info@tutelatruffe.it" style="color:#FFD700;text-decoration:none;font-size:14px;transition:all .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#FFD700'">✉️ Contact</a>
+      </div>
+      <p style="color:#888;font-size:12px;margin:0">© 2024-2026 TutelaTruffe.it - Financial Defense Against Scams</p>
+      <p style="color:#666;font-size:10px;margin-top:10px">🇪🇺 EU Consumer Protection | GDPR Compliant</p>
+    </div>
+  </footer>
+  
+  <!-- === PWA Service Worker Registration === -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(reg => console.log('✅ PWA Service Worker registered:', reg.scope))
+          .catch(err => console.log('❌ PWA registration failed:', err));
+      });
+    }
+  </script>
+  
+</body>
+</html>
