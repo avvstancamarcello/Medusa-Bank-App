@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /VAULT/
+Disallow: /screenshots/
+Disallow: /MEDUSA-BUILD/
+Disallow: /Layout-APP/
+
+# Sitemap
+Sitemap: https://www.tutelatruffe.it/sitemap.xml
+
+# Crawl-delay (opzionale, per bot educati)
+Crawl-delay: 2

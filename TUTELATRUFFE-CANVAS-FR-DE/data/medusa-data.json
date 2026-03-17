@@ -1,0 +1,139 @@
+{
+  "truffe": [
+    {
+      "categoria": "Identità e Autorità",
+      "voci": [
+        "Profili social falsi",
+        "Falsi agenti di polizia",
+        "Falsi carabinieri",
+        "Falsi avvocati",
+        "Falsi notai",
+        "Falsi messaggi di autorità",
+        "Falsi uffici del fisco"
+      ]
+    },
+    {
+      "categoria": "Bancarie e Finanziarie",
+      "voci": [
+        "Phishing bancario avanzato",
+        "Smishing",
+        "Vishing",
+        "SIM Swap",
+        "Falsi IBAN",
+        "Falsi investimenti",
+        "Fake broker",
+        "Crypto scam",
+        "Pump & Dump",
+        "Malware bancario",
+        "Falsi estratti conto",
+        "False banche",
+        "Falsi consulenti finanziari"
+      ]
+    },
+    {
+      "categoria": "Tecnologiche",
+      "voci": [
+        "Deepfake vocali",
+        "Deepfake video",
+        "Ransomware",
+        "Falsi aggiornamenti software",
+        "Account takeover",
+        "Furto d'identità digitale"
+      ]
+    },
+    {
+      "categoria": "Acquisti e Consumatori",
+      "voci": [
+        "Truffe sugli acquisti",
+        "False giacenze di magazzino",
+        "Falsi saldi del Black Friday",
+        "Falsi corrieri",
+        "Marketplace scam",
+        "Falsi premi e concorsi"
+      ]
+    },
+    {
+      "categoria": "Emotive e Psicologiche",
+      "voci": [
+        "Falso amore",
+        "Truffe romantiche AI-powered",
+        "False eredità"
+      ]
+    }
+  ],
+
+  "centralBanks": [
+    {
+      "country": "European Union",
+      "flag": "eu.svg",
+      "name": "European Central Bank (ECB)",
+      "url": "https://www.ecb.europa.eu/home/html/index.en.html"
+    },
+    {
+      "country": "United States",
+      "flag": "us.svg",
+      "name": "Federal Reserve (USA)",
+      "url": "https://www.federalreserve.gov/"
+    },
+    {
+      "country": "United Kingdom",
+      "flag": "gb.svg",
+      "name": "Bank of England",
+      "url": "https://www.bankofengland.co.uk/"
+    },
+    {
+      "country": "Canada",
+      "flag": "ca.svg",
+      "name": "Bank of Canada",
+      "url": "https://www.bankofcanada.ca/"
+    },
+    {
+      "country": "Japan",
+      "flag": "jp.svg",
+      "name": "Bank of Japan",
+      "url": "https://www.boj.or.jp/en/"
+    },
+    {
+      "country": "Switzerland",
+      "flag": "ch.svg",
+      "name": "Swiss National Bank",
+      "url": "https://www.snb.ch/en/"
+    },
+    {
+      "country": "Australia",
+      "flag": "au.svg",
+      "name": "Reserve Bank of Australia",
+      "url": "https://www.rba.gov.au/"
+    },
+    {
+      "country": "China",
+      "flag": "cn.svg",
+      "name": "People's Bank of China",
+      "url": "http://www.pbc.gov.cn/english/"
+    },
+    {
+      "country": "India",
+      "flag": "in.svg",
+      "name": "Reserve Bank of India",
+      "url": "https://www.rbi.org.in/"
+    },
+    {
+      "country": "Russia",
+      "flag": "ru.svg",
+      "name": "Bank of Russia",
+      "url": "https://www.cbr.ru/eng/"
+    },
+    {
+      "country": "Brazil",
+      "flag": "br.svg",
+      "name": "Banco Central do Brasil",
+      "url": "https://www.bcb.gov.br/en"
+    },
+    {
+      "country": "South Africa",
+      "flag": "za.svg",
+      "name": "South African Reserve Bank",
+      "url": "https://www.resbank.co.za/"
+    }
+  ]
+}

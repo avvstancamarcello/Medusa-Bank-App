@@ -1,0 +1,8 @@
+.venv/
+.vscode/
+.i18n_audit.py
+screenshots/
+SEO/
+*.mhtml
+*_files.zip
+~$*.pptx

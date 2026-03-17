@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Complaints Grid</title>
+  <style>
+    :root{
+      --bg-top:#0e1524;
+      --bg-bottom:#070b14;
+      --panel:#111a2b;
+      --panel-border:rgba(255,173,72,.35);
+      --text:#eef6ff;
+      --muted:#9fb4c7;
+      --slot:#1b2740;
+      --slot-border:rgba(111,149,186,.3);
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;font-family:Segoe UI,Arial,sans-serif;color:var(--text);background:radial-gradient(circle at top,rgba(255,110,79,.18),transparent 22%),linear-gradient(180deg,var(--bg-top),var(--bg-bottom));}
+    .page{max-width:1160px;margin:0 auto;padding:24px 16px 40px}
+    .hero{padding:22px 18px;border:1px solid var(--panel-border);border-radius:28px;background:linear-gradient(180deg,rgba(17,26,43,.96),rgba(10,15,25,.98));box-shadow:0 18px 36px rgba(0,0,0,.28)}
+    .eyebrow{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,143,82,.12);border:1px solid rgba(255,143,82,.35);color:#ffd4bd;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    h1{margin:14px 0 10px;font-size:clamp(32px,5vw,48px);line-height:1.02;font-family:Georgia,"Times New Roman",serif}
+    .hero p{margin:0;color:var(--muted);max-width:760px;font-size:16px;line-height:1.55}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .hero-actions a{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:16px;text-decoration:none;font-weight:800}
+    .hero-actions .home-link{background:linear-gradient(135deg,#334666,#50678f);color:#fff}
+    .hero-actions .abf-link{background:linear-gradient(135deg,#0c6781,#19a0b4);color:#effcff}
+    .grid-shell{margin-top:24px;padding:18px;border:1px solid rgba(79,113,145,.28);border-radius:26px;background:rgba(8,13,22,.72)}
+    .grid-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+    .grid-title h2{margin:0;font-size:22px}
+    .grid-title span{color:var(--muted);font-size:14px}
+    .complaints-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .grid-card,.grid-empty{min-height:144px;border-radius:22px;border:1px solid var(--slot-border);background:linear-gradient(180deg,rgba(27,39,64,.94),rgba(16,24,38,.98));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px;text-decoration:none;color:var(--text);position:relative;overflow:hidden}
+    .grid-card::before,.grid-empty::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.04),transparent 34%);pointer-events:none}
+    .grid-card:hover{transform:translateY(-2px);border-color:rgba(255,143,82,.52);box-shadow:0 16px 28px rgba(0,0,0,.24)}
+    .card-logo{width:52px;height:52px;object-fit:contain;background:#fff;border-radius:14px;padding:6px;box-shadow:0 10px 18px rgba(0,0,0,.24)}
+    .card-acronym{margin-top:10px;font-size:20px;font-weight:900;letter-spacing:.04em}
+    .card-name{margin-top:6px;font-size:13px;line-height:1.35;color:var(--muted)}
+    .card-meta{margin-top:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#ffd4bd}
+    .logo-fallback{display:none;width:52px;height:52px;border-radius:14px;align-items:center;justify-content:center;background:linear-gradient(135deg,#ff8f52,#d8563c);font-weight:900;color:#fff;box-shadow:0 10px 18px rgba(0,0,0,.24)}
+    .grid-empty{border-style:dashed;color:#7f94aa}
+    .grid-empty strong{font-size:22px;color:#c2d3e4}
+    .grid-empty span{margin-top:8px;font-size:12px;line-height:1.4;max-width:120px}
+    .collaborative-banner{margin-top:22px;padding:20px;border-radius:24px;border:1px solid rgba(255,126,126,.34);background:linear-gradient(135deg,rgba(92,16,16,.92),rgba(35,12,28,.98));box-shadow:0 18px 34px rgba(0,0,0,.24)}
+    .collaborative-banner h3{margin:0 0 10px;font-size:24px;font-family:Georgia,"Times New Roman",serif}
+    .collaborative-banner p{margin:0;color:#f1c9c9;line-height:1.55}
+    .collaborative-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+    .collaborative-actions a{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:15px;text-decoration:none;font-weight:800}
+    .collaborative-actions .collaborate-link{background:linear-gradient(135deg,#ff8f52,#ff5d5d);color:#fff}
+    .collaborative-actions .abf-action{background:linear-gradient(135deg,#1d7086,#3cc5d6);color:#effcff}
+
+    @media (min-width:860px){
+      .complaints-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+    }
+
+    @media (max-width:640px){
+      .page{padding:16px 12px 28px}
+      .hero,.grid-shell,.collaborative-banner{border-radius:22px}
+      .complaints-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .grid-card,.grid-empty{min-height:136px;padding:12px}
+      .card-logo,.logo-fallback{width:46px;height:46px}
+      .card-acronym{font-size:18px}
+      .card-name{font-size:12px}
+      .hero-actions,.collaborative-actions{flex-direction:column}
+      .hero-actions a,.collaborative-actions a{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <span class="eyebrow" id="page-eyebrow">Bank complaints database</span>
+      <h1 id="page-title">40 complaint slots</h1>
+      <p id="page-copy">The first 20 cells open official bank complaint pages. The next 20 cells stay empty, reserved for future banks and future complaint addresses.</p>
+      <div class="hero-actions">
+        <a class="home-link" href="index-corretto-medusa-attack-versione7.html" id="home-link">Return to mobile scenario</a>
+        <a class="abf-link" href="https://www.arbitrobancariofinanziario.it" target="_blank" rel="noopener noreferrer" id="hero-abf-link">Open ABF</a>
+      </div>
+    </section>
+
+    <section class="grid-shell">
+      <div class="grid-title">
+        <h2 id="grid-heading">20 banks plus 20 future cells</h2>
+        <span id="grid-counter">40 total slots</span>
+      </div>
+      <div class="complaints-grid" id="complaints-grid"></div>
+    </section>
+
+    <section class="collaborative-banner">
+      <h3 id="collaborative-title">Collaborative</h3>
+      <p id="collaborative-copy">If a bank is missing, use the collaborative area on the main page to send the official complaint service address and help expand the database.</p>
+      <div class="collaborative-actions">
+        <a class="collaborate-link" href="index-corretto-medusa-attack-versione7.html#blog-collaboration" id="collaborate-link">Open Collaborative banner</a>
+        <a class="abf-action" href="https://www.arbitrobancariofinanziario.it" target="_blank" rel="noopener noreferrer" id="collaborative-abf-link">ABF official website</a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const pageTranslations = {
+      EN: {
+        eyebrow: 'Bank complaints database',
+        title: '40 complaint slots',
+        copy: 'The first 20 cells open official bank complaint pages. The next 20 cells stay empty, reserved for future banks and future complaint addresses.',
+        home: 'Return to mobile scenario',
+        heroAbf: 'Open ABF',
+        heading: '20 banks plus 20 future cells',
+        counter: '40 total slots',
+        collaborativeTitle: 'Collaborative',
+        collaborativeCopy: 'If a bank is missing, use the collaborative area on the main page to send the official complaint service address and help expand the database.',
+        collaborateLink: 'Open Collaborative banner',
+        collaborativeAbf: 'ABF official website',
+        reservedTitle: 'Reserved slot',
+        reservedBody: 'Future complaint service',
+        complaintMeta: 'Official complaint page'
+      },
+      IT: {
+        eyebrow: 'Bank complaints database',
+        title: '40 caselle reclami',
+        copy: 'Le prime 20 caselle aprono le pagine ufficiali dei reclami bancari. Le successive 20 restano vuote, riservate a future banche e a futuri indirizzi complaint.',
+        home: 'Torna allo scenario mobile',
+        heroAbf: 'Apri ABF',
+        heading: '20 banche piu 20 caselle future',
+        counter: '40 caselle totali',
+        collaborativeTitle: 'Collaborative',
+        collaborativeCopy: 'Se una banca manca, usa l\'area collaborativa della pagina principale per inviare l\'indirizzo ufficiale del servizio reclami e ampliare il database.',
+        collaborateLink: 'Apri il banner Collaborative',
+        collaborativeAbf: 'Sito ufficiale ABF',
+        reservedTitle: 'Casella riservata',
+        reservedBody: 'Futuro servizio reclami',
+        complaintMeta: 'Pagina ufficiale reclami'
+      },
+      FR: {
+        eyebrow: 'Base de donnees des reclamations bancaires',
+        title: '40 cases de reclamations',
+        copy: 'Les 20 premieres cases ouvrent les pages officielles de reclamations bancaires. Les 20 suivantes restent vides, reservees aux futures banques et futures adresses de reclamation.',
+        home: 'Retour au scenario mobile',
+        heroAbf: 'Ouvrir ABF',
+        heading: '20 banques plus 20 cases futures',
+        counter: '40 cases au total',
+        collaborativeTitle: 'Collaborative',
+        collaborativeCopy: 'Si une banque manque, utilisez l\'espace collaboratif de la page principale pour envoyer l\'adresse officielle du service reclamations et elargir la base.',
+        collaborateLink: 'Ouvrir la banniere Collaborative',
+        collaborativeAbf: 'Site officiel ABF',
+        reservedTitle: 'Case reservee',
+        reservedBody: 'Futur service reclamations',
+        complaintMeta: 'Page officielle des reclamations'
+      },
+      DE: {
+        eyebrow: 'Bankbeschwerde-Datenbank',
+        title: '40 Beschwerdefelder',
+        copy: 'Die ersten 20 Felder offnen offizielle Bank-Beschwerdeseiten. Die nachsten 20 bleiben leer und sind fur zukunftige Banken und Beschwerdeadressen reserviert.',
+        home: 'Zuruck zum mobilen Szenario',
+        heroAbf: 'ABF offnen',
+        heading: '20 Banken plus 20 freie Felder',
+        counter: '40 Felder insgesamt',
+        collaborativeTitle: 'Collaborative',
+        collaborativeCopy: 'Wenn eine Bank fehlt, nutzen Sie den kollaborativen Bereich auf der Hauptseite, um die offizielle Beschwerdeadresse zu senden und die Datenbank zu erweitern.',
+        collaborateLink: 'Collaborative-Banner offnen',
+        collaborativeAbf: 'Offizielle ABF-Website',
+        reservedTitle: 'Reserviertes Feld',
+        reservedBody: 'Zukunftige Beschwerdestelle',
+        complaintMeta: 'Offizielle Beschwerdeseite'
+      }
+    };
+
+    const fallbackBanks = [
+      {name:'Credit Agricole', acronym:'CR AGR', color:'#006B3F', logo:'https://www.google.com/s2/favicons?domain=credit-agricole.it&sz=128', url:'https://www.credit-agricole.it/reclami-ricorsi-e-conciliazioni', flag:'it'},
+      {name:'FinecoBank', acronym:'FINECO', color:'#00297A', logo:'assets/FINECO.svg', url:'https://it.finecobank.com/reclami-ricorsi-conciliazione/', flag:'it'},
+      {name:'Banca Fideuram', acronym:'FIDEURAM', color:'#35777a', logo:'assets/banca-fideuram.svg', url:'https://www.fideuram.it/reclami-e-risoluzione-controversie/risoluzione-stragiudiziale-controversie/', flag:'it'},
+      {name:'BPER Banca', acronym:'BPER', color:'#00A651', logo:'https://www.google.com/s2/favicons?domain=bper.it&sz=128', url:'https://www.bper.it/footer/numeri-utili', flag:'it'},
+      {name:'Monte Paschi', acronym:'MPS', color:'#8B0000', logo:'https://www.google.com/s2/favicons?domain=mps.it&sz=128', url:'https://www.mps.it/contatti/reclami-e-ricorsi.html', flag:'it'},
+      {name:'Banca Mediolanum', acronym:'BMED', color:'#E60000', logo:'https://www.google.com/s2/favicons?domain=bancamediolanum.it&sz=128', url:'https://www.bancamediolanum.it/informazioni-al-cliente/reclami-ricorsi-conciliazione', flag:'it'},
+      {name:'Intesa Sanpaolo', acronym:'ISP', color:'#006B3F', logo:'https://www.google.com/s2/favicons?domain=intesasanpaolo.com&sz=128', url:'https://www.intesasanpaolo.com/it/persone-e-famiglie/reclami.html', flag:'it'},
+      {name:'BNL BNP Paribas', acronym:'BNL', color:'#00915A', logo:'https://www.google.com/s2/favicons?domain=bnl.it&sz=128', url:'https://bnl.it/it/Footer/Reclami-Ricorsi-Conciliazione', flag:'it'},
+      {name:'Banca Popolare di Sondrio', acronym:'BPS', color:'#004B87', logo:'https://www.google.com/s2/favicons?domain=popso.it&sz=128', url:'https://www.popso.it/reclami', flag:'it'},
+      {name:'Poste Italiane', acronym:'POSTE', color:'#FFD300', logo:'https://www.google.com/s2/favicons?domain=poste.it&sz=128', url:'https://www.poste.it/assistenza/reclami', flag:'it'},
+      {name:'Deutsche Bank', acronym:'DB', color:'#0018A8', logo:'https://www.google.com/s2/favicons?domain=deutsche-bank.de&sz=128', url:'https://www.deutsche-bank.de/pk/service/beschwerden.html', flag:'de'},
+      {name:'Commerzbank', acronym:'CBK', color:'#FFCC00', logo:'https://www.google.com/s2/favicons?domain=commerzbank.de&sz=128', url:'https://www.commerzbank.de/hinweisgeber/', flag:'de'},
+      {name:'BNP Paribas', acronym:'BNP', color:'#00915A', logo:'https://www.google.com/s2/favicons?domain=mabanque.bnpparibas&sz=128', url:'https://mabanque.bnpparibas/fr/reclamation', flag:'fr'},
+      {name:'Societe Generale', acronym:'SG', color:'#E60000', logo:'https://www.google.com/s2/favicons?domain=societegenerale.fr&sz=128', url:'https://particuliers.societegenerale.fr/reclamations', flag:'fr'},
+      {name:'Credit Mutuel', acronym:'CM', color:'#0055A4', logo:'https://www.google.com/s2/favicons?domain=creditmutuel.fr&sz=128', url:'https://www.creditmutuel.fr/fr/reclamations.html', flag:'fr'},
+      {name:'ING Bank', acronym:'ING', color:'#FF6200', logo:'https://www.google.com/s2/favicons?domain=ing.com&sz=128', url:'https://www.ing.com/About-us/Compliance/Complaints.htm', flag:'nl'},
+      {name:'ABN AMRO', acronym:'ABN', color:'#004D40', logo:'https://www.google.com/s2/favicons?domain=abnamro.nl&sz=128', url:'https://www.abnamro.nl/en/personal/contact/complaints.html', flag:'nl'},
+      {name:'Banco Santander', acronym:'SAN', color:'#EC0000', logo:'https://www.google.com/s2/favicons?domain=bancosantander.es&sz=128', url:'https://www.bancosantander.es/particulares/atencion-cliente/reclamaciones', flag:'es'},
+      {name:'BBVA', acronym:'BBVA', color:'#004481', logo:'https://www.google.com/s2/favicons?domain=bbva.es&sz=128', url:'https://www.bbva.es/personas/atencion-al-cliente/reclamaciones.html', flag:'es'},
+      {name:'Barclays', acronym:'BARC', color:'#00AEEF', logo:'https://www.google.com/s2/favicons?domain=barclays.co.uk&sz=128', url:'https://www.barclays.co.uk/help/complaints/', flag:'gb'}
+    ];
+
+    const localBankLogos = {
+      'FINECO.svg': 'assets/FINECO.svg',
+      'banca-fideuram.svg': 'assets/banca-fideuram.svg'
+    };
+
+    function getBankLogoBasename(src){
+      if(!src || typeof src !== 'string') return '';
+      return src.split('/').pop().trim();
+    }
+
+    function getBankFaviconFromUrl(url){
+      if(!url || typeof url !== 'string') return '';
+      try {
+        const hostname = new URL(url).hostname.replace(/^www\./i, '');
+        return hostname ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(hostname)}&sz=128` : '';
+      } catch {
+        return '';
+      }
+    }
+
+    function resolveBankLogo(bank){
+      const logo = bank.logo || '';
+      const basename = getBankLogoBasename(logo);
+      const fallback = getBankFaviconFromUrl(bank.url);
+
+      if(basename && localBankLogos[basename]) {
+        return { primary: localBankLogos[basename], fallback };
+      }
+
+      if(typeof logo === 'string' && /^assets\//i.test(logo)) {
+        return { primary: logo, fallback };
+      }
+
+      if(typeof logo === 'string' && /^https?:\/\//i.test(logo)) {
+        return { primary: logo, fallback };
+      }
+
+      return { primary: fallback || logo || '', fallback: '' };
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const currentLang = pageTranslations[params.get('lang')] ? params.get('lang') : 'IT';
+    const t = pageTranslations[currentLang];
+
+    function applyPageText(){
+      document.documentElement.lang = currentLang.toLowerCase();
+      document.title = t.title;
+      document.getElementById('page-eyebrow').textContent = t.eyebrow;
+      document.getElementById('page-title').textContent = t.title;
+      document.getElementById('page-copy').textContent = t.copy;
+      document.getElementById('home-link').textContent = t.home;
+      document.getElementById('hero-abf-link').textContent = t.heroAbf;
+      document.getElementById('grid-heading').textContent = t.heading;
+      document.getElementById('grid-counter').textContent = t.counter;
+      document.getElementById('collaborative-title').textContent = t.collaborativeTitle;
+      document.getElementById('collaborative-copy').textContent = t.collaborativeCopy;
+      document.getElementById('collaborate-link').textContent = t.collaborateLink;
+      document.getElementById('collaborative-abf-link').textContent = t.collaborativeAbf;
+      document.getElementById('home-link').href = `index-corretto-medusa-attack-versione7.html?lang=${encodeURIComponent(currentLang)}`;
+      document.getElementById('collaborate-link').href = `index-corretto-medusa-attack-versione7.html?lang=${encodeURIComponent(currentLang)}#blog-collaboration`;
+    }
+
+    function renderGrid(banks){
+      const grid = document.getElementById('complaints-grid');
+      grid.innerHTML = '';
+
+      banks.slice(0, 20).forEach(bank => {
+        const { primary: logoSrc, fallback: fallbackLogoSrc } = resolveBankLogo(bank);
+        const card = document.createElement('a');
+        card.className = 'grid-card';
+        card.href = bank.url;
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        card.style.borderColor = `${bank.color}55`;
+        card.innerHTML = `
+          <img class="card-logo" src="${logoSrc}" alt="${bank.name}">
+          <div class="logo-fallback" aria-hidden="true">${bank.acronym}</div>
+          <div class="card-acronym">${bank.acronym}</div>
+          <div class="card-name">${bank.name}</div>
+          <div class="card-meta">${t.complaintMeta}</div>
+        `;
+
+        const image = card.querySelector('.card-logo');
+        const fallback = card.querySelector('.logo-fallback');
+        image.addEventListener('error', () => {
+          if(fallbackLogoSrc && image.dataset.fallbackApplied !== 'true' && image.getAttribute('src') !== fallbackLogoSrc) {
+            image.dataset.fallbackApplied = 'true';
+            image.src = fallbackLogoSrc;
+            return;
+          }
+          image.style.display = 'none';
+          fallback.style.display = 'flex';
+        });
+
+        grid.appendChild(card);
+      });
+
+      for(let index = 0; index < 20; index += 1){
+        const empty = document.createElement('div');
+        empty.className = 'grid-empty';
+        empty.innerHTML = `<strong>+</strong><span>${t.reservedTitle}<br>${t.reservedBody}</span>`;
+        grid.appendChild(empty);
+      }
+    }
+
+    async function loadBanks(){
+      try {
+        const response = await fetch('banks_database.json');
+        if(!response.ok) throw new Error('banks_database.json unavailable');
+        const data = await response.json();
+        return [...(data.bancheItaliane || []), ...(data.bancheEuropee || [])];
+      } catch (error) {
+        console.warn('Using fallback banks data for complaints grid:', error.message);
+        return fallbackBanks;
+      }
+    }
+
+    applyPageText();
+    loadBanks().then(renderGrid);
+  </script>
+</body>
+</html>

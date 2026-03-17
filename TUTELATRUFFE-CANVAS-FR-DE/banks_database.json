@@ -1,0 +1,168 @@
+{
+  "version": "1.0.1",
+  "lastUpdate": "2026-03-16",
+  "bancheItaliane": [
+    {
+      "name": "Credit Agricole",
+      "acronym": "CR AGR",
+      "color": "#006B3F",
+      "logo": "https://www.google.com/s2/favicons?domain=credit-agricole.it&sz=128",
+      "url": "https://www.credit-agricole.it/reclami-ricorsi-e-conciliazioni",
+      "flag": "it"
+    },
+    {
+      "name": "FinecoBank",
+      "acronym": "FINECO",
+      "color": "#00297A",
+      "logo": "assets/FINECO.svg",
+      "url": "https://it.finecobank.com/reclami-ricorsi-conciliazione/",
+      "flag": "it"
+    },
+    {
+      "name": "Banca Fideuram",
+      "acronym": "FIDEURAM",
+      "color": "#35777a",
+      "logo": "assets/banca-fideuram.svg",
+      "url": "https://www.fideuram.it/reclami-e-risoluzione-controversie/risoluzione-stragiudiziale-controversie/",
+      "flag": "it"
+    },
+    {
+      "name": "BPER Banca",
+      "acronym": "BPER",
+      "color": "#00A651",
+      "logo": "https://www.google.com/s2/favicons?domain=bper.it&sz=128",
+      "url": "https://www.bper.it/footer/numeri-utili",
+      "flag": "it"
+    },
+    {
+      "name": "Monte Paschi",
+      "acronym": "MPS",
+      "color": "#8B0000",
+      "logo": "https://www.google.com/s2/favicons?domain=mps.it&sz=128",
+      "url": "https://www.mps.it/contatti/reclami-e-ricorsi.html",
+      "flag": "it"
+    },
+    {
+      "name": "Banca Mediolanum",
+      "acronym": "BMED",
+      "color": "#E60000",
+      "logo": "https://www.google.com/s2/favicons?domain=bancamediolanum.it&sz=128",
+      "url": "https://www.bancamediolanum.it/informazioni-al-cliente/reclami-ricorsi-conciliazione",
+      "flag": "it"
+    },
+    {
+      "name": "Intesa Sanpaolo",
+      "acronym": "ISP",
+      "color": "#006B3F",
+      "logo": "https://www.google.com/s2/favicons?domain=intesasanpaolo.com&sz=128",
+      "url": "https://www.intesasanpaolo.com/it/persone-e-famiglie/reclami.html",
+      "flag": "it"
+    },
+    {
+      "name": "BNL BNP Paribas",
+      "acronym": "BNL",
+      "color": "#00915A",
+      "logo": "https://www.google.com/s2/favicons?domain=bnl.it&sz=128",
+      "url": "https://bnl.it/it/Footer/Reclami-Ricorsi-Conciliazione",
+      "flag": "it"
+    },
+    {
+      "name": "Banca Popolare di Sondrio",
+      "acronym": "BPS",
+      "color": "#004B87",
+      "logo": "https://www.google.com/s2/favicons?domain=popso.it&sz=128",
+      "url": "https://www.popso.it/reclami",
+      "flag": "it"
+    },
+    {
+      "name": "Poste Italiane",
+      "acronym": "POSTE",
+      "color": "#FFD300",
+      "logo": "https://www.google.com/s2/favicons?domain=poste.it&sz=128",
+      "url": "https://www.poste.it/assistenza/reclami",
+      "flag": "it"
+    }
+  ],
+  "bancheEuropee": [
+    {
+      "name": "Deutsche Bank",
+      "acronym": "DB",
+      "color": "#0018A8",
+      "logo": "https://www.google.com/s2/favicons?domain=deutsche-bank.de&sz=128",
+      "url": "https://www.deutsche-bank.de/pk/service/beschwerden.html",
+      "flag": "de"
+    },
+    {
+      "name": "Commerzbank",
+      "acronym": "CBK",
+      "color": "#FFCC00",
+      "logo": "https://www.google.com/s2/favicons?domain=commerzbank.de&sz=128",
+      "url": "https://www.commerzbank.de/hinweisgeber/",
+      "flag": "de"
+    },
+    {
+      "name": "BNP Paribas",
+      "acronym": "BNP",
+      "color": "#00915A",
+      "logo": "https://www.google.com/s2/favicons?domain=mabanque.bnpparibas&sz=128",
+      "url": "https://mabanque.bnpparibas/fr/reclamation",
+      "flag": "fr"
+    },
+    {
+      "name": "Societe Generale",
+      "acronym": "SG",
+      "color": "#E60000",
+      "logo": "https://www.google.com/s2/favicons?domain=societegenerale.fr&sz=128",
+      "url": "https://particuliers.societegenerale.fr/reclamations",
+      "flag": "fr"
+    },
+    {
+      "name": "Credit Mutuel",
+      "acronym": "CM",
+      "color": "#0055A4",
+      "logo": "https://www.google.com/s2/favicons?domain=creditmutuel.fr&sz=128",
+      "url": "https://www.creditmutuel.fr/fr/reclamations.html",
+      "flag": "fr"
+    },
+    {
+      "name": "ING Bank",
+      "acronym": "ING",
+      "color": "#FF6200",
+      "logo": "https://www.google.com/s2/favicons?domain=ing.com&sz=128",
+      "url": "https://www.ing.com/About-us/Compliance/Complaints.htm",
+      "flag": "nl"
+    },
+    {
+      "name": "ABN AMRO",
+      "acronym": "ABN",
+      "color": "#004D40",
+      "logo": "https://www.google.com/s2/favicons?domain=abnamro.nl&sz=128",
+      "url": "https://www.abnamro.nl/en/personal/contact/complaints.html",
+      "flag": "nl"
+    },
+    {
+      "name": "Banco Santander",
+      "acronym": "SAN",
+      "color": "#EC0000",
+      "logo": "https://www.google.com/s2/favicons?domain=bancosantander.es&sz=128",
+      "url": "https://www.bancosantander.es/particulares/atencion-cliente/reclamaciones",
+      "flag": "es"
+    },
+    {
+      "name": "BBVA",
+      "acronym": "BBVA",
+      "color": "#004481",
+      "logo": "https://www.google.com/s2/favicons?domain=bbva.es&sz=128",
+      "url": "https://www.bbva.es/personas/atencion-al-cliente/reclamaciones.html",
+      "flag": "es"
+    },
+    {
+      "name": "Barclays",
+      "acronym": "BARC",
+      "color": "#00AEEF",
+      "logo": "https://www.google.com/s2/favicons?domain=barclays.co.uk&sz=128",
+      "url": "https://www.barclays.co.uk/help/complaints/",
+      "flag": "gb"
+    }
+  ]
+}

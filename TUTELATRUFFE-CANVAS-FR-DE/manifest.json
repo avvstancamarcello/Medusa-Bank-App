@@ -1,0 +1,17 @@
+{
+  "name": "Caravaggio Codex - Tutela Truffe",
+  "short_name": "Tutela Truffe",
+  "description": "Guida interattiva anti truffe finanziarie con bank complaints database, ABF e risorse di difesa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000d14",
+  "theme_color": "#1e3a5f",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "/images/logo_shield_MS.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

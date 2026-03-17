@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "lastUpdate": "2026-03-12",
+  "brandTitle": "M E D U S A - C O D E X by CARAVAGGIO",
+  "settings": {
+    "separator": " ★ ",
+    "scrollSpeed": 60,
+    "notes": "Modifica questo file JSON via FTP per aggiornare il banner scorrevole. Ogni messaggio con active:true apparirà nel ticker. Per disattivare un messaggio, imposta active:false."
+  },
+  "messages": [
+    {
+      "id": 1,
+      "text": "🔴 70.000 truffe e vittime in Italia nel 2025 — Proteggi i tuoi risparmi!",
+      "active": true
+    },
+    {
+      "id": 2,
+      "text": "⚠️ Petizione EU n.645/2025 per la tutela dei risparmiatori europei — FIRMATA!",
+      "active": true
+    },
+    {
+      "id": 3,
+      "text": "🛡️ Consiglio UE 27-11-2025: Nuove misure contro le frodi finanziarie online",
+      "active": true
+    },
+    {
+      "id": 4,
+      "text": "📊 Database 189 Autorità Finanziarie mondiali — Cerca la tua protezione!",
+      "active": true
+    },
+    {
+      "id": 5,
+      "text": "🏦 20 banche europee: link diretti ai moduli reclamo — Fai valere i tuoi diritti",
+      "active": true
+    },
+    {
+      "id": 6,
+      "text": "🧠 Difesa psicologica anti-truffa: leggi il Caravaggio Codex PDF gratuito",
+      "active": true
+    },
+    {
+      "id": 7,
+      "text": "📡 Global Money Week 2026 — Educazione finanziaria per tutti",
+      "active": true
+    },
+    {
+      "id": 8,
+      "text": "⚡ ALERT: vishing, smishing, phishing — impara a riconoscerli nella guida pratica",
+      "active": true
+    }
+  ]
+}
