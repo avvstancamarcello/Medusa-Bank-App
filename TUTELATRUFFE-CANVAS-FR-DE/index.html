@@ -14,8 +14,7 @@
   <meta name="rating" content="general">
   <link rel="canonical" href="https://www.tutelatruffe.it/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <!-- Flag Icons CSS — SVG flags for all countries -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+  <!-- Flags rendered as emoji to avoid third-party CSS requests -->
   
   <!-- Google Search Console - Inserisci il tuo codice di verifica -->
   <!-- <meta name="google-site-verification" content="IL_TUO_CODICE_VERIFICA_QUI"> -->
@@ -29,6 +28,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1e3a5f">
+  <link rel="preload" as="image" href="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" fetchpriority="high">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -443,6 +443,8 @@
     .psyco-defense-thumb{width:100%;max-width:180px;aspect-ratio:4/3;border-radius:10px;object-fit:cover;border:2px solid rgba(255,215,0,.4);box-shadow:0 6px 18px rgba(0,0,0,.4);transition:transform .2s ease}
     .psyco-defense-item:hover .psyco-defense-thumb{transform:scale(1.05)}
     .psyco-defense-label{line-height:1.3}
+    .psyco-nav-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .psyco-nav-buttons .adsense-action-link{flex:1;min-width:220px;text-align:center}
     @media(max-width:700px){.psyco-defense-grid{grid-template-columns:1fr}}
 
     /* ===== 189 FLAGS GRID & AUTHORITY MODAL ===== */
@@ -452,6 +454,12 @@
     .flags-section-header p{color:#9fb4c7;font-size:14px;margin:0}
       .authority-preview-band{margin:22px 0 26px;padding:16px;border-radius:24px;background:linear-gradient(180deg,rgba(168,151,255,.26),rgba(126,112,214,.2));border:2px solid rgba(191,181,255,.62);box-shadow:0 12px 28px rgba(54,34,114,.22),inset 0 0 20px rgba(255,255,255,.08)}
       .authority-preview-band img{display:block;width:100%;height:auto;border-radius:18px;border:2px solid rgba(255,255,255,.45);box-shadow:0 10px 30px rgba(32,20,70,.28)}
+      .authority-preview-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;padding:14px 16px;border-radius:18px;background:linear-gradient(135deg,rgba(11,26,46,.82),rgba(20,47,82,.78));border:1px solid rgba(170,220,255,.24)}
+      .authority-preview-copy{display:flex;flex-direction:column;gap:8px;flex:1;min-width:240px}
+      .authority-preview-badge{display:inline-flex;align-items:center;width:max-content;padding:5px 11px;border-radius:999px;background:rgba(255,215,0,.14);border:1px solid rgba(255,215,0,.38);color:#ffe082;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+      .authority-preview-note{margin:0;color:#d7e6ff;font-size:13px;line-height:1.55}
+      .authority-preview-link{display:inline-flex;align-items:center;justify-content:center;min-width:260px;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,#18a957,#0b7c38);border:1px solid rgba(180,255,198,.55);box-shadow:0 10px 22px rgba(6,52,22,.24);color:#f7fff9;font-size:14px;font-weight:800;letter-spacing:.02em;text-decoration:none;text-align:center;transition:transform .2s,box-shadow .2s,border-color .2s}
+      .authority-preview-link:hover,.authority-preview-link:focus-visible{transform:translateY(-2px);box-shadow:0 14px 28px rgba(6,52,22,.34);border-color:#ffd700}
     .flags-search-bar{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap;justify-content:center}
     .flags-search-bar input{flex:1;min-width:200px;max-width:400px;padding:10px 14px;border:2px solid rgba(77,184,255,.5);border-radius:10px;background:rgba(255,255,255,.08);color:#fff;font-size:15px;outline:none}
     .flags-search-bar input::placeholder{color:rgba(255,255,255,.4)}
@@ -464,8 +472,11 @@
       .flag-card{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:90px;padding:10px 6px;border:1px solid rgba(125,112,214,.32);border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(245,247,255,.96));cursor:pointer;transition:all .25s;text-decoration:none;text-align:center;position:relative;overflow:hidden;box-shadow:0 5px 12px rgba(43,31,94,.14)}
       .flag-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.62),transparent 46%);pointer-events:none}
       .flag-card:hover{transform:translateY(-3px) scale(1.05);border-color:rgba(255,215,0,.75);box-shadow:0 10px 24px rgba(60,40,120,.24)}
-      .flag-card .flag-emoji{display:flex;align-items:center;justify-content:center;width:52px;height:38px;margin-bottom:6px;padding:4px;background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(31,23,72,.16);font-size:2.2em;line-height:1}
-      .flag-card .flag-emoji .fi{display:block;font-size:1em;width:1.4em;line-height:1;border-radius:3px;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+      .flag-card .flag-emoji{display:flex;align-items:center;justify-content:center;width:52px;height:38px;margin-bottom:6px;padding:0;background:#fff;border-radius:8px;box-shadow:0 2px 8px rgba(31,23,72,.16);overflow:hidden;position:relative}
+      .flag-card .flag-image{display:block;width:100%;height:100%;object-fit:cover}
+      .flag-card .flag-fallback-code{display:none;align-items:center;justify-content:center;width:100%;height:100%;background:linear-gradient(180deg,#ffffff,#eef2ff);color:#6f78aa;font-size:18px;font-weight:900;letter-spacing:.04em}
+      .flag-card .flag-emoji.flag-emoji-fallback .flag-fallback-code{display:flex}
+      .flag-card .flag-emoji.flag-emoji-fallback .flag-image{display:none}
       .flag-card .flag-code{font-size:11px;font-weight:800;color:#4562a8;letter-spacing:.06em;text-transform:uppercase}
     .flag-card.eu-member{border-color:rgba(0,87,183,.6)}
     .flag-card.eu-member:hover{border-color:#ffd700;box-shadow:0 8px 24px rgba(0,87,183,.3)}
@@ -499,7 +510,9 @@
 
     /* Mental Health / Psychiatric Assistance section */
     .mental-health-section{margin-top:28px;padding:24px 20px;background:linear-gradient(180deg,rgba(40,10,25,.95),rgba(20,5,15,.98));border:2px solid rgba(255,107,107,.35);border-radius:22px}
+    .mental-health-section.mental-health-bottom{margin-top:34px}
     .mental-health-section h3{color:#ff6b6b;font-size:clamp(16px,2vw,20px);text-align:center;margin:0 0 6px}
+    .mental-health-seq{display:inline-block;margin-right:6px;padding:2px 8px;border-radius:999px;background:rgba(255,107,107,.22);border:1px solid rgba(255,107,107,.42);font-size:.88em}
     .mental-health-section .mental-health-subtitle{text-align:center;color:#f1c9c9;font-size:14px;margin:0 0 18px;line-height:1.5}
     .mental-health-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
     .mental-health-card{padding:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,107,107,.25);border-radius:14px;transition:all .2s}
@@ -552,11 +565,13 @@
     .ask-authority-btn.native-lang{background:linear-gradient(135deg,#3b82f6,#2563eb);border-color:#60a5fa;box-shadow:0 4px 12px rgba(59,130,246,.4)}
     .ask-authority-btn.native-lang:hover{background:linear-gradient(135deg,#2563eb,#1d4ed8);box-shadow:0 6px 18px rgba(59,130,246,.6)}
     .authority-modal-actions{margin-top:16px;padding-top:14px;border-top:1px solid rgba(77,184,255,.2);display:flex;flex-direction:column;gap:10px;align-items:center}
-    .authority-modal-actions .action-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .authority-modal-actions .action-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;width:100%}
     .report-suspect-btn{background:#dc2626;color:#fff;border:2px solid #fca5a5;border-radius:999px;padding:9px 16px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:6px;cursor:pointer;box-shadow:0 4px 12px rgba(220,38,38,.4);transition:all .25s}
     .report-suspect-btn:hover{background:#b91c1c;box-shadow:0 6px 18px rgba(220,38,38,.6)}
     .report-abuse-btn{background:#000;color:#39ff14;border:2px solid #39ff14;border-radius:999px;padding:9px 16px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:6px;cursor:pointer;box-shadow:0 4px 12px rgba(57,255,20,.4);text-shadow:0 0 8px rgba(57,255,20,.6);transition:all .25s}
     .report-abuse-btn:hover{background:#0a0a0a;box-shadow:0 6px 18px rgba(57,255,20,.7)}
+    .external-directory-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;max-width:420px;padding:11px 18px;border-radius:999px;background:linear-gradient(135deg,#0f3a67,#2462a3);border:2px solid #8fc8ff;color:#f3fbff;font-size:13px;font-weight:800;text-decoration:none;box-shadow:0 4px 12px rgba(36,98,163,.34);transition:all .25s}
+    .external-directory-btn:hover,.external-directory-btn:focus-visible{transform:translateY(-2px);box-shadow:0 8px 18px rgba(36,98,163,.42);border-color:#ffd700}
     .sanctioned-alert{background:linear-gradient(135deg,#dc3545,#c82333);color:#fff;padding:14px;border-radius:10px;margin-bottom:14px;text-align:center;font-weight:600;box-shadow:0 4px 12px rgba(220,53,69,.4)}
     .sanctioned-alert h4{margin:0 0 6px;font-size:15px}
     .sanctioned-alert p{margin:0;font-size:13px;opacity:.95}
@@ -948,10 +963,26 @@
     .collab-popup-overlay .blog-collaboration{position:relative;top:auto;left:auto;right:auto;bottom:auto;max-width:700px;width:90%;max-height:85vh;overflow-y:auto;z-index:9999;margin:0 auto}
     .collab-popup-close{position:absolute;top:8px;right:12px;background:none;border:none;font-size:28px;color:#8b4513;cursor:pointer;font-weight:900;z-index:10000;line-height:1}
     .collab-popup-close:hover{color:#ff0000}
-    .collab-visible-banner{position:absolute;top:6900px;left:calc(15% - 10px + 120px);right:calc(15% - 10px + 120px);z-index:160;background:linear-gradient(180deg,#d4a574 0%,#c4956a 15%,#f5deb3 30%,#deb887 50%,#f5deb3 70%,#c4956a 85%,#a0522d 100%);border:4px solid #8b4513;border-radius:15px;padding:28px 24px;box-shadow:0 10px 40px rgba(0,0,0,.6),inset 0 5px 15px rgba(255,255,255,.3);text-align:center;cursor:pointer;transition:transform .3s,box-shadow .3s}
+    .collab-visible-banner{position:absolute;top:4500px;left:calc(15% + 150px);right:calc(15% + 150px);z-index:160;background:linear-gradient(180deg,#d4a574 0%,#c4956a 15%,#f5deb3 30%,#deb887 50%,#f5deb3 70%,#c4956a 85%,#a0522d 100%);border:4px solid #8b4513;border-radius:15px;padding:28px 24px;box-shadow:0 10px 40px rgba(0,0,0,.6),inset 0 5px 15px rgba(255,255,255,.3);text-align:center;cursor:pointer;transition:transform .3s,box-shadow .3s}
     .collab-visible-banner:hover{transform:translateY(-3px);box-shadow:0 14px 50px rgba(0,0,0,.7),0 0 25px rgba(255,215,0,.4)}
     .collab-visible-banner h2{font-family:'Times New Roman',serif;font-size:clamp(20px,2.5vw,28px);font-weight:900;color:#4a3728;text-shadow:1px 1px 2px rgba(255,255,255,.5);margin:0 0 12px;letter-spacing:2px}
     .collab-visible-banner p{font-family:'Times New Roman',serif;font-size:clamp(14px,1.6vw,18px);color:#4a3728;text-shadow:1px 1px 2px rgba(255,255,255,.5);margin:0;line-height:1.5}
+    .collab-side-stack{position:absolute;top:4500px;width:126px;display:flex;flex-direction:column;gap:12px;z-index:158}
+    .collab-side-stack-left{left:calc(15% + 14px)}
+    .collab-side-stack-right{right:calc(15% + 14px)}
+    .collab-side-box{min-height:148px;border-radius:14px;border:2px solid rgba(255,215,0,.55);background:linear-gradient(180deg,rgba(7,22,40,.92),rgba(4,12,24,.96));box-shadow:0 8px 22px rgba(0,0,0,.42),inset 0 0 20px rgba(255,255,255,.06);padding:10px;display:flex;align-items:center;justify-content:center}
+    .collab-side-box.collab-left-copy{font-family:'Trebuchet MS',sans-serif;font-size:26px;font-weight:900;line-height:1.05;color:#ffdf76;text-shadow:0 0 12px rgba(255,215,0,.45);text-align:center;letter-spacing:.5px}
+    .collab-side-box.collab-bank-box{flex-direction:column;gap:8px;overflow:hidden}
+    .collab-bank-pair{width:100%;display:flex;flex-direction:column;gap:8px}
+    .collab-bank-chip{display:flex;align-items:center;gap:7px;width:100%;padding:6px;border-radius:9px;background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(235,245,255,.95));box-shadow:0 2px 9px rgba(0,0,0,.2)}
+    .collab-bank-chip .chip-logo{width:38px;height:28px;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
+    .collab-bank-chip .chip-logo img{width:100%;height:100%;object-fit:contain}
+    .collab-bank-chip .chip-fallback{font-size:10px;font-weight:900;color:#113b7a;line-height:1.08;text-align:center}
+    .collab-bank-chip .chip-meta{display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-width:0}
+    .collab-bank-chip .chip-code{font-size:11px;font-weight:900;color:#06255f;line-height:1}
+    .collab-bank-chip .chip-flag{font-size:13px;line-height:1}
+    .collab-bank-chip .chip-name{font-size:9px;font-weight:700;color:#19437d;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:58px}
+    @media(max-width:1024px){.collab-side-stack{display:none}.collab-visible-banner{display:none}}
     .blog-response{background:rgba(255,255,255,.7);border:1px solid #c4956a;border-radius:8px;padding:15px;margin-bottom:15px}
     .blog-response-bank{font-weight:700;color:#003366;font-size:14px}
     .blog-response-address{font-size:13px;color:#4a3728;margin-top:5px;word-break:break-all}
@@ -994,8 +1025,8 @@
     .bank-floor a{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;width:100%;height:100%;padding:12px 4px 14px;gap:6px;transition:all .3s}
     .bank-floor-flag{position:absolute;bottom:2px;left:4px;width:16px;height:12px;border-radius:2px;overflow:hidden;transition:all .3s}
     .bank-floor:hover{transform:scale(1.8);z-index:1000;background:rgba(255,255,255,.95);border-radius:8px;box-shadow:0 10px 40px rgba(74,144,226,.8),0 0 30px rgba(135,206,235,.7)}
-    .bank-floor-logo-shell{width:min(100%,var(--bank-logo-shell-width,78px));height:var(--bank-logo-shell-height,66px);display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(244,249,255,.94));padding:var(--bank-logo-shell-padding,6px);border-radius:8px;box-shadow:0 3px 10px rgba(20,60,110,.18);overflow:hidden;position:relative}
-    .bank-floor img.bank-floor-logo{max-width:var(--bank-logo-max-width,100%);max-height:var(--bank-logo-max-height,100%);object-fit:contain;transform:scale(var(--bank-logo-scale,1));transform-origin:center;filter:drop-shadow(0 2px 4px rgba(0,51,153,.08))}
+    .bank-floor-logo-shell{width:min(100%,var(--bank-logo-shell-size,74px));height:var(--bank-logo-shell-size,74px);display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(244,249,255,.94));padding:var(--bank-logo-shell-padding,8px);border-radius:10px;box-shadow:0 3px 10px rgba(20,60,110,.18);overflow:hidden;position:relative;aspect-ratio:1 / 1}
+    .bank-floor img.bank-floor-logo{width:100%;height:100%;max-width:var(--bank-logo-max-width,100%);max-height:var(--bank-logo-max-height,100%);object-fit:contain;object-position:center;transform:scale(var(--bank-logo-scale,1));transform-origin:center;filter:drop-shadow(0 2px 4px rgba(0,51,153,.08))}
     .bank-floor img.bank-floor-logo.is-favicon{max-width:var(--bank-logo-max-width,58px);max-height:var(--bank-logo-max-height,58px);transform:scale(var(--bank-logo-scale,1.2));transform-origin:center;filter:drop-shadow(0 2px 4px rgba(0,51,153,.15))}
     .bank-floor-logo-shell.has-side-tag{justify-content:flex-start;padding-right:24px}
     .bank-floor-logo-side-tag{position:absolute;top:5px;right:5px;bottom:5px;width:18px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;font-size:16px;font-weight:900;line-height:1;color:#8B0000;text-shadow:0 0 4px rgba(139,0,0,.18)}
@@ -1003,6 +1034,7 @@
     .bank-floor-acronym-small{max-width:100%;font-size:10px;font-weight:800;color:#003399;line-height:1.05;letter-spacing:.4px;text-align:center;text-shadow:0 0 5px rgba(0,51,153,.18)}
     .bank-acronym-box{width:80px;height:50px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:#fff;border-radius:6px;text-shadow:0 1px 2px rgba(0,0,0,.5);box-shadow:0 2px 8px rgba(0,0,0,.3)}
     .bank-floor-flag img{width:100%;height:100%;object-fit:cover}
+    .bank-floor-flag span{display:block;width:100%;height:100%;font-size:11px;line-height:12px;text-align:center;background:rgba(0,0,0,.22)}
     .bank-floor.captured{background:rgba(255,50,50,.3);border:2px solid #ff3333}
     .bank-floor.captured::after{content:'😢';position:absolute;top:2px;left:4px;font-size:14px}
     .bank-floor-0{background:rgba(0,100,0,.2);border:2px solid rgba(0,255,0,.4)}
@@ -1107,6 +1139,7 @@
     .captures-grid{display:flex;flex-direction:column;gap:clamp(5px,0.6vw,8px);align-items:center;flex-shrink:0}
     .captured-item{display:flex;flex-direction:column;align-items:center;gap:4px;background:rgba(255,50,50,.15);border:2px solid rgba(255,100,100,.4);border-radius:8px;padding:clamp(4px,0.5vw,6px);width:100%;min-height:60px;flex-shrink:0;transition:all .3s;animation:emojiPulse 6s ease-in-out infinite}
     .captured-item:hover{transform:scale(1.6);z-index:1000;box-shadow:0 8px 30px rgba(255,100,100,.8);animation:none;background:rgba(255,50,50,.3)}
+    .captured-item.laser-hit{box-shadow:0 0 22px rgba(0,255,180,.72),0 0 42px rgba(0,255,180,.38);border-color:rgba(120,255,220,.92);transform:scale(1.05)}
     .captured-emoji{font-size:clamp(22px,2.5vw,30px);text-align:center}
     .captured-counter{background:#ffd700;color:#000;padding:clamp(2px,0.3vw,3px) clamp(5px,0.6vw,8px);border-radius:6px;font-size:clamp(9px,0.9vw,11px);font-weight:700;box-shadow:0 2px 8px rgba(255,215,0,.5);text-align:center;min-width:clamp(50px,5vw,65px)}
     
@@ -1289,8 +1322,16 @@
     .basilisk-snake-tertiary{opacity:.96;stroke:#39ff94;stroke-width:5.5;filter:drop-shadow(0 0 8px rgba(57,255,148,.92)) drop-shadow(0 0 16px rgba(57,255,148,.65))}
     .adsense-toc-intro{text-align:center;margin-bottom:18px}
     .adsense-toc-title{color:#ffd700;font-size:clamp(18px,2vw,24px);font-weight:900;letter-spacing:.4px}
-    .adsense-toc-copy{max-width:760px;margin:8px auto 0;color:#d8ebff;font-size:14px;line-height:1.65}
-    .adsense-toc-warning{max-width:760px;margin:10px auto 0;color:#ffd89a;font-size:12px;line-height:1.55;font-weight:700;letter-spacing:.15px;text-shadow:0 0 8px rgba(255,100,100,.35)}
+    .adsense-toc-copy{max-width:760px;margin:8px auto 0;color:#d8ebff;font-size:29.75px;line-height:1.65;text-align:center}
+    .toc-inline-placeholders{display:inline-flex;align-items:center;justify-content:center;gap:6px;margin:0 6px 0 4px;vertical-align:middle}
+    .toc-inline-placeholder{display:inline-block;width:24px;height:14px;border-radius:999px;border:1px solid rgba(255,255,255,.42);box-shadow:0 0 10px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.22)}
+    .toc-inline-placeholder-ochre{background:linear-gradient(180deg,#d8a339,#9d6518)}
+    .toc-inline-placeholder-red{background:linear-gradient(180deg,#ff5f5f,#a81818)}
+    .toc-inline-placeholder-green{background:linear-gradient(180deg,#6ef0a1,#16854a)}
+    .toc-inline-placeholder-blue{background:linear-gradient(180deg,#6cb8ff,#1d4fb8)}
+    .toc-inline-placeholder-purple{background:linear-gradient(180deg,#b684ff,#6630c9)}
+    .toc-inline-placeholder-pink{background:linear-gradient(180deg,#ff91cf,#d93d93)}
+    .adsense-toc-warning{max-width:760px;margin:10px auto 0;color:#ffd89a;font-size:24px;line-height:1.55;font-weight:700;letter-spacing:.15px;text-shadow:0 0 8px rgba(255,100,100,.35);text-align:center}
     .adsense-toc-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
     .adsense-toc-group{position:relative;padding:16px 16px 14px;border-radius:16px;background:linear-gradient(180deg,rgba(2,44,86,.46),rgba(6,28,53,.56));border:1px solid rgba(77,184,255,.28);overflow:hidden}
     .adsense-toc-group h3{margin:0 0 12px;color:#f8fbff;font-size:16px;font-weight:800;line-height:1.35}
@@ -1313,15 +1354,15 @@
     .adsense-toc-buttons a[href="#urgent-transfer-scam"]:is(:hover,:focus-visible),
     .adsense-toc-buttons a[href="#gift-card-scam"]:is(:hover,:focus-visible){padding:10px 14px;line-height:1.1;max-width:220px}
 
-    .mystery-medusa-fixed{position:absolute;z-index:286;width:54px;height:54px;border-radius:10px;border:2px solid rgba(255,80,80,.9);background:linear-gradient(180deg,rgba(34,10,12,.96),rgba(18,6,8,.97));box-shadow:0 0 14px rgba(255,80,80,.8),0 0 24px rgba(255,80,80,.45);overflow:hidden;pointer-events:none;display:flex;align-items:center;justify-content:center;animation:mysteryMedusaPulse 4.2s ease-in-out infinite}
-    .mystery-medusa-fixed img{width:38px;height:38px;border-radius:50%;object-fit:cover;filter:saturate(1.2) contrast(1.08)}
+    .mystery-medusa-fixed{position:absolute;z-index:286;width:108px;height:108px;border-radius:20px;border:2px solid rgba(255,80,80,.9);background:linear-gradient(180deg,rgba(34,10,12,.96),rgba(18,6,8,.97));box-shadow:0 0 14px rgba(255,80,80,.8),0 0 24px rgba(255,80,80,.45);overflow:hidden;pointer-events:none;display:flex;align-items:center;justify-content:center;animation:mysteryMedusaPulse 4.2s ease-in-out infinite}
+    .mystery-medusa-fixed img{width:76px;height:76px;border-radius:50%;object-fit:cover;filter:saturate(1.2) contrast(1.08)}
     #mystery-medusa-left{animation-delay:0s}
     #mystery-medusa-right{animation-delay:2.1s;border-color:rgba(57,255,148,.9);box-shadow:0 0 14px rgba(57,255,148,.8),0 0 24px rgba(57,255,148,.45)}
     #mystery-medusa-social{animation-delay:1s}
     #mystery-medusa-authority{animation-delay:3.2s;border-color:rgba(57,255,148,.9);box-shadow:0 0 14px rgba(57,255,148,.8),0 0 24px rgba(57,255,148,.45)}
     #mystery-medusa-identity{animation-delay:1.6s;border-color:rgba(57,255,148,.9);box-shadow:0 0 14px rgba(57,255,148,.8),0 0 24px rgba(57,255,148,.45)}
     #mystery-medusa-psycho{animation-delay:0.5s}
-    @keyframes mysteryMedusaPulse{0%,100%{transform:scale(1) rotate(-4deg)}50%{transform:scale(1.1) rotate(4deg)}}
+    @keyframes mysteryMedusaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
 
     .mystery-medusa-laser{position:fixed;height:6px;border-radius:999px;transform-origin:0 50%;z-index:287;pointer-events:none;opacity:0;background:linear-gradient(90deg,rgba(0,255,136,0),#c5ffe0 20%,#33ff99 58%,rgba(51,255,153,.1));box-shadow:0 0 12px rgba(51,255,153,.95),0 0 24px rgba(51,255,153,.62)}
     .mystery-medusa-laser.active{animation:mysteryMedusaLaserShot .26s ease-out forwards}
@@ -1342,8 +1383,8 @@
       .adsense-toc-buttons a{justify-content:center}
       .adsense-toc-buttons a::before,
       .adsense-toc-buttons a:nth-child(even)::before{order:0}
-      .mystery-medusa-fixed{width:58px;height:58px;border-radius:14px;animation:mysteryMedusaPulseMobile 3.8s ease-in-out infinite}
-      .mystery-medusa-fixed img{width:42px;height:42px}
+      .mystery-medusa-fixed{width:116px;height:116px;border-radius:28px;animation:mysteryMedusaPulseMobile 3.8s ease-in-out infinite}
+      .mystery-medusa-fixed img{width:84px;height:84px}
     }
     /* Theme 1 — Social: Coral */
     .adsense-toc-group[data-theme="social"]{border-color:rgba(255,107,107,.55)}
@@ -1391,6 +1432,68 @@
     .adsense-card{padding:20px 22px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(130,190,255,.28);border-radius:16px;backdrop-filter:blur(5px);scroll-margin-top:24px}
     #video-avatar-section{grid-column:1 / -1}
     .adsense-card:target{border-color:#ffd700;box-shadow:0 0 0 2px rgba(255,215,0,.28),0 10px 24px rgba(0,0,0,.28)}
+    .educational-pdf-insert{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:18px;align-items:center;padding:18px 18px 20px;border-radius:18px;background:linear-gradient(180deg,rgba(4,18,34,.92),rgba(7,28,50,.82));border:1px solid rgba(130,190,255,.28);box-shadow:0 12px 30px rgba(0,0,0,.24);overflow:hidden}
+    .educational-pdf-insert::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at top right,rgba(255,255,255,.08),transparent 34%),linear-gradient(135deg,rgba(255,255,255,.04),transparent 58%);pointer-events:none}
+    .educational-pdf-insert[data-theme="social"]{border-color:rgba(255,107,107,.45)}
+    .educational-pdf-insert[data-theme="authority"]{border-color:rgba(255,170,51,.45)}
+    .educational-pdf-insert[data-theme="investments"]{border-color:rgba(0,214,143,.45)}
+    .educational-pdf-insert[data-theme="payments"]{border-color:rgba(0,200,255,.45)}
+    .educational-pdf-insert[data-theme="identity"]{border-color:rgba(179,136,255,.45)}
+    .educational-pdf-insert[data-theme="psycho"]{border-color:rgba(255,105,180,.45)}
+    .educational-pdf-copy{position:relative;z-index:1}
+    .educational-pdf-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;padding:5px 12px;border-radius:999px;background:rgba(255,215,0,.12);border:1px solid rgba(255,215,0,.34);color:#ffd700;font-size:11px;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+    .educational-pdf-kicker::before{content:'PDF';display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:20px;padding:0 8px;border-radius:999px;background:rgba(8,20,34,.92);border:1px solid rgba(255,215,0,.45);font-size:10px}
+    .educational-pdf-copy h4{margin:0 0 10px;color:#f7fbff;font-size:clamp(22px,2vw,28px);line-height:1.22}
+    .educational-pdf-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+    .educational-pdf-chip{display:inline-flex;align-items:center;justify-content:center;padding:4px 10px;border-radius:999px;background:rgba(77,184,255,.14);border:1px solid rgba(77,184,255,.34);color:#bfe9ff;font-size:11px;font-weight:800;letter-spacing:.25px}
+    .educational-pdf-copy p{margin:0;color:#dcecff;font-size:15px;line-height:1.7}
+    .educational-pdf-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .educational-pdf-frame-wrap{position:relative;z-index:1;display:flex;justify-content:center}
+    .educational-pdf-frame{width:min(100%,390px);aspect-ratio:9 / 16;border-radius:22px;padding:8px;background:linear-gradient(180deg,#101922,#04070b);border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 32px rgba(0,0,0,.32),0 0 0 1px rgba(255,255,255,.04) inset}
+    .educational-pdf-frame::before{content:'';display:block;width:34%;height:6px;margin:0 auto 8px;border-radius:999px;background:rgba(255,255,255,.14)}
+    .educational-pdf-frame-link{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:620px;padding:20px 18px;border-radius:16px;background:linear-gradient(180deg,#fbfdff 0%,#e9f1f9 48%,#d7e4f1 100%);border:1px solid rgba(16,25,34,.12);color:#0d2034;text-decoration:none;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+    .educational-pdf-frame-link:hover{transform:translateY(-2px);box-shadow:0 16px 28px rgba(0,0,0,.18);filter:brightness(1.02)}
+    .educational-pdf-frame-link::before{content:'PDF';position:absolute;top:18px;right:18px;display:inline-flex;align-items:center;justify-content:center;min-width:56px;height:28px;padding:0 10px;border-radius:999px;background:#d92231;color:#fff;font-size:11px;font-weight:900;letter-spacing:.7px;box-shadow:0 6px 14px rgba(217,34,49,.28)}
+    .educational-pdf-frame-link::after{content:'';position:absolute;inset:auto -42px -42px auto;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(77,184,255,.24),rgba(77,184,255,0) 68%);pointer-events:none}
+    .educational-pdf-frame-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding-right:64px}
+    .educational-pdf-frame-page{display:flex;align-items:center;gap:10px;width:max-content;margin-top:22px;padding:8px 12px;border-radius:999px;background:rgba(53,81,109,.06);border:1px solid rgba(53,81,109,.12);color:#35516d;font-size:12px;font-weight:900;letter-spacing:.45px;text-transform:uppercase}
+    .educational-pdf-frame-page::before{content:'';display:block;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#ffd700,#ff9f1c);box-shadow:0 0 0 4px rgba(255,215,0,.16)}
+    .educational-pdf-frame-badge{display:inline-flex;align-items:center;justify-content:center;padding:7px 12px;border-radius:999px;background:linear-gradient(135deg,#10263d,#173c60);color:#eff8ff;font-size:11px;font-weight:900;letter-spacing:.55px;text-transform:uppercase;box-shadow:0 10px 18px rgba(16,38,61,.14)}
+    .educational-pdf-frame-teaser{margin:18px 0 8px;color:#0b2237;font-size:12px;font-weight:900;letter-spacing:.75px;text-transform:uppercase}
+    .educational-pdf-insert[data-theme="social"] .educational-pdf-frame-page{background:rgba(198,71,71,.08);border-color:rgba(198,71,71,.14)}
+    .educational-pdf-insert[data-theme="social"] .educational-pdf-frame-page::before{background:linear-gradient(135deg,#d95c5c,#f39a9a);box-shadow:0 0 0 4px rgba(198,71,71,.16)}
+    .educational-pdf-insert[data-theme="social"] .educational-pdf-frame-badge{background:linear-gradient(135deg,#a92f2f,#d95c5c);box-shadow:0 10px 18px rgba(198,71,71,.22)}
+    .educational-pdf-insert[data-theme="social"] .educational-pdf-frame-teaser{color:#c64747}
+    .educational-pdf-insert[data-theme="authority"] .educational-pdf-frame-page{background:rgba(196,123,17,.08);border-color:rgba(196,123,17,.14)}
+    .educational-pdf-insert[data-theme="authority"] .educational-pdf-frame-page::before{background:linear-gradient(135deg,#d99116,#f0ba63);box-shadow:0 0 0 4px rgba(196,123,17,.16)}
+    .educational-pdf-insert[data-theme="authority"] .educational-pdf-frame-badge{background:linear-gradient(135deg,#9a5b00,#d99116);box-shadow:0 10px 18px rgba(196,123,17,.22)}
+    .educational-pdf-insert[data-theme="authority"] .educational-pdf-frame-teaser{color:#c47b11}
+    .educational-pdf-insert[data-theme="investments"] .educational-pdf-frame-page{background:rgba(4,141,97,.08);border-color:rgba(4,141,97,.14)}
+    .educational-pdf-insert[data-theme="investments"] .educational-pdf-frame-page::before{background:linear-gradient(135deg,#08a36f,#5de0a9);box-shadow:0 0 0 4px rgba(4,141,97,.16)}
+    .educational-pdf-insert[data-theme="investments"] .educational-pdf-frame-badge{background:linear-gradient(135deg,#036346,#08a36f);box-shadow:0 10px 18px rgba(4,141,97,.22)}
+    .educational-pdf-insert[data-theme="investments"] .educational-pdf-frame-teaser{color:#048d61}
+    .educational-pdf-insert[data-theme="payments"] .educational-pdf-frame-page{background:rgba(0,125,163,.08);border-color:rgba(0,125,163,.14)}
+    .educational-pdf-insert[data-theme="payments"] .educational-pdf-frame-page::before{background:linear-gradient(135deg,#1099c1,#68d7f3);box-shadow:0 0 0 4px rgba(0,125,163,.16)}
+    .educational-pdf-insert[data-theme="payments"] .educational-pdf-frame-badge{background:linear-gradient(135deg,#005d79,#1099c1);box-shadow:0 10px 18px rgba(0,125,163,.22)}
+    .educational-pdf-insert[data-theme="payments"] .educational-pdf-frame-teaser{color:#007da3}
+    .educational-pdf-insert[data-theme="identity"] .educational-pdf-frame-page{background:rgba(118,87,200,.08);border-color:rgba(118,87,200,.14)}
+    .educational-pdf-insert[data-theme="identity"] .educational-pdf-frame-page::before{background:linear-gradient(135deg,#8b68e4,#b59bf1);box-shadow:0 0 0 4px rgba(118,87,200,.16)}
+    .educational-pdf-insert[data-theme="identity"] .educational-pdf-frame-badge{background:linear-gradient(135deg,#5a39b0,#8b68e4);box-shadow:0 10px 18px rgba(118,87,200,.22)}
+    .educational-pdf-insert[data-theme="identity"] .educational-pdf-frame-teaser{color:#7657c8}
+    .educational-pdf-insert[data-theme="psycho"] .educational-pdf-frame-page{background:rgba(192,67,126,.08);border-color:rgba(192,67,126,.14)}
+    .educational-pdf-insert[data-theme="psycho"] .educational-pdf-frame-page::before{background:linear-gradient(135deg,#d45b96,#f2a4c7);box-shadow:0 0 0 4px rgba(192,67,126,.16)}
+    .educational-pdf-insert[data-theme="psycho"] .educational-pdf-frame-badge{background:linear-gradient(135deg,#9d2f62,#d45b96);box-shadow:0 10px 18px rgba(192,67,126,.22)}
+    .educational-pdf-insert[data-theme="psycho"] .educational-pdf-frame-teaser{color:#c0437e}
+    .educational-pdf-frame-title{margin:16px 0 10px;color:#071421;font-size:clamp(22px,2vw,28px);line-height:1.16;font-weight:900}
+    .educational-pdf-frame-copy{margin:0;color:#27445f;font-size:14px;line-height:1.68}
+    .educational-pdf-frame-social-proof{display:flex;align-items:center;gap:10px;margin-top:16px;padding:11px 12px;border-radius:14px;background:rgba(255,255,255,.58);border:1px solid rgba(16,32,52,.1);color:#23415c;font-size:13px;font-weight:700;line-height:1.5}
+    .educational-pdf-frame-social-proof::before{content:'↗';display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#ffd700,#ff9f1c);color:#0d2034;font-size:16px;font-weight:900;flex:0 0 auto}
+    .educational-pdf-frame-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;padding-top:14px;border-top:1px solid rgba(13,32,52,.12)}
+    .educational-pdf-frame-open{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:9px 14px;border-radius:999px;background:linear-gradient(135deg,#0d2034,#123657);color:#fff;font-size:12px;font-weight:900;letter-spacing:.3px;text-transform:uppercase;box-shadow:0 10px 20px rgba(13,32,52,.16)}
+    .educational-pdf-frame-open::after{content:'→';font-size:15px;line-height:1}
+    .educational-pdf-frame-footnote{color:#52708a;font-size:11px;font-weight:800;letter-spacing:.3px;text-transform:uppercase}
+    .educational-pdf-insert[data-placement="after"] .educational-pdf-copy{order:2}
+    .educational-pdf-insert[data-placement="after"] .educational-pdf-frame-wrap{order:1}
     .adsense-card h3{margin:0 0 12px;color:#ffd700;font-size:clamp(19px,2vw,24px);line-height:1.25}
     .adsense-card p{margin:0 0 12px;color:#edf4ff;font-size:15px;line-height:1.7}
     .adsense-card p:last-child{margin-bottom:0}
@@ -1403,6 +1506,9 @@
     .adsense-template-lead{margin:0 0 10px;color:#ffd700;font-size:14px;font-weight:800;letter-spacing:.2px}
     .adsense-template-box ul{margin-top:0}
     .video-avatar-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:18px}
+    .video-external-list{margin:12px 0 0;padding-left:18px;color:#edf4ff}
+    .video-external-list li{margin-bottom:10px;line-height:1.6}
+    .video-external-status{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:rgba(255,215,0,.18);border:1px solid rgba(255,215,0,.45);color:#ffe089;font-size:11px;font-weight:800;letter-spacing:.2px}
     .video-avatar-card{display:grid;grid-template-columns:minmax(260px,1.1fr) minmax(430px,1.9fr);grid-template-rows:auto 1fr;column-gap:20px;row-gap:10px;align-items:start;padding:16px;border-radius:16px;background:linear-gradient(180deg,rgba(5,25,46,.9),rgba(8,38,66,.74));border:1px solid rgba(77,184,255,.26);box-shadow:0 10px 24px rgba(0,0,0,.24)}
     .video-avatar-media{grid-column:2;grid-row:1 / span 2;position:relative;border-radius:12px;overflow:hidden;border:1px solid rgba(141,217,255,.34);background:#031120;box-shadow:0 10px 24px rgba(0,0,0,.28)}
     .video-avatar-card video{display:block;width:100%;aspect-ratio:16 / 9;min-height:240px;border-radius:12px;background:#031120;object-fit:cover}
@@ -1495,6 +1601,7 @@
           .collab-visible-banner:hover{transform:translateY(-3px);box-shadow:0 14px 50px rgba(0,0,0,.7),0 0 25px rgba(255,215,0,.4)}
           .collab-visible-banner h2{font-family:'Times New Roman',serif;font-size:clamp(20px,2.5vw,28px);font-weight:900;color:#4a3728;text-shadow:1px 1px 2px rgba(255,255,255,.5);margin:0 0 12px;letter-spacing:2px}
           .collab-visible-banner p{font-family:'Times New Roman',serif;font-size:clamp(14px,1.6vw,18px);color:#4a3728;text-shadow:1px 1px 2px rgba(255,255,255,.5);margin:0;line-height:1.5}
+          .collab-side-stack{display:none}
         }
     
     /* === NEWS TICKER SCORREVOLE - ADIACENTE AI FORZIERI === */
@@ -1962,7 +2069,7 @@
       .chest-coin{font-size:11px}
       .bank-logo-item{padding:4px;gap:3px}
       .bank-floor a{padding:10px 3px 12px;gap:5px}
-      .bank-floor-logo-shell{width:min(100%,var(--bank-logo-shell-width-mobile,74px));height:var(--bank-logo-shell-height-mobile,62px);padding:var(--bank-logo-shell-padding-mobile,5px)}
+      .bank-floor-logo-shell{width:min(100%,var(--bank-logo-shell-size-mobile,68px));height:var(--bank-logo-shell-size-mobile,68px);padding:var(--bank-logo-shell-padding-mobile,6px)}
       .bank-floor img.bank-floor-logo.is-favicon{max-width:var(--bank-logo-max-width-mobile,54px);max-height:var(--bank-logo-max-height-mobile,54px);transform:scale(var(--bank-logo-scale-mobile,1.24))}
       .bank-floor-acronym-small{font-size:9px;letter-spacing:.3px}
       .bank-acronym{font-size:23px}
@@ -2274,6 +2381,13 @@
   </style>
 </head>
 <body>
+  <script>
+    (function(){
+      if(window.matchMedia && window.matchMedia('(max-width: 900px)').matches){
+        document.body.classList.add('mobile-hero-collapsed');
+      }
+    })();
+  </script>
 
   <!-- Popup Limite Zoom -->
   <div class="zoom-limit-popup" id="zoomLimitPopup">
@@ -2367,7 +2481,7 @@
       <div class="orbit orbit-outer"></div>
       <div class="orbit orbit-inner"></div>
       <div class="orbit-safe">
-        <img src="images/perseo-medusa.jpg" alt="Perseo con la testa di Medusa">
+        <img src="images/perseo-medusa.jpg" alt="Perseo con la testa di Medusa" width="800" height="658" loading="lazy">
       </div>
 
       <div class="photo-arrows" aria-hidden="true">
@@ -2390,7 +2504,7 @@
 
       <!-- Medusa Caravaggio - Centro disco banche - CAUSA della pietrificazione -->
       <div class="medusa-caravaggio" id="medusa-caravaggio">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa di Caravaggio - Ipnosi Bancaria" crossorigin="anonymous" loading="lazy">
+        <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa di Caravaggio - Ipnosi Bancaria" width="3369" height="3453" crossorigin="anonymous" loading="lazy">
       </div>
 
       <!-- Shield centrale - tra le due orbite -->
@@ -2583,21 +2697,21 @@
       <!-- Medusa SINISTRA - Caravaggio vivo -->
       <div class="medusa left" id="medusa-left">
         <div class="medusa-image-container">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Sinistra - Ipnosi" crossorigin="anonymous" loading="lazy">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Sinistra - Ipnosi" crossorigin="anonymous" loading="lazy">
         </div>
       </div>
 
       <!-- Medusa DESTRA - Caravaggio vivo -->
       <div class="medusa right" id="medusa-right">
         <div class="medusa-image-container">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Destra - Ipnosi" crossorigin="anonymous" loading="lazy">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Destra - Ipnosi" crossorigin="anonymous" loading="lazy">
         </div>
       </div>
 
       <!-- Medusa CENTRALE - Caravaggio vivo -->
       <div class="medusa center" id="medusa-center">
         <div class="medusa-image-container">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Centrale - Ipnosi" crossorigin="anonymous" loading="lazy">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Medusa Centrale - Ipnosi" crossorigin="anonymous" loading="lazy">
         </div>
       </div>
 
@@ -2693,27 +2807,43 @@
         <div class="papyrus-arrow">⬇️</div>
       </div>
 
-      <div class="captures-lower-container captures-lower-left" id="captures-lower-left"></div>
-      <div class="captures-lower-container captures-lower-right" id="captures-lower-right"></div>
+      <div class="captures-lower-container captures-lower-left" id="captures-lower-left">
+        <div class="mystery-medusa-fixed" id="mystery-medusa-social" aria-hidden="true">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa social" loading="lazy">
+        </div>
+        <div class="mystery-medusa-fixed" id="mystery-medusa-left" aria-hidden="true">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa sinistra" loading="lazy">
+        </div>
+        <div class="mystery-medusa-fixed" id="mystery-medusa-identity" aria-hidden="true">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa identity" loading="lazy">
+        </div>
+      </div>
+      <div class="captures-lower-container captures-lower-right" id="captures-lower-right">
+        <div class="mystery-medusa-fixed" id="mystery-medusa-authority" aria-hidden="true">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa authority" loading="lazy">
+        </div>
+        <div class="mystery-medusa-fixed" id="mystery-medusa-right" aria-hidden="true">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa destra" loading="lazy">
+        </div>
+        <div class="mystery-medusa-fixed" id="mystery-medusa-psycho" aria-hidden="true">
+          <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa psycho" loading="lazy">
+        </div>
+      </div>
 
       <!-- === COLLABORATE VISIBLE BANNER - tra le torri celesti === -->
       <div class="collab-visible-banner" onclick="openCollabPopup()">
         <h2 data-i18n="blogTitle">🤝 COLLABORATE!<br>HELP US! 🤝</h2>
         <p data-i18n="blogInvite">Help us complete the Bank Database! Write here the "complaint service" address of the Bank you don't see in the icons on this page!</p>
       </div>
-      
-      <!-- === TORRI BANCHE BOTTOM - Sotto il papiro === -->
-      <div class="bank-logos-bottom bank-logos-bottom-left" id="bank-logos-bottom-left">
-        <div class="bank-floor" data-floor="-1" data-bank-index="20"><span class="bank-floor-number">-1</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
-        <div class="bank-floor" data-floor="-2" data-bank-index="21"><span class="bank-floor-number">-2</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
-        <div class="bank-floor" data-floor="-3" data-bank-index="22"><span class="bank-floor-number">-3</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
-        <div class="bank-floor" data-floor="-4" data-bank-index="23"><span class="bank-floor-number">-4</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+
+      <div class="collab-side-stack collab-side-stack-left" id="bank-logos-bottom-left" aria-hidden="true">
+        <div class="collab-side-box collab-left-copy">What's<br>Your BANK?</div>
+        <div class="collab-side-box collab-left-copy">What's<br>Your BANK?</div>
       </div>
-      <div class="bank-logos-bottom bank-logos-bottom-right" id="bank-logos-bottom-right">
-        <div class="bank-floor" data-floor="-1" data-bank-index="24"><span class="bank-floor-number">-1</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
-        <div class="bank-floor" data-floor="-2" data-bank-index="25"><span class="bank-floor-number">-2</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
-        <div class="bank-floor" data-floor="-3" data-bank-index="26"><span class="bank-floor-number">-3</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
-        <div class="bank-floor" data-floor="-4" data-bank-index="27"><span class="bank-floor-number">-4</span><span style="font-size:28px;opacity:0.5">🏦</span></div>
+
+      <div class="collab-side-stack collab-side-stack-right" id="bank-logos-bottom-right" aria-hidden="true">
+        <div class="collab-side-box collab-bank-box" id="collab-bank-box-1"></div>
+        <div class="collab-side-box collab-bank-box" id="collab-bank-box-2"></div>
       </div>
       
       <!-- === BLOG COLLABORATIVO - Contributi utenti per Database Bancario === -->
@@ -2925,7 +3055,7 @@
         </div>
       </div>
       <!-- Colonna Destra: Condividi + Threads, Reddit, WhatsApp, Telegram, TikTok -->
-      <div class="social-column right">
+      <div class="social-column right" id="social-share-panel">
         <div class="share-header">
           <span class="share-text">Condividi nei<br>profili social</span>
         </div>
@@ -2951,25 +3081,6 @@
             <span class="social-label">TikTok</span>
           </a>
         </div>
-      </div>
-
-      <div class="mystery-medusa-fixed" id="mystery-medusa-left" aria-hidden="true">
-        <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa sinistra" loading="lazy">
-      </div>
-      <div class="mystery-medusa-fixed" id="mystery-medusa-right" aria-hidden="true">
-        <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa destra" loading="lazy">
-      </div>
-      <div class="mystery-medusa-fixed" id="mystery-medusa-social" aria-hidden="true">
-        <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa social" loading="lazy">
-      </div>
-      <div class="mystery-medusa-fixed" id="mystery-medusa-authority" aria-hidden="true">
-        <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa authority" loading="lazy">
-      </div>
-      <div class="mystery-medusa-fixed" id="mystery-medusa-identity" aria-hidden="true">
-        <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa identity" loading="lazy">
-      </div>
-      <div class="mystery-medusa-fixed" id="mystery-medusa-psycho" aria-hidden="true">
-        <img src="assets/Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Mini Medusa psycho" loading="lazy">
       </div>
 
       <section class="adsense-guide" id="fraud-guide" aria-labelledby="fraud-guide-title">
@@ -3001,9 +3112,9 @@
             </svg>
           </div>
           <div class="adsense-toc-intro">
-            <div class="adsense-toc-title" data-i18n="fraudGuideTocTitle">Browse the guide by theme - Camera dei segreti</div>
-            <p class="adsense-toc-copy" data-i18n="fraudGuideTocCopy">Use these thematic buttons to jump directly to the risk area you want to study, then return to the summary from each section.</p>
-            <p class="adsense-toc-warning">Warning: these "secret rooms" expose scam tactics. Follow the guided sequence and verify every move before opening links or actions.</p>
+            <div class="adsense-toc-title" data-i18n="fraudGuideTocTitle">Browse the guide by theme - Secret Chamber</div>
+            <p class="adsense-toc-copy" data-i18n="fraudGuideTocCopy">Use these thematic buttons <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-ochre"></span><span class="toc-inline-placeholder toc-inline-placeholder-red"></span></span> to jump directly to the risk area <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-green"></span><span class="toc-inline-placeholder toc-inline-placeholder-blue"></span></span> you want to study, then return to the summary <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-purple"></span><span class="toc-inline-placeholder toc-inline-placeholder-pink"></span></span><br>from each section.</p>
+            <p class="adsense-toc-warning" data-i18n="fraudGuideTocWarning">Warning: these "secret rooms" expose scam tactics.<br>Follow the guided sequence and verify every move before opening links or actions.</p>
             <div class="guide-search-box">
               <input type="text" id="guideSearchInput" class="guide-search-input" placeholder="🔍 Search scam by name..." data-i18n-placeholder="guideSearchPlaceholder" oninput="filterGuideTopics(this.value)">
               <div class="guide-search-results" id="guideSearchResults"></div>
@@ -3075,6 +3186,13 @@
 
         <div class="authority-preview-band">
           <img src="images/Bandiere189.png" alt="Anteprima del database internazionale delle 189 autorita finanziarie" loading="lazy">
+          <div class="authority-preview-actions">
+            <div class="authority-preview-copy">
+              <span class="authority-preview-badge" data-i18n="flagsExternalBadge">Indexed external directory</span>
+              <p class="authority-preview-note" data-i18n="flagsExternalSection">Open the indexed external directory with direct landing pages for financial authorities worldwide, already discoverable through Google.</p>
+            </div>
+            <a class="authority-preview-link" href="https://www.tutelatruffe.fr/?lang=fr" target="_blank" rel="noopener noreferrer" data-i18n="flagsExternalCta">Contact or verify through the global Authority directory</a>
+          </div>
         </div>
 
         <!-- ========== 189 FLAGS GRID — Financial Authorities Database ========== -->
@@ -3145,133 +3263,18 @@
         <div class="adsense-guide-grid">
           <section class="adsense-card" id="video-avatar-section">
             <h3 data-i18n="videoAvatarTitle">Video Avatar: educational and motivational short clips</h3>
-            <p data-i18n="videoAvatarIntro">This section collects short local clips, animated avatars and educational motivational videos that can make the page more attractive and keep visitors inside the site while they explore anti-fraud messages.</p>
+            <p data-i18n="videoAvatarIntro">To improve performance, heavy media are now loaded from a dedicated external hub (Canvas / Google Drive / OneDrive links) instead of being embedded in this page.</p>
             <div class="video-avatar-actions">
+              <a class="adsense-action-link" href="canvas-video-links.html" target="_blank" rel="noopener noreferrer">Apri presentazione Canva</a>
               <a class="adsense-action-link" href="VAULT/index.html" target="_blank" rel="noopener noreferrer" data-i18n="videoAvatarHubButton">Open the Video Avatar mini home</a>
-              <a class="adsense-action-link" href="video-slide-educativi/the-caravaggio-codex.pptx" target="_blank" rel="noopener noreferrer" data-i18n="videoAvatarSlidesButton">Open the slides presentation</a>
             </div>
-            <div class="video-avatar-grid">
-              <article class="video-avatar-card" data-video-category="avatar">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Medusa animazione" data-video-category-label="Avatar">
-                  <source src="Video-avatar/medusa-animazione.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">🎭</span>Avatar</span><div class="video-avatar-thumb-title">Medusa animazione</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle1">Medusa animazione</h4>
-                <p data-i18n="videoAvatarCard2">Animated avatar sequence useful for educational storytelling around risk, manipulation and vigilance.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="educational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="I truffatori sondano i punti deboli delle Banche" data-video-category-label="Educational">
-                  <source src="Video-avatar/01-truffatori-sondano-punti-deboli-banche.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">📚</span>Educational</span><div class="video-avatar-thumb-title">I truffatori sondano i punti deboli delle Banche</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle2">I truffatori sondano i punti deboli delle Banche</h4>
-                <p data-i18n="videoAvatarCard4">Educational short focused on structural weaknesses, vigilance and the need for stronger banking controls.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="educational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="I truffatori nel web sono piovre in agguato" data-video-category-label="Educational">
-                  <source src="Video-avatar/02-truffatori-web-piovre-agguato.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">📚</span>Educational</span><div class="video-avatar-thumb-title">I truffatori nel web sono piovre in agguato</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle3">I truffatori nel web sono piovre in agguato</h4>
-                <p data-i18n="videoAvatarCard5">Short clip with a vivid metaphor designed to improve memory and emotional retention of the anti-fraud message.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="educational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="I truffatori sono pronti a colpire banche in qualsiasi Paese del mondo" data-video-category-label="Educational">
-                  <source src="Video-avatar/03-truffatori-pronti-colpire-banche-mondo.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">📚</span>Educational</span><div class="video-avatar-thumb-title">I truffatori sono pronti a colpire banche in qualsiasi Paese del mondo</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle4">I truffatori sono pronti a colpire banche in qualsiasi Paese del mondo</h4>
-                <p data-i18n="videoAvatarCard6">Global perspective clip that reinforces the cross-border nature of fraud and the value of international verification.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="motivational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="La supervisione e indispensabile" data-video-category-label="Motivational">
-                  <source src="Video-avatar/04-supervisione-indispensabile-confini-orbite-oscure.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">💪</span>Motivational</span><div class="video-avatar-thumb-title">La supervisione e indispensabile</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle5">La supervisione e indispensabile</h4>
-                <p data-i18n="videoAvatarCard7">Motivational clip about supervision, boundaries and the need to map risk before moving money.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="motivational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Vespe bonifica web" data-video-category-label="Motivational">
-                  <source src="Video-avatar/vespe-bonifica-web.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">💪</span>Motivational</span><div class="video-avatar-thumb-title">Vespe bonifica web</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle6">Vespe bonifica web</h4>
-                <p data-i18n="videoAvatarCard3">Motivational clip built around digital cleanup, counter-action and safer web navigation.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="educational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="L'area di sicurezza e sorvegliata dalle Authorities" data-video-category-label="Educational">
-                  <source src="Video-avatar/05-area-sicurezza-sorvegliata-authorities.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">📚</span>Educational</span><div class="video-avatar-thumb-title">L'area di sicurezza e sorvegliata dalle Authorities</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle7">L'area di sicurezza e sorvegliata dalle Authorities</h4>
-                <p data-i18n="videoAvatarCard8">Clip that connects the security area message to financial authorities and official oversight.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="motivational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Fragilita emotiva e bersagli dei truffatori" data-video-category-label="Motivational">
-                  <source src="Video-avatar/06-fragilita-emotiva-bersagli-truffatori.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">💪</span>Motivational</span><div class="video-avatar-thumb-title">Fragilita emotiva e bersagli dei truffatori</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle8">Fragilita emotiva e bersagli dei truffatori</h4>
-                <p data-i18n="videoAvatarCard9">Sensitive educational clip linking emotional vulnerability, isolation and scam targeting.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="motivational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Non sciare fuori pista" data-video-category-label="Motivational">
-                  <source src="Video-avatar/07-non-sciare-fuori-pista.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">💪</span>Motivational</span><div class="video-avatar-thumb-title">Non sciare fuori pista</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle9">Non sciare fuori pista</h4>
-                <p data-i18n="videoAvatarCard10">Short motivational warning that encourages users to stay inside verified channels and safe routes.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="avatar">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Meduse in azione" data-video-category-label="Avatar">
-                  <source src="Video-avatar/meduse-in-azione.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">🎭</span>Avatar</span><div class="video-avatar-thumb-title">Meduse in azione</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle10">Meduse in azione</h4>
-                <p data-i18n="videoAvatarCard11">Avatar clip focused on coordinated defense dynamics and rapid anti-fraud reaction patterns.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="avatar">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Laser vincente" data-video-category-label="Avatar">
-                  <source src="Video-avatar/laser-vincente.mp4#t=0.5" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">🎭</span>Avatar</span><div class="video-avatar-thumb-title">Laser vincente</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle11">Laser vincente</h4>
-                <p data-i18n="videoAvatarCard1">Short avatar clip with a direct visual signal of defense, reaction and active protection.</p>
-              </article>
-              <article class="video-avatar-card" data-video-category="educational">
-                <div class="video-avatar-media">
-                <video class="video-avatar-player" controls preload="metadata" playsinline data-video-title="Meduse in azione: focus" data-video-category-label="Educational">
-                  <source src="Video-avatar/meduse-in-azione.mp4#t=8" type="video/mp4">
-                </video>
-                <div class="video-avatar-thumb"><span class="video-avatar-chip"><span class="chip-icon">📚</span>Educational</span><div class="video-avatar-thumb-title">Meduse in azione: focus</div><span class="video-avatar-play">▶</span></div>
-                </div>
-                <h4 data-i18n="videoTitle12">Meduse in azione: focus</h4>
-                <p data-i18n="videoAvatarCard12">Educational focus clip that reinforces threat recognition and safe verification behavior before transfers.</p>
-              </article>
-            </div>
+            <ul class="video-external-list">
+              <li><strong>01-truffatori-sondano-punti-deboli-banche.mp4</strong> <span class="video-external-status">Moved to external hub</span></li>
+              <li><strong>03-truffatori-pronti-colpire-banche-mondo.mp4</strong> <span class="video-external-status">Moved to external hub</span></li>
+              <li><strong>06-fragilita-emotiva-bersagli-truffatori.mp4</strong> <span class="video-external-status">Moved to external hub</span></li>
+              <li><strong>the-caravaggio-codex.pptx</strong> <span class="video-external-status">Moved to external hub</span></li>
+            </ul>
+            <a class="adsense-action-link" href="canvas-video-links.html" target="_blank" rel="noopener noreferrer">Apri presentazione Canva</a>
           </section>
         </div>
 
@@ -3604,6 +3607,10 @@
             <h3 data-i18n="psycoDefenseTitle">Psychological defense: documents and presentations</h3>
             <p data-i18n="psycoDefenseIntro">Downloadable resources that explore the psychological architecture of financial fraud — how scammers exploit cognitive biases, emotional vulnerability and social pressure — and the concrete strategies to recognize and resist manipulation.</p>
             <a class="adsense-action-link" href="#perseus-argonauti-defense" data-i18n="psycoDefenseGoToDownloads">&#x2B06; Download PDF &amp; PPTX from the Psychological Defense section</a>
+            <div class="psyco-nav-buttons">
+              <a class="adsense-action-link" href="#mental-health-section" onclick="event.preventDefault();document.getElementById('mental-health-section').scrollIntoView({behavior:'smooth',block:'start'});">31. Mental Health Impact</a>
+              <a class="adsense-action-link" href="#fraud-guide-toc" onclick="event.preventDefault();document.getElementById('fraud-guide-toc').scrollIntoView({behavior:'smooth',block:'start'});">Back to Summary Guide</a>
+            </div>
           </section>
         </div>
 
@@ -4053,13 +4060,7 @@
     }
 
     function getBankFaviconFromUrl(url) {
-      if(!url || typeof url !== 'string') return '';
-      try {
-        const hostname = new URL(url).hostname.replace(/^www\./i, '');
-        return hostname ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(hostname)}&sz=128` : '';
-      } catch {
-        return '';
-      }
+      return '';
     }
 
     function resolveBankLogoSrc(logo, url) {
@@ -4112,7 +4113,6 @@
       if(orbitFallback) orbitFallback.style.display = 'flex';
     }
 
-    const BANK_TOWER_MONOGRAMS = new Set(['FIDEURAM','ISP','BNL','BPS','BNP','SG','ABN','BPER']);
     const BANK_ORBIT_MONOGRAMS = new Set(['FIDEURAM','ISP','BNL','BPS','BNP','SG','ABN','BPER']);
     const BANK_ORBIT_SIDE_TAGS = new Set(['MPS']);
 
@@ -4159,7 +4159,7 @@
     function buildOrbitSideTagMarkup(bank, logoSrc, fallbackLogoSrc) {
       return `
         <div class="bank-orbit-custom has-side-tag">
-          <img src="${logoSrc}" alt="${bank.name}" data-fallback-logo="${fallbackLogoSrc || ''}" onerror="handleBankLogoError(this)" style="max-width:78%;max-height:82%;object-fit:contain;background:#fff;padding:2px;border-radius:4px">
+          <img src="${logoSrc}" alt="${bank.name}" width="160" height="160" data-fallback-logo="${fallbackLogoSrc || ''}" onerror="handleBankLogoError(this)" style="max-width:78%;max-height:82%;object-fit:contain;background:#fff;padding:2px;border-radius:4px">
           <div class="bank-orbit-side-tag"><span>M</span><span>P</span><span>S</span></div>
         </div>`;
     }
@@ -4174,6 +4174,22 @@
       BNP: { shellWidth: 84, shellHeight: 70, shellPadding: 2, maxWidth: 72, maxHeight: 72, scale: 1.74, mobileShellWidth: 80, mobileShellHeight: 66, mobileShellPadding: 2, mobileMaxWidth: 66, mobileMaxHeight: 66, mobileScale: 1.64 },
       ABN: { shellWidth: 84, shellHeight: 70, shellPadding: 2, maxWidth: 74, maxHeight: 74, scale: 1.18, mobileShellWidth: 80, mobileShellHeight: 66, mobileShellPadding: 2, mobileMaxWidth: 68, mobileMaxHeight: 68, mobileScale: 1.12 }
     };
+
+    function normalizeBankRecord(bank, index) {
+      return {
+        name: bank.name,
+        acronym: bank.acronym,
+        color: bank.color,
+        img: 'banca_fragile.svg',
+        logo: typeof bank.logo === 'string' ? bank.logo.trim() : '',
+        url: bank.url,
+        flag: bank.flag,
+        orbit: 'outer',
+        angle: index * 36,
+        counter: 0,
+        emoji: 'happy'
+      };
+    }
     
     // Funzione per caricare il database delle banche
     async function loadBanksDatabase(){
@@ -4185,33 +4201,9 @@
         console.log('✅ Database banche caricato:', data.version, '-', data.lastUpdate);
         
         // Converti formato JSON in formato interno con campi aggiuntivi per animazione
-        bancheItaliane = data.bancheItaliane.map((b, i) => ({
-          name: b.name,
-          acronym: b.acronym,
-          color: b.color,
-          img: 'banca_fragile.svg',
-          logo: b.logo,
-          url: b.url,
-          flag: b.flag,
-          orbit: 'outer',
-          angle: i * 36,
-          counter: 0,
-          emoji: 'happy'
-        }));
+        bancheItaliane = data.bancheItaliane.map((b, i) => normalizeBankRecord(b, i));
         
-        bancheEuropee = data.bancheEuropee.map((b, i) => ({
-          name: b.name,
-          acronym: b.acronym,
-          color: b.color,
-          img: 'banca_fragile.svg',
-          logo: b.logo,
-          url: b.url,
-          flag: b.flag,
-          orbit: 'outer',
-          angle: i * 36,
-          counter: 0,
-          emoji: 'happy'
-        }));
+        bancheEuropee = data.bancheEuropee.map((b, i) => normalizeBankRecord(b, i));
         
         // Componi array completo
         allBanks = [
@@ -4226,6 +4218,7 @@
         
         // ★★★ INIZIALIZZA CICLO 1: Banche Italiane nell'orbita ★★★
         initCycle1Banks();
+        startCollaborateBankFrames();
         
       } catch(err) {
         console.warn('⚠️ Errore caricamento JSON, uso dati di fallback:', err.message);
@@ -4235,31 +4228,35 @@
     
     // Dati di fallback se il JSON non è disponibile
     function useFallbackBanksData(){
-      bancheItaliane = [
-        {name:'Credit Agricole', acronym:'CR AGR', color:'#006B3F', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=credit-agricole.it&sz=128', url:'https://www.credit-agricole.it/reclami-ricorsi-e-conciliazioni', flag:'it', orbit:'outer', angle:0, counter:0, emoji:'happy'},
-        {name:'FinecoBank', acronym:'FINECO', color:'#00297A', img:'banca_fragile.svg', logo:'assets/FINECO.svg', url:'https://it.finecobank.com/reclami-ricorsi-conciliazione/', flag:'it', orbit:'outer', angle:36, counter:0, emoji:'happy'},
-        {name:'Banca Fideuram', acronym:'FIDEURAM', color:'#35777a', img:'banca_fragile.svg', logo:'assets/banca-fideuram.svg', url:'https://www.fideuram.it/reclami-e-risoluzione-controversie/risoluzione-stragiudiziale-controversie/', flag:'it', orbit:'outer', angle:72, counter:0, emoji:'happy'},
-        {name:'BPER Banca', acronym:'BPER', color:'#00A651', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=bper.it&sz=128', url:'https://www.bper.it/footer/numeri-utili', flag:'it', orbit:'outer', angle:108, counter:0, emoji:'happy'},
-        {name:'Monte Paschi', acronym:'MPS', color:'#8B0000', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=mps.it&sz=128', url:'https://www.mps.it/contatti/reclami-e-ricorsi.html', flag:'it', orbit:'outer', angle:144, counter:0, emoji:'happy'},
-        {name:'Banca Mediolanum', acronym:'BMED', color:'#E60000', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=bancamediolanum.it&sz=128', url:'https://www.bancamediolanum.it/informazioni-al-cliente/reclami-ricorsi-conciliazione', flag:'it', orbit:'outer', angle:180, counter:0, emoji:'happy'},
-        {name:'Intesa Sanpaolo', acronym:'ISP', color:'#006B3F', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=intesasanpaolo.com&sz=128', url:'https://www.intesasanpaolo.com/it/persone-e-famiglie/reclami.html', flag:'it', orbit:'outer', angle:216, counter:0, emoji:'happy'},
-        {name:'BNL BNP Paribas', acronym:'BNL', color:'#00915A', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=bnl.it&sz=128', url:'https://bnl.it/it/Footer/Reclami-Ricorsi-Conciliazione', flag:'it', orbit:'outer', angle:252, counter:0, emoji:'happy'},
-        {name:'Banca Pop. Sondrio', acronym:'BPS', color:'#004B87', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=popso.it&sz=128', url:'https://www.popso.it/reclami', flag:'it', orbit:'outer', angle:288, counter:0, emoji:'happy'},
-        {name:'Poste Italiane', acronym:'POSTE', color:'#FFD300', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=poste.it&sz=128', url:'https://www.poste.it/assistenza/reclami', flag:'it', orbit:'outer', angle:324, counter:0, emoji:'happy'}
-      ];
-      
-      bancheEuropee = [
-        {name:'Deutsche Bank', acronym:'DB', color:'#0018A8', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=deutsche-bank.de&sz=128', url:'https://www.deutsche-bank.de/pk/service/beschwerden.html', flag:'de', orbit:'outer', angle:0, counter:0, emoji:'happy'},
-        {name:'Commerzbank', acronym:'CBK', color:'#FFCC00', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=commerzbank.de&sz=128', url:'https://www.commerzbank.de/hinweisgeber/', flag:'de', orbit:'outer', angle:36, counter:0, emoji:'happy'},
-        {name:'BNP Paribas', acronym:'BNP', color:'#00915A', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=mabanque.bnpparibas&sz=128', url:'https://mabanque.bnpparibas/fr/reclamation', flag:'fr', orbit:'outer', angle:72, counter:0, emoji:'happy'},
-        {name:'Société Générale', acronym:'SG', color:'#E60000', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=societegenerale.fr&sz=128', url:'https://particuliers.societegenerale.fr/reclamations', flag:'fr', orbit:'outer', angle:108, counter:0, emoji:'happy'},
-        {name:'Crédit Mutuel', acronym:'CM', color:'#0055A4', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=creditmutuel.fr&sz=128', url:'https://www.creditmutuel.fr/fr/reclamations.html', flag:'fr', orbit:'outer', angle:144, counter:0, emoji:'happy'},
-        {name:'ING Bank', acronym:'ING', color:'#FF6200', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=ing.com&sz=128', url:'https://www.ing.com/About-us/Compliance/Complaints.htm', flag:'nl', orbit:'outer', angle:180, counter:0, emoji:'happy'},
-        {name:'ABN AMRO', acronym:'ABN', color:'#004D40', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=abnamro.nl&sz=128', url:'https://www.abnamro.nl/en/personal/contact/complaints.html', flag:'nl', orbit:'outer', angle:216, counter:0, emoji:'happy'},
-        {name:'Banco Santander', acronym:'SAN', color:'#EC0000', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=bancosantander.es&sz=128', url:'https://www.bancosantander.es/particulares/atencion-cliente/reclamaciones', flag:'es', orbit:'outer', angle:252, counter:0, emoji:'happy'},
-        {name:'BBVA', acronym:'BBVA', color:'#004481', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=bbva.es&sz=128', url:'https://www.bbva.es/personas/atencion-al-cliente/reclamaciones.html', flag:'es', orbit:'outer', angle:288, counter:0, emoji:'happy'},
-        {name:'Barclays', acronym:'BARC', color:'#00AEEF', img:'banca_fragile.svg', logo:'https://www.google.com/s2/favicons?domain=barclays.co.uk&sz=128', url:'https://www.barclays.co.uk/help/complaints/', flag:'gb', orbit:'outer', angle:324, counter:0, emoji:'happy'}
-      ];
+      const fallbackData = {
+        bancheItaliane: [
+          {name:'Credit Agricole', acronym:'CR AGR', color:'#006B3F', logo:'https://www.google.com/s2/favicons?domain=credit-agricole.it&sz=128', url:'https://www.credit-agricole.it/reclami-ricorsi-e-conciliazioni', flag:'it'},
+          {name:'FinecoBank', acronym:'FINECO', color:'#00297A', logo:'assets/FINECO.svg', url:'https://it.finecobank.com/reclami-ricorsi-conciliazione/', flag:'it'},
+          {name:'Banca Fideuram', acronym:'FIDEURAM', color:'#35777a', logo:'assets/banca-fideuram.svg', url:'https://www.fideuram.it/reclami-e-risoluzione-controversie/risoluzione-stragiudiziale-controversie/', flag:'it'},
+          {name:'BPER Banca', acronym:'BPER', color:'#00A651', logo:'https://www.google.com/s2/favicons?domain=bper.it&sz=128', url:'https://www.bper.it/footer/numeri-utili', flag:'it'},
+          {name:'Monte Paschi', acronym:'MPS', color:'#8B0000', logo:'https://www.google.com/s2/favicons?domain=mps.it&sz=128', url:'https://www.mps.it/contatti/reclami-e-ricorsi.html', flag:'it'},
+          {name:'Banca Mediolanum', acronym:'BMED', color:'#E60000', logo:'https://www.google.com/s2/favicons?domain=bancamediolanum.it&sz=128', url:'https://www.bancamediolanum.it/informazioni-al-cliente/reclami-ricorsi-conciliazione', flag:'it'},
+          {name:'Intesa Sanpaolo', acronym:'ISP', color:'#006B3F', logo:'https://www.google.com/s2/favicons?domain=intesasanpaolo.com&sz=128', url:'https://www.intesasanpaolo.com/it/persone-e-famiglie/reclami.html', flag:'it'},
+          {name:'BNL BNP Paribas', acronym:'BNL', color:'#00915A', logo:'https://www.google.com/s2/favicons?domain=bnl.it&sz=128', url:'https://bnl.it/it/Footer/Reclami-Ricorsi-Conciliazione', flag:'it'},
+          {name:'Banca Pop. Sondrio', acronym:'BPS', color:'#004B87', logo:'https://www.google.com/s2/favicons?domain=popso.it&sz=128', url:'https://www.popso.it/reclami', flag:'it'},
+          {name:'Poste Italiane', acronym:'POSTE', color:'#FFD300', logo:'https://www.google.com/s2/favicons?domain=poste.it&sz=128', url:'https://www.poste.it/assistenza/reclami', flag:'it'}
+        ],
+        bancheEuropee: [
+          {name:'Deutsche Bank', acronym:'DB', color:'#0018A8', logo:'https://www.google.com/s2/favicons?domain=deutsche-bank.de&sz=128', url:'https://www.deutsche-bank.de/pk/service/beschwerden.html', flag:'de'},
+          {name:'Commerzbank', acronym:'CBK', color:'#FFCC00', logo:'https://www.google.com/s2/favicons?domain=commerzbank.de&sz=128', url:'https://www.commerzbank.de/hinweisgeber/', flag:'de'},
+          {name:'BNP Paribas', acronym:'BNP', color:'#00915A', logo:'https://www.google.com/s2/favicons?domain=mabanque.bnpparibas&sz=128', url:'https://mabanque.bnpparibas/fr/reclamation', flag:'fr'},
+          {name:'Société Générale', acronym:'SG', color:'#E60000', logo:'https://www.google.com/s2/favicons?domain=societegenerale.fr&sz=128', url:'https://particuliers.societegenerale.fr/reclamations', flag:'fr'},
+          {name:'Crédit Mutuel', acronym:'CM', color:'#0055A4', logo:'https://www.google.com/s2/favicons?domain=creditmutuel.fr&sz=128', url:'https://www.creditmutuel.fr/fr/reclamations.html', flag:'fr'},
+          {name:'ING Bank', acronym:'ING', color:'#FF6200', logo:'https://www.google.com/s2/favicons?domain=ing.com&sz=128', url:'https://www.ing.com/About-us/Compliance/Complaints.htm', flag:'nl'},
+          {name:'ABN AMRO', acronym:'ABN', color:'#004D40', logo:'https://www.google.com/s2/favicons?domain=abnamro.nl&sz=128', url:'https://www.abnamro.nl/en/personal/contact/complaints.html', flag:'nl'},
+          {name:'Banco Santander', acronym:'SAN', color:'#EC0000', logo:'https://www.google.com/s2/favicons?domain=bancosantander.es&sz=128', url:'https://www.bancosantander.es/particulares/atencion-cliente/reclamaciones', flag:'es'},
+          {name:'BBVA', acronym:'BBVA', color:'#004481', logo:'https://www.google.com/s2/favicons?domain=bbva.es&sz=128', url:'https://www.bbva.es/personas/atencion-al-cliente/reclamaciones.html', flag:'es'},
+          {name:'Barclays', acronym:'BARC', color:'#00AEEF', logo:'https://www.google.com/s2/favicons?domain=barclays.co.uk&sz=128', url:'https://www.barclays.co.uk/help/complaints/', flag:'gb'}
+        ]
+      };
+
+      bancheItaliane = fallbackData.bancheItaliane.map((b, i) => normalizeBankRecord(b, i));
+      bancheEuropee = fallbackData.bancheEuropee.map((b, i) => normalizeBankRecord(b, i));
       
       allBanks = [
         ...bancheItaliane.map((b, i) => ({...b, originalIndex: i})),
@@ -4270,10 +4267,67 @@
       
       // ★★★ INIZIALIZZA CICLO 1: Banche Italiane nell'orbita ★★★
       initCycle1Banks();
+      startCollaborateBankFrames();
     }
     
     // Carica database all'avvio
     loadBanksDatabase();
+
+    let collabBankFrameIndex = 0;
+    let collabBankFrameTimer = null;
+
+    function getCollaborateBankPairs(){
+      if(!Array.isArray(allBanks) || allBanks.length === 0) return [];
+      const pairs = [];
+      for(let i = 0; i < allBanks.length; i += 2){
+        pairs.push([allBanks[i], allBanks[(i + 1) % allBanks.length]]);
+      }
+      return pairs;
+    }
+
+    function buildCollaborateBankChip(bank){
+      if(!bank) return '';
+      const logos = resolveBankLogoSrc(bank.logo, bank.url);
+      const logoSrc = logos.primary || '';
+      const acronym = escapeHtml(String(bank.acronym || '').toUpperCase().slice(0, 6));
+      const bankName = escapeHtml(bank.name || 'Bank');
+      const flag = isoToFlagEmoji(String(bank.flag || '').toLowerCase());
+      const logoHtml = logoSrc
+        ? `<div class="chip-logo"><img src="${logoSrc}" alt="${bankName}" loading="lazy" decoding="async" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\"chip-fallback\">${acronym}</span>';"/></div>`
+        : `<div class="chip-logo"><span class="chip-fallback">${acronym}</span></div>`;
+      return `<div class="collab-bank-chip">${logoHtml}<div class="chip-meta"><span class="chip-code">${acronym}</span><span class="chip-flag">${flag}</span><span class="chip-name">${bankName}</span></div></div>`;
+    }
+
+    function renderCollaborateBankFrames(){
+      const boxes = [
+        document.getElementById('collab-bank-box-1'),
+        document.getElementById('collab-bank-box-2')
+      ].filter(Boolean);
+      if(boxes.length === 0) return;
+
+      const pairs = getCollaborateBankPairs();
+      if(pairs.length === 0){
+        boxes.forEach(box => {
+          box.innerHTML = '<div class="collab-bank-pair"><div class="collab-bank-chip"><div class="chip-logo"><span class="chip-fallback">BANK</span></div><div class="chip-meta"><span class="chip-code">DB</span><span class="chip-flag">🌍</span><span class="chip-name">Database loading</span></div></div></div>';
+        });
+      } else {
+        boxes.forEach((box, offset) => {
+          const pair = pairs[(collabBankFrameIndex + offset) % pairs.length];
+          box.innerHTML = '<div class="collab-bank-pair">' + pair.map(buildCollaborateBankChip).join('') + '</div>';
+        });
+        collabBankFrameIndex = (collabBankFrameIndex + boxes.length) % pairs.length;
+      }
+
+      collabBankFrameTimer = setTimeout(renderCollaborateBankFrames, 2600);
+    }
+
+    function startCollaborateBankFrames(){
+      if(collabBankFrameTimer){
+        clearTimeout(collabBankFrameTimer);
+        collabBankFrameTimer = null;
+      }
+      renderCollaborateBankFrames();
+    }
 
     /* ===== 189 FINANCIAL AUTHORITIES — FLAGS GRID ===== */
     let authoritiesData = {};
@@ -4384,6 +4438,44 @@
       return fallback;
     }
 
+    function getFlagImageUrl(iso){
+      if(!iso || iso === 'xx') return '';
+      return 'https://flagcdn.com/w80/' + iso.toLowerCase() + '.png';
+    }
+
+    function createFlagVisual(country, iso){
+      const wrapper = document.createElement('span');
+      wrapper.className = 'flag-emoji';
+
+      const fallbackCode = (iso && iso !== 'xx'
+        ? iso
+        : ((country.financial_authority && country.financial_authority.abbreviation) || country.country_name.substring(0, 2))
+      ).toUpperCase();
+
+      if(iso && iso !== 'xx'){
+        const img = document.createElement('img');
+        img.className = 'flag-image';
+        img.src = getFlagImageUrl(iso);
+        img.alt = '';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.referrerPolicy = 'no-referrer';
+        img.addEventListener('error', () => {
+          wrapper.classList.add('flag-emoji-fallback');
+        });
+        wrapper.appendChild(img);
+      } else {
+        wrapper.classList.add('flag-emoji-fallback');
+      }
+
+      const fallback = document.createElement('span');
+      fallback.className = 'flag-fallback-code';
+      fallback.textContent = fallbackCode;
+      wrapper.appendChild(fallback);
+
+      return wrapper;
+    }
+
     function renderFlagsGrid(countries){
       const grid = document.getElementById('flagsGrid');
       if(!grid) return;
@@ -4397,15 +4489,17 @@
         card.onclick = () => openAuthorityModal(c.country_name);
         const abbr = c.financial_authority ? c.financial_authority.abbreviation : c.country_name.substring(0,3).toUpperCase();
         const iso = resolveCountryIso(c);
-        let flagHtml;
-        if(iso && iso !== 'xx'){
-          flagHtml = '<span class="fi fi-' + iso + '"></span>';
-        } else {
-          flagHtml = c.flag || '🌍';
+        card.appendChild(createFlagVisual(c, iso));
+        const code = document.createElement('span');
+        code.className = 'flag-code';
+        code.textContent = abbr;
+        card.appendChild(code);
+        if(c.isEU){
+          const badge = document.createElement('span');
+          badge.className = 'flag-eu-badge';
+          badge.textContent = '★';
+          card.appendChild(badge);
         }
-        card.innerHTML = '<span class="flag-emoji">' + flagHtml + '</span>' +
-          '<span class="flag-code">' + escapeHtml(abbr) + '</span>' +
-          (c.isEU ? '<span class="flag-eu-badge">★</span>' : '');
         grid.appendChild(card);
       });
       updateFlagsCounter(countries.length);
@@ -4430,6 +4524,25 @@
       if(!country) return '';
       const byName = COUNTRY_ISO[country.country_name] || '';
       if(byName && byName !== 'xx') return byName;
+
+      const auth = country.financial_authority || {};
+      const candidates = [
+        country.iso,
+        country.country_iso,
+        country.country_code,
+        auth.iso,
+        auth.country_iso,
+        auth.country_code,
+        country.flag,
+        auth.abbreviation
+      ];
+
+      for(const raw of candidates){
+        if(typeof raw !== 'string') continue;
+        const normalized = raw.trim().toLowerCase().replace(/[^a-z]/g, '');
+        if(normalized.length === 2 && normalized !== 'xx') return normalized;
+      }
+
       const fromEmoji = emojiFlagToIso(country.flag);
       if(fromEmoji && fromEmoji !== 'xx') return fromEmoji;
       return '';
@@ -4468,6 +4581,12 @@
       }
     }
 
+    function getExternalAuthorityDirectoryUrl(){
+      const lang = String(currentLang || document.documentElement.lang || 'en').toLowerCase();
+      const supported = ['en','it','fr','de'];
+      return 'https://www.tutelatruffe.fr/?lang=' + (supported.includes(lang) ? lang : 'en');
+    }
+
     function openAuthorityModal(countryName){
       const c = authoritiesData[countryName];
       if(!c) return;
@@ -4475,7 +4594,7 @@
       const iso = resolveCountryIso(c);
       const flagEl = document.getElementById('authorityModalFlag');
       if(iso && iso !== 'xx'){
-        flagEl.innerHTML = '<span class="fi fi-' + iso + '" style="font-size:1em;width:1.5em;border-radius:4px;box-shadow:0 4px 12px rgba(0,0,0,.3)"></span>';
+        flagEl.textContent = isoToFlagEmoji(iso);
       } else {
         flagEl.textContent = c.flag || '🌍';
       }
@@ -4511,6 +4630,7 @@
         body += '<div class="sanctioned-alert"><h4>\u26a0\ufe0f STOPPED BY ONU \u26a0\ufe0f</h4><p>This country is subject to international sanctions. Financial transactions may be prohibited or severely restricted.</p></div>';
 
       // Action buttons
+      const langPack = translations[currentLang] || translations.EN || {};
       const safeCountry = escapeHtml(c.country_name).replace(/'/g,"\\'");
       const safeAuth = escapeHtml(auth.name || '').replace(/'/g,"\\'");
       const safeEmail = escapeHtml(auth.authorityEmail || '').replace(/'/g,"\\'");
@@ -4523,6 +4643,8 @@
       body += '</div><div class="action-row">';
       body += '<button class="report-suspect-btn" onclick="openReportForm(\'' + safeCountry + '\',\'' + safeAuth + '\',\'' + safeEmail + '\')">\u26a0\ufe0f Report Suspect</button>';
       body += '<button class="report-abuse-btn" onclick="openReportForm(\'' + safeCountry + '\',\'' + safeAuth + '\',\'' + safeEmail + '\')">\ud83d\udea8 Report Abuse</button>';
+      body += '</div><div class="action-row">';
+      body += '<a class="external-directory-btn" href="' + escapeHtml(getExternalAuthorityDirectoryUrl()) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(langPack.flagsExternalModalButton || 'Open full Authority directory for verification') + '</a>';
       body += '</div></div>';
 
       document.getElementById('authorityModalBody').innerHTML = body;
@@ -4631,6 +4753,20 @@
         tiktok:'https://www.tiktok.com/'
       };
       if(urls[platform]) window.open(urls[platform],'_blank','noopener,noreferrer,width=600,height=500');
+    }
+
+    function openSharePanelForSection(sectionId){
+      if(sectionId){
+        const shareUrl = new URL(window.location.href);
+        shareUrl.hash = sectionId;
+        if(window.history && typeof window.history.replaceState === 'function'){
+          window.history.replaceState(null, '', shareUrl.toString());
+        } else {
+          window.location.hash = sectionId;
+        }
+      }
+      const panel = document.getElementById('social-share-panel');
+      if(panel) panel.scrollIntoView({behavior:'smooth', block:'center'});
     }
 
     /* ===== RICERCA BANCA - Popup con filtro testuale ===== */
@@ -5122,10 +5258,10 @@
             <div class="bank-label-top">BANK</div>
             ${usesOrbitSideTag
               ? buildOrbitSideTagMarkup(b, bankImg, bankFallbackImg)
-              : `<img src="${orbitDisplayLogoSrc}" alt="${b.name}" data-fallback-logo="${usesOrbitMonogram ? '' : (bankFallbackImg || '')}" onerror="handleBankLogoError(this)" ${usesOrbitMonogram ? 'style="max-width:94%;max-height:94%;object-fit:contain;border-radius:4px"' : bankImgStyle}>`}
+              : `<img src="${orbitDisplayLogoSrc}" alt="${b.name}" width="160" height="160" data-fallback-logo="${usesOrbitMonogram ? '' : (bankFallbackImg || '')}" onerror="handleBankLogoError(this)" ${usesOrbitMonogram ? 'style="max-width:94%;max-height:94%;object-fit:contain;border-radius:4px"' : bankImgStyle}>`}
             <div class="bank-orbit-fallback" style="display:none;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:4px 6px;border-radius:8px;background:${b.color || '#003399'};color:#fff;font-weight:900;font-size:11px;line-height:1.1;text-align:center">${b.acronym}</div>
             <div class="bank-label-bottom">Imprudent</div>
-            <div class="flag"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/${b.flag}.svg" alt="${b.flag.toUpperCase()}"></div>
+            <div class="flag"><span>${isoToFlagEmoji(b.flag || '')}</span></div>
             <div class="bank-counter">${counterText}</div>
           </div>
           <div class="emoji-face ${b.emoji}" ${emojiVisible}>${emojiChar}</div>
@@ -5639,32 +5775,27 @@
       const { primary: logoSrc, fallback: fallbackLogoSrc } = resolveBankLogoSrc(bank.logo || bank.img, bank.url);
       const url = bank.url || '#';
       const bgColor = bank.color || '#003399';
-      const usesTowerMonogram = BANK_TOWER_MONOGRAMS.has(bank.acronym);
       const hasSideTag = bank.acronym === 'MPS';
-      const displayLogoSrc = usesTowerMonogram ? buildTowerMonogramLogo(bank) : logoSrc;
-      const isFaviconLogo = !usesTowerMonogram && logoSrc.includes('google.com/s2/favicons');
-      const logoTuning = BANK_TOWER_LOGO_TUNING[bank.acronym] || null;
-      const shellStyle = logoTuning
-        ? ` style="--bank-logo-shell-width:${logoTuning.shellWidth}px;--bank-logo-shell-height:${logoTuning.shellHeight}px;--bank-logo-shell-padding:${logoTuning.shellPadding || 6}px;--bank-logo-max-width:${logoTuning.maxWidth}px;--bank-logo-max-height:${logoTuning.maxHeight}px;--bank-logo-scale:${logoTuning.scale};--bank-logo-shell-width-mobile:${logoTuning.mobileShellWidth}px;--bank-logo-shell-height-mobile:${logoTuning.mobileShellHeight}px;--bank-logo-shell-padding-mobile:${logoTuning.mobileShellPadding || 5}px;--bank-logo-max-width-mobile:${logoTuning.mobileMaxWidth}px;--bank-logo-max-height-mobile:${logoTuning.mobileMaxHeight}px;--bank-logo-scale-mobile:${logoTuning.mobileScale};"`
+      const displayLogoSrc = logoSrc || '';
+      const hasRenderableLogo = Boolean(displayLogoSrc);
+      const shellStyle = hasSideTag
+        ? ' style="--bank-logo-shell-padding:8px;--bank-logo-shell-size:74px;--bank-logo-shell-size-mobile:68px;"'
         : '';
       
       // Mostra sempre logo con fallback su acronimo se errore caricamento
       floor.innerHTML = `
         <span class="bank-floor-number">${numText}</span>
         <a href="${url}" target="_blank" rel="noopener noreferrer" title="${bank.name} - Reclami">
-          <div class="bank-floor-logo-shell${hasSideTag ? ' has-side-tag' : ''}"${shellStyle}>
-            <img class="bank-floor-logo${isFaviconLogo ? ' is-favicon' : ''}" src="${displayLogoSrc}" alt="${bank.name}" data-fallback-logo="${usesTowerMonogram ? '' : (fallbackLogoSrc || '')}" onerror="handleBankLogoError(this)" onload="this.dataset.loaded='true';">
-            ${hasSideTag ? '<div class="bank-floor-logo-side-tag"><span>M</span><span>P</span><span>S</span></div>' : ''}
-          </div>
+          ${hasRenderableLogo ? `<div class="bank-floor-logo-shell${hasSideTag ? ' has-side-tag' : ''}"${shellStyle}><img class="bank-floor-logo" src="${displayLogoSrc}" alt="${bank.name}" width="160" height="160" data-fallback-logo="${fallbackLogoSrc || ''}" onerror="handleBankLogoError(this)" onload="this.dataset.loaded='true';">${hasSideTag ? '<div class="bank-floor-logo-side-tag"><span>M</span><span>P</span><span>S</span></div>' : ''}</div>` : ''}
           <div class="bank-floor-acronym-small">${bank.acronym}</div>
-          <div class="bank-acronym-box" style="display:none;background:${bgColor}">${bank.acronym}</div>
+          <div class="bank-acronym-box" style="display:${hasRenderableLogo ? 'none' : 'flex'};background:${bgColor}">${bank.acronym}</div>
         </a>
-        <div class="bank-floor-flag"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/${bank.flag}.svg" alt="${bank.flag.toUpperCase()}"></div>
+        <div class="bank-floor-flag"><span>${isoToFlagEmoji(bank.flag || '')}</span></div>
       `;
       
       // Fallback timeout: se dopo 3s l'immagine non è caricata, mostra acronimo
       const floorImg = floor.querySelector('img');
-      if(floorImg && !usesTowerMonogram && (logoSrc.includes('http') || fallbackLogoSrc)) {
+      if(floorImg && (displayLogoSrc.includes('http') || fallbackLogoSrc)) {
         setTimeout(() => {
           if(floorImg.dataset.loaded !== 'true' && !floorImg.complete) {
             handleBankLogoError(floorImg);
@@ -6032,13 +6163,27 @@
     let guideMedusaLaserLoopActive = false;
     let guideMedusaLaserLoopTimeout = null;
 
-    function fireGuideMedusaLaserPulse(useGuideLeft, targetEmoji){
+    function getLowerColumnLaserTargets(columnEl){
+      if(!columnEl) return [];
+
+      const preferredTargets = Array.from(columnEl.querySelectorAll('.captured-item'));
+      const fallbackTargets = Array.from(columnEl.querySelectorAll('.mystery-medusa-fixed'));
+      const targets = preferredTargets.length ? preferredTargets : fallbackTargets;
+
+      return targets.sort((leftEl, rightEl) => {
+        const leftRect = leftEl.getBoundingClientRect();
+        const rightRect = rightEl.getBoundingClientRect();
+        return leftRect.top - rightRect.top;
+      });
+    }
+
+    function fireGuideMedusaLaserPulse(useGuideLeft, targetElement){
       const source = document.querySelector(useGuideLeft ? '.medusa-guide-pair .guide-medusa-left' : '.medusa-guide-pair .guide-medusa-right');
-      if(!scene || !source || !targetEmoji) return;
+      if(!scene || !source || !targetElement) return;
 
       const sceneRect = scene.getBoundingClientRect();
       const sourceRect = source.getBoundingClientRect();
-      const targetRect = targetEmoji.getBoundingClientRect();
+      const targetRect = targetElement.getBoundingClientRect();
       const ox = sourceRect.left + sourceRect.width / 2 - sceneRect.left;
       const oy = sourceRect.top + sourceRect.height * 0.64 - sceneRect.top;
       const tx = targetRect.left + targetRect.width / 2 - sceneRect.left;
@@ -6057,8 +6202,8 @@
       scene.appendChild(laser);
 
       requestAnimationFrame(() => laser.classList.add('active'));
-      targetEmoji.classList.add('laser-hit');
-      setTimeout(() => targetEmoji.classList.remove('laser-hit'), 320);
+      targetElement.classList.add('laser-hit');
+      setTimeout(() => targetElement.classList.remove('laser-hit'), 320);
       setTimeout(() => laser.remove(), 320);
     }
 
@@ -6069,24 +6214,23 @@
         return;
       }
 
-      const leftTargets = [];
-      const rightTargets = [];
-      for(let floor = 10; floor >= 1; floor--){
-        const l = document.getElementById(`emoji-left-${floor}`);
-        const r = document.getElementById(`emoji-right-${floor}`);
-        if(l) leftTargets.push(l);
-        if(r) rightTargets.push(r);
+      const leftTargets = getLowerColumnLaserTargets(capturesLowerLeftGrid);
+      const rightTargets = getLowerColumnLaserTargets(capturesLowerRightGrid);
+
+      if(leftTargets.length === 0 && rightTargets.length === 0){
+        guideMedusaLaserLoopTimeout = setTimeout(launchGuideMedusaLaserCycle, 1000);
+        return;
       }
 
       const stepDelay = 190;
       leftTargets.forEach((target, index) => {
         setTimeout(() => {
-          if(guideMedusaLaserLoopActive) fireGuideMedusaLaserPulse(false, target); // Destra -> Sinistra
+          if(guideMedusaLaserLoopActive) fireGuideMedusaLaserPulse(false, target); // Destra -> Colonna inferiore sinistra
         }, index * stepDelay);
       });
       rightTargets.forEach((target, index) => {
         setTimeout(() => {
-          if(guideMedusaLaserLoopActive) fireGuideMedusaLaserPulse(true, target); // Sinistra -> Destra
+          if(guideMedusaLaserLoopActive) fireGuideMedusaLaserPulse(true, target); // Sinistra -> Colonna inferiore destra
         }, index * stepDelay + 95);
       });
 
@@ -6217,83 +6361,32 @@
     }
 
     function positionMysteryMedusas(){
-      const tocShellEl = document.getElementById('fraud-guide-toc') || document.querySelector('.adsense-toc-shell');
-      if(!tocShellEl) return;
-
-      const shellRect = tocShellEl.getBoundingClientRect();
-      const isMobile = window.innerWidth <= 768;
-      const boxSize = isMobile ? 58 : 54;
-      const sideGap = isMobile ? 10 : 8;
-      const groupMedusaMap = [
-        {sourceId:'mystery-medusa-social', selector:'#fraud-guide-toc .adsense-toc-group[data-theme="social"]'},
-        {sourceId:'mystery-medusa-authority', selector:'#fraud-guide-toc .adsense-toc-group[data-theme="authority"]'},
-        {sourceId:'mystery-medusa-left', selector:'#fraud-guide-toc .adsense-toc-group[data-theme="investments"]'},
-        {sourceId:'mystery-medusa-right', selector:'#fraud-guide-toc .adsense-toc-group[data-theme="payments"]'},
-        {sourceId:'mystery-medusa-identity', selector:'#fraud-guide-toc .adsense-toc-group[data-theme="identity"]'},
-        {sourceId:'mystery-medusa-psycho', selector:'#fraud-guide-toc .adsense-toc-group[data-theme="psycho"]'}
+      const groupMap = [
+        {sourceId:'mystery-medusa-social',    selector:'#fraud-guide-toc .adsense-toc-group[data-theme="social"]',      towerId:'captures-lower-left'},
+        {sourceId:'mystery-medusa-left',      selector:'#fraud-guide-toc .adsense-toc-group[data-theme="investments"]', towerId:'captures-lower-left'},
+        {sourceId:'mystery-medusa-identity',  selector:'#fraud-guide-toc .adsense-toc-group[data-theme="identity"]',    towerId:'captures-lower-left'},
+        {sourceId:'mystery-medusa-authority', selector:'#fraud-guide-toc .adsense-toc-group[data-theme="authority"]',   towerId:'captures-lower-right'},
+        {sourceId:'mystery-medusa-right',     selector:'#fraud-guide-toc .adsense-toc-group[data-theme="payments"]',    towerId:'captures-lower-right'},
+        {sourceId:'mystery-medusa-psycho',    selector:'#fraud-guide-toc .adsense-toc-group[data-theme="psycho"]',      towerId:'captures-lower-right'},
       ];
 
-      function setPos(node, left, top){
-        if(!node) return;
-        node.style.left = `${left}px`;
-        node.style.top = `${top}px`;
-      }
+      groupMap.forEach(entry => {
+        const medusa = document.getElementById(entry.sourceId);
+        const group  = document.querySelector(entry.selector);
+        const tower  = document.getElementById(entry.towerId);
+        if(!medusa || !group || !tower) return;
 
-      if(isMobile){
-        groupMedusaMap.forEach(entry => {
-          const medusa = document.getElementById(entry.sourceId);
-          const group = document.querySelector(entry.selector);
-          if(!medusa || !group) return;
-          const rect = group.getBoundingClientRect();
-          const left = rect.left - shellRect.left + (rect.width - boxSize) / 2;
-          const top = rect.top - shellRect.top + 14;
-          setPos(medusa, left, top);
-        });
-        return;
-      }
+        const groupRect = group.getBoundingClientRect();
+        const towerRect = tower.getBoundingClientRect();
+        const medusaWidth = medusa.offsetWidth || (window.innerWidth <= 768 ? 116 : 108);
+        const medusaHeight = medusa.offsetHeight || (window.innerWidth <= 768 ? 116 : 108);
 
-      const leftMedusa = document.getElementById('mystery-medusa-left');
-      const rightMedusa = document.getElementById('mystery-medusa-right');
-      const leftTarget = document.querySelector('#fraud-guide-toc a[href="#investment-academy-scam"]');
-      const rightTarget = document.querySelector('#fraud-guide-toc a[href="#qr-code-scam"]');
-      if(leftMedusa && rightMedusa && leftTarget && rightTarget){
-        const leftRect = leftTarget.getBoundingClientRect();
-        const rightRect = rightTarget.getBoundingClientRect();
-        setPos(leftMedusa, leftRect.right - shellRect.left + sideGap, leftRect.top - shellRect.top + (leftRect.height - boxSize) / 2);
-        setPos(rightMedusa, rightRect.left - shellRect.left - boxSize - sideGap - 4, rightRect.top - shellRect.top + (rightRect.height - boxSize) / 2);
-      }
+        const top  = groupRect.top - towerRect.top + (groupRect.height - medusaHeight) / 2;
+        const left = Math.round((towerRect.width - medusaWidth) / 2);
 
-      const socialMedusa = document.getElementById('mystery-medusa-social');
-      const socialTarget = document.querySelector('#fraud-guide-toc a[href="#fake-charity-scam"]');
-      if(socialMedusa && socialTarget){
-        const sRect = socialTarget.getBoundingClientRect();
-        setPos(socialMedusa, sRect.right - shellRect.left + sideGap, sRect.top - shellRect.top + (sRect.height - boxSize) / 2);
-      }
-
-      const authMedusa = document.getElementById('mystery-medusa-authority');
-      const authLeft = document.querySelector('#fraud-guide-toc a[href="#fake-lawyer-scam"]');
-      const authRight = document.querySelector('#fraud-guide-toc a[href="#tax-refund-scam"]');
-      if(authMedusa && authLeft && authRight){
-        const aL = authLeft.getBoundingClientRect();
-        const aR = authRight.getBoundingClientRect();
-        setPos(authMedusa, (aL.right + aR.left) / 2 - shellRect.left - boxSize / 2, (aL.top + aL.bottom) / 2 - shellRect.top - boxSize / 2);
-      }
-
-      const idMedusa = document.getElementById('mystery-medusa-identity');
-      const idLeft = document.querySelector('#fraud-guide-toc a[href="#sim-swap-scam"]');
-      const idRight = document.querySelector('#fraud-guide-toc a[href="#account-takeover-scam"]');
-      if(idMedusa && idLeft && idRight){
-        const iL = idLeft.getBoundingClientRect();
-        const iR = idRight.getBoundingClientRect();
-        setPos(idMedusa, (iL.right + iR.left) / 2 - shellRect.left - boxSize / 2, (iL.top + iL.bottom) / 2 - shellRect.top - boxSize / 2);
-      }
-
-      const psyMedusa = document.getElementById('mystery-medusa-psycho');
-      const psyTarget = document.querySelector('#fraud-guide-toc a[href="#psyco-defense-resources"]');
-      if(psyMedusa && psyTarget){
-        const pRect = psyTarget.getBoundingClientRect();
-        setPos(psyMedusa, pRect.right - shellRect.left + sideGap, pRect.top - shellRect.top + (pRect.height - boxSize) / 2);
-      }
+        medusa.style.top  = `${Math.max(0, top)}px`;
+        medusa.style.left = `${left}px`;
+      });
     }
 
     function fireMysteryMedusaLaser(sourceId, targetButton){
@@ -6935,12 +7028,22 @@
         bankSearchEmpty: 'No bank found. Try another name!',
         guideSearchPlaceholder: '🔍 Search scam by name...',
         guideSearchEmpty: 'No match found. Try another keyword!',
+        educationalPdfKicker: 'Educational PDF slide',
+        educationalPdfPlacementBefore: 'Preview before this topic',
+        educationalPdfPlacementAfter: 'Preview after this topic',
+        educationalPdfPageLabel: 'Page {page} of 17',
+        educationalPdfDescription: 'Smartphone-width preview from the multipage Caravaggio Codex PDF, aligned in cyclic reuse with this section and opened directly on page {page}.',
+        educationalPdfOpen: 'Open PDF page {page}',
+        educationalPdfTeaser: 'Quick visual brief for this risk',
+        educationalPdfSocialProof: 'Tap to open, save, or share this slide with anyone who needs the warning in context.',
+        fraudShareThisSection: 'Share this section',
         psycoDefenseGoToDownloads: '⬆ Download PDF & PPTX from the Psychological Defense section',
         fraudGuideKicker: 'Practical anti-fraud guide',
         fraudGuideTitle: 'Financial scam guide: phishing, fake bank calls, ABF, bank complaints and trading fraud',
         fraudGuideSubtitle: 'Use this multilingual financial scam guide to recognise phishing, fake bank calls, SMS spoofing, online trading fraud, crypto scam and unauthorised transfers, then move from bank complaints to ABF, verification and safer payment decisions before you send money.',
         fraudGuideTocTitle: 'Browse the guide by theme - Secret Chamber',
-        fraudGuideTocCopy: 'Use these thematic buttons to jump directly to the risk area you want to study, then return to the summary from each section.',
+        fraudGuideTocCopy: 'Use these thematic buttons <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-ochre"></span><span class="toc-inline-placeholder toc-inline-placeholder-red"></span></span> to jump directly to the risk area <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-green"></span><span class="toc-inline-placeholder toc-inline-placeholder-blue"></span></span> you want to study, then return to the summary <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-purple"></span><span class="toc-inline-placeholder toc-inline-placeholder-pink"></span></span><br>from each section.',
+        fraudGuideTocWarning: 'Warning: these "secret rooms" expose scam tactics.<br>Follow the guided sequence and verify every move before opening links or actions.',
         tocGroupSocial: 'Job scam, romance scam and emotional traps',
         tocGroupAuthority: 'Bank phishing, SMS spoofing and fake bank calls',
         tocGroupInvestments: 'Trading scam, crypto fraud, loans and fake recovery',
@@ -7187,6 +7290,10 @@
         fraudDefenseNote: '<strong>Final self-defense rule:</strong> when a money request is driven by urgency, secrecy or the promise of easy profit, pause the operation for at least thirty minutes and recheck everything through an independent channel. That delay alone blocks many scams better than any software.',
         flagsSectionTitle: '🌍 189 Financial Authorities — Flag Alphabet',
         flagsSectionSubtitle: 'Click any flag to see the financial authority, fraud report link and contact details for that country.',
+        flagsExternalBadge: 'Indexed external directory',
+        flagsExternalSection: 'Open the indexed external directory with direct landing pages for financial authorities worldwide, already discoverable through Google.',
+        flagsExternalCta: 'Contact or verify through the global Authority directory',
+        flagsExternalModalButton: 'Open full Authority directory for verification',
         flagsSearchPlaceholder: 'Search country or authority...',
         flagsFilterAll: 'All',
         flagsFilterEU: 'EU',
@@ -7246,11 +7353,21 @@
         bankAddressPlaceholder: 'Indirizzo servizio reclami (email, indirizzo postale o URL)',
         contributorNamePlaceholder: 'Il tuo nome (opzionale)',
         blogSubmit: '📤 INVIA CONTRIBUTO',
+        educationalPdfKicker: 'Slide PDF educativa',
+        educationalPdfPlacementBefore: 'Anteprima prima di questo tema',
+        educationalPdfPlacementAfter: 'Anteprima dopo questo tema',
+        educationalPdfPageLabel: 'Pagina {page} di 17',
+        educationalPdfDescription: 'Anteprima a larghezza smartphone del PDF multipagina Caravaggio Codex, riusata in modo ciclico per questa sezione e aperta direttamente alla pagina {page}.',
+        educationalPdfOpen: 'Apri la pagina {page} del PDF',
+        educationalPdfTeaser: 'Brief visuale rapido su questo rischio',
+        educationalPdfSocialProof: 'Tocca per aprire, salvare o condividere questa slide con chi deve capire subito l\'avviso nel contesto giusto.',
+        fraudShareThisSection: 'Condividi questa sezione',
         fraudGuideKicker: 'Guida pratica anti-truffa',
         fraudGuideTitle: 'Guida truffe finanziarie: phishing bancario, false telefonate, ABF, reclami banca e trading scam',
         fraudGuideSubtitle: 'Usa questa guida multilanguage per riconoscere phishing bancario, falsa telefonata della banca, sms spoofing, trading scam, crypto scam e bonifici non autorizzati, poi passa da reclamo banca a ABF, verifica indipendente e scelte di pagamento piu sicure.',
         fraudGuideTocTitle: 'Esplora la guida per tema - Camera dei segreti',
-        fraudGuideTocCopy: 'Usa questi pulsanti tematici per raggiungere subito l\'area di rischio che vuoi studiare, poi torna al sommario da ogni sezione.',
+        fraudGuideTocCopy: 'Usa questi pulsanti tematici <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-ochre"></span><span class="toc-inline-placeholder toc-inline-placeholder-red"></span></span> per raggiungere subito l\'area di rischio <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-green"></span><span class="toc-inline-placeholder toc-inline-placeholder-blue"></span></span> che vuoi studiare, poi torna al sommario <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-purple"></span><span class="toc-inline-placeholder toc-inline-placeholder-pink"></span></span><br>da ogni sezione.',
+        fraudGuideTocWarning: 'Avvertenza: queste "stanze segrete" mostrano tattiche di truffa.<br>Segui la sequenza guidata e verifica ogni passaggio prima di aprire link o azioni.',
         tocGroupSocial: 'Job scam, romance scam e trappole emotive',
         tocGroupAuthority: 'Phishing bancario, sms spoofing e falsa telefonata',
         tocGroupInvestments: 'Trading scam, crypto, prestiti e falsi recuperi',
@@ -7497,6 +7614,10 @@
         fraudDefenseNote: '<strong>Regola finale di autodifesa:</strong> quando una richiesta di denaro nasce da fretta, segretezza o promessa di guadagno facile, sospendi l\'operazione per almeno trenta minuti e ricontrolla tutto da un canale indipendente. Questa pausa, da sola, blocca molte truffe meglio di qualsiasi software.',
         flagsSectionTitle: '🌍 189 Autorita Finanziarie — Alfabeto Bandiere',
         flagsSectionSubtitle: 'Clicca su qualsiasi bandiera per vedere l\'autorita finanziaria, il link denuncia frode e i contatti del paese.',
+        flagsExternalBadge: 'Directory esterna indicizzata',
+        flagsExternalSection: 'Apri la directory esterna gia indicizzata con landing page dirette delle autorita finanziarie nel mondo, gia intercettabile da Google.',
+        flagsExternalCta: 'Contatta o verifica tramite la directory globale delle Authority',
+        flagsExternalModalButton: 'Apri la directory completa delle Authority per la verifica',
         flagsSearchPlaceholder: 'Cerca paese o autorita...',
         flagsFilterAll: 'Tutti',
         flagsFilterEU: 'UE',
@@ -7545,6 +7666,15 @@
         bankAddressPlaceholder: 'Adresse du service reclamations (email, adresse postale ou URL)',
         contributorNamePlaceholder: 'Votre nom (optionnel)',
         blogSubmit: '📤 ENVOYER LA CONTRIBUTION',
+        educationalPdfKicker: 'Diapositive PDF educative',
+        educationalPdfPlacementBefore: 'Apercu avant ce theme',
+        educationalPdfPlacementAfter: 'Apercu apres ce theme',
+        educationalPdfPageLabel: 'Page {page} sur 17',
+        educationalPdfDescription: 'Apercu au format smartphone du PDF multipage Caravaggio Codex, reutilise de facon cyclique pour cette section et ouvert directement a la page {page}.',
+        educationalPdfOpen: 'Ouvrir la page {page} du PDF',
+        educationalPdfTeaser: 'Brief visuel rapide sur ce risque',
+        educationalPdfSocialProof: 'Touchez pour ouvrir, enregistrer ou partager cette diapositive avec toute personne qui doit voir l\'alerte dans le bon contexte.',
+        fraudShareThisSection: 'Partager cette section',
         btnNewsCasi: 'Arnaques et News',
         btnSearchBank: 'Cherchez votre<br>Banque',
         btnAddBank: 'ou ajoutez-la !',
@@ -7558,7 +7688,8 @@
         fraudGuideTitle: 'Guide des fraudes financieres : phishing bancaire, faux appels, ABF, reclamations bancaires et trading frauduleux',
         fraudGuideSubtitle: 'Utilisez ce guide multilingue pour reconnaitre le phishing bancaire, les faux appels de banque, le SMS spoofing, le trading frauduleux, la crypto-arnaque et les virements non autorises, puis passer des reclamations bancaires a l\'ABF, a la verification independante et a des paiements plus prudents.',
         fraudGuideTocTitle: 'Explorer le guide par theme - Chambre des secrets',
-        fraudGuideTocCopy: 'Utilisez ces boutons thematiques pour rejoindre directement la zone de risque qui vous interesse, puis revenez au sommaire depuis chaque section.',
+        fraudGuideTocCopy: 'Utilisez ces boutons thematiques <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-ochre"></span><span class="toc-inline-placeholder toc-inline-placeholder-red"></span></span> pour rejoindre directement la zone de risque <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-green"></span><span class="toc-inline-placeholder toc-inline-placeholder-blue"></span></span> qui vous interesse, puis revenez au sommaire <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-purple"></span><span class="toc-inline-placeholder toc-inline-placeholder-pink"></span></span><br>depuis chaque section.',
+        fraudGuideTocWarning: 'Avertissement : ces "chambres secretes" montrent des tactiques d\'arnaque.<br>Suivez la sequence guidee et verifiez chaque etape avant d\'ouvrir des liens ou des actions.',
         tocGroupSocial: 'Job scam, romance scam et pieges emotionnels',
         tocGroupAuthority: 'Phishing bancaire, SMS spoofing et faux appels bancaires',
         tocGroupInvestments: 'Trading frauduleux, crypto, credit et faux recouvrement',
@@ -7805,6 +7936,10 @@
         fraudDefenseNote: '<strong>Regle finale d\'autoprotection:</strong> lorsqu\'une demande d\'argent repose sur l\'urgence, le secret ou la promesse d\'un gain facile, interrompez l\'operation pendant au moins trente minutes et verifiez tout par un canal independant. Cette pause bloque a elle seule de nombreuses fraudes mieux que n\'importe quel logiciel.',
         flagsSectionTitle: '🌍 189 Autorites Financieres — Alphabet de Drapeaux',
         flagsSectionSubtitle: 'Cliquez sur un drapeau pour voir l\'autorite financiere, le lien de signalement de fraude et les coordonnees du pays.',
+        flagsExternalBadge: 'Annuaire externe indexe',
+        flagsExternalSection: 'Ouvrez l\'annuaire externe deja indexe avec des pages directes pour les autorites financieres du monde entier, deja reperable via Google.',
+        flagsExternalCta: 'Contacter ou verifier via l\'annuaire global des autorites',
+        flagsExternalModalButton: 'Ouvrir l\'annuaire complet des autorites pour verification',
         flagsSearchPlaceholder: 'Rechercher un pays ou une autorite...',
         flagsFilterAll: 'Tous',
         flagsFilterEU: 'UE',
@@ -7853,6 +7988,15 @@
         bankAddressPlaceholder: 'Adresse des Beschwerdeservice (E-Mail, Postanschrift oder URL)',
         contributorNamePlaceholder: 'Ihr Name (optional)',
         blogSubmit: '📤 BEITRAG SENDEN',
+        educationalPdfKicker: 'Lehrreiche PDF-Folie',
+        educationalPdfPlacementBefore: 'Vorschau vor diesem Thema',
+        educationalPdfPlacementAfter: 'Vorschau nach diesem Thema',
+        educationalPdfPageLabel: 'Seite {page} von 17',
+        educationalPdfDescription: 'Vorschau in Smartphone-Breite aus dem mehrseitigen PDF Caravaggio Codex, zyklisch dieser Sektion zugeordnet und direkt auf Seite {page} geoffnet.',
+        educationalPdfOpen: 'PDF-Seite {page} offnen',
+        educationalPdfTeaser: 'Schneller visueller Kurzbrief zu diesem Risiko',
+        educationalPdfSocialProof: 'Tippen Sie zum Offnen, Speichern oder Teilen dieser Folie mit Personen, die den Warnhinweis direkt im richtigen Kontext sehen sollen.',
+        fraudShareThisSection: 'Diesen Abschnitt teilen',
         btnNewsCasi: 'Betrug & News',
         btnSearchBank: 'Finden Sie Ihre<br>Bank',
         btnAddBank: 'oder fugen Sie sie hinzu!',
@@ -7866,7 +8010,8 @@
         fraudGuideTitle: 'Leitfaden zu Finanzbetrug: Bank-Phishing, falsche Anrufe, ABF, Bankbeschwerden und Trading-Betrug',
         fraudGuideSubtitle: 'Nutzen Sie diesen mehrsprachigen Leitfaden, um Bank-Phishing, falsche Bankanrufe, SMS-Spoofing, Trading-Betrug, Krypto-Betrug und nicht autorisierte Uberweisungen zu erkennen und dann von Bankbeschwerden zu ABF, unabhangiger Prufung und sichereren Zahlungsentscheidungen uberzugehen.',
         fraudGuideTocTitle: 'Leitfaden nach Themen durchsuchen - Kammer der Geheimnisse',
-        fraudGuideTocCopy: 'Nutzen Sie diese Themen-Schaltflachen, um direkt zum gewunschten Risikobereich zu springen, und kehren Sie von jeder Sektion zum Inhaltsverzeichnis zuruck.',
+        fraudGuideTocCopy: 'Nutzen Sie diese Themen-Schaltflachen <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-ochre"></span><span class="toc-inline-placeholder toc-inline-placeholder-red"></span></span>, um direkt zum gewunschten Risikobereich <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-green"></span><span class="toc-inline-placeholder toc-inline-placeholder-blue"></span></span> zu springen, und kehren Sie zum Inhaltsverzeichnis <span class="toc-inline-placeholders" aria-hidden="true"><span class="toc-inline-placeholder toc-inline-placeholder-purple"></span><span class="toc-inline-placeholder toc-inline-placeholder-pink"></span></span><br>von jeder Sektion zuruck.',
+        fraudGuideTocWarning: 'Warnung: Diese "geheimen Kammern" zeigen Betrugstaktiken.<br>Folgen Sie der gefuhrten Reihenfolge und prufen Sie jeden Schritt, bevor Sie Links oder Aktionen offnen.',
         tocGroupSocial: 'Job Scam, Romance Scam und emotionale Fallen',
         tocGroupAuthority: 'Bank-Phishing, SMS-Spoofing und falsche Bankanrufe',
         tocGroupInvestments: 'Trading-Betrug, Krypto, Kredite und Fake Recovery',
@@ -8113,6 +8258,10 @@
         fraudDefenseNote: '<strong>Letzte Selbstschutzregel:</strong> wenn eine Geldforderung auf Zeitdruck, Geheimhaltung oder dem Versprechen leichter Gewinne basiert, unterbrechen Sie den Vorgang fur mindestens dreissig Minuten und prufen Sie alles uber einen unabhangigen Kanal neu. Diese Pause allein blockiert viele Betruge besser als jede Software.',
         flagsSectionTitle: '🌍 189 Finanzaufsichtsbehorden — Flaggen-Alphabet',
         flagsSectionSubtitle: 'Klicken Sie auf eine Flagge, um die Finanzaufsichtsbehorde, den Betrugsmeldungslink und die Kontaktdaten des Landes zu sehen.',
+        flagsExternalBadge: 'Indexiertes externes Verzeichnis',
+        flagsExternalSection: 'Offnen Sie das bereits indexierte externe Verzeichnis mit direkten Landingpages fur Finanzaufsichtsbehorden weltweit, das bereits uber Google auffindbar ist.',
+        flagsExternalCta: 'Kontaktieren oder prufen uber das globale Aufsichtsverzeichnis',
+        flagsExternalModalButton: 'Vollstandiges Aufsichtsverzeichnis zur Prufung offnen',
         flagsSearchPlaceholder: 'Land oder Behorde suchen...',
         flagsFilterAll: 'Alle',
         flagsFilterEU: 'EU',
@@ -8143,6 +8292,110 @@
     };
     
     let currentLang = 'EN';
+    const EDU_PDF_PATH = 'Psyco-difesa/The_Caravaggio_Codex-eng.pdf';
+    const EDU_PDF_TOTAL_PAGES = 17;
+    const EDU_PDF_SECTION_FLOW = [
+      {id:'job-scam', theme:'social'},
+      {id:'romance-scam', theme:'social'},
+      {id:'fake-charity-scam', theme:'social'},
+      {id:'phishing-scam', theme:'authority'},
+      {id:'fake-bank-officer-scam', theme:'authority'},
+      {id:'fake-lawyer-scam', theme:'authority'},
+      {id:'tax-refund-scam', theme:'authority'},
+      {id:'support-scam', theme:'authority'},
+      {id:'authority-check', theme:'authority'},
+      {id:'financial-shield-card', theme:'authority'},
+      {id:'abf-conciliation', theme:'authority'},
+      {id:'trading-scam', theme:'investments'},
+      {id:'crypto-scam', theme:'investments'},
+      {id:'investment-academy-scam', theme:'investments'},
+      {id:'recovery-scam', theme:'investments'},
+      {id:'loan-scam', theme:'investments'},
+      {id:'pyramid-scheme-scam', theme:'investments'},
+      {id:'whatsapp-security-pill', theme:'investments'},
+      {id:'fake-shop-scam', theme:'payments'},
+      {id:'marketplace-scam', theme:'payments'},
+      {id:'parcel-scam', theme:'payments'},
+      {id:'qr-code-scam', theme:'payments'},
+      {id:'invoice-scam', theme:'payments'},
+      {id:'urgent-transfer-scam', theme:'payments'},
+      {id:'gift-card-scam', theme:'payments'},
+      {id:'rental-scam', theme:'payments'},
+      {id:'sim-swap-scam', theme:'identity'},
+      {id:'account-takeover-scam', theme:'identity'},
+      {id:'identity-theft-scam', theme:'identity'},
+      {id:'golden-tree-news', theme:'identity'},
+      {id:'psyco-defense-resources', theme:'psycho'}
+    ];
+
+    function formatEducationalPdfText(template, replacements = {}){
+      return String(template || '').replace(/\{(\w+)\}/g, (_, key) => replacements[key] ?? '');
+    }
+
+    function renderEducationalPdfSlides(){
+      document.querySelectorAll('.educational-pdf-insert').forEach(card => card.remove());
+
+      const langPack = translations[currentLang] || translations.EN || {};
+      EDU_PDF_SECTION_FLOW.forEach((entry, index) => {
+        const section = document.getElementById(entry.id);
+        if(!section) return;
+
+        const pageNumber = (index % EDU_PDF_TOTAL_PAGES) + 1;
+        const placement = index % 2 === 0 ? 'before' : 'after';
+        const sectionHeading = section.querySelector('h3, h4');
+        const sectionTitle = sectionHeading ? sectionHeading.textContent.trim() : entry.id;
+        const pageLabel = formatEducationalPdfText(langPack.educationalPdfPageLabel, {page: pageNumber});
+        const placementLabel = placement === 'before' ? langPack.educationalPdfPlacementBefore : langPack.educationalPdfPlacementAfter;
+        const description = formatEducationalPdfText(langPack.educationalPdfDescription, {page: pageNumber});
+        const openLabel = formatEducationalPdfText(langPack.educationalPdfOpen, {page: pageNumber});
+        const teaserLabel = langPack.educationalPdfTeaser || 'Quick visual brief for this risk';
+        const socialProof = langPack.educationalPdfSocialProof || 'Tap to open, save, or share this slide with anyone who needs the warning in context.';
+        const pdfUrl = `${EDU_PDF_PATH}#page=${pageNumber}&view=FitH`;
+
+        const card = document.createElement('article');
+        card.className = 'educational-pdf-insert';
+        card.dataset.theme = entry.theme;
+        card.dataset.placement = placement;
+        card.innerHTML = `
+          <div class="educational-pdf-copy">
+            <span class="educational-pdf-kicker">${langPack.educationalPdfKicker || 'Educational PDF slide'}</span>
+            <h4>${sectionTitle}</h4>
+            <div class="educational-pdf-meta">
+              <span class="educational-pdf-chip">${placementLabel || ''}</span>
+              <span class="educational-pdf-chip">${pageLabel || ''}</span>
+            </div>
+            <p>${description || ''}</p>
+            <div class="educational-pdf-actions">
+              <a class="adsense-action-link" href="${pdfUrl}" target="_blank" rel="noopener noreferrer">${openLabel || ''}</a>
+            </div>
+          </div>
+          <div class="educational-pdf-frame-wrap">
+            <div class="educational-pdf-frame">
+              <a class="educational-pdf-frame-link" href="${pdfUrl}" target="_blank" rel="noopener noreferrer" aria-label="${sectionTitle} - ${pageLabel}">
+                <div>
+                  <div class="educational-pdf-frame-top">
+                    <div class="educational-pdf-frame-page">${pageLabel}</div>
+                    <span class="educational-pdf-frame-badge">${placementLabel || ''}</span>
+                  </div>
+                  <div class="educational-pdf-frame-teaser">${teaserLabel}</div>
+                  <h5 class="educational-pdf-frame-title">${sectionTitle}</h5>
+                  <p class="educational-pdf-frame-copy">${description || ''}</p>
+                  <div class="educational-pdf-frame-social-proof">${socialProof}</div>
+                </div>
+                <div class="educational-pdf-frame-footer">
+                  <span class="educational-pdf-frame-open">${openLabel || ''}</span>
+                  <span class="educational-pdf-frame-footnote">Caravaggio Codex</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        `;
+
+        if(placement === 'before') section.insertAdjacentElement('beforebegin', card);
+        else section.insertAdjacentElement('afterend', card);
+      });
+    }
+
     const mobileStaticScenarioCopy = {
       EN: {
         badge: 'SCENARIO 2',
@@ -8210,6 +8463,19 @@
       backLink.setAttribute('data-i18n', 'fraudBackToToc');
       backLink.textContent = 'Back to table of contents';
       card.appendChild(backLink);
+
+      if(card.id){
+        const shareLink = document.createElement('a');
+        shareLink.href = '#social-share-panel';
+        shareLink.className = 'adsense-back-link';
+        shareLink.setAttribute('data-i18n', 'fraudShareThisSection');
+        shareLink.textContent = 'Share this section';
+        shareLink.addEventListener('click', (event) => {
+          event.preventDefault();
+          openSharePanelForSection(card.id);
+        });
+        card.appendChild(shareLink);
+      }
     });
 
     const fraudCardBadges = [
@@ -8287,6 +8553,7 @@
     }
 
     applyFraudCardBadges();
+  renderEducationalPdfSlides();
     
     function applyTranslations(lang){
       currentLang = lang;
@@ -8304,6 +8571,7 @@
         }
       });
       applyFraudCardBadges();
+      renderEducationalPdfSlides();
       // Aggiorna anche i popup delle icone banca
       updateBankPopups(lang);
       renderMobileStaticScenarioText();
@@ -8516,36 +8784,66 @@
 
     setupVideoAvatarPreviews();
 
+    function relocateMentalHealthSection(){
+      const guide = document.getElementById('fraud-guide');
+      const mental = document.getElementById('mental-health-section');
+      if(!guide || !mental) return;
+
+      const defenseNote = guide.querySelector('.adsense-defense-note');
+      if(defenseNote && defenseNote.nextSibling !== mental){
+        guide.insertBefore(mental, defenseNote.nextSibling);
+      } else if(!defenseNote && guide.lastElementChild !== mental){
+        guide.appendChild(mental);
+      }
+
+      mental.classList.add('mental-health-bottom');
+      const title = mental.querySelector('h3');
+      if(title && !title.querySelector('.mental-health-seq')){
+        const seq = document.createElement('span');
+        seq.className = 'mental-health-seq';
+        seq.textContent = '31.';
+        title.prepend(seq, document.createTextNode(' '));
+      }
+    }
+
     function updateLowerSceneLayout(){
       const scene = document.querySelector('.scene');
       const guide = document.getElementById('fraud-guide');
       const toc = document.getElementById('fraud-guide-toc');
-      const blog = document.getElementById('blog-collaboration');
-      const bottomLeft = document.getElementById('bank-logos-bottom-left');
-      const bottomRight = document.getElementById('bank-logos-bottom-right');
+      const sideLeft = document.getElementById('bank-logos-bottom-left');
+      const sideRight = document.getElementById('bank-logos-bottom-right');
       const lowerLeftColumn = document.getElementById('captures-lower-left');
       const lowerRightColumn = document.getElementById('captures-lower-right');
 
-      if(!scene || !guide || !blog || !bottomLeft || !bottomRight){
+      if(!scene || !guide || !sideLeft || !sideRight){
         return;
       }
+
+      relocateMentalHealthSection();
 
       const guideBottom = guide.offsetTop + guide.offsetHeight;
       const narrowViewport = isMobileViewport();
       const compactViewport = isCompactViewport();
+      const isNarrowLayout = window.innerWidth <= 1024;
 
-      /* Blog subito dopo la guida */
-      const blogTop = guideBottom + (narrowViewport ? 40 : compactViewport ? 50 : 60);
-
-      /* Torri affiancate al blog */
-      bottomLeft.style.top = `${blogTop}px`;
-      bottomRight.style.top = `${blogTop}px`;
-
-      /* Banner Collaborate visibile — centrato tra le torri */
       const collabBanner = document.querySelector('.collab-visible-banner');
-      if(collabBanner){
-        const towerH = bottomLeft.offsetHeight || 448;
-        collabBanner.style.top = `${blogTop + Math.round(towerH / 2 - collabBanner.offsetHeight / 2)}px`;
+
+      if(isNarrowLayout){
+        sideLeft.style.top = '';
+        sideRight.style.top = '';
+        if(collabBanner){
+          collabBanner.style.top = '';
+        }
+      } else {
+        const sideTop = guideBottom + (narrowViewport ? 34 : compactViewport ? 46 : 58);
+        sideLeft.style.top = `${sideTop}px`;
+        sideRight.style.top = `${sideTop}px`;
+
+        const sideBottom = sideTop + Math.max(sideLeft.offsetHeight || 320, sideRight.offsetHeight || 320);
+
+        if(collabBanner){
+          collabBanner.style.top = `${sideBottom + 22}px`;
+        }
       }
 
       if(toc && lowerLeftColumn && lowerRightColumn){
@@ -8560,9 +8858,15 @@
         positionMysteryMedusas();
       }
 
-      const towerHeight = bottomLeft.offsetHeight || 448;
-      const blogBottom = blogTop + Math.max(towerHeight, 448) + 120;
-      scene.style.minHeight = `${blogBottom}px`;
+      if(isNarrowLayout){
+        scene.style.minHeight = `${guideBottom + 240}px`;
+      } else {
+        const sideTop = parseFloat(sideLeft.style.top) || guideBottom + 58;
+        const sideBottom = sideTop + Math.max(sideLeft.offsetHeight || 320, sideRight.offsetHeight || 320);
+        const bannerTop = collabBanner ? (parseFloat(collabBanner.style.top) || sideBottom + 22) : sideBottom;
+        const bannerBottom = collabBanner ? bannerTop + (collabBanner.offsetHeight || 200) : sideTop;
+        scene.style.minHeight = `${Math.max(sideBottom, bannerBottom) + 96}px`;
+      }
     }
     
     // ===== POPUP ICONE BANCA =====
@@ -9108,6 +9412,8 @@
       }
 
       syncMobileHeroFocus();
+      relocateMentalHealthSection();
+      startCollaborateBankFrames();
       checkScrollNeeded();
       monitorZoom();
       scheduleLowerSceneLayout(140);
