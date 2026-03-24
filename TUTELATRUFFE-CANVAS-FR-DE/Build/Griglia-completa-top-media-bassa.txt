@@ -1,0 +1,440 @@
+Griglia tecnica completa - top, scena media e scena bassa
+
+Riferimento
+- File base di lettura: index.html
+- Scopo: unificare in un solo documento le anchor, le coordinate, le dimensioni e le dipendenze principali del layout desktop dalla parte superiore fino alla soglia del contenuto a flusso.
+- Canvas logico di riferimento: 1024x1536 come master desktop.
+- Regola d'uso: prima di spostare qualsiasi blocco, preservare il suo anchor e verificare l'effetto sui rettangoli adiacenti.
+
+1. Macro-zonizzazione generale
+
+A - Top navigation
+- Header superiore con top banners e shell lingua.
+
+B - Hero top e corridoio centrale alto
+- Meduse superiori, AdSense top, banner centrale testuale, video, audio, pulsanti news, gazze.
+
+C-L / C-R - Colonne superiori laterali
+- Complaint banners, titoli BANK, forzieri, indicatori laterali superiori.
+
+D - Fascia ticker / fascia rossa
+- Corridoio orizzontale tra i forzieri.
+
+E - Stage centrale alto
+- Etichette centrali, popup e area introduttiva sopra il radar.
+
+F - Radar e centro dinamico
+- Orbite, Medusa Caravaggio, banche in orbita, overlay attacco.
+
+G - Scena media centrale
+- Pulsanti verdi, petizioni, shield, shortcut psyco, blog collaboration, papiro.
+
+H - Scena bassa assoluta
+- Social columns, medusa guide pair, scams-message, adsense-guide, perseus-defense-section.
+
+I - Soglia contenuto a flusso
+- content-flow-wrapper e torri inferiori correlate.
+
+2. Parte superiore - coordinate reali correnti
+
+A1 - Header / top-nav
+- Selector: header
+- Anchor: relativo, con padding-left 72px e padding-right 72px
+- Z-index: 100
+- Note: contenitore logico della fascia alta.
+
+A2 - Top banners desktop
+- Selector: .top-banners
+- Anchor: interno a header, width max-content, margin 0 auto
+- Ordine desktop: banner-main 1, banner-authorities 2, banner-gmw 3, banner-avv 4, banner-scam-radar 5
+- Note: non alterare l'ordine DOM per non rompere il mobile.
+
+A3 - Shell lingue
+- Selector: .lang-stack-shell.left / .lang-stack-shell.right
+- Size: 57x57
+- Anchor base desktop: top 0, left 0 / right 0 nel header
+- Note: il JS le riposiziona rispetto al rettangolo dei top banners; anchor dinamico dipendente da header.
+
+B1 - Meduse top
+- Selector: .medusa.left / .medusa.right
+- Anchor: top 10px
+- Left: 4%
+- Right: 4%
+- Size: clamp 130px - 180px
+- Note: definiscono il corridoio laterale superiore.
+
+B2 - Label MEDUSA sinistra
+- Selector: .medusa-label-left
+- Anchor: top -28px, left 9%
+- Width: clamp 130px - 180px
+
+B3 - Label MEDUSA destra
+- Selector: .medusa-label-right
+- Anchor: top -28px, right calc(9% - 20px)
+- Width: clamp 130px - 180px
+- Font-size: 18.9px
+
+B4 - AdSense wrapper top
+- Selector: .adsense-container
+- Anchor: top -18px
+- Left: calc(4% + clamp(130px,12vw,180px) + 16px)
+- Right: calc(4% + clamp(130px,12vw,180px) + 16px)
+- Padding: 4px 14px 6px
+- Min-height: 55px
+- Z-index: 161
+- Note: wrapper personalizzato, ma non deve comprimere l'ad reale.
+
+B5 - AdSense real box
+- Selector: ins.adsbygoogle
+- Size standard: width 100%, max-width 728px, height 90px
+- Formato: leaderboard 728x90
+- Note: standard Google da preservare.
+
+B6 - Banner centrale testuale
+- Selector: #central-static-banner
+- Anchor: top 60px, left 50%, transform translateX(-50%)
+- Width: 37.35%
+- Max-width: 611px
+- Padding: 9px 14px 11px
+- Z-index: 160
+- Note: primo controllo collisione con AdSense top.
+
+B7 - Candlestick dentro banner centrale
+- Selector: #central-static-banner .candlestick-container
+- Note: parte integrante del rettangolo del banner centrale; segue ogni spostamento del blocco.
+
+B8 - Video button
+- Selector: #video-button-gazza
+- Anchor: top 93px, right 21%
+- Size: 110x60
+- Font-size: 17.1px
+- Z-index: 165
+
+B9 - Audio indicator
+- Selector: #audioIndicator
+- Anchor: top 155px, right 21%
+- Width: 108px
+- Min-height: 88px
+- Z-index: 151
+- Note: condivide l'anchor orizzontale del video.
+
+B10 - News button sinistro
+- Selector: #news-button-gazza
+- Anchor: top 204px, right calc(50% + 16.6% + 24px)
+- Width: max-content
+- Min-width: 148px
+- Max-width: min(220px, calc(50% - 78px))
+- Height: 42px
+- Z-index: 165
+- Note: in FR il font desktop e 17px; nel root 18px.
+
+B11 - Gazza sinistra
+- Selector: .gazza-left
+- Anchor: top 204px, left calc(13% - 1px)
+
+B12 - Gazza destra
+- Selector: .gazza-right
+- Anchor: top 204px, right calc(13% + 4px)
+
+C1 - Complaint banners
+- Selector: .complaint-banner-left / .complaint-banner-right
+- Anchor: top 350px
+- Left / right: 3%
+- Width: 145px
+- Height: 45px
+- Z-index: 100
+
+C2 - Bank titles
+- Selector: .bank-title-left / .bank-title-right
+- Anchor: top 352px
+- Left / right: 15%
+- Width: 118px
+- Font-size: 30.6px
+
+C3 - Crying bounce markers
+- Selector: .crying-bounce-left / .crying-bounce-right
+- Anchor: top 352px
+- Left: calc(15% + 128px)
+- Right: calc(15% + 124px)
+
+C4 - Treasure chests
+- Selector: .treasure-chest-left / .treasure-chest-right
+- Anchor: top 223px
+- Left: 5%
+- Right: 5%
+- Size: 80x60
+- Z-index: 156
+
+D1 - Ticker red band top
+- Selector: .scams-message-top
+- Anchor: top 252px, left 13%, right 13%
+- Height: 63px
+- Z-index: 155
+- Note: fascia rossa orizzontale tra i forzieri.
+
+E1 - Anchor stage alto concettuale
+- Zona concettuale: da y 305 a circa y 555
+- Comprende area introduttiva sopra il radar e fascia dei primi overlay centrali.
+
+E2 - Caravaggio Codex title frame
+- Selector: .caravaggio-text
+- Anchor: left 50%, top 292px, transform translateX(-50%)
+- Size: width 70%, max-width 70%, altezza auto
+- Font: 1.474rem, weight 900, line-height 1.08
+- Colori testo: .caravaggio-red (#ff0000), .caravaggio-green (#00ff00), .caravaggio-yellow (#ffd700), .caravaggio-cyan (#00ffff)
+- Cornice: border 2px solid rgba(0,255,0,.75), border-radius 10px, background rgba(0,20,0,.35), box-shadow glow verde
+- z-index: 180
+- Padding: 6px 14px
+- Note: stringa multicolore "Caravaggio Codex ti insegna autodifesa dalla pericolose Meduse Truffa del web". Cornice verde con glow aggiunta 2026-03-24.
+
+3. Scena media - coordinate reali correnti
+
+F1 - Orbit outer
+- Selector: .orbit-outer
+- Anchor: left 50%, top 792px, transform translate(-50%, -50%)
+- Size: 320x320
+- Occupied area stimata: x 352, y 632, w 320, h 320
+
+F2 - Orbit inner
+- Selector: .orbit-inner
+- Anchor: left 50%, top 792px, transform translate(-50%, -50%)
+- Size: 220x220
+- Occupied area stimata: x 402, y 682, w 220, h 220
+
+F3 - Orbit safe
+- Selector: .orbit-safe
+- Anchor: left 50%, top 1280px, transform translate(-50%, -50%)
+- Size: 250x250
+- Occupied area stimata: x 387, y 1155, w 250, h 250
+
+F4 - Medusa Caravaggio
+- Selector: .medusa-caravaggio
+- Anchor: left 50%, top 792px, transform translate(-50%, -50%)
+- Size: 280x280
+- Occupied area stimata: x 372, y 652, w 280, h 280
+- Z-index: 145
+
+G1 - Authorities search button
+- Selector: .authorities-search-button
+- Anchor: left 50%, top 1040px, transform translateX(-258%) scale(1.15)
+- Width nominale: 108px
+
+G2 - Global protection button
+- Selector: .global-protection-button
+- Anchor: left 50%, top 1038px, transform translateX(210%) scale(1.15)
+- Width nominale: 90px
+
+G3 - Read petition lane
+- Selector container: .read-petition-container
+- Anchor verticale: top 1114px
+- Left petition anchor: .read-petition-left left 25%
+- Right petition anchor: .read-petition-right right 25%
+- Child scale: scale(0.81)
+
+G4 - Shield center
+- Selector: .shield-center
+- Anchor: left calc(50% - 35px), top 1500px, transform translate(-50%, -50%)
+- Size: 140x140
+- Z-index: 149
+
+G5 - Psyco shortcuts
+- Selector: .psyco-shortcut
+- Size: width 138px, min-height 85px
+- Left 1: top 1478px left 29%
+- Left 2: top 1498px left 14%
+- Right 1: top 1488px right 14%
+- Right 2: top 1478px right 29%
+
+G6 - Photo arrows
+- Selector: .photo-arrows
+- Anchor: top 1397px, left 50%, transform translateX(-50%)
+- Width: 280px
+
+G7 - Blog collaboration
+- Selector: .blog-collaboration
+- Anchor: top 1500px, left calc(15% + 120px), right calc(15% + 120px)
+- Padding: 25px
+- Z-index: 160
+
+G8 - Papyrus scroll
+- Selector: .papyrus-scroll
+- Anchor: top 1640px, left 0, right 0
+- Height: 120px
+
+4. Torri laterali e scaffold persistenti
+
+L1 - Capture towers top
+- Selector: .captures-container
+- Anchor: top 400px
+- Size: 100x1232
+- Left: .captures-left left 3%
+- Right: .captures-right right 3%
+
+L2 - Lower capture towers
+- Selector: .captures-lower-container
+- Anchor: top 2015px
+- Size: width 100px, min-height 980px
+- Left: .captures-lower-left left 3%
+- Right: .captures-lower-right right 3%
+
+L3 - Stolen total boxes
+- Selector: .stolen-total-box
+- Anchor: top 285px
+- Size: 100x60
+- Left: .stolen-total-left left 3%
+- Right: .stolen-total-right right 3%
+
+L4 - Scaffold columns
+- Selector: .scaffold-column
+- Anchor: top 570px
+- Size: 100x1070
+- Left: .scaffold-column-left left 3%
+- Right: .scaffold-column-right right 3%
+
+L5 - Bank logo towers
+- Selector: .bank-logos-container
+- Anchor: top 400px
+- Size: 118x1070
+- Left: .bank-logos-left left 15%
+- Right: .bank-logos-right right 15%
+- Z-index: 100
+
+L6 - Bottom bank towers
+- Selector: .bank-logos-bottom
+- Anchor: top 6685px
+- Size: 110x448
+- Left: .bank-logos-bottom-left left calc(15% + 120px - 130px)
+- Right: .bank-logos-bottom-right right calc(15% + 120px - 130px)
+
+L7 - Scaffold rungs
+- Selector: .scaffold-rung
+- Anchor: left calc(3% + 110px), right calc(3% + 110px)
+- Height: 20px
+
+L8 - Scaffold final banner
+- Selector: .scaffold-banner-final
+- Anchor: left calc(3% + 170px), right calc(3% + 170px)
+- Height: 35px
+
+5. Scena bassa - coordinate reali correnti
+
+H1 - Medusa guide pair
+- Selector: .medusa-guide-pair
+- Anchor: top 1720px, left calc(3% + 135px), right calc(3% + 135px)
+- Layout interno: flex space-between, gap 20px
+- Child images: size clamp 140px - 200px
+
+H2 - Social column left
+- Selector: .social-column.left
+- Anchor: top 1770px, left 1.5%
+- Width: 130px
+
+H3 - Social column right
+- Selector: .social-column.right
+- Anchor: top 1770px, right 1.5%
+- Width: 130px
+
+H4 - Scams message basso
+- Selector: .scams-message
+- Anchor: top 1945px, left calc(1.5% + 140px), right calc(1.5% + 140px)
+- Padding: 10px 20px
+- Z-index: 155
+
+H5 - Adsense guide
+- Selector: .adsense-guide
+- Anchor: top 2015px, left calc(3% + 135px), right calc(3% + 135px)
+- Padding: 28px 32px
+- Z-index: 158
+
+H6 - Perseus defense section
+- Selector: .perseus-defense-section
+- Anchor: top 2040px, left calc(3% + 135px), right calc(3% + 135px)
+- Padding: 22px 24px
+- Gap interno: 24px
+- Z-index: 158
+
+I1 - Content flow wrapper
+- Selector: .content-flow-wrapper
+- Anchor: top 2000px, width 100%, max-width 900px, margin 0 auto
+- Note: soglia del contenuto a flusso sotto la scena assoluta.
+
+6. Cerniere critiche del layout
+
+Cerniera top
+- AdSense wrapper: top -18px
+- AdSense real box: 728x90
+- Banner centrale: top 60px
+- Video: top 93px
+- Audio: top 155px
+- News/Gazze: top 204px
+- Complaint banners: top 350px
+- Note: questa e la zona critica per sovrapposizioni alte.
+
+Cerniera media
+- Pulsanti verdi: 1038-1040px
+- Petizioni: 1114px
+- Orbit safe: 1280px
+- Photo arrows: 1397px
+- Shield / blog collaboration: 1478-1500px
+- Papyrus: 1640px
+
+Cerniera bassa
+- Medusa guide pair: 1720px
+- Social columns: 1770px
+- Scams message: 1945px
+- Content flow wrapper: 2000px
+- Adsense guide: 2015px
+- Perseus defense section: 2040px
+
+7. Anchor da preservare obbligatoriamente
+
+- Tutti i blocchi centrali con left 50% + transform translate o left/right simmetrici.
+- Le torri laterali ancorate a 3% e 15%.
+- L'impronta orizzontale condivisa di .adsense-guide e .perseus-defense-section: left/right calc(3% + 135px).
+- La soglia del content-flow-wrapper top 2000px.
+- Il corridoio verticale del top definito da meduse, AdSense, banner centrale, video, audio e gazze.
+
+8. Procedura operativa per modifiche future
+
+1. Registrare sempre selector, top, left/right, width o size, transform e z-index del blocco da muovere.
+2. Identificare se l'anchor e centrale, laterale percentuale o dinamica via JS.
+3. Se si modifica un blocco top, verificare collisioni con AdSense, banner centrale, video, audio, news, gazze e complaint banners.
+4. Se si modifica un blocco medio o basso, verificare collisioni con papyrus, medusa-guide-pair, social columns, scams-message, adsense-guide e content-flow-wrapper.
+5. Non alterare singole righe di testo se il problema deriva dal rettangolo del contenitore.
+
+9. File correlati
+
+- Build/Griglia.txt
+- Build/Griglia-scena-media-bassa.txt
+
+10. Compatibilita dispositivi - Snapshot 2026-03-24
+
+- Riferimento validazione: screenshot funzionali raccolti nella sessione del 2026-03-24.
+- Esito generale: compatibilita SUFFICIENTE (non perfetta) per rilascio controllato.
+
+Dispositivo master di sviluppo: Surface Pro 7 (912x1368)
+- Stato: compatibilita sufficiente, non perfetta.
+- Il layout desktop si adatta correttamente; margini e spaziature generali sono accettabili.
+- Ottimizzazione fine non ancora eseguita.
+
+Asus Zenbook Fold (853x1280):
+- Stato: compatibilita sufficiente, non perfetta.
+- Il layout si ridimensiona ragionevolmente ma non e stato ottimizzato per questo viewport.
+- Alcune sovrapposizioni minori possibili nelle zone laterali.
+
+Responsive generico (1297x991):
+- Stato: compatibilita sufficiente, non perfetta.
+- Layout visivamente accettabile su viewport largo orizzontale.
+- I contenuti sono leggibili e funzionali.
+
+Smartphone piccoli e iPhone:
+- Stato: non ancora testato/ottimizzato.
+- Piano: utilizzare Android Studio per test sui display piu piccoli.
+- Obiettivo: identificare contenuti idonei per schermi smartphone compatti.
+
+Nota generale: la versione corrente e deployata in produzione con compatibilita sufficiente sui dispositivi sopra elencati. L'ottimizzazione fine per smartphone/iPhone e prevista come fase successiva.
+
+11. Uso consigliato
+
+Esempio prompt:
+"Lavora solo sul layout desktop. Usa Build/Griglia-completa-top-media-bassa.txt come riferimento principale. Mantieni invariati gli anchor di top, scena media e scena bassa. Se sposti un blocco, modifica il suo rettangolo intero senza rompere la simmetria e verifica le cerniere top, media e bassa prima di chiudere la modifica."
