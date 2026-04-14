@@ -5,28 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="994c0bb1-5737-473b-affc-a31e4f7e091a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../map-thumbnail-popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../APP/curriculum/Screenshot_20260116_201308_com_google_android_apps_maps_MapsActivity.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../APP/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../APP/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../COUNTRY_DOMAINS/DE-Germany/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../COUNTRY_DOMAINS/DE-Germany/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../COUNTRY_DOMAINS/FR-France/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../COUNTRY_DOMAINS/FR-France/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DEPLOY_REGISTER/Presentazione-marchio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEPLOY_REGISTER/Presentazione-marchio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DEPLOY_REGISTER/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../DEPLOY_REGISTER/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IONOS/Images_screenshot/esempio-corretto-posizione-banner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IONOS/ScamRadar-main/ScamRadar-main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../IONOS/ScamRadar-main/ScamRadar-main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IONOS/ScamRadar-main/ScamRadar-main/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../IONOS/ScamRadar-main/ScamRadar-main/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IONOS/index-dramatic.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../IONOS/index-dramatic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IONOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../IONOS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IONOS/json-Bandiera[.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IONOS/nuovo scenario.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../banner-dinamico.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../banner-dinamico.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/VAULT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/VAULT/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/banks_database.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/banks_database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TUTELATRUFFE-CANVAS-FR-DE/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sitemap.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +52,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="39XLkrSStVCVobf5KxwQEtH2P8e" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -80,9 +70,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Rebasing tutelatruffe-site-split",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Utente/BancheEuropa/scam-radar-vertical/android",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
