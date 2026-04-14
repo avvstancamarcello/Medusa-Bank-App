@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://www.tutelatruffe.it/images/banner-Medusa-verticale-it.html -->
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram/Facebook Cover - TutelaTruffe.it</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    overflow: hidden;
+  }
+
+  .social-card {
+    width: min(1080px, 100vw);
+    aspect-ratio: 1080 / 1350;
+    background: linear-gradient(180deg, #09192d 0%, #0e223a 40%, #030814 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+    padding: clamp(28px, 6vw, 80px) clamp(22px, 5vw, 60px);
+    box-sizing: border-box;
+  }
+
+  .social-card::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(900px, 84vw);
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.06) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .social-card::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -30%;
+    width: min(1000px, 92vw);
+    aspect-ratio: 1 / 1;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.04) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .top-area {
+    z-index: 2;
+    text-align: center;
+    margin-top: clamp(6px, 2vh, 30px);
+  }
+
+  .brand-text {
+    color: #FFD700;
+    font-size: clamp(12px, 2.2vw, 24px);
+    font-weight: 800;
+    letter-spacing: clamp(2px, 0.55vw, 6px);
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+  }
+
+  .brand-text::after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #00FFFF;
+    border-radius: 2px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+  }
+
+  .medusa-container {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin: clamp(16px, 4vh, 50px) 0;
+  }
+
+  .medusa-shield {
+    width: min(680px, 66vw);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 215, 0, 0.25);
+    box-shadow: 0 0 90px rgba(255, 215, 0, 0.15),
+                0 30px 70px rgba(0, 0, 0, 0.8),
+                inset 0 0 60px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .medusa-shield img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.1) contrast(1.15) brightness(0.95);
+  }
+
+  .bottom-area {
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    margin-bottom: clamp(8px, 2vh, 20px);
+  }
+
+  .headline {
+    color: #f5f7ff;
+    font-size: clamp(34px, 9vw, 100px);
+    font-weight: 900;
+    line-height: 1.05;
+    margin: 0 0 clamp(16px, 3vh, 35px) 0;
+    letter-spacing: clamp(-1px, -0.16vw, -2px);
+    text-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+  }
+
+  .subtitle {
+    color: #8dd9ff;
+    font-size: clamp(16px, 3.1vw, 34px);
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 auto clamp(24px, 4vh, 60px) auto;
+    max-width: 85%;
+  }
+
+  .footer-label {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: clamp(10px, 1.7vw, 18px);
+    font-weight: 700;
+    letter-spacing: clamp(3px, 0.65vw, 7px);
+    text-transform: uppercase;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: clamp(14px, 2.3vh, 30px);
+    margin: 0 auto;
+    width: max-content;
+  }
+
+  @media (max-width: 520px) {
+    .social-card {
+      padding: 16px 14px 18px;
+    }
+
+    .top-area {
+      margin-top: 0;
+    }
+
+    .brand-text {
+      font-size: 11px;
+      letter-spacing: 1.8px;
+    }
+
+    .brand-text::after {
+      bottom: -10px;
+      width: 34px;
+      height: 2px;
+    }
+
+    .medusa-container {
+      margin: 12px 0;
+    }
+
+    .medusa-shield {
+      width: min(230px, 58vw);
+      border-width: 2px;
+    }
+
+    .headline {
+      font-size: clamp(24px, 7vw, 34px);
+      line-height: 1.04;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      max-width: 92%;
+      font-size: clamp(11px, 3.2vw, 15px);
+      margin-bottom: 14px;
+    }
+
+    .footer-label {
+      font-size: 8px;
+      letter-spacing: 2px;
+      padding-top: 10px;
+    }
+  }
+</style>
+<script type="text/javascript" data-name="TokenSigning" data-by="Web-eID extension" src="chrome-extension://gnmckgbandlkacikdndelhfghdejfido/token-signing-page-script.js"></script></head>
+<body>
+
+<div class="social-card">
+  <div class="top-area">
+    <div class="brand-text">TUTELATRUFFE.IT</div>
+  </div>
+
+  <div class="medusa-container">
+    <div class="medusa-shield">
+      <img src="./Caravaggio_-_Medusa_-_Google_Art_Project.jpg" alt="Scudo Medusa Difesa Finanziaria">
+    </div>
+  </div>
+
+  <div class="bottom-area">
+    <h1 class="headline">Difesa dalle<br>Truffe<br>Finanziarie</h1>
+    <p class="subtitle">Phishing, reclami bancari, autorita verificate</p>
+    <div class="footer-label">CARAVAGGIO CODEX</div>
+  </div>
+</div>
+
+
+</body></html>
