@@ -4397,7 +4397,7 @@ body.mobile-hero-expanded #central-static-banner{display:flex;align-items:center
   /* collab-visible-banner ha CSS top:4500px ma JS la sposta a ~3000px;
     la nascondiamo solo su desktop (mobile usa già display:none). */
   @media (min-width: 1025px) {
-   .collab-visible-banner { visibility: hidden; }
+  /* collab-visible-banner: JS gestisce la visibilità tramite style.visibility direttamente */
   }
 
   </style>
@@ -10816,6 +10816,156 @@ body.mobile-hero-expanded #central-static-banner{display:flex;align-items:center
       setupStaffettaLiveDebug();
     }
 
+    const cardCorridorTraceState = {
+      active: false,
+      records: [],
+      options: null,
+      rafId: null,
+      timerId: null,
+      listeners: null
+    };
+
+    function buildGuideCardSnapshot(){
+      const guide = document.getElementById('fraud-guide');
+      const scene = document.querySelector('.scene');
+      const cards = guide ? Array.from(guide.querySelectorAll('.adsense-card')) : [];
+      const vh = window.innerHeight || document.documentElement.clientHeight || 0;
+      let first = null;
+      let last = null;
+      let topMost = null;
+      let topMostDist = Number.POSITIVE_INFINITY;
+
+      cards.forEach((card, idx) => {
+        const rect = card.getBoundingClientRect();
+        const visible = rect.bottom > 0 && rect.top < vh;
+        if(!visible) return;
+        if(first === null) first = idx + 1;
+        last = idx + 1;
+        const dist = Math.abs(rect.top);
+        if(dist < topMostDist){
+          topMostDist = dist;
+          topMost = idx + 1;
+        }
+      });
+
+      const card8 = cards[7] || null;
+      const card12 = cards[11] || null;
+      const card8Rect = card8 ? card8.getBoundingClientRect() : null;
+      const card12Rect = card12 ? card12.getBoundingClientRect() : null;
+      const card8Visible = !!(card8Rect && card8Rect.bottom > 0 && card8Rect.top < vh);
+      const card12Visible = !!(card12Rect && card12Rect.bottom > 0 && card12Rect.top < vh);
+      const corridorVisible = card8Visible || card12Visible || (first !== null && last !== null && first <= 12 && last >= 8);
+      const topCard = topMost;
+      const topCardInCorridor = Number.isFinite(topCard) ? topCard >= 8 && topCard <= 12 : false;
+      const documentHeight = Math.max(
+        document.documentElement.scrollHeight || 0,
+        document.body ? document.body.scrollHeight || 0 : 0
+      );
+
+      return {
+        at: Date.now(),
+        y: Math.round(window.scrollY || document.documentElement.scrollTop || 0),
+        innerHeight: vh,
+        documentHeight,
+        documentElementScrollHeight: document.documentElement.scrollHeight || 0,
+        bodyScrollHeight: document.body ? document.body.scrollHeight || 0 : 0,
+        cardsWindow: first === null ? '-' : `${first}-${last}`,
+        topCard: topCard === null ? null : topCard,
+        corridorVisible,
+        topCardInCorridor,
+        card8Top: card8Rect ? Math.round(card8Rect.top) : null,
+        card8Bottom: card8Rect ? Math.round(card8Rect.bottom) : null,
+        card12Top: card12Rect ? Math.round(card12Rect.top) : null,
+        card12Bottom: card12Rect ? Math.round(card12Rect.bottom) : null,
+        guideTop: guide ? Math.round(guide.getBoundingClientRect().top) : null,
+        guideHeight: guide ? Math.round(guide.getBoundingClientRect().height) : null,
+        sceneInlineHeight: scene ? scene.style.height || '' : '',
+        sceneInlineMinHeight: scene ? scene.style.minHeight || '' : '',
+        sceneOffsetHeight: scene ? Math.round(scene.offsetHeight || 0) : 0,
+        sceneScrollHeight: scene ? Math.round(scene.scrollHeight || 0) : 0,
+        sceneComputedHeight: scene ? window.getComputedStyle(scene).height : '',
+        sceneComputedMinHeight: scene ? window.getComputedStyle(scene).minHeight : ''
+      };
+    }
+
+    function pushCardCorridorRecord(reason){
+      if(!cardCorridorTraceState.active) return;
+      const snapshot = buildGuideCardSnapshot();
+      const opts = cardCorridorTraceState.options || {};
+      const shouldKeep = opts.onlyCorridor ? (snapshot.corridorVisible || snapshot.topCardInCorridor) : true;
+      if(!shouldKeep) return;
+      cardCorridorTraceState.records.push({...snapshot, reason});
+      const maxRecords = Math.max(40, Number(opts.maxRecords) || 2400);
+      if(cardCorridorTraceState.records.length > maxRecords){
+        cardCorridorTraceState.records.splice(0, cardCorridorTraceState.records.length - maxRecords);
+      }
+    }
+
+    function scheduleCardCorridorRecord(reason){
+      if(!cardCorridorTraceState.active) return;
+      if(cardCorridorTraceState.rafId !== null) return;
+      cardCorridorTraceState.rafId = window.requestAnimationFrame(() => {
+        cardCorridorTraceState.rafId = null;
+        pushCardCorridorRecord(reason);
+      });
+    }
+
+    function stopCardCorridorTrace(){
+      if(cardCorridorTraceState.listeners){
+        window.removeEventListener('scroll', cardCorridorTraceState.listeners.onScroll, {passive: true});
+        window.removeEventListener('resize', cardCorridorTraceState.listeners.onResize, {passive: true});
+        document.removeEventListener('visibilitychange', cardCorridorTraceState.listeners.onVisibility, false);
+        cardCorridorTraceState.listeners = null;
+      }
+      if(cardCorridorTraceState.timerId !== null){
+        clearInterval(cardCorridorTraceState.timerId);
+        cardCorridorTraceState.timerId = null;
+      }
+      if(cardCorridorTraceState.rafId !== null){
+        cancelAnimationFrame(cardCorridorTraceState.rafId);
+        cardCorridorTraceState.rafId = null;
+      }
+      cardCorridorTraceState.active = false;
+      cardCorridorTraceState.options = null;
+      return cardCorridorTraceState.records.slice();
+    }
+
+    function startCardCorridorTrace(options = {}){
+      stopCardCorridorTrace();
+      cardCorridorTraceState.records = [];
+      cardCorridorTraceState.active = true;
+      cardCorridorTraceState.options = {
+        onlyCorridor: options.onlyCorridor !== false,
+        sampleMs: Math.max(80, Number(options.sampleMs) || 180),
+        maxRecords: Math.max(120, Number(options.maxRecords) || 2400)
+      };
+
+      const onScroll = () => scheduleCardCorridorRecord('scroll');
+      const onResize = () => scheduleCardCorridorRecord('resize');
+      const onVisibility = () => scheduleCardCorridorRecord(document.hidden ? 'hidden' : 'visible');
+      cardCorridorTraceState.listeners = {onScroll, onResize, onVisibility};
+
+      window.addEventListener('scroll', onScroll, {passive: true});
+      window.addEventListener('resize', onResize, {passive: true});
+      document.addEventListener('visibilitychange', onVisibility, false);
+      cardCorridorTraceState.timerId = window.setInterval(() => scheduleCardCorridorRecord('interval'), cardCorridorTraceState.options.sampleMs);
+      pushCardCorridorRecord('start');
+      return {
+        active: true,
+        options: cardCorridorTraceState.options
+      };
+    }
+
+    window.__startCardCorridorTrace = startCardCorridorTrace;
+    window.__stopCardCorridorTrace = stopCardCorridorTrace;
+    window.__dumpCardCorridorTrace = function(limit = 240){
+      const safeLimit = Math.max(1, Number(limit) || 240);
+      return cardCorridorTraceState.records.slice(-safeLimit);
+    };
+    window.__dumpCardCorridorTraceJson = function(limit = 240){
+      return JSON.stringify(window.__dumpCardCorridorTrace(limit), null, 2);
+    };
+
     function scheduleLowerSceneLayout(delay = 90){
       if(lowerSceneLayoutFrame !== null){
         cancelAnimationFrame(lowerSceneLayoutFrame);
@@ -14632,7 +14782,7 @@ body.mobile-hero-expanded #central-static-banner{display:flex;align-items:center
 
         if(collabBanner){
           centralCursor = placeAbsoluteSection(collabBanner, centralCursor + 10, towerCorridor);
-          collabBanner.style.visibility = '';
+          collabBanner.style.visibility = 'visible';
         }
 
         sideLeft.style.top = '';
@@ -14654,7 +14804,7 @@ body.mobile-hero-expanded #central-static-banner{display:flex;align-items:center
 
         if(collabBanner){
           collabBanner.style.top = `${sideBottom + 22}px`;
-          collabBanner.style.visibility = '';
+          collabBanner.style.visibility = 'visible';
         }
       }
 
@@ -14677,7 +14827,7 @@ body.mobile-hero-expanded #central-static-banner{display:flex;align-items:center
         const sideBottom = sideTop + Math.max(sideLeft.offsetHeight || 320, sideRight.offsetHeight || 320);
         const bannerTop = collabBanner ? (parseFloat(collabBanner.style.top) || sideBottom + 22) : sideBottom;
         const bannerBottom = collabBanner ? bannerTop + (collabBanner.offsetHeight || 200) : sideTop;
-        scene.style.minHeight = `${Math.max(guideBottom, sideBottom, bannerBottom) + 96}px`;
+        scene.style.minHeight = `${Math.max(guideBottom, sideBottom, bannerBottom) + 280}px`;
       }
     }
     
