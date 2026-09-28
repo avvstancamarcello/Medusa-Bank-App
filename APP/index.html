@@ -1471,7 +1471,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span style="font-size: 1.1em;"><strong id="euCountries">0</strong> Paesi UE</span>
             <span style="font-size: 1.1em;"><strong id="highProtection">0</strong> Protezione Standard</span>
         </div>
-        <p id="datasetCountStatus" role="status" aria-live="polite" style="text-align:center;margin:8px 0 16px;color:#cbd5e1;font-size:.95rem;"></p>
+        <p id="datasetCountStatus" role="status" aria-live="polite" aria-atomic="true" style="text-align:center;margin:8px 0 16px;color:#cbd5e1;font-size:.95rem;"></p>
 
         <!-- Banner PTSD - Depressione Post-Traumatica da Truffa Finanziaria -->
         <section id="ptsd-section" style="background: #000000; padding: 15px 20px; margin: 0; border-top: 2px solid #00ffff; border-bottom: 2px solid #00ffff;">
@@ -2769,6 +2769,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         function assertNoHardcodedSeoRecordClaims() {
+            const issues = [];
+            const numericRecordClaimPattern = /\b\d+\b\s*(?:record|records|schede|authority|authorities|links?)\b/ig;
             const seoTexts = [];
             const titleEl = document.querySelector('title');
             if (titleEl) seoTexts.push(titleEl.textContent || '');
@@ -2781,14 +2783,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 if (el) seoTexts.push(el.getAttribute('content') || '');
             });
 
+            const combinedSeoContent = seoTexts.join(' ');
+            const numericClaims = combinedSeoContent.match(numericRecordClaimPattern) || [];
+            issues.push(...numericClaims.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in SEO surfaces ("${claim}").`));
+
             document.querySelectorAll('script[type="application/ld+json"]').forEach((scriptEl) => {
-                seoTexts.push(scriptEl.textContent || '');
+                try {
+                    const parsedBlock = JSON.parse(scriptEl.textContent || '{}');
+                    const blocks = Array.isArray(parsedBlock) ? parsedBlock : [parsedBlock];
+                    blocks.forEach((block) => {
+                        if (!block || typeof block !== 'object') return;
+                        const blockType = block['@type'];
+
+                        if (typeof block.description === 'string') {
+                            const matches = block.description.match(numericRecordClaimPattern) || [];
+                            issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD description ("${claim}").`));
+                        }
+
+                        if (blockType === 'Dataset' && Array.isArray(block.variableMeasured)) {
+                            block.variableMeasured.forEach((metric) => {
+                                const metricText = `${metric?.name || ''} ${metric?.value || ''}`;
+                                const matches = metricText.match(numericRecordClaimPattern) || [];
+                                issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD variableMeasured ("${claim}").`));
+                            });
+                        }
+
+                        if (blockType === 'FAQPage' && Array.isArray(block.mainEntity)) {
+                            block.mainEntity.forEach((entity) => {
+                                const answerText = entity?.acceptedAnswer?.text || '';
+                                const matches = String(answerText).match(numericRecordClaimPattern) || [];
+                                issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD FAQ answer ("${claim}").`));
+                            });
+                        }
+                    });
+                } catch (error) {
+                    issues.push(`SEO assertion failed: unable to parse a JSON-LD block (${error.message}).`);
+                }
             });
 
-            const combinedSeoContent = seoTexts.join(' ');
-            const numericRecordClaimPattern = /\b\d+\b\s*(?:record|records|schede|authority|authorities|links?)\b/ig;
-            const numericClaims = combinedSeoContent.match(numericRecordClaimPattern) || [];
-            return numericClaims.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in SEO surfaces ("${claim}").`);
+            return issues;
         }
 
         function reportIntegrityIssues(issues) {
@@ -2817,10 +2850,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
 
             const renderedCardsCount = document.querySelectorAll('#countriesGrid .country-card').length;
-            if (currentFilter === 'all') {
-                if (renderedCardsCount !== normalizedRecordCount) {
-                    issues.push(`Render assertion failed: rendered cards (${renderedCardsCount}) differ from normalized dataset count (${normalizedRecordCount}) in unfiltered view.`);
-                }
+            const expectedVisibleRecords = getFilteredCountries().length;
+            if (renderedCardsCount !== expectedVisibleRecords) {
+                issues.push(`Render assertion failed: rendered cards (${renderedCardsCount}) differ from expected visible records (${expectedVisibleRecords}) for current filter "${currentFilter}".`);
             }
 
             issues.push(...assertNoHardcodedSeoRecordClaims());
@@ -2973,23 +3005,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const grid = document.getElementById('countriesGrid');
             grid.innerHTML = '';
             
-            const sortedCountries = countriesData.sort((a, b) => 
-                a.country_name.localeCompare(b.country_name)
-            );
-            
-            const filtered = sortedCountries.filter(country => {
-                if (currentFilter === 'all') return true;
-                if (currentFilter === 'altissimo') return country.protectionLevel === 'Altissimo';
-                if (currentFilter === 'ue') return country.isEU;
-                if (currentFilter === 'non-ue') return !country.isEU;
-                // Filtri per continente - SEO Enhancement
-                if (currentFilter === 'europe') return country.continent === 'Europe';
-                if (currentFilter === 'asia') return country.continent === 'Asia';
-                if (currentFilter === 'africa') return country.continent === 'Africa';
-                if (currentFilter === 'americas') return country.continent === 'Americas' || country.continent === 'North America' || country.continent === 'South America';
-                if (currentFilter === 'oceania') return country.continent === 'Oceania';
-                return false;
-            });
+            const filtered = getFilteredCountries();
 
             filtered.forEach(country => {
                 const card = document.createElement('div');
@@ -3034,6 +3050,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 `;
                 grid.appendChild(card);
+            });
+        }
+
+        function getFilteredCountries() {
+            const sortedCountries = countriesData.sort((a, b) =>
+                a.country_name.localeCompare(b.country_name)
+            );
+
+            return sortedCountries.filter(country => {
+                if (currentFilter === 'all') return true;
+                if (currentFilter === 'altissimo') return country.protectionLevel === 'Altissimo';
+                if (currentFilter === 'ue') return country.isEU;
+                if (currentFilter === 'non-ue') return !country.isEU;
+                // Filtri per continente - SEO Enhancement
+                if (currentFilter === 'europe') return country.continent === 'Europe';
+                if (currentFilter === 'asia') return country.continent === 'Asia';
+                if (currentFilter === 'africa') return country.continent === 'Africa';
+                if (currentFilter === 'americas') return country.continent === 'Americas' || country.continent === 'North America' || country.continent === 'South America';
+                if (currentFilter === 'oceania') return country.continent === 'Oceania';
+                return false;
             });
         }
 
