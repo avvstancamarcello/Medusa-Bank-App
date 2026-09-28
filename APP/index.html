@@ -1224,7 +1224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%); padding: 1rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15); position: sticky; top: 0; z-index: 999;">
         <div style="max-width: 1200px; margin: 0 auto; display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap; padding: 0 1rem;">
             <a href="https://avvstancamarcello.github.io/Financial-Authority-Database/index.html#database-search-section" style="color: white; text-decoration: none; font-weight: bold; font-size: 1.05rem; padding: 0.5rem 1.5rem; background: rgba(255,255,255,0.15); border-radius: 8px; transition: all 0.3s ease; border: 2px solid rgba(255,255,255,0.2);" onmouseover="this.style.background='rgba(255,255,255,0.25)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';">
-                🏠 Database Autorità Finanziarie (189)
+                🏠 <span id="navAuthorityCountLabel">Database schede Authority (0)</span>
             </a>
             <a href="odissea.html" style="color: white; text-decoration: none; font-weight: 500; font-size: 1.05rem; padding: 0.5rem 1.5rem; background: rgba(255,255,255,0.05); border-radius: 8px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.15)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
                 🌊 Odissea Digitale
@@ -1411,7 +1411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <img src="logo_shield_financial_defense.svg" alt="Financial Defense - tutela del consumatore" width="170" height="170">
                 </div>
             </div>
-            <h1 data-i18n="subtitle" itemprop="name">Database Autorità Finanziarie Internazionali – 189 Paesi, 20 Lingue</h1>
+            <h1 id="authoritySubtitle" data-i18n="subtitle" itemprop="name">Database schede Authority internazionali – 0 record, 20 lingue</h1>
             <p class="subtitle" data-i18n="title" itemprop="description">Verifica licenze broker, segnala truffe Forex e Crypto, controlla l'identità finanziaria dei destinatari di bonifici bancari.</p>
         </header>
 
@@ -1422,7 +1422,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
                     <a href="#flags-section" style="background: rgba(255,215,0,0.15); color: #ffffff; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,215,0,0.4); transition: all 0.3s;">🏳️ Bandiere A-Z</a>
                     <a href="#database-search-section" style="background: rgba(255,215,0,0.15); color: #ffffff; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,215,0,0.4); transition: all 0.3s;">🔍 Cerca Autorità</a>
-                    <a href="#countries-section" style="background: rgba(255,215,0,0.15); color: #ffffff; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,215,0,0.4); transition: all 0.3s;">🌍 Lista 189 Paesi</a>
+                    <a id="tocAuthoritiesLink" href="#countries-section" style="background: rgba(255,215,0,0.15); color: #ffffff; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,215,0,0.4); transition: all 0.3s;" aria-label="Lista schede Authority">🌍 Lista schede Authority (0)</a>
                     <a href="#ptsd-section" style="background: #000000; color: #00ffff; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 2px solid #00ffff; transition: all 0.3s; text-shadow: 0 0 10px rgba(0,255,255,0.8);">🧠 Depressione</a>
                     <a href="#international-authorities" style="background: rgba(255,215,0,0.15); color: #ffffff; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,215,0,0.4); transition: all 0.3s;">🏛️ ESMA, FBI, IOSCO</a>
                     <a href="#author-credentials" style="background: rgba(255,215,0,0.15); color: #ffffff; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,215,0,0.4); transition: all 0.3s;">👨‍⚖️ Autore Verificato</a>
@@ -1461,7 +1461,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <section id="database-search-section" class="controls" role="search" aria-label="Search and filter">
-    			<p class="intro-text" data-i18n="introText">Questa pagina web offre 189 LINK diretti per accedere alle webpage delle AUTORITA' FINANZIARIE di 189 PAESI del Mondo.<br>CERCA il nome del Paese che viene dichiarato sede della impresa finanziaria, e potrai conoscere tutti i dettagli identificativi ufficiali.</p>
+    			<p id="authorityIntroText" class="intro-text" data-i18n="introText">Questa pagina web offre 0 LINK diretti alle schede Authority del dataset caricato.<br>CERCA il nome della giurisdizione dichiarata dalla impresa finanziaria per verificare i dettagli identificativi ufficiali.</p>
             <div class="search-row">
                 <div class="search-box">
                     <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="Cerca per paese o autorità..." aria-label="Search countries">
@@ -1490,10 +1490,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
 
         <div class="stats" style="padding: 10px 20px; display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
-            <span style="font-size: 1.1em;"><strong id="totalCountries">0</strong> Paesi Monitorati</span>
+            <span style="font-size: 1.1em;"><strong id="totalCountries">0</strong> <span id="totalCountriesLabel">schede Authority</span></span>
             <span style="font-size: 1.1em;"><strong id="euCountries">0</strong> Paesi UE</span>
             <span style="font-size: 1.1em;"><strong id="highProtection">0</strong> Protezione Standard</span>
         </div>
+        <p id="datasetCountStatus" role="status" aria-live="polite" style="text-align:center;margin:8px 0 16px;color:#cbd5e1;font-size:.95rem;"></p>
 
         <!-- Banner PTSD - Depressione Post-Traumatica da Truffa Finanziaria -->
         <section id="ptsd-section" style="background: #000000; padding: 15px 20px; margin: 0; border-top: 2px solid #00ffff; border-bottom: 2px solid #00ffff;">
@@ -1504,7 +1505,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
         </section>
 
-        <section id="countries-section" class="content">
+        <section id="countries-section" class="content" aria-label="Elenco schede Authority">
             <div class="countries-grid" id="countriesGrid"></div>
         </section>
 
@@ -2486,6 +2487,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         let currentLanguage = getInitialLanguageFromUrl();
         let currentFilter = 'all';
+        const EXPECTED_AUTHORITY_RECORDS = 239;
+        let loadedAuthorityRecordCount = null;
         // Array di paesi; inizializzato a [] per evitare errori quando i dati non sono caricati
         let countriesData = [];
         // Gestione intervallo per l'effetto HOLA sulle bandiere del grid
@@ -2781,6 +2784,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
         }
 
+        function getAuthorityRecordCount() {
+            return Number.isInteger(loadedAuthorityRecordCount) ? loadedAuthorityRecordCount : EXPECTED_AUTHORITY_RECORDS;
+        }
+
+        function updateAuthorityCountMessaging() {
+            const count = getAuthorityRecordCount();
+            const isItalian = currentLanguage === 'it';
+
+            const navLabel = document.getElementById('navAuthorityCountLabel');
+            if (navLabel) {
+                navLabel.textContent = isItalian
+                    ? `Database schede Authority (${count})`
+                    : `Authority records database (${count})`;
+            }
+
+            const subtitle = document.getElementById('authoritySubtitle');
+            if (subtitle) {
+                subtitle.innerHTML = isItalian
+                    ? `Database <span class='keyword-pulse'>schede Authority</span> internazionali — <span class='keyword-pulse'>${count}</span> record`
+                    : `International <span class='keyword-pulse'>Authority records</span> database — <span class='keyword-pulse'>${count}</span> records`;
+            }
+
+            const intro = document.getElementById('authorityIntroText');
+            if (intro) {
+                intro.innerHTML = isItalian
+                    ? `Questa pagina web offre <strong>${count}</strong> link diretti alle <strong>schede Authority</strong> del dataset caricato.<br>CERCA il nome della giurisdizione dichiarata dalla impresa finanziaria per verificare i dettagli identificativi ufficiali.`
+                    : `This page provides <strong>${count}</strong> direct links to the loaded dataset <strong>Authority records</strong>.<br>Search the declared jurisdiction to verify official identification details.`;
+            }
+
+            const tocLink = document.getElementById('tocAuthoritiesLink');
+            if (tocLink) {
+                const tocText = isItalian
+                    ? `🌍 Lista schede Authority (${count})`
+                    : `🌍 Authority records list (${count})`;
+                tocLink.textContent = tocText;
+                tocLink.setAttribute('aria-label', tocText);
+            }
+        }
+
+        function validateAuthorityDatasetCount() {
+            const status = document.getElementById('datasetCountStatus');
+            if (!status) return;
+
+            const count = getAuthorityRecordCount();
+            if (count !== EXPECTED_AUTHORITY_RECORDS) {
+                const message = `⚠️ Dataset Authority caricato: ${count} record. Valore atteso: ${EXPECTED_AUTHORITY_RECORDS}. Verifica l'aggiornamento di financial_authorities_database.json.`;
+                console.warn(message);
+                status.textContent = message;
+                status.style.color = '#fbbf24';
+            } else {
+                const message = `✅ Dataset Authority allineato: ${count} record caricati da financial_authorities_database.json.`;
+                console.info(message);
+                status.textContent = message;
+                status.style.color = '#86efac';
+            }
+        }
+
         async function loadCountryData() {
             try {
                 // Carica direttamente il database JSON
@@ -2788,21 +2848,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 let data = await response.json();
                 
-                // Aggiungi suddivisioni regionali e watermark copyright
-                data = addCanadaSubregions(data);
+                // Mantieni il perimetro del dataset così come caricato dal file sorgente
                 data = addWatermark(data);
                 
                 // Converti l'oggetto in array
                 countriesData = Object.values(data);
+                loadedAuthorityRecordCount = countriesData.length;
                 
                 // Assegna continente a ogni paese - SEO Enhancement
                 countriesData = assignContinents(countriesData);
                 
                 renderAll();
+                validateAuthorityDatasetCount();
             } catch (error) {
                 console.error('Error loading country data:', error);
+                loadedAuthorityRecordCount = null;
                 countriesData = [];
                 document.getElementById('countriesGrid').innerHTML = `<p style="color: red; text-align: center;">Could not load country data. Please check the console for errors.</p>`;
+                validateAuthorityDatasetCount();
             }
         }
 
@@ -2810,6 +2873,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             updateStats();
             renderCountries();
             renderFlagsGrid();
+            updateAuthorityCountMessaging();
         }
 
         function changeLanguage(lang) {
@@ -2959,6 +3023,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             document.getElementById('totalCountries').textContent = total;
             document.getElementById('euCountries').textContent = eu;
             document.getElementById('highProtection').textContent = high;
+            validateAuthorityDatasetCount();
         }
 
         function getLocalizedProtectionLevel(level) {
@@ -3706,8 +3771,6 @@ https://avvstancamarcello.github.io/Financial-Authority-Database/
     </footer>
 </body>
 </html>
-
-
 
 
 
