@@ -234,7 +234,7 @@
                 "name": "Quante autorità finanziarie copre questo database?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Il database include 189 schede Authority caricate dal file financial_authorities_database.json, con autorità nazionali, regionali e riferimenti internazionali per la verifica e la segnalazione transfrontaliera."
+                    "text": "Il database include le schede Authority caricate dal file financial_authorities_database.json, con autorità nazionali, regionali e riferimenti internazionali per la verifica e la segnalazione transfrontaliera."
                 }
             },
             {
@@ -274,11 +274,6 @@
         },
         "temporalCoverage": "2024/..",
         "variableMeasured": [
-            {
-                "@type": "PropertyValue",
-                "name": "Authority records in dataset",
-                "value": "189"
-            },
             {
                 "@type": "PropertyValue",
                 "name": "Supported interface languages",
@@ -1471,7 +1466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span style="font-size: 1.1em;"><strong id="euCountries">0</strong> Paesi UE</span>
             <span style="font-size: 1.1em;"><strong id="highProtection">0</strong> Protezione Standard</span>
         </div>
-        <p id="datasetCountStatus" role="status" aria-live="polite" style="text-align:center;margin:8px 0 16px;color:#cbd5e1;font-size:.95rem;"></p>
+        <p id="datasetCountStatus" role="status" aria-live="polite" aria-atomic="true" style="text-align:center;margin:8px 0 16px;color:#cbd5e1;font-size:.95rem;"></p>
 
         <!-- Banner PTSD - Depressione Post-Traumatica da Truffa Finanziaria -->
         <section id="ptsd-section" style="background: #000000; padding: 15px 20px; margin: 0; border-top: 2px solid #00ffff; border-bottom: 2px solid #00ffff;">
@@ -2470,7 +2465,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         let currentLanguage = getInitialLanguageFromUrl();
         let currentFilter = 'all';
-        const EXPECTED_AUTHORITY_RECORDS = 189;
+        const EXPECTED_AUTHORITY_RECORDS = 189; // Conteggio top-level reale del file APP/financial_authorities_database.json
         let loadedAuthorityRecordCount = null;
         // Array di paesi; inizializzato a [] per evitare errori quando i dati non sono caricati
         let countriesData = [];
@@ -2768,6 +2763,110 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             return Number.isInteger(loadedAuthorityRecordCount) ? loadedAuthorityRecordCount : EXPECTED_AUTHORITY_RECORDS;
         }
 
+        function assertNoHardcodedSeoRecordClaims() {
+            const issues = [];
+            const numberBeforeNounPattern = /\b\d+\b\s*(?:record|records|links?|authority|authorities|schede(?:\s+authority)?)\b/ig;
+            const nounBeforeNumberPattern = /\b(?:record|records|links?|authority|authorities|schede(?:\s+authority)?)\b\s*\d+\b/ig;
+            const seoTexts = [];
+            const titleEl = document.querySelector('title');
+            if (titleEl) seoTexts.push(titleEl.textContent || '');
+
+            ['description', 'og:description', 'twitter:description'].forEach((name) => {
+                const selector = name.includes(':')
+                    ? `meta[property="${name}"]`
+                    : `meta[name="${name}"]`;
+                const el = document.querySelector(selector);
+                if (el) seoTexts.push(el.getAttribute('content') || '');
+            });
+
+            const combinedSeoContent = seoTexts.join(' ');
+            const numericClaims = [
+                ...(combinedSeoContent.match(numberBeforeNounPattern) || []),
+                ...(combinedSeoContent.match(nounBeforeNumberPattern) || [])
+            ];
+            issues.push(...numericClaims.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in SEO surfaces ("${claim}").`));
+
+            document.querySelectorAll('script[type="application/ld+json"]').forEach((scriptEl) => {
+                try {
+                    const parsedBlock = JSON.parse(scriptEl.textContent || '{}');
+                    const blocks = Array.isArray(parsedBlock) ? parsedBlock : [parsedBlock];
+                    blocks.forEach((block) => {
+                        if (!block || typeof block !== 'object') return;
+                        const nodes = [block, ...(Array.isArray(block['@graph']) ? block['@graph'] : [])];
+                        nodes.forEach((node) => {
+                            if (!node || typeof node !== 'object') return;
+                            const nodeType = node['@type'];
+
+                            if (typeof node.description === 'string') {
+                                const matches = [
+                                    ...(node.description.match(numberBeforeNounPattern) || []),
+                                    ...(node.description.match(nounBeforeNumberPattern) || [])
+                                ];
+                                issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD description ("${claim}").`));
+                            }
+
+                            if (nodeType === 'FAQPage' && Array.isArray(node.mainEntity)) {
+                                node.mainEntity.forEach((entity) => {
+                                    const answerText = entity?.acceptedAnswer?.text || '';
+                                    const answerAsString = String(answerText);
+                                    const matches = [
+                                        ...(answerAsString.match(numberBeforeNounPattern) || []),
+                                        ...(answerAsString.match(nounBeforeNumberPattern) || [])
+                                    ];
+                                    issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD FAQ answer ("${claim}").`));
+                                });
+                            }
+                        });
+                    });
+                } catch (error) {
+                    console.warn(`JSON-LD parse warning (developer diagnostic): ${error.message}`);
+                }
+            });
+
+            return issues;
+        }
+
+        function reportIntegrityIssues(issues) {
+            const status = document.getElementById('datasetCountStatus');
+            if (!Array.isArray(issues) || issues.length === 0) {
+                if (status && status.dataset.integrityWarning === 'true') {
+                    status.textContent = '';
+                    status.dataset.integrityWarning = 'false';
+                }
+                return;
+            }
+            issues.forEach((message) => console.error(message));
+
+            if (status) {
+                status.textContent = `⚠️ ${issues[0]}`;
+                status.style.color = '#fbbf24';
+                status.dataset.integrityWarning = 'true';
+            }
+        }
+
+        function runAuthorityIntegrityAssertions(parsedData) {
+            const issues = [];
+            const normalizedFromParsedData = Array.isArray(parsedData)
+                ? parsedData
+                : (parsedData && typeof parsedData === 'object' ? Object.values(parsedData) : []);
+            const parsedTopLevelCount = normalizedFromParsedData.length;
+            if (parsedTopLevelCount !== EXPECTED_AUTHORITY_RECORDS) {
+                issues.push(`Dataset assertion failed: parsed top-level count (${parsedTopLevelCount}) differs from EXPECTED_AUTHORITY_RECORDS (${EXPECTED_AUTHORITY_RECORDS}).`);
+            }
+
+            const currentRenderCycleId = document.getElementById('countriesGrid')?.dataset?.renderCycleId || '';
+            const renderedCards = Array.from(document.querySelectorAll(`#countriesGrid .country-card[data-render-cycle-id="${currentRenderCycleId}"]`));
+            const renderedCardsCount = renderedCards.filter((card) => card.style.display !== 'none').length;
+            const expectedVisibleRecords = getExpectedDisplayedRecordsCount();
+            if (renderedCardsCount !== expectedVisibleRecords) {
+                issues.push(`Render assertion failed: rendered visible cards (${renderedCardsCount}) differ from expected visible records (${expectedVisibleRecords}) for current filter "${currentFilter}".`);
+            }
+
+            issues.push(...assertNoHardcodedSeoRecordClaims());
+            reportIntegrityIssues(issues);
+            return issues;
+        }
+
         function updateAuthorityCountMessaging() {
             const count = getAuthorityRecordCount();
             const isItalian = currentLanguage === 'it';
@@ -2839,7 +2938,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 countriesData = assignContinents(countriesData);
                 
                 renderAll();
+                applySearchFilter(document.getElementById('searchInput')?.value || '');
                 validateAuthorityDatasetCount();
+                const integrityIssues = runAuthorityIntegrityAssertions(data);
+                if (integrityIssues.length > 0) {
+                    console.warn(`Integrità dataset/SEO: ${integrityIssues.length} anomalia/e rilevata/e.`);
+                }
             } catch (error) {
                 console.error('Error loading country data:', error);
                 loadedAuthorityRecordCount = null;
@@ -2908,28 +3012,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function renderCountries() {
             const grid = document.getElementById('countriesGrid');
             grid.innerHTML = '';
+            const renderCycleId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+            grid.dataset.renderCycleId = renderCycleId;
             
-            const sortedCountries = countriesData.sort((a, b) => 
-                a.country_name.localeCompare(b.country_name)
-            );
-            
-            const filtered = sortedCountries.filter(country => {
-                if (currentFilter === 'all') return true;
-                if (currentFilter === 'altissimo') return country.protectionLevel === 'Altissimo';
-                if (currentFilter === 'ue') return country.isEU;
-                if (currentFilter === 'non-ue') return !country.isEU;
-                // Filtri per continente - SEO Enhancement
-                if (currentFilter === 'europe') return country.continent === 'Europe';
-                if (currentFilter === 'asia') return country.continent === 'Asia';
-                if (currentFilter === 'africa') return country.continent === 'Africa';
-                if (currentFilter === 'americas') return country.continent === 'Americas' || country.continent === 'North America' || country.continent === 'South America';
-                if (currentFilter === 'oceania') return country.continent === 'Oceania';
-                return false;
-            });
+            const filtered = getFilteredCountries();
 
             filtered.forEach(country => {
                 const card = document.createElement('div');
                 card.className = 'country-card';
+                card.dataset.renderCycleId = renderCycleId;
                 card.onclick = () => openModal(country.country_name);
                 
                 const protectionClass = `protection-${(country.protectionLevel || 'medio').toLowerCase()}`;
@@ -2973,6 +3064,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             });
         }
 
+        function getFilteredCountries() {
+            const sortedCountries = [...countriesData].sort((a, b) =>
+                a.country_name.localeCompare(b.country_name)
+            );
+
+            return sortedCountries.filter(matchesCurrentFilter);
+        }
+
+        function getExpectedDisplayedRecordsCount() {
+            const baseFiltered = countriesData.filter(matchesCurrentFilter);
+            const searchTerm = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
+            if (!searchTerm) return baseFiltered.length;
+
+            return baseFiltered.filter((country) => {
+                const searchableText = `${country?.country_name || ''} ${country?.financial_authority?.name || ''} ${country?.financial_authority?.abbreviation || ''}`.toLowerCase();
+                return searchableText.includes(searchTerm);
+            }).length;
+        }
+
+        function matchesCurrentFilter(country) {
+            if (currentFilter === 'all') return true;
+            if (currentFilter === 'altissimo') return country.protectionLevel === 'Altissimo';
+            if (currentFilter === 'ue') return country.isEU;
+            if (currentFilter === 'non-ue') return !country.isEU;
+            // Filtri per continente - SEO Enhancement
+            if (currentFilter === 'europe') return country.continent === 'Europe';
+            if (currentFilter === 'asia') return country.continent === 'Asia';
+            if (currentFilter === 'africa') return country.continent === 'Africa';
+            if (currentFilter === 'americas') return country.continent === 'Americas' || country.continent === 'North America' || country.continent === 'South America';
+            if (currentFilter === 'oceania') return country.continent === 'Oceania';
+            return false;
+        }
+
         function filterCountries(filter) {
             currentFilter = filter;
             document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
@@ -2984,11 +3108,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function setupSearch() {
             const searchInput = document.getElementById('searchInput');
             searchInput.addEventListener('input', (e) => {
-                const searchTerm = e.target.value.toLowerCase();
-                const cards = document.querySelectorAll('.country-card');
-                cards.forEach(card => {
-                    card.style.display = card.textContent.toLowerCase().includes(searchTerm) ? 'block' : 'none';
-                });
+                applySearchFilter(e.target.value);
+            });
+        }
+
+        function applySearchFilter(rawSearchTerm) {
+            const searchTerm = (rawSearchTerm || '').toLowerCase().trim();
+            const cards = document.querySelectorAll('.country-card');
+            cards.forEach(card => {
+                card.style.display = card.textContent.toLowerCase().includes(searchTerm) ? 'block' : 'none';
             });
         }
 
