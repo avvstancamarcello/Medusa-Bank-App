@@ -2853,10 +2853,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 issues.push(`Normalization assertion failed: normalized records (${normalizedRecordCount}) differ from parsed top-level dataset count (${parsedTopLevelCount}).`);
             }
 
-            const renderedCardsCount = document.querySelectorAll('#countriesGrid .country-card').length;
-            const expectedVisibleRecords = getVisibleRecordsCountForCurrentFilter();
+            const renderedCardsCount = Array.from(document.querySelectorAll('#countriesGrid .country-card'))
+                .filter((card) => card.style.display !== 'none')
+                .length;
+            const expectedVisibleRecords = getExpectedDisplayedRecordsCount();
             if (renderedCardsCount !== expectedVisibleRecords) {
-                issues.push(`Render assertion failed: rendered cards (${renderedCardsCount}) differ from expected visible records (${expectedVisibleRecords}) for current filter "${currentFilter}".`);
+                issues.push(`Render assertion failed: rendered visible cards (${renderedCardsCount}) differ from expected visible records (${expectedVisibleRecords}) for current filter "${currentFilter}".`);
             }
 
             issues.push(...assertNoHardcodedSeoRecordClaims());
@@ -3065,8 +3067,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             return sortedCountries.filter(matchesCurrentFilter);
         }
 
-        function getVisibleRecordsCountForCurrentFilter() {
-            return countriesData.filter(matchesCurrentFilter).length;
+        function getExpectedDisplayedRecordsCount() {
+            const baseFiltered = countriesData.filter(matchesCurrentFilter);
+            const searchTerm = (document.getElementById('searchInput')?.value || '').toLowerCase().trim();
+            if (!searchTerm) return baseFiltered.length;
+
+            return baseFiltered.filter((country) => {
+                const searchableText = `${country?.country_name || ''} ${country?.financial_authority?.name || ''} ${country?.financial_authority?.abbreviation || ''}`.toLowerCase();
+                return searchableText.includes(searchTerm);
+            }).length;
         }
 
         function matchesCurrentFilter(country) {
