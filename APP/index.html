@@ -2829,8 +2829,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function reportIntegrityIssues(issues) {
             const status = document.getElementById('datasetCountStatus');
             if (!Array.isArray(issues) || issues.length === 0) {
-                if (status && status.textContent.trim().startsWith('⚠️ SEO assertion failed:')) {
+                if (status && status.dataset.integrityWarning === 'true') {
                     status.textContent = '';
+                    status.dataset.integrityWarning = 'false';
                 }
                 return;
             }
@@ -2839,6 +2840,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             if (status) {
                 status.textContent = `⚠️ ${issues[0]}`;
                 status.style.color = '#fbbf24';
+                status.dataset.integrityWarning = 'true';
             }
         }
 
