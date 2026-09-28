@@ -2793,18 +2793,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         function runAuthorityIntegrityAssertions(parsedData) {
-            const parsedTopLevelCount = parsedData && typeof parsedData === 'object'
-                ? Object.keys(parsedData).length
-                : 0;
+            const parsedTopLevelCount = Array.isArray(parsedData)
+                ? parsedData.length
+                : (parsedData && typeof parsedData === 'object' ? Object.keys(parsedData).length : 0);
+            const normalizedRecordCount = Array.isArray(countriesData) ? countriesData.length : 0;
             console.assert(
                 parsedTopLevelCount === EXPECTED_AUTHORITY_RECORDS,
                 `Dataset assertion failed: parsed top-level count (${parsedTopLevelCount}) differs from EXPECTED_AUTHORITY_RECORDS (${EXPECTED_AUTHORITY_RECORDS}).`
             );
+            console.assert(
+                normalizedRecordCount === parsedTopLevelCount,
+                `Normalization assertion failed: normalized records (${normalizedRecordCount}) differ from parsed top-level dataset count (${parsedTopLevelCount}).`
+            );
 
             const renderedCardsCount = document.querySelectorAll('#countriesGrid .country-card').length;
             console.assert(
-                renderedCardsCount === parsedTopLevelCount,
-                `Render assertion failed: rendered cards (${renderedCardsCount}) differ from parsed top-level dataset count (${parsedTopLevelCount}).`
+                renderedCardsCount === normalizedRecordCount,
+                `Render assertion failed: rendered cards (${renderedCardsCount}) differ from normalized dataset count (${normalizedRecordCount}).`
             );
 
             assertNoHardcodedSeoRecordClaims();
