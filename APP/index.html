@@ -234,7 +234,7 @@
                 "name": "Quante autorità finanziarie copre questo database?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Il database include 189 schede Authority caricate dal file financial_authorities_database.json, con autorità nazionali, regionali e riferimenti internazionali per la verifica e la segnalazione transfrontaliera."
+                    "text": "Il database include le schede Authority caricate dal file financial_authorities_database.json, con autorità nazionali, regionali e riferimenti internazionali per la verifica e la segnalazione transfrontaliera."
                 }
             },
             {
@@ -277,7 +277,7 @@
             {
                 "@type": "PropertyValue",
                 "name": "Authority records in dataset",
-                "value": "189"
+                "value": "Loaded dynamically from financial_authorities_database.json"
             },
             {
                 "@type": "PropertyValue",
@@ -2470,7 +2470,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         let currentLanguage = getInitialLanguageFromUrl();
         let currentFilter = 'all';
-        const EXPECTED_AUTHORITY_RECORDS = 189;
+        const EXPECTED_AUTHORITY_RECORDS = 189; // Conteggio top-level reale del file APP/financial_authorities_database.json
         let loadedAuthorityRecordCount = null;
         // Array di paesi; inizializzato a [] per evitare errori quando i dati non sono caricati
         let countriesData = [];
@@ -2768,6 +2768,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             return Number.isInteger(loadedAuthorityRecordCount) ? loadedAuthorityRecordCount : EXPECTED_AUTHORITY_RECORDS;
         }
 
+        function assertNoHardcodedSeoRecordClaims() {
+            const seoTexts = [];
+            const titleEl = document.querySelector('title');
+            if (titleEl) seoTexts.push(titleEl.textContent || '');
+
+            ['description', 'og:description', 'twitter:description'].forEach((name) => {
+                const selector = name.includes(':')
+                    ? `meta[property="${name}"]`
+                    : `meta[name="${name}"]`;
+                const el = document.querySelector(selector);
+                if (el) seoTexts.push(el.getAttribute('content') || '');
+            });
+
+            document.querySelectorAll('script[type="application/ld+json"]').forEach((scriptEl) => {
+                seoTexts.push(scriptEl.textContent || '');
+            });
+
+            const staleClaimsPattern = /\b(189|142|124)\b/;
+            const combinedSeoContent = seoTexts.join(' ');
+            console.assert(!staleClaimsPattern.test(combinedSeoContent), 'SEO assertion failed: stale hard-coded record claims found in SEO surfaces.');
+        }
+
+        function runAuthorityIntegrityAssertions(parsedData) {
+            const parsedTopLevelCount = parsedData && typeof parsedData === 'object'
+                ? Object.keys(parsedData).length
+                : 0;
+            console.assert(
+                parsedTopLevelCount === EXPECTED_AUTHORITY_RECORDS,
+                `Dataset assertion failed: parsed top-level count (${parsedTopLevelCount}) differs from EXPECTED_AUTHORITY_RECORDS (${EXPECTED_AUTHORITY_RECORDS}).`
+            );
+
+            const renderedCardsCount = document.querySelectorAll('#countriesGrid .country-card').length;
+            console.assert(
+                renderedCardsCount === parsedTopLevelCount,
+                `Render assertion failed: rendered cards (${renderedCardsCount}) differ from parsed top-level dataset count (${parsedTopLevelCount}).`
+            );
+
+            assertNoHardcodedSeoRecordClaims();
+        }
+
         function updateAuthorityCountMessaging() {
             const count = getAuthorityRecordCount();
             const isItalian = currentLanguage === 'it';
@@ -2839,6 +2879,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 countriesData = assignContinents(countriesData);
                 
                 renderAll();
+                runAuthorityIntegrityAssertions(data);
                 validateAuthorityDatasetCount();
             } catch (error) {
                 console.error('Error loading country data:', error);
