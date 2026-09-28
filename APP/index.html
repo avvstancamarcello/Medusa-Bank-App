@@ -2785,9 +2785,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 seoTexts.push(scriptEl.textContent || '');
             });
 
-            const staleClaimsPattern = /\b(189|142|124)\b/;
+            const staleLegacyClaimsPattern = /\b(142|124)\b/;
+            const hardcodedExpectedCountPattern = new RegExp(`\\b${EXPECTED_AUTHORITY_RECORDS}\\b\\s*(?:record|records|schede|authority|authorities|links?)`, 'i');
             const combinedSeoContent = seoTexts.join(' ');
-            console.assert(!staleClaimsPattern.test(combinedSeoContent), 'SEO assertion failed: stale hard-coded record claims found in SEO surfaces.');
+            console.assert(!staleLegacyClaimsPattern.test(combinedSeoContent), 'SEO assertion failed: stale legacy hard-coded count claims found in SEO surfaces.');
+            console.assert(!hardcodedExpectedCountPattern.test(combinedSeoContent), 'SEO assertion failed: hard-coded EXPECTED_AUTHORITY_RECORDS claim found in SEO surfaces.');
         }
 
         function runAuthorityIntegrityAssertions(parsedData) {
