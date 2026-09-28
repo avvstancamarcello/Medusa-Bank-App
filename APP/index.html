@@ -2793,9 +2793,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         function runAuthorityIntegrityAssertions(parsedData) {
-            const parsedTopLevelCount = Array.isArray(parsedData)
-                ? parsedData.length
-                : (parsedData && typeof parsedData === 'object' ? Object.keys(parsedData).length : 0);
+            const normalizedFromParsedData = Array.isArray(parsedData)
+                ? parsedData
+                : (parsedData && typeof parsedData === 'object' ? Object.values(parsedData) : []);
+            const parsedTopLevelCount = normalizedFromParsedData.length;
             const normalizedRecordCount = Array.isArray(countriesData) ? countriesData.length : 0;
             console.assert(
                 parsedTopLevelCount === EXPECTED_AUTHORITY_RECORDS,
@@ -2807,10 +2808,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             );
 
             const renderedCardsCount = document.querySelectorAll('#countriesGrid .country-card').length;
-            console.assert(
-                renderedCardsCount === normalizedRecordCount,
-                `Render assertion failed: rendered cards (${renderedCardsCount}) differ from normalized dataset count (${normalizedRecordCount}).`
-            );
+            if (currentFilter === 'all') {
+                console.assert(
+                    renderedCardsCount === normalizedRecordCount,
+                    `Render assertion failed: rendered cards (${renderedCardsCount}) differ from normalized dataset count (${normalizedRecordCount}) in unfiltered view.`
+                );
+            }
 
             assertNoHardcodedSeoRecordClaims();
         }
