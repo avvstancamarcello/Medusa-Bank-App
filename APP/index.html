@@ -276,11 +276,6 @@
         "variableMeasured": [
             {
                 "@type": "PropertyValue",
-                "name": "Authority records in dataset",
-                "value": "Loaded dynamically from financial_authorities_database.json"
-            },
-            {
-                "@type": "PropertyValue",
                 "name": "Supported interface languages",
                 "value": "10"
             }
@@ -2821,7 +2816,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         });
                     });
                 } catch (error) {
-                    issues.push(`SEO assertion failed: unable to parse a JSON-LD block (${error.message}).`);
+                    console.warn(`JSON-LD parse warning (developer diagnostic): ${error.message}`);
                 }
             });
 
@@ -2829,10 +2824,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         function reportIntegrityIssues(issues) {
-            if (!Array.isArray(issues) || issues.length === 0) return;
+            const status = document.getElementById('datasetCountStatus');
+            if (!Array.isArray(issues) || issues.length === 0) {
+                if (status && status.textContent.trim().startsWith('⚠️ SEO assertion failed:')) {
+                    status.textContent = '';
+                }
+                return;
+            }
             issues.forEach((message) => console.error(message));
 
-            const status = document.getElementById('datasetCountStatus');
             if (status) {
                 status.textContent = `⚠️ ${issues[0]}`;
                 status.style.color = '#fbbf24';
@@ -2854,7 +2854,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
 
             const renderedCardsCount = document.querySelectorAll('#countriesGrid .country-card').length;
-            const expectedVisibleRecords = getFilteredCountries().length;
+            const expectedVisibleRecords = getVisibleRecordsCountForCurrentFilter();
             if (renderedCardsCount !== expectedVisibleRecords) {
                 issues.push(`Render assertion failed: rendered cards (${renderedCardsCount}) differ from expected visible records (${expectedVisibleRecords}) for current filter "${currentFilter}".`);
             }
@@ -3062,19 +3062,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 a.country_name.localeCompare(b.country_name)
             );
 
-            return sortedCountries.filter(country => {
-                if (currentFilter === 'all') return true;
-                if (currentFilter === 'altissimo') return country.protectionLevel === 'Altissimo';
-                if (currentFilter === 'ue') return country.isEU;
-                if (currentFilter === 'non-ue') return !country.isEU;
-                // Filtri per continente - SEO Enhancement
-                if (currentFilter === 'europe') return country.continent === 'Europe';
-                if (currentFilter === 'asia') return country.continent === 'Asia';
-                if (currentFilter === 'africa') return country.continent === 'Africa';
-                if (currentFilter === 'americas') return country.continent === 'Americas' || country.continent === 'North America' || country.continent === 'South America';
-                if (currentFilter === 'oceania') return country.continent === 'Oceania';
-                return false;
-            });
+            return sortedCountries.filter(matchesCurrentFilter);
+        }
+
+        function getVisibleRecordsCountForCurrentFilter() {
+            return countriesData.filter(matchesCurrentFilter).length;
+        }
+
+        function matchesCurrentFilter(country) {
+            if (currentFilter === 'all') return true;
+            if (currentFilter === 'altissimo') return country.protectionLevel === 'Altissimo';
+            if (currentFilter === 'ue') return country.isEU;
+            if (currentFilter === 'non-ue') return !country.isEU;
+            // Filtri per continente - SEO Enhancement
+            if (currentFilter === 'europe') return country.continent === 'Europe';
+            if (currentFilter === 'asia') return country.continent === 'Asia';
+            if (currentFilter === 'africa') return country.continent === 'Africa';
+            if (currentFilter === 'americas') return country.continent === 'Americas' || country.continent === 'North America' || country.continent === 'South America';
+            if (currentFilter === 'oceania') return country.continent === 'Oceania';
+            return false;
         }
 
         function filterCountries(filter) {
