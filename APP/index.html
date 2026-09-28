@@ -2793,28 +2793,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     const blocks = Array.isArray(parsedBlock) ? parsedBlock : [parsedBlock];
                     blocks.forEach((block) => {
                         if (!block || typeof block !== 'object') return;
-                        const blockType = block['@type'];
+                        const nodes = [block, ...(Array.isArray(block['@graph']) ? block['@graph'] : [])];
+                        nodes.forEach((node) => {
+                            if (!node || typeof node !== 'object') return;
+                            const nodeType = node['@type'];
 
-                        if (typeof block.description === 'string') {
-                            const matches = block.description.match(numericRecordClaimPattern) || [];
-                            issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD description ("${claim}").`));
-                        }
+                            if (typeof node.description === 'string') {
+                                const matches = node.description.match(numericRecordClaimPattern) || [];
+                                issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD description ("${claim}").`));
+                            }
 
-                        if (blockType === 'Dataset' && Array.isArray(block.variableMeasured)) {
-                            block.variableMeasured.forEach((metric) => {
-                                const metricText = `${metric?.name || ''} ${metric?.value || ''}`;
-                                const matches = metricText.match(numericRecordClaimPattern) || [];
-                                issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD variableMeasured ("${claim}").`));
-                            });
-                        }
+                            if (nodeType === 'Dataset' && Array.isArray(node.variableMeasured)) {
+                                node.variableMeasured.forEach((metric) => {
+                                    const metricText = `${metric?.name || ''} ${metric?.value || ''}`;
+                                    const matches = metricText.match(numericRecordClaimPattern) || [];
+                                    issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD variableMeasured ("${claim}").`));
+                                });
+                            }
 
-                        if (blockType === 'FAQPage' && Array.isArray(block.mainEntity)) {
-                            block.mainEntity.forEach((entity) => {
-                                const answerText = entity?.acceptedAnswer?.text || '';
-                                const matches = String(answerText).match(numericRecordClaimPattern) || [];
-                                issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD FAQ answer ("${claim}").`));
-                            });
-                        }
+                            if (nodeType === 'FAQPage' && Array.isArray(node.mainEntity)) {
+                                node.mainEntity.forEach((entity) => {
+                                    const answerText = entity?.acceptedAnswer?.text || '';
+                                    const matches = String(answerText).match(numericRecordClaimPattern) || [];
+                                    issues.push(...matches.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in JSON-LD FAQ answer ("${claim}").`));
+                                });
+                            }
+                        });
                     });
                 } catch (error) {
                     issues.push(`SEO assertion failed: unable to parse a JSON-LD block (${error.message}).`);
