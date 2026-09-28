@@ -3054,7 +3054,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
 
         function getFilteredCountries() {
-            const sortedCountries = countriesData.sort((a, b) =>
+            const sortedCountries = [...countriesData].sort((a, b) =>
                 a.country_name.localeCompare(b.country_name)
             );
 
