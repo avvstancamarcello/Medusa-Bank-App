@@ -2852,7 +2852,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 issues.push(`Dataset assertion failed: parsed top-level count (${parsedTopLevelCount}) differs from EXPECTED_AUTHORITY_RECORDS (${EXPECTED_AUTHORITY_RECORDS}).`);
             }
 
-            const renderedCards = Array.from(document.querySelectorAll('#countriesGrid .country-card'));
+            const currentRenderCycleId = document.getElementById('countriesGrid')?.dataset?.renderCycleId || '';
+            const renderedCards = Array.from(document.querySelectorAll(`#countriesGrid .country-card[data-render-cycle-id="${currentRenderCycleId}"]`));
             const renderedCardsCount = renderedCards.filter((card) => card.style.display !== 'none').length;
             const expectedVisibleRecords = getExpectedDisplayedRecordsCount();
             if (renderedCardsCount !== expectedVisibleRecords) {
@@ -3009,12 +3010,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function renderCountries() {
             const grid = document.getElementById('countriesGrid');
             grid.innerHTML = '';
+            const renderCycleId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+            grid.dataset.renderCycleId = renderCycleId;
             
             const filtered = getFilteredCountries();
 
             filtered.forEach(country => {
                 const card = document.createElement('div');
                 card.className = 'country-card';
+                card.dataset.renderCycleId = renderCycleId;
                 card.onclick = () => openModal(country.country_name);
                 
                 const protectionClass = `protection-${(country.protectionLevel || 'medio').toLowerCase()}`;
