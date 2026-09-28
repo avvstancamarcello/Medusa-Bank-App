@@ -2785,37 +2785,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 seoTexts.push(scriptEl.textContent || '');
             });
 
-            const staleLegacyClaimsPattern = /\b(142|124)\b/;
-            const hardcodedExpectedCountPattern = new RegExp(`\\b${EXPECTED_AUTHORITY_RECORDS}\\b\\s*(?:record|records|schede|authority|authorities|links?)`, 'i');
             const combinedSeoContent = seoTexts.join(' ');
-            console.assert(!staleLegacyClaimsPattern.test(combinedSeoContent), 'SEO assertion failed: stale legacy hard-coded count claims found in SEO surfaces.');
-            console.assert(!hardcodedExpectedCountPattern.test(combinedSeoContent), 'SEO assertion failed: hard-coded EXPECTED_AUTHORITY_RECORDS claim found in SEO surfaces.');
+            const numericRecordClaimPattern = /\b\d+\b\s*(?:record|records|schede|authority|authorities|links?)\b/ig;
+            const numericClaims = combinedSeoContent.match(numericRecordClaimPattern) || [];
+            return numericClaims.map((claim) => `SEO assertion failed: hard-coded numeric record claim found in SEO surfaces ("${claim}").`);
+        }
+
+        function reportIntegrityIssues(issues) {
+            if (!Array.isArray(issues) || issues.length === 0) return;
+            issues.forEach((message) => console.error(message));
+
+            const status = document.getElementById('datasetCountStatus');
+            if (status) {
+                status.textContent = `⚠️ ${issues[0]}`;
+                status.style.color = '#fbbf24';
+            }
         }
 
         function runAuthorityIntegrityAssertions(parsedData) {
+            const issues = [];
             const normalizedFromParsedData = Array.isArray(parsedData)
                 ? parsedData
                 : (parsedData && typeof parsedData === 'object' ? Object.values(parsedData) : []);
             const parsedTopLevelCount = normalizedFromParsedData.length;
             const normalizedRecordCount = Array.isArray(countriesData) ? countriesData.length : 0;
-            console.assert(
-                parsedTopLevelCount === EXPECTED_AUTHORITY_RECORDS,
-                `Dataset assertion failed: parsed top-level count (${parsedTopLevelCount}) differs from EXPECTED_AUTHORITY_RECORDS (${EXPECTED_AUTHORITY_RECORDS}).`
-            );
-            console.assert(
-                normalizedRecordCount === parsedTopLevelCount,
-                `Normalization assertion failed: normalized records (${normalizedRecordCount}) differ from parsed top-level dataset count (${parsedTopLevelCount}).`
-            );
+            if (parsedTopLevelCount !== EXPECTED_AUTHORITY_RECORDS) {
+                issues.push(`Dataset assertion failed: parsed top-level count (${parsedTopLevelCount}) differs from EXPECTED_AUTHORITY_RECORDS (${EXPECTED_AUTHORITY_RECORDS}).`);
+            }
+            if (normalizedRecordCount !== parsedTopLevelCount) {
+                issues.push(`Normalization assertion failed: normalized records (${normalizedRecordCount}) differ from parsed top-level dataset count (${parsedTopLevelCount}).`);
+            }
 
             const renderedCardsCount = document.querySelectorAll('#countriesGrid .country-card').length;
             if (currentFilter === 'all') {
-                console.assert(
-                    renderedCardsCount === normalizedRecordCount,
-                    `Render assertion failed: rendered cards (${renderedCardsCount}) differ from normalized dataset count (${normalizedRecordCount}) in unfiltered view.`
-                );
+                if (renderedCardsCount !== normalizedRecordCount) {
+                    issues.push(`Render assertion failed: rendered cards (${renderedCardsCount}) differ from normalized dataset count (${normalizedRecordCount}) in unfiltered view.`);
+                }
             }
 
-            assertNoHardcodedSeoRecordClaims();
+            issues.push(...assertNoHardcodedSeoRecordClaims());
+            reportIntegrityIssues(issues);
         }
 
         function updateAuthorityCountMessaging() {
@@ -2889,8 +2898,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 countriesData = assignContinents(countriesData);
                 
                 renderAll();
-                runAuthorityIntegrityAssertions(data);
                 validateAuthorityDatasetCount();
+                runAuthorityIntegrityAssertions(data);
             } catch (error) {
                 console.error('Error loading country data:', error);
                 loadedAuthorityRecordCount = null;
