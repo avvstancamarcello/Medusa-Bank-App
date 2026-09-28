@@ -2825,6 +2825,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             issues.push(...assertNoHardcodedSeoRecordClaims());
             reportIntegrityIssues(issues);
+            return issues;
         }
 
         function updateAuthorityCountMessaging() {
@@ -2899,7 +2900,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 renderAll();
                 validateAuthorityDatasetCount();
-                runAuthorityIntegrityAssertions(data);
+                const integrityIssues = runAuthorityIntegrityAssertions(data);
+                if (integrityIssues.length > 0) {
+                    console.warn(`Integrità dataset/SEO: ${integrityIssues.length} anomalia/e rilevata/e.`);
+                }
             } catch (error) {
                 console.error('Error loading country data:', error);
                 loadedAuthorityRecordCount = null;
