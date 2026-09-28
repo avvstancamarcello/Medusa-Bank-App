@@ -2853,10 +2853,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 issues.push(`Normalization assertion failed: normalized records (${normalizedRecordCount}) differ from parsed top-level dataset count (${parsedTopLevelCount}).`);
             }
 
-            const renderedCardsCount = Array.from(document.querySelectorAll('#countriesGrid .country-card'))
-                .filter((card) => card.style.display !== 'none')
-                .length;
-            const expectedVisibleRecords = getExpectedDisplayedRecordsCount();
+            const renderedCards = Array.from(document.querySelectorAll('#countriesGrid .country-card'));
+            const renderedCardsCount = renderedCards.filter((card) => card.style.display !== 'none').length;
+            const hasSearchDisplayFiltering = renderedCards.some((card) => card.style.display === 'none');
+            const expectedVisibleRecords = hasSearchDisplayFiltering
+                ? getExpectedDisplayedRecordsCount()
+                : countriesData.filter(matchesCurrentFilter).length;
             if (renderedCardsCount !== expectedVisibleRecords) {
                 issues.push(`Render assertion failed: rendered visible cards (${renderedCardsCount}) differ from expected visible records (${expectedVisibleRecords}) for current filter "${currentFilter}".`);
             }
