@@ -2582,7 +2582,7 @@
       body.mobile-guide-scroll::after,
       body.mobile-post-papyrus::before,
       body.mobile-post-papyrus::after{content:none !important;display:none !important}
-      body.mobile-hero-collapsed::before{width:260px;height:10px;transform-origin:10px 50%;z-index:320;animation:mobileClockLaserSweep 4.9s linear infinite}
+      body.mobile-hero-collapsed::before{width:260px;height:10px;transform-origin:10px 50%;z-index:170;animation:mobileClockLaserSweep 4.9s linear infinite;pointer-events:none}
       body.mobile-hero-collapsed::after{width:196px;height:4px;transform-origin:10px 50%;z-index:171;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.96) 30%,rgba(255,255,255,.2) 100%);box-shadow:0 0 12px rgba(255,255,255,.85),0 0 22px rgba(170,230,255,.45);animation:mobileClockLaserCore 4.9s linear infinite;pointer-events:none}
       body.mobile-hero-collapsed .medusa-caravaggio{display:block !important;top:158px;left:50%;width:184px;height:184px;transform:translate(-50%,-50%);z-index:174;border-width:3px;box-shadow:0 0 42px rgba(255,0,0,.68),0 0 90px rgba(255,0,0,.42)}
       body.mobile-hero-collapsed .medusa{top:var(--mobile-side-medusa-top);width:var(--mobile-side-medusa-size);height:var(--mobile-side-medusa-size);z-index:180}
@@ -3288,6 +3288,12 @@
       body.mobile-hero-expanded footer,
       body.mobile-guide-scroll footer,
       body.mobile-post-papyrus footer{position:relative;margin-top:var(--mobile-guide-footer-margin-top) !important;z-index:220}
+    }
+
+    @media (min-width:431px) and (max-width:768px){
+      body.mobile-hero-collapsed .roleplay-controls{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 88px);transform:translateX(-50%);display:flex;align-items:center;gap:8px;width:min(350px,calc(100vw - 24px));z-index:260}
+      body.mobile-hero-collapsed .roleplay-controls .replay-button{position:relative;left:auto;top:auto;bottom:auto;transform:none;flex:1;width:auto}
+      body.mobile-hero-collapsed .roleplay-controls .roleplay-info-trigger{position:relative;left:auto;right:auto;top:auto;bottom:auto;flex:0 0 34px}
     }
 
     @media (max-width:768px){
@@ -6303,19 +6309,21 @@ body.mobile-hero-expanded #central-static-banner{display:flex;align-items:center
       
       <div class="medusa-label medusa-label-right">M E D U S A</div>
       
-      <button class="replay-button play-game-btn visible" id="replay-button" type="button">
-        <span class="play-main" data-i18n="roleplayButtonTitle">Avvia il Monitor Truffe!</span>
-        <span class="mobile-play-label" aria-hidden="true">Play!</span>
-        <span class="play-subtitle" data-i18n="roleplayButtonSubtitle">Play! Tu sei il Cavallo di Troia inviato in banca dai truffatori!</span>
-        <div class="play-hover-panel" aria-hidden="true">
-          <ol class="play-hover-list">
-            <li data-i18n="roleplayHoverLine1">Osserva gli attacchi crudeli di Medusa!</li>
-            <li data-i18n="roleplayHoverLine2">conta le vittime di truffa e le banche,</li>
-            <li data-i18n="roleplayHoverLine3">crea il tuo scudo psicologico.</li>
-          </ol>
-        </div>
-      </button>
-      <button class="roleplay-info-trigger" id="roleplay-info-trigger" type="button" aria-label="Spiega il significato del gioco di ruolo">?</button>
+      <div class="roleplay-controls">
+        <button class="replay-button play-game-btn visible" id="replay-button" type="button">
+          <span class="play-main" data-i18n="roleplayButtonTitle">Avvia il Monitor Truffe!</span>
+          <span class="mobile-play-label" aria-hidden="true">Play!</span>
+          <span class="play-subtitle" data-i18n="roleplayButtonSubtitle">Play! Tu sei il Cavallo di Troia inviato in banca dai truffatori!</span>
+          <div class="play-hover-panel" aria-hidden="true">
+            <ol class="play-hover-list">
+              <li data-i18n="roleplayHoverLine1">Osserva gli attacchi crudeli di Medusa!</li>
+              <li data-i18n="roleplayHoverLine2">conta le vittime di truffa e le banche,</li>
+              <li data-i18n="roleplayHoverLine3">crea il tuo scudo psicologico.</li>
+            </ol>
+          </div>
+        </button>
+        <button class="roleplay-info-trigger" id="roleplay-info-trigger" type="button" aria-label="Spiega il significato del gioco di ruolo">?</button>
+      </div>
 
       <div id="mobile-taglines-box" aria-hidden="true">
         <p style="color:#FFD700" data-i18n="bannerLine1">Chiedi aiuto e rimborso alla tua Banca</p>
