@@ -877,8 +877,7 @@
 
     /* Wrapper per il contenuto a flusso normale */
     .content-flow-wrapper {
-      position: relative;
-      top: 2000px; /* Spazio per la parte superiore con posizionamento assoluto */
+      position: static;
       width: 100%;
       max-width: 900px; /* Mantiene la larghezza del contenuto centrale */
       margin: 0 auto;
@@ -2123,7 +2122,6 @@
 
     @media (max-width:1024px){
           .wrap{padding:16px 12px}
-          .content-flow-wrapper { top: 2050px; } /* Aggiusta lo spazio per schermi medi */
           .scams-message-top{left:10%;right:10%;font-size:clamp(16px,2.4vw,22px)}
           .adsense-guide{padding:24px 20px}
           .adsense-toc-shell{padding:18px}
@@ -2152,7 +2150,6 @@
         }
     @media (min-width:769px) and (max-width:1024px) and (orientation:portrait){
 
-          .content-flow-wrapper { top: 2100px; } /* Aggiusta lo spazio per tablet verticali */
           #central-static-banner{width:62%;padding:24px 14px}
           #central-static-banner p{font-size:1.5rem;line-height:1.25}
           .captures-container,.captures-lower-container,.stolen-total-box,.scaffold-column{width:92px}
@@ -2586,7 +2583,7 @@
       body.mobile-post-papyrus::before,
       body.mobile-post-papyrus::after{content:none !important;display:none !important}
       body.mobile-hero-collapsed::before{width:260px;height:10px;transform-origin:10px 50%;z-index:320;animation:mobileClockLaserSweep 4.9s linear infinite}
-      body.mobile-hero-collapsed::after{width:196px;height:4px;transform-origin:10px 50%;z-index:321;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.96) 30%,rgba(255,255,255,.2) 100%);box-shadow:0 0 12px rgba(255,255,255,.85),0 0 22px rgba(170,230,255,.45);animation:mobileClockLaserCore 4.9s linear infinite}
+      body.mobile-hero-collapsed::after{width:196px;height:4px;transform-origin:10px 50%;z-index:171;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.96) 30%,rgba(255,255,255,.2) 100%);box-shadow:0 0 12px rgba(255,255,255,.85),0 0 22px rgba(170,230,255,.45);animation:mobileClockLaserCore 4.9s linear infinite;pointer-events:none}
       body.mobile-hero-collapsed .medusa-caravaggio{display:block !important;top:158px;left:50%;width:184px;height:184px;transform:translate(-50%,-50%);z-index:174;border-width:3px;box-shadow:0 0 42px rgba(255,0,0,.68),0 0 90px rgba(255,0,0,.42)}
       body.mobile-hero-collapsed .medusa{top:var(--mobile-side-medusa-top);width:var(--mobile-side-medusa-size);height:var(--mobile-side-medusa-size);z-index:180}
       body.mobile-hero-collapsed .medusa.left .medusa-image-container,
@@ -2843,7 +2840,7 @@
         body.mobile-hero-collapsed .mobile-banks-module{display:none !important}
       }
 
-      body.mobile-static-scenario .scene{height:100dvh;min-height:100dvh;max-height:100dvh;overflow:hidden;padding-bottom:0}
+      body.mobile-static-scenario .scene{height:auto;min-height:100dvh;max-height:none;overflow:visible;padding-bottom:0}
       body.mobile-static-scenario .mobile-static-scenario{display:block}
       body.mobile-static-scenario .replay-button,
       body.mobile-static-scenario .mobile-victims-module,
@@ -2933,7 +2930,7 @@
       body.mobile-guide-scroll .medusa-guide-pair,
       body.mobile-guide-scroll .perseus-defense-section,
       body.mobile-guide-scroll .collab-visible-banner{z-index:170}
-      body.mobile-hero-expanded .scene{overflow:visible;padding-bottom:calc(120px + env(safe-area-inset-bottom))}
+      body.mobile-hero-expanded .scene{height:auto;min-height:100dvh;max-height:none;overflow:visible;padding-bottom:calc(120px + env(safe-area-inset-bottom))}
       body.mobile-hero-expanded::before,
       body.mobile-hero-expanded::after{display:none}
       body.mobile-hero-expanded .top-banners .banner-item:nth-child(1),
@@ -3033,7 +3030,7 @@
       body.mobile-hero-expanded .scams-message-top{top:520px;left:50%;right:auto;width:min(90vw,300px);transform:translateX(-50%);height:44px;font-size:12px;padding:7px 0;z-index:182}
       body.mobile-hero-expanded .ticker-content{animation-duration:25s}
       body.mobile-hero-expanded .ticker-item{padding:0 14px;gap:7px}
-      body.mobile-hero-expanded .bank-logos-container{top:638px;width:clamp(116px,33vw,132px);height:960px;min-height:960px;padding:10px 8px;z-index:110;scroll-snap-type:y proximity}
+      body.mobile-hero-expanded .bank-logos-container{top:638px;width:clamp(116px,33vw,132px);height:auto;min-height:0;padding:10px 8px;z-index:110;scroll-snap-type:y proximity}
       body.mobile-hero-expanded .bank-logos-left{left:2.5%}
       body.mobile-hero-expanded .bank-logos-right{right:2.5%}
       body.mobile-hero-expanded .bank-floor{height:112px;scroll-snap-align:start}
@@ -3146,11 +3143,11 @@
       .click-arrow{display:none}
       .flag-train-item{width:50px;height:50px}
       .flag-train-shield,.flag-train-planet,.flag-train-flag{width:40px;height:40px}
-      .captures-container{width:92px;padding:9px 7px;top:380px;min-height:1120px}
+      .captures-container{width:92px;height:auto;min-height:0;padding:9px 7px;top:380px}
       .share-tower-extension{width:92px;top:2010px;gap:6px}
       .captures-left{left:2%} /* Emoji esterne mobile */
       .captures-right{right:2%} /* Emoji esterne mobile */
-      .bank-logos-container{width:98px;padding:9px 7px;top:380px;min-height:1070px}
+      .bank-logos-container{width:98px;height:auto;min-height:0;padding:9px 7px;top:380px}
       .bank-logos-left{left:8%} /* Banche interne mobile, allineate con Medusa */
       .bank-logos-right{right:8%} /* Banche interne mobile, allineate con Medusa */
       .depression-horizontal{top:21%;gap:6px;transform:translate(-50%,0)}
